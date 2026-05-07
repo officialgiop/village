@@ -1,0 +1,262 @@
+---
+import '../styles/global.css';
+
+const phoneLink = 'tel:+390600000000';
+const whatsappNumber = '393330000000';
+const whatsappTemplate = encodeURIComponent(
+	`Ciao Village Fregene Padel & Suites, vorrei richiedere disponibilita per le suites.
+
+Check-in:
+Check-out:
+Numero ospiti:
+Note:`
+);
+const whatsappLink = `https://wa.me/${whatsappNumber}?text=${whatsappTemplate}`;
+---
+
+<html lang="it">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" href="/favicon.ico" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Village Fregene Padel & Suites</title>
+		<meta
+			name="description"
+			content="Village Fregene Padel & Suites: circolo padel, eventi, lezioni, tornei e suites con cucina a due passi dal mare."
+		/>
+	</head>
+	<body class="selection:bg-brand-200 selection:text-brand-900">
+		<header class="mx-auto max-w-6xl px-4 pb-10 pt-6 sm:px-6">
+			<nav class="glass-card flex items-center justify-between p-4">
+				<a href="#" class="flex items-center gap-3">
+					<img src="/logo.png" alt="Village Fregene Padel logo" class="h-10 w-10 rounded-full object-contain bg-black/5 p-1" />
+					<span class="font-display text-base font-bold tracking-tight text-brand-900 sm:text-lg">
+						Village Fregene Padel & Suites
+					</span>
+				</a>
+				<div class="hidden items-center gap-5 text-sm font-medium text-slate-700 md:flex">
+					<a href="#circolo" class="hover:text-brand-700">Circolo</a>
+					<a href="/suites" class="hover:text-brand-700">Suites</a>
+					<a href="#servizi" class="hover:text-brand-700">Servizi</a>
+					<a href="#eventi" class="hover:text-brand-700">Eventi</a>
+					<a href="#contatti" class="hover:text-brand-700">Contatti</a>
+				</div>
+				<div class="hidden items-center gap-2 sm:flex">
+					<a href={phoneLink} class="rounded-full bg-brand-700 px-3 py-2 text-xs font-semibold text-white hover:bg-brand-800">
+						Prenota campi
+					</a>
+					<a href={whatsappLink} target="_blank" rel="noopener noreferrer" class="rounded-full bg-accent px-3 py-2 text-xs font-semibold text-white hover:opacity-90">
+						Prenota suites
+					</a>
+				</div>
+			</nav>
+		</header>
+
+		<main class="mx-auto max-w-6xl space-y-16 px-4 pb-16 sm:px-6">
+			<section class="grid gap-8 lg:grid-cols-5">
+				<div class="space-y-6 lg:col-span-3 animate-fade-up">
+					<p class="inline-flex rounded-full bg-brand-100 px-3 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-brand-800">
+						Fregene, Roma
+					</p>
+					<h1 class="font-display text-4xl font-bold leading-tight tracking-tight text-slate-900 sm:text-5xl">
+						Padel di giorno, relax in suite la sera.
+					</h1>
+					<p class="max-w-xl text-base text-slate-700 sm:text-lg">
+						Un luogo unico dove sport e ospitalita si incontrano: campi da padel, tornei, lezioni, bar e
+						suites con cucina per vivere il tuo weekend senza spostarti.
+					</p>
+					<div class="flex flex-wrap gap-3">
+						<a
+							href={phoneLink}
+							class="rounded-full bg-brand-700 px-5 py-3 text-sm font-semibold text-white hover:bg-brand-800"
+						>
+							Prenota campi
+						</a>
+						<a
+							href={whatsappLink}
+							target="_blank"
+							rel="noopener noreferrer"
+							class="rounded-full border border-accent/30 bg-white px-5 py-3 text-sm font-semibold text-accent hover:border-accent"
+						>
+							Prenota suites
+						</a>
+					</div>
+					<p class="text-xs text-slate-600">
+						Prenotazione suites con messaggio precompilato (check-in, check-out, ospiti) per risposta piu rapida.
+					</p>
+				</div>
+				<div class="glass-card relative overflow-hidden p-6 lg:col-span-2 animate-float-soft">
+					<div class="absolute -right-14 -top-14 h-36 w-36 rounded-full bg-brand-200 blur-2xl"></div>
+					<div class="absolute -bottom-12 -left-12 h-28 w-28 rounded-full bg-red-200 blur-2xl"></div>
+					<h2 class="font-display text-xl font-semibold text-brand-900">Perche scegliere Village</h2>
+					<ul class="mt-4 space-y-3 text-sm text-slate-700">
+						<li>• Due esperienze in un solo posto: circolo e pernottamento.</li>
+						<li>• Location pensata per weekend sportivi e mini-vacanze.</li>
+						<li>• Servizi completi: bar, area fitness, solarium ed eventi.</li>
+						<li>• Atmosfera premium ma accogliente, anche per famiglie.</li>
+					</ul>
+				</div>
+			</section>
+
+			<section id="suites" class="glass-card p-6 sm:p-8">
+				<div class="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
+					<div>
+						<p class="text-xs font-semibold uppercase tracking-[0.2em] text-brand-700">Padel & Hospitality</p>
+						<h2 class="font-display text-3xl font-bold text-slate-900">Suites con cucina dedicate al soggiorno</h2>
+					</div>
+					<a href="/suites" class="text-sm font-semibold text-brand-700 hover:text-brand-900">Visita pagina suites →</a>
+				</div>
+				<div class="mt-6 grid gap-4 md:grid-cols-3">
+					<div class="rounded-2xl bg-brand-50 p-5 hover-lift">
+						<h3 class="font-display text-lg font-semibold">Stanza Singola</h3>
+						<p class="mt-2 text-sm text-slate-700">Camera doppia proposta in uso singola, perfetta per chi desidera piu comfort personale.</p>
+					</div>
+					<div class="rounded-2xl bg-brand-50 p-5 hover-lift">
+						<h3 class="font-display text-lg font-semibold">Stanza Doppia</h3>
+						<p class="mt-2 text-sm text-slate-700">Stanza matrimoniale ideale per coppie o compagni di soggiorno.</p>
+					</div>
+					<div class="rounded-2xl bg-brand-50 p-5 hover-lift">
+						<h3 class="font-display text-lg font-semibold">Stanza Tripla</h3>
+						<p class="mt-2 text-sm text-slate-700">Soluzione comoda per famiglie con un bambino, con spazi ben distribuiti.</p>
+					</div>
+				</div>
+			</section>
+
+			<section id="circolo" class="grid gap-5 sm:grid-cols-2 xl:grid-cols-4">
+				<article class="glass-card hover-lift p-5">
+					<h3 class="font-display text-lg font-semibold">Campi Padel</h3>
+					<p class="mt-2 text-sm text-slate-700">Campi outdoor di ultima generazione, disponibili tutto l'anno.</p>
+				</article>
+				<article class="glass-card hover-lift p-5">
+					<h3 class="font-display text-lg font-semibold">Lezioni</h3>
+					<p class="mt-2 text-sm text-slate-700">Percorsi individuali e di gruppo per ogni livello, dal beginner all'agonista.</p>
+				</article>
+				<article class="glass-card hover-lift p-5">
+					<h3 class="font-display text-lg font-semibold">Tornei</h3>
+					<p class="mt-2 text-sm text-slate-700">Eventi social e competizioni ufficiali con format weekend e serale.</p>
+				</article>
+				<article class="glass-card hover-lift p-5">
+					<h3 class="font-display text-lg font-semibold">Community</h3>
+					<p class="mt-2 text-sm text-slate-700">Un ambiente vivo dove trovare partner di gioco e nuove amicizie.</p>
+				</article>
+			</section>
+
+			<section id="app" class="glass-card p-6 sm:p-8">
+				<div class="grid gap-6 lg:grid-cols-[1.3fr_1fr] lg:items-center">
+					<div class="space-y-3">
+						<p class="text-xs font-semibold uppercase tracking-[0.2em] text-brand-700">App dedicata</p>
+						<h2 class="font-display text-3xl font-bold text-slate-900">Prenota i campi in autonomia dall'app</h2>
+						<p class="text-sm text-slate-700 sm:text-base">
+							Presto disponibile il link ufficiale dell'app per controllare disponibilita in tempo reale e prenotare campi direttamente dal telefono.
+						</p>
+					</div>
+					<div class="rounded-2xl border border-brand-100 bg-white p-5">
+						<p class="text-sm font-semibold text-slate-900">Link app in arrivo</p>
+						<p class="mt-1 text-sm text-slate-600">Appena me lo fornisci, lo inserisco qui con badge iOS/Android.</p>
+						<a
+							href="#"
+							class="mt-4 inline-flex rounded-full bg-slate-200 px-4 py-2 text-xs font-semibold text-slate-600"
+							aria-disabled="true"
+						>
+							Scarica l'app (coming soon)
+						</a>
+					</div>
+				</div>
+			</section>
+
+			<section id="servizi" class="space-y-4">
+				<h2 class="font-display text-2xl font-bold">Servizi accessori</h2>
+				<div class="grid gap-3 sm:grid-cols-2 lg:grid-cols-5">
+					<div class="rounded-xl bg-white/80 p-4 text-sm font-medium text-slate-700 shadow-sm">Bar e area relax</div>
+					<div class="rounded-xl bg-white/80 p-4 text-sm font-medium text-slate-700 shadow-sm">Spazio palestra</div>
+					<div class="rounded-xl bg-white/80 p-4 text-sm font-medium text-slate-700 shadow-sm">Solarium</div>
+					<div class="rounded-xl bg-white/80 p-4 text-sm font-medium text-slate-700 shadow-sm">Academy junior</div>
+					<div class="rounded-xl bg-white/80 p-4 text-sm font-medium text-slate-700 shadow-sm">Eventi privati</div>
+				</div>
+			</section>
+
+			<section id="eventi" class="grid gap-4 lg:grid-cols-3">
+				<article class="rounded-2xl border border-slate-200 bg-white p-5">
+					<p class="text-xs font-semibold uppercase tracking-[0.16em] text-brand-700">Maggio</p>
+					<h3 class="mt-2 font-display text-xl font-semibold">Sunset Padel Cup</h3>
+					<p class="mt-2 text-sm text-slate-700">Torneo misto con dj set finale e aperitivo nel bar del club.</p>
+				</article>
+				<article class="rounded-2xl border border-slate-200 bg-white p-5">
+					<p class="text-xs font-semibold uppercase tracking-[0.16em] text-brand-700">Giugno</p>
+					<h3 class="mt-2 font-display text-xl font-semibold">Weekend Clinic</h3>
+					<p class="mt-2 text-sm text-slate-700">Stage tecnico intensivo con coach certificati e analisi video.</p>
+				</article>
+				<article class="rounded-2xl border border-slate-200 bg-white p-5">
+					<p class="text-xs font-semibold uppercase tracking-[0.16em] text-brand-700">Luglio</p>
+					<h3 class="mt-2 font-display text-xl font-semibold">Padel & Suites Escape</h3>
+					<p class="mt-2 text-sm text-slate-700">Pacchetto 2 notti con mini torneo, brunch e accesso solarium.</p>
+				</article>
+			</section>
+
+			<section id="gallery" class="space-y-4">
+				<div class="flex items-end justify-between">
+					<h2 class="font-display text-2xl font-bold">Gallery</h2>
+					<p class="text-sm text-slate-600">Atmosfera circolo, sport e ospitalita</p>
+				</div>
+				<div class="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+					<img class="h-44 w-full rounded-xl object-cover shadow-sm hover-lift" src="https://images.unsplash.com/photo-1592656094267-764a45160876?auto=format&fit=crop&w=1200&q=80" alt="Campo da padel illuminato" loading="lazy" />
+					<img class="h-44 w-full rounded-xl object-cover shadow-sm hover-lift" src="https://images.unsplash.com/photo-1526232373132-0e4ee9f66c35?auto=format&fit=crop&w=1200&q=80" alt="Giocatori durante un torneo" loading="lazy" />
+					<img class="h-44 w-full rounded-xl object-cover shadow-sm hover-lift" src="https://images.unsplash.com/photo-1560185008-b033106af5c3?auto=format&fit=crop&w=1200&q=80" alt="Suite con cucina e area living" loading="lazy" />
+					<img class="h-44 w-full rounded-xl object-cover shadow-sm hover-lift" src="https://images.unsplash.com/photo-1496417263034-38ec4f0b665a?auto=format&fit=crop&w=1200&q=80" alt="Area bar e relax" loading="lazy" />
+				</div>
+			</section>
+
+			<section id="video" class="space-y-4">
+				<h2 class="font-display text-2xl font-bold">Video</h2>
+				<div class="grid gap-4 lg:grid-cols-2">
+					<div class="overflow-hidden rounded-2xl border border-slate-200 bg-black shadow-sm hover-lift">
+						<iframe
+							class="aspect-video w-full"
+							src="https://www.youtube.com/embed/9Fpzv4Qj8eM"
+							title="Village Fregene Padel teaser"
+							loading="lazy"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+							referrerpolicy="strict-origin-when-cross-origin"
+							allowfullscreen
+						></iframe>
+					</div>
+					<div class="overflow-hidden rounded-2xl border border-slate-200 bg-black shadow-sm hover-lift">
+						<iframe
+							class="aspect-video w-full"
+							src="https://www.youtube.com/embed/9LQkIY6phhM"
+							title="Highlights torneo padel"
+							loading="lazy"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+							referrerpolicy="strict-origin-when-cross-origin"
+							allowfullscreen
+						></iframe>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer id="contatti" class="mt-16 border-t border-slate-200/80 bg-white/70">
+			<div class="mx-auto grid max-w-6xl gap-6 px-4 py-10 sm:grid-cols-2 sm:px-6">
+				<div>
+					<div class="flex items-center gap-3">
+						<img src="/logo.png" alt="Village Fregene Padel logo" class="h-12 w-12 rounded-full object-contain bg-black/5 p-1" />
+						<h2 class="font-display text-2xl font-bold">Village Fregene Padel & Suites</h2>
+					</div>
+					<p class="mt-2 text-sm text-slate-700">Via di Fregene 00, Fregene (RM)</p>
+					<p class="text-sm text-slate-700">Aperto tutti i giorni 07:00 - 23:00</p>
+				</div>
+				<div class="space-y-2 text-sm">
+					<p><strong>Telefono:</strong> +39 06 0000 0000</p>
+					<p><strong>WhatsApp:</strong> +39 333 000 0000</p>
+					<p><strong>Email:</strong> info@villagefregenepadel.it</p>
+					<div class="flex flex-wrap gap-2 pt-2">
+						<a href={phoneLink} class="rounded-full bg-brand-700 px-3 py-2 text-xs font-semibold text-white hover:bg-brand-800">Chiama per campi</a>
+						<a href={whatsappLink} target="_blank" rel="noopener noreferrer" class="rounded-full bg-accent px-3 py-2 text-xs font-semibold text-white hover:opacity-90">WhatsApp per suites</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>
