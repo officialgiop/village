@@ -49,10 +49,17 @@ const whatsappLink = `https://wa.me/${whatsappNumber}?text=${whatsappTemplate}`;
 					<a href="#contatti" class="hover:text-brand-700">Contatti</a>
 				</div>
 				<div class="hidden items-center gap-2 sm:flex">
-					<a href={phoneLink} class="rounded-full bg-brand-700 px-3 py-2 text-xs font-semibold text-white hover:bg-brand-800">
+					<a href={phoneLink} class="inline-flex items-center gap-1 rounded-full bg-brand-700 px-3 py-2 text-xs font-semibold text-white hover:bg-brand-800">
+						<svg viewBox="0 0 24 24" fill="none" class="h-3.5 w-3.5" stroke="currentColor" stroke-width="1.8">
+							<path d="M6 4h3l2 5-2 2a14 14 0 0 0 4 4l2-2 5 2v3a2 2 0 0 1-2 2c-7.7 0-14-6.3-14-14a2 2 0 0 1 2-2z" />
+						</svg>
 						Prenota campi
 					</a>
-					<a href={whatsappLink} target="_blank" rel="noopener noreferrer" class="rounded-full bg-accent px-3 py-2 text-xs font-semibold text-white hover:opacity-90">
+					<a href={whatsappLink} target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 rounded-full bg-accent px-3 py-2 text-xs font-semibold text-white hover:opacity-90">
+						<svg viewBox="0 0 24 24" fill="none" class="h-3.5 w-3.5" aria-hidden="true" stroke="currentColor" stroke-width="1.8">
+							<rect x="3.5" y="5.5" width="17" height="15" rx="2" />
+							<path d="M7.5 3.5v4M16.5 3.5v4M3.5 9.5h17M8 13h3M13 13h3M8 17h3" />
+						</svg>
 						Prenota suites
 					</a>
 				</div>
@@ -70,27 +77,31 @@ const whatsappLink = `https://wa.me/${whatsappNumber}?text=${whatsappTemplate}`;
 					</h1>
 					<p class="max-w-xl text-base text-slate-700 sm:text-lg">
 						Un luogo unico dove sport e ospitalita si incontrano: campi da padel, tornei, lezioni, bar e
-						suites con cucina per vivere il tuo weekend senza spostarti.
+						suites con cucina per soggiorni rilassanti senza spostarti.
 					</p>
 					<div class="flex flex-wrap gap-3">
 						<a
 							href={phoneLink}
-							class="rounded-full bg-brand-700 px-5 py-3 text-sm font-semibold text-white hover:bg-brand-800"
+							class="inline-flex items-center gap-1 rounded-full bg-brand-700 px-5 py-3 text-sm font-semibold text-white hover:bg-brand-800"
 						>
+							<svg viewBox="0 0 24 24" fill="none" class="h-4 w-4" stroke="currentColor" stroke-width="1.8">
+								<path d="M6 4h3l2 5-2 2a14 14 0 0 0 4 4l2-2 5 2v3a2 2 0 0 1-2 2c-7.7 0-14-6.3-14-14a2 2 0 0 1 2-2z" />
+							</svg>
 							Prenota campi
 						</a>
 						<a
 							href={whatsappLink}
 							target="_blank"
 							rel="noopener noreferrer"
-							class="rounded-full border border-accent/30 bg-white px-5 py-3 text-sm font-semibold text-accent hover:border-accent"
+							class="inline-flex items-center gap-1 rounded-full border border-accent/30 bg-white px-5 py-3 text-sm font-semibold text-accent hover:border-accent"
 						>
+							<svg viewBox="0 0 24 24" fill="none" class="h-4 w-4" aria-hidden="true" stroke="currentColor" stroke-width="1.8">
+								<rect x="3.5" y="5.5" width="17" height="15" rx="2" />
+								<path d="M7.5 3.5v4M16.5 3.5v4M3.5 9.5h17M8 13h3M13 13h3M8 17h3" />
+							</svg>
 							Prenota suites
 						</a>
 					</div>
-					<p class="text-xs text-slate-600">
-						Prenotazione suites con messaggio precompilato (check-in, check-out, ospiti) per risposta piu rapida.
-					</p>
 				</div>
 				<div class="glass-card relative overflow-hidden p-6 lg:col-span-2 animate-float-soft">
 					<div class="absolute -right-14 -top-14 h-36 w-36 rounded-full bg-brand-200 blur-2xl"></div>
@@ -111,38 +122,185 @@ const whatsappLink = `https://wa.me/${whatsappNumber}?text=${whatsappTemplate}`;
 						<p class="text-xs font-semibold uppercase tracking-[0.2em] text-brand-700">Padel & Hospitality</p>
 						<h2 class="font-display text-3xl font-bold text-slate-900">Suites con cucina dedicate al soggiorno</h2>
 					</div>
-					<a href={suitesPath} class="text-sm font-semibold text-brand-700 hover:text-brand-900">Visita pagina suites →</a>
+					<a
+						href={suitesPath}
+						class="inline-flex items-center rounded-full bg-accent px-5 py-3 text-sm font-semibold text-white shadow-lg shadow-accent/30 transition hover:-translate-y-0.5 hover:opacity-95"
+					>
+						Scopri tutte le suites →
+					</a>
 				</div>
 				<div class="mt-6 grid gap-4 md:grid-cols-3">
 					<div class="rounded-2xl bg-brand-50 p-5 hover-lift">
 						<h3 class="font-display text-lg font-semibold">Stanza Singola</h3>
 						<p class="mt-2 text-sm text-slate-700">Camera doppia proposta in uso singola, perfetta per chi desidera piu comfort personale.</p>
+						<div class="mt-3 flex flex-wrap gap-2 text-xs font-medium text-slate-700">
+							<span class="inline-flex items-center gap-1 rounded-full bg-white px-2 py-1">
+								<svg viewBox="0 0 24 24" fill="none" class="h-3.5 w-3.5" stroke="currentColor" stroke-width="1.8">
+									<path d="M3 12h18M5 12V9h14v3M5 12v3M19 12v3" />
+								</svg>
+								1 letto matrimoniale
+							</span>
+							<span class="inline-flex items-center gap-1 rounded-full bg-white px-2 py-1">
+								<svg viewBox="0 0 24 24" fill="none" class="h-3.5 w-3.5" stroke="currentColor" stroke-width="1.8">
+									<path d="M4 9a8 8 0 0 1 16 0M7 12a5 5 0 0 1 10 0M10 15a2 2 0 0 1 4 0" />
+								</svg>
+								Wi-Fi
+							</span>
+							<span class="inline-flex items-center gap-1 rounded-full bg-white px-2 py-1">
+								<svg viewBox="0 0 24 24" fill="none" class="h-3.5 w-3.5" stroke="currentColor" stroke-width="1.8">
+									<path d="M12 3v18M3 12h18M5.5 5.5l13 13M18.5 5.5l-13 13" />
+								</svg>
+								A/C
+							</span>
+							<span class="inline-flex items-center gap-1 rounded-full bg-white px-2 py-1">
+								<svg viewBox="0 0 24 24" fill="none" class="h-3.5 w-3.5" stroke="currentColor" stroke-width="1.8">
+									<path d="M4 8h16M6 8v9a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V8M9 8V6a3 3 0 0 1 6 0v2" />
+								</svg>
+								Cucina
+							</span>
+							<span class="inline-flex items-center gap-1 rounded-full bg-white px-2 py-1">
+								<svg viewBox="0 0 24 24" fill="none" class="h-3.5 w-3.5" stroke="currentColor" stroke-width="1.8">
+									<path d="M7 4h10v16H7zM10 10h4M10 14h4" />
+								</svg>
+								1 bagno
+							</span>
+							<span class="inline-flex items-center gap-1 rounded-full bg-white px-2 py-1">
+								<svg viewBox="0 0 24 24" fill="none" class="h-3.5 w-3.5" stroke="currentColor" stroke-width="1.8">
+									<path d="M4 14h16M7 14v5M17 14v5M7 10l3-3M17 10l-3-3" />
+								</svg>
+								Spazio esterno
+							</span>
+						</div>
 					</div>
 					<div class="rounded-2xl bg-brand-50 p-5 hover-lift">
 						<h3 class="font-display text-lg font-semibold">Stanza Doppia</h3>
 						<p class="mt-2 text-sm text-slate-700">Stanza matrimoniale ideale per coppie o compagni di soggiorno.</p>
+						<div class="mt-3 flex flex-wrap gap-2 text-xs font-medium text-slate-700">
+							<span class="inline-flex items-center gap-1 rounded-full bg-white px-2 py-1">
+								<svg viewBox="0 0 24 24" fill="none" class="h-3.5 w-3.5" stroke="currentColor" stroke-width="1.8">
+									<path d="M3 12h18M5 12V9h14v3M5 12v3M19 12v3" />
+								</svg>
+								1 letto matrimoniale
+							</span>
+							<span class="inline-flex items-center gap-1 rounded-full bg-white px-2 py-1">
+								<svg viewBox="0 0 24 24" fill="none" class="h-3.5 w-3.5" stroke="currentColor" stroke-width="1.8">
+									<path d="M4 9a8 8 0 0 1 16 0M7 12a5 5 0 0 1 10 0M10 15a2 2 0 0 1 4 0" />
+								</svg>
+								Wi-Fi
+							</span>
+							<span class="inline-flex items-center gap-1 rounded-full bg-white px-2 py-1">
+								<svg viewBox="0 0 24 24" fill="none" class="h-3.5 w-3.5" stroke="currentColor" stroke-width="1.8">
+									<path d="M12 3v18M3 12h18M5.5 5.5l13 13M18.5 5.5l-13 13" />
+								</svg>
+								A/C
+							</span>
+							<span class="inline-flex items-center gap-1 rounded-full bg-white px-2 py-1">
+								<svg viewBox="0 0 24 24" fill="none" class="h-3.5 w-3.5" stroke="currentColor" stroke-width="1.8">
+									<path d="M4 8h16M6 8v9a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V8M9 8V6a3 3 0 0 1 6 0v2" />
+								</svg>
+								Cucina
+							</span>
+							<span class="inline-flex items-center gap-1 rounded-full bg-white px-2 py-1">
+								<svg viewBox="0 0 24 24" fill="none" class="h-3.5 w-3.5" stroke="currentColor" stroke-width="1.8">
+									<path d="M7 4h10v16H7zM10 10h4M10 14h4" />
+								</svg>
+								1 bagno
+							</span>
+							<span class="inline-flex items-center gap-1 rounded-full bg-white px-2 py-1">
+								<svg viewBox="0 0 24 24" fill="none" class="h-3.5 w-3.5" stroke="currentColor" stroke-width="1.8">
+									<path d="M4 14h16M7 14v5M17 14v5M7 10l3-3M17 10l-3-3" />
+								</svg>
+								Spazio esterno
+							</span>
+						</div>
 					</div>
 					<div class="rounded-2xl bg-brand-50 p-5 hover-lift">
 						<h3 class="font-display text-lg font-semibold">Stanza Tripla</h3>
 						<p class="mt-2 text-sm text-slate-700">Soluzione comoda per famiglie con un bambino, con spazi ben distribuiti.</p>
+						<div class="mt-3 flex flex-wrap gap-2 text-xs font-medium text-slate-700">
+							<span class="inline-flex items-center gap-1 rounded-full bg-white px-2 py-1">
+								<svg viewBox="0 0 24 24" fill="none" class="h-3.5 w-3.5" stroke="currentColor" stroke-width="1.8">
+									<path d="M3 12h18M5 12V9h14v3M5 12v3M19 12v3" />
+								</svg>
+								1 matrimoniale + 1 singolo
+							</span>
+							<span class="inline-flex items-center gap-1 rounded-full bg-white px-2 py-1">
+								<svg viewBox="0 0 24 24" fill="none" class="h-3.5 w-3.5" stroke="currentColor" stroke-width="1.8">
+									<path d="M4 9a8 8 0 0 1 16 0M7 12a5 5 0 0 1 10 0M10 15a2 2 0 0 1 4 0" />
+								</svg>
+								Wi-Fi
+							</span>
+							<span class="inline-flex items-center gap-1 rounded-full bg-white px-2 py-1">
+								<svg viewBox="0 0 24 24" fill="none" class="h-3.5 w-3.5" stroke="currentColor" stroke-width="1.8">
+									<path d="M12 3v18M3 12h18M5.5 5.5l13 13M18.5 5.5l-13 13" />
+								</svg>
+								A/C
+							</span>
+							<span class="inline-flex items-center gap-1 rounded-full bg-white px-2 py-1">
+								<svg viewBox="0 0 24 24" fill="none" class="h-3.5 w-3.5" stroke="currentColor" stroke-width="1.8">
+									<path d="M4 8h16M6 8v9a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V8M9 8V6a3 3 0 0 1 6 0v2" />
+								</svg>
+								Cucina
+							</span>
+							<span class="inline-flex items-center gap-1 rounded-full bg-white px-2 py-1">
+								<svg viewBox="0 0 24 24" fill="none" class="h-3.5 w-3.5" stroke="currentColor" stroke-width="1.8">
+									<path d="M7 4h10v16H7zM10 10h4M10 14h4" />
+								</svg>
+								1 bagno
+							</span>
+							<span class="inline-flex items-center gap-1 rounded-full bg-white px-2 py-1">
+								<svg viewBox="0 0 24 24" fill="none" class="h-3.5 w-3.5" stroke="currentColor" stroke-width="1.8">
+									<path d="M4 14h16M7 14v5M17 14v5M7 10l3-3M17 10l-3-3" />
+								</svg>
+								Spazio esterno
+							</span>
+						</div>
 					</div>
 				</div>
 			</section>
 
 			<section id="circolo" class="grid gap-5 sm:grid-cols-2 xl:grid-cols-4">
 				<article class="glass-card hover-lift p-5">
+					<span class="mb-2 inline-flex h-8 w-8 items-center justify-center rounded-full bg-brand-100 text-brand-800">
+						<svg viewBox="0 0 24 24" fill="none" class="h-4 w-4" stroke="currentColor" stroke-width="1.8">
+							<rect x="4" y="6" width="16" height="12" rx="2" />
+							<path d="M12 6v12M4 12h16" />
+						</svg>
+					</span>
 					<h3 class="font-display text-lg font-semibold">Campi Padel</h3>
 					<p class="mt-2 text-sm text-slate-700">Campi outdoor di ultima generazione, disponibili tutto l'anno.</p>
 				</article>
 				<article class="glass-card hover-lift p-5">
+					<span class="mb-2 inline-flex h-8 w-8 items-center justify-center rounded-full bg-brand-100 text-brand-800">
+						<svg viewBox="0 0 24 24" fill="none" class="h-4 w-4" stroke="currentColor" stroke-width="1.8">
+							<path d="M7 16l4-4 3 3 4-4" />
+							<circle cx="7" cy="16" r="1.5" />
+							<circle cx="11" cy="12" r="1.5" />
+							<circle cx="14" cy="15" r="1.5" />
+							<circle cx="18" cy="11" r="1.5" />
+						</svg>
+					</span>
 					<h3 class="font-display text-lg font-semibold">Lezioni</h3>
 					<p class="mt-2 text-sm text-slate-700">Percorsi individuali e di gruppo per ogni livello, dal beginner all'agonista.</p>
 				</article>
 				<article class="glass-card hover-lift p-5">
+					<span class="mb-2 inline-flex h-8 w-8 items-center justify-center rounded-full bg-brand-100 text-brand-800">
+						<svg viewBox="0 0 24 24" fill="none" class="h-4 w-4" stroke="currentColor" stroke-width="1.8">
+							<path d="M4 8h16M4 12h16M4 16h10" />
+							<circle cx="18" cy="16" r="2" />
+						</svg>
+					</span>
 					<h3 class="font-display text-lg font-semibold">Tornei</h3>
 					<p class="mt-2 text-sm text-slate-700">Eventi social e competizioni ufficiali con format weekend e serale.</p>
 				</article>
 				<article class="glass-card hover-lift p-5">
+					<span class="mb-2 inline-flex h-8 w-8 items-center justify-center rounded-full bg-brand-100 text-brand-800">
+						<svg viewBox="0 0 24 24" fill="none" class="h-4 w-4" stroke="currentColor" stroke-width="1.8">
+							<circle cx="8" cy="10" r="2" />
+							<circle cx="16" cy="10" r="2" />
+							<path d="M4 18c.6-2.2 2.3-3.5 4-3.5S11.4 15.8 12 18M12 18c.6-2.2 2.3-3.5 4-3.5s3.4 1.3 4 3.5" />
+						</svg>
+					</span>
 					<h3 class="font-display text-lg font-semibold">Community</h3>
 					<p class="mt-2 text-sm text-slate-700">Un ambiente vivo dove trovare partner di gioco e nuove amicizie.</p>
 				</article>
@@ -173,16 +331,56 @@ const whatsappLink = `https://wa.me/${whatsappNumber}?text=${whatsappTemplate}`;
 
 			<section id="servizi" class="space-y-4">
 				<h2 class="font-display text-2xl font-bold">Servizi accessori</h2>
-				<div class="grid gap-3 sm:grid-cols-2 lg:grid-cols-5">
-					<div class="rounded-xl bg-white/80 p-4 text-sm font-medium text-slate-700 shadow-sm">Bar e area relax</div>
-					<div class="rounded-xl bg-white/80 p-4 text-sm font-medium text-slate-700 shadow-sm">Spazio palestra</div>
-					<div class="rounded-xl bg-white/80 p-4 text-sm font-medium text-slate-700 shadow-sm">Solarium</div>
-					<div class="rounded-xl bg-white/80 p-4 text-sm font-medium text-slate-700 shadow-sm">Academy junior</div>
-					<div class="rounded-xl bg-white/80 p-4 text-sm font-medium text-slate-700 shadow-sm">Eventi privati</div>
+				<div class="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+					<div class="rounded-xl bg-white/80 p-4 text-sm font-medium text-slate-700 shadow-sm hover-lift">
+						<span class="mr-2 inline-flex h-6 w-6 items-center justify-center rounded-full bg-brand-100 text-brand-800">
+							<svg viewBox="0 0 24 24" fill="none" class="h-4 w-4" stroke="currentColor" stroke-width="1.8"><path d="M7 4v16M17 4v16M7 12h10" /></svg>
+						</span>Bar e area relax
+					</div>
+					<div class="rounded-xl bg-white/80 p-4 text-sm font-medium text-slate-700 shadow-sm hover-lift">
+						<span class="mr-2 inline-flex h-6 w-6 items-center justify-center rounded-full bg-brand-100 text-brand-800">
+							<svg viewBox="0 0 24 24" fill="none" class="h-4 w-4" stroke="currentColor" stroke-width="1.8"><path d="M6 18h12M8 18V9h8v9M10 9V6h4v3" /></svg>
+						</span>Spazio palestra
+					</div>
+					<div class="rounded-xl bg-white/80 p-4 text-sm font-medium text-slate-700 shadow-sm hover-lift">
+						<span class="mr-2 inline-flex h-6 w-6 items-center justify-center rounded-full bg-brand-100 text-brand-800">
+							<svg viewBox="0 0 24 24" fill="none" class="h-4 w-4" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8" r="3" /><path d="M5 20h14" /></svg>
+						</span>Solarium
+					</div>
+					<div class="rounded-xl bg-white/80 p-4 text-sm font-medium text-slate-700 shadow-sm hover-lift">
+						<span class="mr-2 inline-flex h-6 w-6 items-center justify-center rounded-full bg-brand-100 text-brand-800">
+							<svg viewBox="0 0 24 24" fill="none" class="h-4 w-4" stroke="currentColor" stroke-width="1.8"><circle cx="9" cy="9" r="2" /><circle cx="15" cy="10" r="2" /><path d="M4 18c1-2.5 2.5-4 5-4M11 18c1-2.3 2.5-3.6 4.8-3.6" /></svg>
+						</span>Academy adulti e bambini
+					</div>
+					<div class="rounded-xl bg-white/80 p-4 text-sm font-medium text-slate-700 shadow-sm hover-lift">
+						<span class="mr-2 inline-flex h-6 w-6 items-center justify-center rounded-full bg-brand-100 text-brand-800">
+							<svg viewBox="0 0 24 24" fill="none" class="h-4 w-4" stroke="currentColor" stroke-width="1.8"><path d="M4 8h16M4 12h16M4 16h10" /><circle cx="18" cy="16" r="2" /></svg>
+						</span>Eventi privati
+					</div>
+					<div class="rounded-xl bg-white/80 p-4 text-sm font-medium text-slate-700 shadow-sm hover-lift">
+						<span class="mr-2 inline-flex h-6 w-6 items-center justify-center rounded-full bg-brand-100 text-brand-800">
+							<svg viewBox="0 0 24 24" fill="none" class="h-4 w-4" stroke="currentColor" stroke-width="1.8"><path d="M7 4h10v16H7zM10 10h4M10 14h4" /></svg>
+						</span>Docce e spogliatoi
+					</div>
+					<div class="rounded-xl bg-white/80 p-4 text-sm font-medium text-slate-700 shadow-sm hover-lift">
+						<span class="mr-2 inline-flex h-6 w-6 items-center justify-center rounded-full bg-brand-100 text-brand-800">
+							<svg viewBox="0 0 24 24" fill="none" class="h-4 w-4" stroke="currentColor" stroke-width="1.8"><rect x="4" y="6" width="16" height="10" rx="2" /><path d="M10 19h4" /></svg>
+						</span>TV area club
+					</div>
+					<div class="rounded-xl bg-white/80 p-4 text-sm font-medium text-slate-700 shadow-sm hover-lift">
+						<span class="mr-2 inline-flex h-6 w-6 items-center justify-center rounded-full bg-brand-100 text-brand-800">
+							<svg viewBox="0 0 24 24" fill="none" class="h-4 w-4" stroke="currentColor" stroke-width="1.8"><path d="M8 4h8M7 4l1 16h8l1-16" /></svg>
+						</span>Aperitivi
+					</div>
 				</div>
 			</section>
 
-			<section id="eventi" class="grid gap-4 lg:grid-cols-3">
+			<section id="eventi" class="space-y-4">
+				<div class="flex items-end justify-between">
+					<h2 class="font-display text-2xl font-bold">Eventi del circolo</h2>
+					<p class="text-sm text-slate-600">Tornei, clinic e format speciali</p>
+				</div>
+				<div class="grid gap-4 lg:grid-cols-3">
 				<article class="rounded-2xl border border-slate-200 bg-white p-5">
 					<p class="text-xs font-semibold uppercase tracking-[0.16em] text-brand-700">Maggio</p>
 					<h3 class="mt-2 font-display text-xl font-semibold">Sunset Padel Cup</h3>
@@ -198,6 +396,7 @@ const whatsappLink = `https://wa.me/${whatsappNumber}?text=${whatsappTemplate}`;
 					<h3 class="mt-2 font-display text-xl font-semibold">Padel & Suites Escape</h3>
 					<p class="mt-2 text-sm text-slate-700">Pacchetto 2 notti con mini torneo, brunch e accesso solarium.</p>
 				</article>
+				</div>
 			</section>
 
 			<section id="gallery" class="space-y-4">
@@ -257,8 +456,19 @@ const whatsappLink = `https://wa.me/${whatsappNumber}?text=${whatsappTemplate}`;
 					<p><strong>WhatsApp:</strong> +39 333 000 0000</p>
 					<p><strong>Email:</strong> info@villagefregenepadel.it</p>
 					<div class="flex flex-wrap gap-2 pt-2">
-						<a href={phoneLink} class="rounded-full bg-brand-700 px-3 py-2 text-xs font-semibold text-white hover:bg-brand-800">Chiama per campi</a>
-						<a href={whatsappLink} target="_blank" rel="noopener noreferrer" class="rounded-full bg-accent px-3 py-2 text-xs font-semibold text-white hover:opacity-90">WhatsApp per suites</a>
+						<a href={phoneLink} class="inline-flex items-center gap-1 rounded-full bg-brand-700 px-3 py-2 text-xs font-semibold text-white hover:bg-brand-800">
+							<svg viewBox="0 0 24 24" fill="none" class="h-3.5 w-3.5" stroke="currentColor" stroke-width="1.8">
+								<path d="M6 4h3l2 5-2 2a14 14 0 0 0 4 4l2-2 5 2v3a2 2 0 0 1-2 2c-7.7 0-14-6.3-14-14a2 2 0 0 1 2-2z" />
+							</svg>
+							Prenota campi
+						</a>
+						<a href={whatsappLink} target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 rounded-full bg-accent px-3 py-2 text-xs font-semibold text-white hover:opacity-90">
+							<svg viewBox="0 0 24 24" fill="none" class="h-3.5 w-3.5" aria-hidden="true" stroke="currentColor" stroke-width="1.8">
+								<rect x="3.5" y="5.5" width="17" height="15" rx="2" />
+								<path d="M7.5 3.5v4M16.5 3.5v4M3.5 9.5h17M8 13h3M13 13h3M8 17h3" />
+							</svg>
+							Prenota suites
+						</a>
 					</div>
 				</div>
 			</div>
