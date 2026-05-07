@@ -3,6 +3,11 @@ import '../styles/global.css';
 
 const phoneLink = 'tel:+390600000000';
 const whatsappNumber = '393330000000';
+const basePath = import.meta.env.BASE_URL;
+const suitesPath = `${basePath}suites/`;
+const logoPath = `${basePath}logo.png`;
+const faviconSvgPath = `${basePath}favicon.svg`;
+const faviconIcoPath = `${basePath}favicon.ico`;
 const whatsappTemplate = encodeURIComponent(
 	`Ciao Village Fregene Padel & Suites, vorrei richiedere disponibilita per le suites.
 
@@ -17,8 +22,8 @@ const whatsappLink = `https://wa.me/${whatsappNumber}?text=${whatsappTemplate}`;
 <html lang="it">
 	<head>
 		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
+		<link rel="icon" type="image/svg+xml" href={faviconSvgPath} />
+		<link rel="icon" href={faviconIcoPath} />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<title>Village Fregene Padel & Suites</title>
@@ -31,14 +36,14 @@ const whatsappLink = `https://wa.me/${whatsappNumber}?text=${whatsappTemplate}`;
 		<header class="mx-auto max-w-6xl px-4 pb-10 pt-6 sm:px-6">
 			<nav class="glass-card flex items-center justify-between p-4">
 				<a href="#" class="flex items-center gap-3">
-					<img src="/logo.png" alt="Village Fregene Padel logo" class="h-10 w-10 rounded-full object-contain bg-black/5 p-1" />
+					<img src={logoPath} alt="Village Fregene Padel logo" class="h-10 w-10 rounded-full object-contain bg-black/5 p-1" />
 					<span class="font-display text-base font-bold tracking-tight text-brand-900 sm:text-lg">
 						Village Fregene Padel & Suites
 					</span>
 				</a>
 				<div class="hidden items-center gap-5 text-sm font-medium text-slate-700 md:flex">
 					<a href="#circolo" class="hover:text-brand-700">Circolo</a>
-					<a href="/suites" class="hover:text-brand-700">Suites</a>
+					<a href={suitesPath} class="hover:text-brand-700">Suites</a>
 					<a href="#servizi" class="hover:text-brand-700">Servizi</a>
 					<a href="#eventi" class="hover:text-brand-700">Eventi</a>
 					<a href="#contatti" class="hover:text-brand-700">Contatti</a>
@@ -106,7 +111,7 @@ const whatsappLink = `https://wa.me/${whatsappNumber}?text=${whatsappTemplate}`;
 						<p class="text-xs font-semibold uppercase tracking-[0.2em] text-brand-700">Padel & Hospitality</p>
 						<h2 class="font-display text-3xl font-bold text-slate-900">Suites con cucina dedicate al soggiorno</h2>
 					</div>
-					<a href="/suites" class="text-sm font-semibold text-brand-700 hover:text-brand-900">Visita pagina suites →</a>
+					<a href={suitesPath} class="text-sm font-semibold text-brand-700 hover:text-brand-900">Visita pagina suites →</a>
 				</div>
 				<div class="mt-6 grid gap-4 md:grid-cols-3">
 					<div class="rounded-2xl bg-brand-50 p-5 hover-lift">
@@ -241,7 +246,7 @@ const whatsappLink = `https://wa.me/${whatsappNumber}?text=${whatsappTemplate}`;
 			<div class="mx-auto grid max-w-6xl gap-6 px-4 py-10 sm:grid-cols-2 sm:px-6">
 				<div>
 					<div class="flex items-center gap-3">
-						<img src="/logo.png" alt="Village Fregene Padel logo" class="h-12 w-12 rounded-full object-contain bg-black/5 p-1" />
+						<img src={logoPath} alt="Village Fregene Padel logo" class="h-12 w-12 rounded-full object-contain bg-black/5 p-1" />
 						<h2 class="font-display text-2xl font-bold">Village Fregene Padel & Suites</h2>
 					</div>
 					<p class="mt-2 text-sm text-slate-700">Via di Fregene 00, Fregene (RM)</p>
