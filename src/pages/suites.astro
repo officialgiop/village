@@ -1,22 +1,26 @@
 ---
 import '../styles/global.css';
 
-const whatsappNumber = '393330000000';
+const whatsappNumber = '393272844757';
 const basePath = import.meta.env.BASE_URL.replace(/\/?$/, '/');
 const withBase = (path: string) => `${basePath}${path}`;
 const homePath = basePath;
 const logoPath = withBase('logo-cropped.png');
 const faviconSvgPath = withBase('favicon.svg');
 const faviconIcoPath = withBase('favicon.ico');
-const baseTemplate = `Ciao Village Fregene Padel & Suites, vorrei richiedere disponibilita per:`;
 const buildWaLink = (roomType: string) =>
-	`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(`${baseTemplate} ${roomType}
+	`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(`Ciao 👋
+vorrei richiedere disponibilita per le suites.
 
-Check-in:
-Check-out:
-Numero ospiti:
-Evento (se presente):
-Note:`)}`;
+Nominativo:
+Tipologia stanza: ${roomType}
+Check-in: [gg/mm/aaaa]
+Check-out: [gg/mm/aaaa]
+Ospiti: [n. adulti] + [n. bambini]
+Orario arrivo indicativo: [hh:mm]
+Richieste aggiuntive: [facoltativo]
+
+Grazie, resto in attesa di un vostro gentile riscontro.`)}`;
 ---
 
 <html lang="it">
@@ -384,7 +388,7 @@ Note:`)}`;
 			<section class="space-y-4">
 				<div class="flex items-end justify-between">
 					<h2 class="font-display text-2xl font-bold">Gallery suites</h2>
-					<p class="text-sm text-slate-600">Foto dimostrative, sostituibili con i tuoi contenuti</p>
+					<p class="text-sm text-slate-600">Scopri gli ambienti delle nostre suites</p>
 				</div>
 				<div class="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
 					<img class="h-48 w-full rounded-xl object-cover shadow-sm hover-lift" src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1200&q=80" alt="Camera da letto luminosa con arredi moderni" loading="lazy" />

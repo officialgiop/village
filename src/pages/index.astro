@@ -1,22 +1,26 @@
 ---
 import '../styles/global.css';
 
-const phoneLink = 'tel:+390600000000';
-const whatsappNumber = '393330000000';
+const phoneLink = 'tel:+393272844757';
+const whatsappNumber = '393272844757';
 const basePath = import.meta.env.BASE_URL.replace(/\/?$/, '/');
 const withBase = (path: string) => `${basePath}${path}`;
 const suitesPath = withBase('suites/');
 const logoPath = withBase('logo-cropped.png');
 const faviconSvgPath = withBase('favicon.svg');
 const faviconIcoPath = withBase('favicon.ico');
-const whatsappTemplate = encodeURIComponent(
-	`Ciao Village Fregene Padel & Suites, vorrei richiedere disponibilita per le suites.
+const whatsappTemplate = encodeURIComponent(`Ciao 👋
+vorrei richiedere disponibilita per le suites.
 
-Check-in:
-Check-out:
-Numero ospiti:
-Note:`
-);
+Nominativo:
+Tipologia stanza: [Singola / Doppia / Tripla]
+Check-in: [gg/mm/aaaa]
+Check-out: [gg/mm/aaaa]
+Ospiti: [n. adulti] + [n. bambini]
+Orario arrivo indicativo: [hh:mm]
+Richieste aggiuntive: [facoltativo]
+
+Grazie, resto in attesa di un vostro gentile riscontro.`);
 const whatsappLink = `https://wa.me/${whatsappNumber}?text=${whatsappTemplate}`;
 ---
 
@@ -59,7 +63,7 @@ const whatsappLink = `https://wa.me/${whatsappNumber}?text=${whatsappTemplate}`;
 						Fregene, Roma
 					</p>
 					<h1 class="font-display text-4xl font-bold leading-tight tracking-tight text-slate-900 sm:text-5xl">
-						Padel di giorno, relax in suite la sera.
+						Padel e mare di giorno, relax in Suite la sera.
 					</h1>
 					<p class="max-w-xl text-base text-slate-700 sm:text-lg">
 						Un luogo unico dove sport e ospitalita si incontrano: campi da padel, tornei, lezioni, bar e
