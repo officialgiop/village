@@ -2,11 +2,12 @@
 import '../styles/global.css';
 
 const whatsappNumber = '393330000000';
-const basePath = import.meta.env.BASE_URL;
+const basePath = import.meta.env.BASE_URL.replace(/\/?$/, '/');
+const withBase = (path: string) => `${basePath}${path}`;
 const homePath = basePath;
-const logoPath = `${basePath}logo.png`;
-const faviconSvgPath = `${basePath}favicon.svg`;
-const faviconIcoPath = `${basePath}favicon.ico`;
+const logoPath = withBase('logo.png');
+const faviconSvgPath = withBase('favicon.svg');
+const faviconIcoPath = withBase('favicon.ico');
 const baseTemplate = `Ciao Village Fregene Padel & Suites, vorrei richiedere disponibilita per:`;
 const buildWaLink = (roomType: string) =>
 	`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(`${baseTemplate} ${roomType}
