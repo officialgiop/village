@@ -6,7 +6,7 @@ const whatsappNumber = '393330000000';
 const basePath = import.meta.env.BASE_URL.replace(/\/?$/, '/');
 const withBase = (path: string) => `${basePath}${path}`;
 const suitesPath = withBase('suites/');
-const logoPath = withBase('logo.png');
+const logoPath = withBase('logo-cropped.png');
 const faviconSvgPath = withBase('favicon.svg');
 const faviconIcoPath = withBase('favicon.ico');
 const whatsappTemplate = encodeURIComponent(
@@ -35,10 +35,10 @@ const whatsappLink = `https://wa.me/${whatsappNumber}?text=${whatsappTemplate}`;
 	</head>
 	<body class="selection:bg-brand-200 selection:text-brand-900">
 		<header class="mx-auto max-w-6xl px-4 pb-10 pt-6 sm:px-6">
-			<nav class="glass-card flex items-center justify-between p-4">
-				<a href="#" class="flex items-center gap-3">
-					<img src={logoPath} alt="Village Fregene Padel logo" class="h-10 w-10 rounded-full object-contain bg-black/5 p-1" />
-					<span class="font-display text-base font-bold tracking-tight text-brand-900 sm:text-lg">
+			<nav class="glass-card flex items-center justify-between gap-4 p-4">
+				<a href="#" class="flex min-w-0 items-center gap-3">
+					<img src={logoPath} alt="Village Fregene Padel logo" class="h-16 w-16 object-contain sm:h-20 sm:w-20" />
+					<span class="font-display text-base font-bold tracking-tight text-brand-900 sm:text-lg md:max-w-[260px] md:truncate">
 						Village Fregene Padel & Suites
 					</span>
 				</a>
@@ -50,13 +50,13 @@ const whatsappLink = `https://wa.me/${whatsappNumber}?text=${whatsappTemplate}`;
 					<a href="#contatti" class="hover:text-brand-700">Contatti</a>
 				</div>
 				<div class="hidden items-center gap-2 sm:flex">
-					<a href={phoneLink} class="inline-flex items-center gap-1 rounded-full bg-brand-700 px-3 py-2 text-xs font-semibold text-white hover:bg-brand-800">
+					<a href={phoneLink} class="inline-flex items-center gap-1 whitespace-nowrap rounded-full bg-brand-700 px-3 py-2 text-xs font-semibold text-white hover:bg-brand-800">
 						<svg viewBox="0 0 24 24" fill="none" class="h-3.5 w-3.5" stroke="currentColor" stroke-width="1.8">
 							<path d="M6 4h3l2 5-2 2a14 14 0 0 0 4 4l2-2 5 2v3a2 2 0 0 1-2 2c-7.7 0-14-6.3-14-14a2 2 0 0 1 2-2z" />
 						</svg>
 						Prenota campi
 					</a>
-					<a href={whatsappLink} target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 rounded-full bg-accent px-3 py-2 text-xs font-semibold text-white hover:opacity-90">
+					<a href={whatsappLink} target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 whitespace-nowrap rounded-full bg-accent px-3 py-2 text-xs font-semibold text-white hover:opacity-90">
 						<svg viewBox="0 0 24 24" fill="none" class="h-3.5 w-3.5" aria-hidden="true" stroke="currentColor" stroke-width="1.8">
 							<rect x="3.5" y="5.5" width="17" height="15" rx="2" />
 							<path d="M7.5 3.5v4M16.5 3.5v4M3.5 9.5h17M8 13h3M13 13h3M8 17h3" />
@@ -446,7 +446,7 @@ const whatsappLink = `https://wa.me/${whatsappNumber}?text=${whatsappTemplate}`;
 			<div class="mx-auto grid max-w-6xl gap-6 px-4 py-10 sm:grid-cols-2 sm:px-6">
 				<div>
 					<div class="flex items-center gap-3">
-						<img src={logoPath} alt="Village Fregene Padel logo" class="h-12 w-12 rounded-full object-contain bg-black/5 p-1" />
+						<img src={logoPath} alt="Village Fregene Padel logo" class="h-20 w-20 object-contain" />
 						<h2 class="font-display text-2xl font-bold">Village Fregene Padel & Suites</h2>
 					</div>
 					<p class="mt-2 text-sm text-slate-700">Via di Fregene 00, Fregene (RM)</p>

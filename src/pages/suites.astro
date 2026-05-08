@@ -5,7 +5,7 @@ const whatsappNumber = '393330000000';
 const basePath = import.meta.env.BASE_URL.replace(/\/?$/, '/');
 const withBase = (path: string) => `${basePath}${path}`;
 const homePath = basePath;
-const logoPath = withBase('logo.png');
+const logoPath = withBase('logo-cropped.png');
 const faviconSvgPath = withBase('favicon.svg');
 const faviconIcoPath = withBase('favicon.ico');
 const baseTemplate = `Ciao Village Fregene Padel & Suites, vorrei richiedere disponibilita per:`;
@@ -36,7 +36,7 @@ Note:`)}`;
 		<header class="mx-auto max-w-6xl px-4 pb-8 pt-6 sm:px-6">
 			<nav class="glass-card flex items-center justify-between p-4">
 				<a href={homePath} class="flex items-center gap-3">
-					<img src={logoPath} alt="Village Fregene Padel logo" class="h-10 w-10 rounded-full bg-black/5 p-1 object-contain" />
+					<img src={logoPath} alt="Village Fregene Padel logo" class="h-20 w-20 object-contain" />
 					<span class="font-display text-base font-bold tracking-tight text-brand-900 sm:text-lg">
 						Village Fregene Padel & Suites
 					</span>
