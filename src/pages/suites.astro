@@ -8,12 +8,12 @@ const homePath = basePath;
 const logoPath = withBase('logo-cropped.png');
 const faviconSvgPath = withBase('favicon.svg');
 const faviconIcoPath = withBase('favicon.ico');
-const buildWaLink = (roomType: string) =>
+const buildWaLink = () =>
 	`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(`Ciao 👋
 vorrei richiedere disponibilita per le suites.
 
 Nominativo:
-Tipologia stanza: ${roomType}
+Tipologia stanza: [Singola / Doppia / Tripla]
 Check-in: [gg/mm/aaaa]
 Check-out: [gg/mm/aaaa]
 Ospiti: [n. adulti] + [n. bambini]
@@ -62,7 +62,7 @@ Grazie, resto in attesa di un vostro gentile riscontro.`)}`;
 				</p>
 				<div class="mt-6 flex flex-wrap gap-3">
 					<a
-						href={buildWaLink('Stanza Doppia')}
+						href={buildWaLink()}
 						target="_blank"
 						rel="noopener noreferrer"
 						class="inline-flex items-center gap-1 rounded-full bg-white px-5 py-3 text-sm font-semibold text-brand-900 hover:bg-brand-50"
@@ -140,7 +140,7 @@ Grazie, resto in attesa di un vostro gentile riscontro.`)}`;
 							<p class="text-xs text-slate-600">a notte</p>
 						</div>
 						<a
-							href={buildWaLink('Stanza Singola')}
+							href={buildWaLink()}
 							target="_blank"
 							rel="noopener noreferrer"
 							class="mt-5 inline-flex items-center gap-1 rounded-full bg-accent px-4 py-2 text-xs font-semibold text-white hover:opacity-90"
@@ -207,7 +207,7 @@ Grazie, resto in attesa di un vostro gentile riscontro.`)}`;
 							<p class="text-xs text-slate-600">a notte</p>
 						</div>
 						<a
-							href={buildWaLink('Stanza Doppia')}
+							href={buildWaLink()}
 							target="_blank"
 							rel="noopener noreferrer"
 							class="mt-5 inline-flex items-center gap-1 rounded-full bg-accent px-4 py-2 text-xs font-semibold text-white hover:opacity-90"
@@ -274,7 +274,7 @@ Grazie, resto in attesa di un vostro gentile riscontro.`)}`;
 							<p class="text-xs text-slate-600">a notte</p>
 						</div>
 						<a
-							href={buildWaLink('Stanza Tripla')}
+							href={buildWaLink()}
 							target="_blank"
 							rel="noopener noreferrer"
 							class="mt-5 inline-flex items-center gap-1 rounded-full bg-accent px-4 py-2 text-xs font-semibold text-white hover:opacity-90"
@@ -371,7 +371,7 @@ Grazie, resto in attesa di un vostro gentile riscontro.`)}`;
 						<li>• Condizioni personalizzate per gruppi sportivi.</li>
 					</ul>
 					<a
-						href={buildWaLink('Offerta soggiorno con formula scontata')}
+						href={buildWaLink()}
 						target="_blank"
 						rel="noopener noreferrer"
 						class="mt-5 inline-flex items-center gap-1 rounded-full bg-accent px-4 py-2 text-xs font-semibold text-white hover:opacity-90"
@@ -432,7 +432,7 @@ Grazie, resto in attesa di un vostro gentile riscontro.`)}`;
 					Scrivici su WhatsApp con date e numero ospiti: ti rispondiamo rapidamente con disponibilita e proposta migliore.
 				</p>
 				<a
-					href={buildWaLink('Stanza Singola / Doppia / Tripla')}
+					href={buildWaLink()}
 					target="_blank"
 					rel="noopener noreferrer"
 					class="mt-6 inline-flex items-center gap-1 rounded-full bg-accent px-6 py-3 text-sm font-semibold text-white hover:opacity-90"
