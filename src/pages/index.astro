@@ -49,21 +49,6 @@ const whatsappLink = `https://wa.me/${whatsappNumber}?text=${whatsappTemplate}`;
 					<a href="#eventi" class="hover:text-brand-700">Eventi</a>
 					<a href="#contatti" class="hover:text-brand-700">Contatti</a>
 				</div>
-				<div class="hidden items-center gap-2 sm:flex">
-					<a href={phoneLink} class="inline-flex items-center gap-1 whitespace-nowrap rounded-full bg-brand-700 px-3 py-2 text-xs font-semibold text-white hover:bg-brand-800">
-						<svg viewBox="0 0 24 24" fill="none" class="h-3.5 w-3.5" stroke="currentColor" stroke-width="1.8">
-							<path d="M6 4h3l2 5-2 2a14 14 0 0 0 4 4l2-2 5 2v3a2 2 0 0 1-2 2c-7.7 0-14-6.3-14-14a2 2 0 0 1 2-2z" />
-						</svg>
-						Prenota campi
-					</a>
-					<a href={whatsappLink} target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 whitespace-nowrap rounded-full bg-accent px-3 py-2 text-xs font-semibold text-white hover:opacity-90">
-						<svg viewBox="0 0 24 24" fill="none" class="h-3.5 w-3.5" aria-hidden="true" stroke="currentColor" stroke-width="1.8">
-							<rect x="3.5" y="5.5" width="17" height="15" rx="2" />
-							<path d="M7.5 3.5v4M16.5 3.5v4M3.5 9.5h17M8 13h3M13 13h3M8 17h3" />
-						</svg>
-						Prenota suites
-					</a>
-				</div>
 			</nav>
 		</header>
 
@@ -125,13 +110,13 @@ const whatsappLink = `https://wa.me/${whatsappNumber}?text=${whatsappTemplate}`;
 					</div>
 					<a
 						href={suitesPath}
-						class="inline-flex items-center rounded-full bg-accent px-5 py-3 text-sm font-semibold text-white shadow-lg shadow-accent/30 transition hover:-translate-y-0.5 hover:opacity-95"
+						class="inline-flex items-center rounded-full bg-brand-900 px-5 py-3 text-sm font-semibold text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-brand-800"
 					>
 						Scopri tutte le suites →
 					</a>
 				</div>
 				<div class="mt-6 grid gap-4 md:grid-cols-3">
-					<div class="rounded-2xl bg-brand-50 p-5 hover-lift">
+					<div class="rounded-2xl border border-brand-200 bg-white p-5 hover-lift">
 						<h3 class="font-display text-lg font-semibold">Stanza Singola</h3>
 						<p class="mt-2 text-sm text-slate-700">Camera doppia proposta in uso singola, perfetta per chi desidera piu comfort personale.</p>
 						<div class="mt-3 flex flex-wrap gap-2 text-xs font-medium text-slate-700">
@@ -173,7 +158,7 @@ const whatsappLink = `https://wa.me/${whatsappNumber}?text=${whatsappTemplate}`;
 							</span>
 						</div>
 					</div>
-					<div class="rounded-2xl bg-brand-50 p-5 hover-lift">
+					<div class="rounded-2xl border border-brand-200 bg-white p-5 hover-lift">
 						<h3 class="font-display text-lg font-semibold">Stanza Doppia</h3>
 						<p class="mt-2 text-sm text-slate-700">Stanza matrimoniale ideale per coppie o compagni di soggiorno.</p>
 						<div class="mt-3 flex flex-wrap gap-2 text-xs font-medium text-slate-700">
@@ -215,7 +200,7 @@ const whatsappLink = `https://wa.me/${whatsappNumber}?text=${whatsappTemplate}`;
 							</span>
 						</div>
 					</div>
-					<div class="rounded-2xl bg-brand-50 p-5 hover-lift">
+					<div class="rounded-2xl border border-brand-200 bg-white p-5 hover-lift">
 						<h3 class="font-display text-lg font-semibold">Stanza Tripla</h3>
 						<p class="mt-2 text-sm text-slate-700">Soluzione comoda per famiglie con un bambino, con spazi ben distribuiti.</p>
 						<div class="mt-3 flex flex-wrap gap-2 text-xs font-medium text-slate-700">
@@ -269,7 +254,7 @@ const whatsappLink = `https://wa.me/${whatsappNumber}?text=${whatsappTemplate}`;
 						</svg>
 					</span>
 					<h3 class="font-display text-lg font-semibold">Campi Padel</h3>
-					<p class="mt-2 text-sm text-slate-700">Campi outdoor di ultima generazione, disponibili tutto l'anno.</p>
+					<p class="mt-2 text-sm text-slate-700">3 campi indoor di ultima generazione, disponibili tutto l'anno.</p>
 				</article>
 				<article class="glass-card hover-lift p-5">
 					<span class="mb-2 inline-flex h-8 w-8 items-center justify-center rounded-full bg-brand-100 text-brand-800">
@@ -282,7 +267,7 @@ const whatsappLink = `https://wa.me/${whatsappNumber}?text=${whatsappTemplate}`;
 						</svg>
 					</span>
 					<h3 class="font-display text-lg font-semibold">Lezioni</h3>
-					<p class="mt-2 text-sm text-slate-700">Percorsi individuali e di gruppo per ogni livello, dal beginner all'agonista.</p>
+					<p class="mt-2 text-sm text-slate-700">Percorsi individuali e di gruppo per adulti e bambini, dal beginner all'agonista.</p>
 				</article>
 				<article class="glass-card hover-lift p-5">
 					<span class="mb-2 inline-flex h-8 w-8 items-center justify-center rounded-full bg-brand-100 text-brand-800">
@@ -291,8 +276,8 @@ const whatsappLink = `https://wa.me/${whatsappNumber}?text=${whatsappTemplate}`;
 							<circle cx="18" cy="16" r="2" />
 						</svg>
 					</span>
-					<h3 class="font-display text-lg font-semibold">Tornei</h3>
-					<p class="mt-2 text-sm text-slate-700">Eventi social e competizioni ufficiali con format weekend e serale.</p>
+					<h3 class="font-display text-lg font-semibold">Tornei e Campionati</h3>
+					<p class="mt-2 text-sm text-slate-700">Organizziamo eventi sociali e competizioni ufficiali durante tutto l'anno.</p>
 				</article>
 				<article class="glass-card hover-lift p-5">
 					<span class="mb-2 inline-flex h-8 w-8 items-center justify-center rounded-full bg-brand-100 text-brand-800">
@@ -313,19 +298,40 @@ const whatsappLink = `https://wa.me/${whatsappNumber}?text=${whatsappTemplate}`;
 						<p class="text-xs font-semibold uppercase tracking-[0.2em] text-brand-700">App dedicata</p>
 						<h2 class="font-display text-3xl font-bold text-slate-900">Prenota i campi in autonomia dall'app</h2>
 						<p class="text-sm text-slate-700 sm:text-base">
-							Presto disponibile il link ufficiale dell'app per controllare disponibilita in tempo reale e prenotare campi direttamente dal telefono.
+							Con l'app ufficiale puoi verificare disponibilita in tempo reale, prenotare i campi in pochi secondi e restare aggiornato su partite ed eventi del circolo.
 						</p>
 					</div>
 					<div class="rounded-2xl border border-brand-100 bg-white p-5">
-						<p class="text-sm font-semibold text-slate-900">Link app in arrivo</p>
-						<p class="mt-1 text-sm text-slate-600">Appena me lo fornisci, lo inserisco qui con badge iOS/Android.</p>
-						<a
-							href="#"
-							class="mt-4 inline-flex rounded-full bg-slate-200 px-4 py-2 text-xs font-semibold text-slate-600"
-							aria-disabled="true"
-						>
-							Scarica l'app (coming soon)
-						</a>
+						<p class="text-sm font-semibold text-slate-900">Scarica l'app ufficiale Village Fregene Padel</p>
+						<p class="mt-1 text-sm text-slate-600">Disponibile su App Store e Google Play.</p>
+						<div class="mt-4 flex flex-wrap gap-2">
+							<a
+								href="https://apps.apple.com/it/app/village-fregene-padel/id6740776472"
+								target="_blank"
+								rel="noopener noreferrer"
+								aria-label="Scarica su App Store"
+								class="inline-flex h-14 w-44 items-center justify-center overflow-hidden rounded-md transition hover:opacity-90"
+							>
+								<img
+									src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/it-it?size=250x83"
+									alt="Scarica su App Store"
+									class="h-full w-full object-contain"
+									loading="lazy"
+								/>
+							</a>
+							<a
+								href="#"
+								aria-label="Scarica su Google Play"
+								class="inline-flex h-14 w-44 items-center justify-center overflow-hidden rounded-md transition hover:opacity-90"
+							>
+								<img
+									src="https://play.google.com/intl/en_us/badges/static/images/badges/it_badge_web_generic.png"
+									alt="Scarica su Google Play"
+									class="h-full w-full scale-125 object-contain"
+									loading="lazy"
+								/>
+							</a>
+						</div>
 					</div>
 				</div>
 			</section>
@@ -383,19 +389,40 @@ const whatsappLink = `https://wa.me/${whatsappNumber}?text=${whatsappTemplate}`;
 				</div>
 				<div class="grid gap-4 lg:grid-cols-3">
 				<article class="rounded-2xl border border-slate-200 bg-white p-5">
-					<p class="text-xs font-semibold uppercase tracking-[0.16em] text-brand-700">Maggio</p>
-					<h3 class="mt-2 font-display text-xl font-semibold">Sunset Padel Cup</h3>
-					<p class="mt-2 text-sm text-slate-700">Torneo misto con dj set finale e aperitivo nel bar del club.</p>
+					<div class="mb-3 inline-flex h-16 w-16 flex-col overflow-hidden rounded-xl border border-brand-200 bg-white text-brand-800">
+						<div class="flex h-5 items-center justify-center bg-brand-700 text-[9px] font-semibold uppercase tracking-[0.16em] text-white">
+							2026
+						</div>
+						<div class="flex flex-1 items-center justify-center font-display text-sm font-bold leading-none">
+							MAG
+						</div>
+					</div>
+					<h3 class="mt-2 font-display text-xl font-semibold">Coppa Italia (Misto)</h3>
+					<p class="mt-2 text-sm text-slate-700">Fasi finali 16-17 Maggio.</p>
 				</article>
 				<article class="rounded-2xl border border-slate-200 bg-white p-5">
-					<p class="text-xs font-semibold uppercase tracking-[0.16em] text-brand-700">Giugno</p>
+					<div class="mb-3 inline-flex h-16 w-16 flex-col overflow-hidden rounded-xl border border-brand-200 bg-white text-brand-800">
+						<div class="flex h-5 items-center justify-center bg-brand-700 text-[9px] font-semibold uppercase tracking-[0.16em] text-white">
+							2026
+						</div>
+						<div class="flex flex-1 items-center justify-center font-display text-sm font-bold leading-none">
+							MAG
+						</div>
+					</div>
 					<h3 class="mt-2 font-display text-xl font-semibold">Weekend Clinic</h3>
-					<p class="mt-2 text-sm text-slate-700">Stage tecnico intensivo con coach certificati e analisi video.</p>
+					<p class="mt-2 text-sm text-slate-700">Con maestro argentino Diego del Percio, ex giocatore del World Padel Tour e docente della Federacion Madrilena de Padel.</p>
 				</article>
 				<article class="rounded-2xl border border-slate-200 bg-white p-5">
-					<p class="text-xs font-semibold uppercase tracking-[0.16em] text-brand-700">Luglio</p>
-					<h3 class="mt-2 font-display text-xl font-semibold">Padel & Suites Escape</h3>
-					<p class="mt-2 text-sm text-slate-700">Pacchetto 2 notti con mini torneo, brunch e accesso solarium.</p>
+					<div class="mb-3 inline-flex h-16 w-16 flex-col overflow-hidden rounded-xl border border-brand-200 bg-white text-brand-800">
+						<div class="flex h-5 items-center justify-center bg-brand-700 text-[9px] font-semibold uppercase tracking-[0.16em] text-white">
+							2026
+						</div>
+						<div class="flex flex-1 items-center justify-center font-display text-sm font-bold leading-none">
+							GIU
+						</div>
+					</div>
+					<h3 class="mt-2 font-display text-xl font-semibold">Finali campionato interno del Village</h3>
+					<p class="mt-2 text-sm text-slate-700">Fasi finali dei campionati Silver e Gold del Village... presto sapremo chi sono i nuovi campioni!</p>
 				</article>
 				</div>
 			</section>
@@ -449,27 +476,56 @@ const whatsappLink = `https://wa.me/${whatsappNumber}?text=${whatsappTemplate}`;
 						<img src={logoPath} alt="Village Fregene Padel logo" class="h-20 w-20 object-contain" />
 						<h2 class="font-display text-2xl font-bold">Village Fregene Padel & Suites</h2>
 					</div>
-					<p class="mt-2 text-sm text-slate-700">Via di Fregene 00, Fregene (RM)</p>
-					<p class="text-sm text-slate-700">Aperto tutti i giorni 07:00 - 23:00</p>
+					<p class="mt-2 text-sm text-slate-700">Via Agropoli 85, Fregene (RM)</p>
+					<p class="text-sm text-slate-700">Aperto tutti i giorni 08:00 - 23:00</p>
+					<a
+						href="https://www.google.com/maps?q=41.85459,12.2063022"
+						target="_blank"
+						rel="noopener noreferrer"
+						class="mt-3 inline-flex items-center gap-1 rounded-full bg-brand-700 px-4 py-2 text-xs font-semibold text-white hover:bg-brand-800"
+					>
+						<svg viewBox="0 0 24 24" fill="none" class="h-3.5 w-3.5" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+							<path d="M12 21s7-6.2 7-11a7 7 0 1 0-14 0c0 4.8 7 11 7 11Z" />
+							<circle cx="12" cy="10" r="2.2" />
+						</svg>
+						Raggiungici
+					</a>
 				</div>
 				<div class="space-y-2 text-sm">
-					<p><strong>Telefono:</strong> +39 06 0000 0000</p>
-					<p><strong>WhatsApp:</strong> +39 333 000 0000</p>
-					<p><strong>Email:</strong> info@villagefregenepadel.it</p>
-					<div class="flex flex-wrap gap-2 pt-2">
-						<a href={phoneLink} class="inline-flex items-center gap-1 rounded-full bg-brand-700 px-3 py-2 text-xs font-semibold text-white hover:bg-brand-800">
-							<svg viewBox="0 0 24 24" fill="none" class="h-3.5 w-3.5" stroke="currentColor" stroke-width="1.8">
-								<path d="M6 4h3l2 5-2 2a14 14 0 0 0 4 4l2-2 5 2v3a2 2 0 0 1-2 2c-7.7 0-14-6.3-14-14a2 2 0 0 1 2-2z" />
-							</svg>
-							Prenota campi
-						</a>
-						<a href={whatsappLink} target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 rounded-full bg-accent px-3 py-2 text-xs font-semibold text-white hover:opacity-90">
-							<svg viewBox="0 0 24 24" fill="none" class="h-3.5 w-3.5" aria-hidden="true" stroke="currentColor" stroke-width="1.8">
-								<rect x="3.5" y="5.5" width="17" height="15" rx="2" />
-								<path d="M7.5 3.5v4M16.5 3.5v4M3.5 9.5h17M8 13h3M13 13h3M8 17h3" />
-							</svg>
-							Prenota suites
-						</a>
+					<p>
+						<strong>Telefono e WhatsApp:</strong>
+						<a href="tel:+393272844757" class="hover:text-brand-700">+39 3272844757</a>
+					</p>
+					<p>
+						<strong>Email:</strong>
+						<a href="mailto:villagefregenepadel@gmail.com" class="hover:text-brand-700">villagefregenepadel@gmail.com</a>
+					</p>
+					<div class="pt-2">
+						<p class="text-xs font-semibold uppercase tracking-[0.14em] text-slate-500">Seguici</p>
+						<div class="mt-2 flex items-center gap-3">
+							<a
+								href="https://www.instagram.com/village_fregene_padel?igsh=MXg2YTg3c3Nrd3htcg=="
+								target="_blank"
+								rel="noopener noreferrer"
+								aria-label="Instagram Village Fregene Padel"
+								class="inline-flex h-9 w-9 items-center justify-center rounded-full bg-[#E1306C] text-white shadow-sm hover:opacity-90"
+							>
+								<svg viewBox="0 0 24 24" fill="currentColor" class="h-5 w-5" aria-hidden="true">
+									<path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2Zm0 1.8A3.95 3.95 0 0 0 3.8 7.75v8.5A3.95 3.95 0 0 0 7.75 20.2h8.5a3.95 3.95 0 0 0 3.95-3.95v-8.5a3.95 3.95 0 0 0-3.95-3.95h-8.5Zm8.85 1.35a1.15 1.15 0 1 1 0 2.3 1.15 1.15 0 0 1 0-2.3ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 1.8a3.2 3.2 0 1 0 0 6.4 3.2 3.2 0 0 0 0-6.4Z" />
+								</svg>
+							</a>
+							<a
+								href="https://www.facebook.com/share/1DyaR22jXF/?mibextid=wwXIfr"
+								target="_blank"
+								rel="noopener noreferrer"
+								aria-label="Facebook Village Fregene Padel"
+								class="inline-flex h-9 w-9 items-center justify-center rounded-full bg-[#1877F2] text-white shadow-sm hover:opacity-90"
+							>
+								<svg viewBox="0 0 24 24" fill="currentColor" class="h-5 w-5" aria-hidden="true">
+									<path d="M13.5 21v-8h2.7l.4-3h-3.1V8.2c0-.9.3-1.5 1.6-1.5h1.7V4.1c-.3 0-1.3-.1-2.4-.1-2.4 0-4 1.4-4 4.1V10H8v3h2.4v8h3.1Z" />
+								</svg>
+							</a>
+						</div>
 					</div>
 				</div>
 			</div>
