@@ -7,8 +7,10 @@ const basePath = import.meta.env.BASE_URL.replace(/\/?$/, '/');
 const withBase = (path: string) => `${basePath}${path}`;
 const suitesPath = withBase('suites/');
 const logoPath = withBase('logo-cropped.png');
+const favicon32Path = withBase('favicon-32.png');
 const faviconSvgPath = withBase('favicon.svg');
 const faviconIcoPath = withBase('favicon.ico');
+const appleTouchPath = withBase('apple-touch-icon.png');
 const whatsappTemplate = encodeURIComponent(`Ciao 👋
 vorrei richiedere disponibilita per le suites.
 
@@ -27,8 +29,10 @@ const whatsappLink = `https://wa.me/${whatsappNumber}?text=${whatsappTemplate}`;
 <html lang="it">
 	<head>
 		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href={faviconSvgPath} />
+		<link rel="icon" type="image/png" sizes="32x32" href={favicon32Path} />
 		<link rel="icon" href={faviconIcoPath} />
+		<link rel="icon" type="image/svg+xml" href={faviconSvgPath} />
+		<link rel="apple-touch-icon" href={appleTouchPath} />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<title>Village Fregene Padel & Suites</title>
