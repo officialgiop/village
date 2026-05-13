@@ -32,6 +32,9 @@ jobs:
         run: npm ci
 
       - name: Build site
+        env:
+          ASTRO_SITE: ${{ vars.ASTRO_SITE || 'https://www.villagefregene.it' }}
+          ASTRO_BASE: ${{ vars.ASTRO_BASE || '/' }}
         run: npm run build
 
       - name: Upload Pages artifact
