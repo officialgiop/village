@@ -110,6 +110,7 @@ const dataPath = withBase('data/club-data.json');
 								</button>
 							</div>
 						</form>
+						<p id="memberStatus" class="mt-3 text-sm text-slate-600"></p>
 						<div class="mt-4 overflow-auto rounded-xl border border-slate-200 bg-white">
 							<table class="min-w-full text-left text-sm">
 								<thead class="bg-slate-50 text-xs uppercase tracking-[0.12em] text-slate-600">
@@ -232,6 +233,7 @@ const dataPath = withBase('data/club-data.json');
 			const githubConfigForm = document.getElementById('githubConfigForm');
 			const configStatus = document.getElementById('configStatus');
 			const memberForm = document.getElementById('memberForm');
+			const memberStatus = document.getElementById('memberStatus');
 			const membersTableBody = document.getElementById('membersTableBody');
 			const memberSelect = document.getElementById('memberSelect');
 			const transactionForm = document.getElementById('transactionForm');
@@ -418,7 +420,6 @@ const dataPath = withBase('data/club-data.json');
 					const error = await response.json().catch(() => ({}));
 					throw new Error(error.message || 'Errore durante il salvataggio su GitHub.');
 				}
-				await loadClubDataFromPublic();
 			}
 
 			function unlockApp() {
@@ -482,10 +483,15 @@ const dataPath = withBase('data/club-data.json');
 				const surname = document.getElementById('memberSurname').value.trim();
 				const taxCode = document.getElementById('memberTaxCode').value.trim().toUpperCase();
 				if (!name || !surname || !taxCode) return;
+				const config = getGitHubConfig();
+				if (!config || !config.owner || !config.repo || !config.branch || !config.dataPath || !config.token) {
+					memberStatus.textContent = 'Config GitHub mancante: completa prima la sezione "Configurazione GitHub".';
+					return;
+				}
 
 				const duplicate = clubData.members.some((member) => member.taxCode.toUpperCase() === taxCode);
 				if (duplicate) {
-					configStatus.textContent = 'Socio gia presente con questo codice fiscale.';
+					memberStatus.textContent = 'Socio gia presente con questo codice fiscale.';
 					return;
 				}
 
@@ -500,10 +506,11 @@ const dataPath = withBase('data/club-data.json');
 				try {
 					await saveDataToGitHub(`Aggiunge socio ${name} ${surname}`);
 					memberForm.reset();
-					configStatus.textContent = `Socio ${name} ${surname} salvato con successo.`;
+					renderAll();
+					memberStatus.textContent = `Socio ${name} ${surname} salvato con successo.`;
 				} catch (error) {
 					clubData.members = clubData.members.filter((item) => item.id !== newMember.id);
-					configStatus.textContent = error.message;
+					memberStatus.textContent = error.message;
 				}
 			});
 
@@ -535,6 +542,7 @@ const dataPath = withBase('data/club-data.json');
 					await saveDataToGitHub(`Registra ricevuta ${newTransaction.receiptId}`);
 					transactionForm.reset();
 					transactionDateInput.value = new Date().toISOString().slice(0, 10);
+					renderAll();
 					transactionStatus.textContent = `Ricevuta ${newTransaction.receiptId} salvata con successo.`;
 				} catch (error) {
 					clubData.transactions = clubData.transactions.filter((item) => item.id !== newTransaction.id);
