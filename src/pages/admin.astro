@@ -237,6 +237,20 @@ const dataPath = withBase('data/club-data.json');
 							<tbody id="transactionsTableBody"></tbody>
 						</table>
 					</div>
+					<div class="mt-4 grid gap-3 sm:grid-cols-3">
+						<div class="rounded-xl border border-slate-200 bg-white p-4">
+							<p class="text-xs font-semibold uppercase tracking-[0.12em] text-slate-500">Entrate totali</p>
+							<p id="summaryTotal" class="mt-1 text-lg font-bold text-slate-900">€0,00</p>
+						</div>
+						<div class="rounded-xl border border-slate-200 bg-white p-4">
+							<p class="text-xs font-semibold uppercase tracking-[0.12em] text-slate-500">Entrate Bancomat</p>
+							<p id="summaryBancomat" class="mt-1 text-lg font-bold text-slate-900">€0,00</p>
+						</div>
+						<div class="rounded-xl border border-slate-200 bg-white p-4">
+							<p class="text-xs font-semibold uppercase tracking-[0.12em] text-slate-500">Entrate Contanti</p>
+							<p id="summaryContanti" class="mt-1 text-lg font-bold text-slate-900">€0,00</p>
+						</div>
+					</div>
 				</section>
 			</section>
 		</main>
@@ -276,6 +290,9 @@ const dataPath = withBase('data/club-data.json');
 			const reportYearInput = document.getElementById('reportYear');
 			const reportQuarterInput = document.getElementById('reportQuarter');
 			const reportPaymentFilterInput = document.getElementById('reportPaymentFilter');
+			const summaryTotal = document.getElementById('summaryTotal');
+			const summaryBancomat = document.getElementById('summaryBancomat');
+			const summaryContanti = document.getElementById('summaryContanti');
 
 			const githubOwnerInput = document.getElementById('githubOwner');
 			const githubRepoInput = document.getElementById('githubRepo');
@@ -487,6 +504,7 @@ const dataPath = withBase('data/club-data.json');
 				renderMembersTable();
 				renderMemberOptions();
 				renderTransactionsTable();
+				updateQuarterSummary();
 				updateReceiptField();
 			}
 
@@ -887,6 +905,28 @@ const dataPath = withBase('data/club-data.json');
 				return date >= start && date <= end;
 			}
 
+			function updateQuarterSummary() {
+				const year = Number.parseInt(reportYearInput.value, 10);
+				const quarter = Number.parseInt(reportQuarterInput.value, 10);
+				if (Number.isNaN(year) || Number.isNaN(quarter)) {
+					summaryTotal.textContent = formatCurrency(0);
+					summaryBancomat.textContent = formatCurrency(0);
+					summaryContanti.textContent = formatCurrency(0);
+					return;
+				}
+				const quarterRows = clubData.transactions.filter((tx) => transactionInQuarter(tx, year, quarter));
+				const total = quarterRows.reduce((sum, tx) => sum + tx.amount, 0);
+				const bancomat = quarterRows
+					.filter((tx) => tx.paymentMethod === 'Bancomat')
+					.reduce((sum, tx) => sum + tx.amount, 0);
+				const contanti = quarterRows
+					.filter((tx) => tx.paymentMethod === 'Contanti')
+					.reduce((sum, tx) => sum + tx.amount, 0);
+				summaryTotal.textContent = formatCurrency(total);
+				summaryBancomat.textContent = formatCurrency(bancomat);
+				summaryContanti.textContent = formatCurrency(contanti);
+			}
+
 			function buildReportRows(year, quarter, paymentFilter) {
 				return clubData.transactions
 					.filter((tx) => {
@@ -967,6 +1007,9 @@ const dataPath = withBase('data/club-data.json');
 					transactionStatus.textContent = error.message || 'Errore durante la generazione del PDF.';
 				}
 			});
+
+			reportYearInput.addEventListener('change', updateQuarterSummary);
+			reportQuarterInput.addEventListener('change', updateQuarterSummary);
 
 			bootstrapAuth();
 			fillConfigForm();
