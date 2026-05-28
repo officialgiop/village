@@ -207,6 +207,14 @@ const dataPath = withBase('data/club-data.json');
 									<option value="4">Q4</option>
 								</select>
 							</label>
+							<label class="text-sm">
+								<span class="mb-1 block font-medium text-slate-700">Metodo</span>
+								<select id="reportPaymentFilter" class="w-36 rounded-xl border border-slate-300 px-3 py-2 focus:border-brand-600 focus:outline-none">
+									<option value="all">Entrambi</option>
+									<option value="Bancomat">Solo Bancomat</option>
+									<option value="Contanti">Solo Contanti</option>
+								</select>
+							</label>
 							<button type="submit" class="rounded-xl bg-brand-700 px-4 py-2 text-sm font-semibold text-white hover:bg-brand-800">
 								Esporta PDF
 							</button>
@@ -267,6 +275,7 @@ const dataPath = withBase('data/club-data.json');
 			const reportForm = document.getElementById('reportForm');
 			const reportYearInput = document.getElementById('reportYear');
 			const reportQuarterInput = document.getElementById('reportQuarter');
+			const reportPaymentFilterInput = document.getElementById('reportPaymentFilter');
 
 			const githubOwnerInput = document.getElementById('githubOwner');
 			const githubRepoInput = document.getElementById('githubRepo');
@@ -878,9 +887,13 @@ const dataPath = withBase('data/club-data.json');
 				return date >= start && date <= end;
 			}
 
-			function buildReportRows(year, quarter) {
+			function buildReportRows(year, quarter, paymentFilter) {
 				return clubData.transactions
-					.filter((tx) => transactionInQuarter(tx, year, quarter))
+					.filter((tx) => {
+						if (!transactionInQuarter(tx, year, quarter)) return false;
+						if (paymentFilter === 'all') return true;
+						return tx.paymentMethod === paymentFilter;
+					})
 					.sort((a, b) => (a.date > b.date ? 1 : -1))
 					.map((tx) => {
 						const member = clubData.members.find((item) => item.id === tx.memberId);
@@ -899,9 +912,10 @@ const dataPath = withBase('data/club-data.json');
 				event.preventDefault();
 				const year = Number.parseInt(reportYearInput.value, 10);
 				const quarter = Number.parseInt(reportQuarterInput.value, 10);
-				const rows = buildReportRows(year, quarter);
+				const paymentFilter = reportPaymentFilterInput.value;
+				const rows = buildReportRows(year, quarter, paymentFilter);
 				if (rows.length === 0) {
-					transactionStatus.textContent = `Nessun dato disponibile per Q${quarter} ${year}.`;
+					transactionStatus.textContent = `Nessun dato disponibile per Q${quarter} ${year} con il filtro selezionato.`;
 					return;
 				}
 
