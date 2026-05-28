@@ -1249,20 +1249,12 @@ const dataPath = withBase('data/club-data.json');
 			}
 
 			function updateQuarterSummary() {
-				const year = Number.parseInt(reportYearInput.value, 10);
-				const quarter = Number.parseInt(reportQuarterInput.value, 10);
-				if (Number.isNaN(year) || Number.isNaN(quarter)) {
-					summaryTotal.textContent = formatCurrency(0);
-					summaryBancomat.textContent = formatCurrency(0);
-					summaryContanti.textContent = formatCurrency(0);
-					return;
-				}
-				const quarterRows = clubData.transactions.filter((tx) => transactionInQuarter(tx, year, quarter));
-				const total = quarterRows.reduce((sum, tx) => sum + tx.amount, 0);
-				const bancomat = quarterRows
+				const allRows = clubData.transactions;
+				const total = allRows.reduce((sum, tx) => sum + tx.amount, 0);
+				const bancomat = allRows
 					.filter((tx) => tx.paymentMethod === 'Bancomat')
 					.reduce((sum, tx) => sum + tx.amount, 0);
-				const contanti = quarterRows
+				const contanti = allRows
 					.filter((tx) => tx.paymentMethod === 'Contanti')
 					.reduce((sum, tx) => sum + tx.amount, 0);
 				summaryTotal.textContent = formatCurrency(total);
@@ -1350,9 +1342,6 @@ const dataPath = withBase('data/club-data.json');
 					transactionStatus.textContent = error.message || 'Errore durante la generazione del PDF.';
 				}
 			});
-
-			reportYearInput.addEventListener('change', updateQuarterSummary);
-			reportQuarterInput.addEventListener('change', updateQuarterSummary);
 
 			bootstrapAuth();
 			fillConfigForm();
