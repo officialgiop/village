@@ -465,14 +465,6 @@
       "issue": ""
     },
     {
-      "id": "6af5ea01-c2b6-4869-9ffe-268c8217f2df",
-      "name": "Emanuele",
-      "surname": "Ciotti",
-      "taxCode": "CTTMNL71L04H501C",
-      "hasIssue": true,
-      "issue": "duplicate_tax_code"
-    },
-    {
       "id": "018f24af-338d-4544-b1af-111e59a8f4b2",
       "name": "Marco Antonio",
       "surname": "Franco Moreno",
@@ -2545,16 +2537,12 @@
       "expenseType": "Quota campo lezione partita",
       "paymentMethod": "Bancomat",
       "amount": 20,
-      "memberId": null,
+      "memberId": "4aa4155c-d11e-4895-9022-8c2791f8f581",
       "memberName": "Valentina",
       "memberSurname": "Lori",
-      "memberTaxCode": "#N/A",
-      "hasIssue": true,
-      "issue": "member_ambiguous",
-      "candidateMemberIds": [
-        "4aa4155c-d11e-4895-9022-8c2791f8f581",
-        "2cf15a86-d407-402b-9ae4-05ad63201387"
-      ]
+      "memberTaxCode": "LROVNT80S61H501T",
+      "hasIssue": false,
+      "issue": ""
     },
     {
       "id": "4b4daff6-fb00-4ac4-8d50-1a2690aa8901",
@@ -2925,16 +2913,12 @@
       "expenseType": "Quota Campo",
       "paymentMethod": "Contanti",
       "amount": 10,
-      "memberId": null,
+      "memberId": "4aa4155c-d11e-4895-9022-8c2791f8f581",
       "memberName": "Valentina",
       "memberSurname": "Lori",
-      "memberTaxCode": "#N/A",
-      "hasIssue": true,
-      "issue": "member_ambiguous",
-      "candidateMemberIds": [
-        "4aa4155c-d11e-4895-9022-8c2791f8f581",
-        "2cf15a86-d407-402b-9ae4-05ad63201387"
-      ]
+      "memberTaxCode": "LROVNT80S61H501T",
+      "hasIssue": false,
+      "issue": ""
     },
     {
       "id": "863545bb-763d-4fcb-b58c-c50929592646",
@@ -3123,16 +3107,12 @@
       "expenseType": "QUOTA ISCRIZIONE CAMPIONATO",
       "paymentMethod": "Bancomat",
       "amount": 55,
-      "memberId": null,
+      "memberId": "4aa4155c-d11e-4895-9022-8c2791f8f581",
       "memberName": "Valentina",
       "memberSurname": "Lori",
-      "memberTaxCode": "#N/A",
-      "hasIssue": true,
-      "issue": "member_ambiguous",
-      "candidateMemberIds": [
-        "4aa4155c-d11e-4895-9022-8c2791f8f581",
-        "2cf15a86-d407-402b-9ae4-05ad63201387"
-      ]
+      "memberTaxCode": "LROVNT80S61H501T",
+      "hasIssue": false,
+      "issue": ""
     },
     {
       "id": "b8ebdebb-48fc-4c86-b0c4-136ac1a10cbd",
@@ -3671,16 +3651,12 @@
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
       "amount": 10,
-      "memberId": null,
+      "memberId": "4aa4155c-d11e-4895-9022-8c2791f8f581",
       "memberName": "Valentina",
       "memberSurname": "Lori",
-      "memberTaxCode": "#N/A",
-      "hasIssue": true,
-      "issue": "member_ambiguous",
-      "candidateMemberIds": [
-        "4aa4155c-d11e-4895-9022-8c2791f8f581",
-        "2cf15a86-d407-402b-9ae4-05ad63201387"
-      ]
+      "memberTaxCode": "LROVNT80S61H501T",
+      "hasIssue": false,
+      "issue": ""
     },
     {
       "id": "0872ed45-cba5-4efd-ab07-eb86feb9082a",
@@ -3931,16 +3907,12 @@
       "expenseType": "Lezione Doppia",
       "paymentMethod": "Bancomat",
       "amount": 15,
-      "memberId": null,
+      "memberId": "4aa4155c-d11e-4895-9022-8c2791f8f581",
       "memberName": "Valentina",
       "memberSurname": "Lori",
-      "memberTaxCode": "#N/A",
-      "hasIssue": true,
-      "issue": "member_ambiguous",
-      "candidateMemberIds": [
-        "4aa4155c-d11e-4895-9022-8c2791f8f581",
-        "2cf15a86-d407-402b-9ae4-05ad63201387"
-      ]
+      "memberTaxCode": "LROVNT80S61H501T",
+      "hasIssue": false,
+      "issue": ""
     },
     {
       "id": "c01267f4-0f94-4247-a33c-cd9dccea3b48",
@@ -3995,16 +3967,12 @@
       "expenseType": "Quota campo lezione partita",
       "paymentMethod": "Bancomat",
       "amount": 40,
-      "memberId": null,
+      "memberId": "4aa4155c-d11e-4895-9022-8c2791f8f581",
       "memberName": "Valentina",
       "memberSurname": "Lori",
-      "memberTaxCode": "#N/A",
-      "hasIssue": true,
-      "issue": "member_ambiguous",
-      "candidateMemberIds": [
-        "4aa4155c-d11e-4895-9022-8c2791f8f581",
-        "2cf15a86-d407-402b-9ae4-05ad63201387"
-      ]
+      "memberTaxCode": "LROVNT80S61H501T",
+      "hasIssue": false,
+      "issue": ""
     },
     {
       "id": "d2d2eb24-73bd-4fd1-9e0e-332746fa5bad",
@@ -4227,16 +4195,12 @@
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
       "amount": 10,
-      "memberId": null,
+      "memberId": "4aa4155c-d11e-4895-9022-8c2791f8f581",
       "memberName": "Valentina",
       "memberSurname": "Lori",
-      "memberTaxCode": "#N/A",
-      "hasIssue": true,
-      "issue": "member_ambiguous",
-      "candidateMemberIds": [
-        "4aa4155c-d11e-4895-9022-8c2791f8f581",
-        "2cf15a86-d407-402b-9ae4-05ad63201387"
-      ]
+      "memberTaxCode": "LROVNT80S61H501T",
+      "hasIssue": false,
+      "issue": ""
     },
     {
       "id": "1d080574-719d-45bc-8e78-5eda88785a38",
@@ -4431,16 +4395,12 @@
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
       "amount": 10,
-      "memberId": null,
+      "memberId": "4aa4155c-d11e-4895-9022-8c2791f8f581",
       "memberName": "Valentina",
       "memberSurname": "Lori",
-      "memberTaxCode": "#N/A",
-      "hasIssue": true,
-      "issue": "member_ambiguous",
-      "candidateMemberIds": [
-        "4aa4155c-d11e-4895-9022-8c2791f8f581",
-        "2cf15a86-d407-402b-9ae4-05ad63201387"
-      ]
+      "memberTaxCode": "LROVNT80S61H501T",
+      "hasIssue": false,
+      "issue": ""
     },
     {
       "id": "f6792beb-8291-4fb5-89dd-7d7515d12577",
@@ -4491,16 +4451,12 @@
       "expenseType": "Lezione Privata",
       "paymentMethod": "Bancomat",
       "amount": 25,
-      "memberId": null,
+      "memberId": "4aa4155c-d11e-4895-9022-8c2791f8f581",
       "memberName": "Valentina",
       "memberSurname": "Lori",
-      "memberTaxCode": "#N/A",
-      "hasIssue": true,
-      "issue": "member_ambiguous",
-      "candidateMemberIds": [
-        "4aa4155c-d11e-4895-9022-8c2791f8f581",
-        "2cf15a86-d407-402b-9ae4-05ad63201387"
-      ]
+      "memberTaxCode": "LROVNT80S61H501T",
+      "hasIssue": false,
+      "issue": ""
     },
     {
       "id": "82457222-cddf-4ddb-91f6-9457607aca5b",
@@ -5411,16 +5367,12 @@
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
       "amount": 10,
-      "memberId": null,
+      "memberId": "4aa4155c-d11e-4895-9022-8c2791f8f581",
       "memberName": "Valentina",
       "memberSurname": "Lori",
-      "memberTaxCode": "#N/A",
-      "hasIssue": true,
-      "issue": "member_ambiguous",
-      "candidateMemberIds": [
-        "4aa4155c-d11e-4895-9022-8c2791f8f581",
-        "2cf15a86-d407-402b-9ae4-05ad63201387"
-      ]
+      "memberTaxCode": "LROVNT80S61H501T",
+      "hasIssue": false,
+      "issue": ""
     },
     {
       "id": "803ece60-d3e0-4716-99fd-20ff9d4d7def",
@@ -5475,16 +5427,12 @@
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
       "amount": 10,
-      "memberId": null,
+      "memberId": "4aa4155c-d11e-4895-9022-8c2791f8f581",
       "memberName": "Valentina",
       "memberSurname": "Lori",
-      "memberTaxCode": "#N/A",
-      "hasIssue": true,
-      "issue": "member_ambiguous",
-      "candidateMemberIds": [
-        "4aa4155c-d11e-4895-9022-8c2791f8f581",
-        "2cf15a86-d407-402b-9ae4-05ad63201387"
-      ]
+      "memberTaxCode": "LROVNT80S61H501T",
+      "hasIssue": false,
+      "issue": ""
     },
     {
       "id": "ee74bc06-4a4c-4e9a-bc18-72a6e479e61a",
@@ -9259,16 +9207,12 @@
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
       "amount": 10,
-      "memberId": null,
+      "memberId": "4aa4155c-d11e-4895-9022-8c2791f8f581",
       "memberName": "Valentina",
       "memberSurname": "Lori",
-      "memberTaxCode": "#N/A",
-      "hasIssue": true,
-      "issue": "member_ambiguous",
-      "candidateMemberIds": [
-        "4aa4155c-d11e-4895-9022-8c2791f8f581",
-        "2cf15a86-d407-402b-9ae4-05ad63201387"
-      ]
+      "memberTaxCode": "LROVNT80S61H501T",
+      "hasIssue": false,
+      "issue": ""
     },
     {
       "id": "b28742e9-14d1-499e-bb7c-c21067215b9a",
@@ -9389,16 +9333,12 @@
       "expenseType": "Lezione Privata",
       "paymentMethod": "Bancomat",
       "amount": 25,
-      "memberId": null,
+      "memberId": "4aa4155c-d11e-4895-9022-8c2791f8f581",
       "memberName": "Valentina",
       "memberSurname": "Lori",
-      "memberTaxCode": "#N/A",
-      "hasIssue": true,
-      "issue": "member_ambiguous",
-      "candidateMemberIds": [
-        "4aa4155c-d11e-4895-9022-8c2791f8f581",
-        "2cf15a86-d407-402b-9ae4-05ad63201387"
-      ]
+      "memberTaxCode": "LROVNT80S61H501T",
+      "hasIssue": false,
+      "issue": ""
     },
     {
       "id": "4ba5d552-72c1-46ff-9df8-319923b2ece4",
@@ -9555,16 +9495,12 @@
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
       "amount": 10,
-      "memberId": null,
+      "memberId": "4aa4155c-d11e-4895-9022-8c2791f8f581",
       "memberName": "Valentina",
       "memberSurname": "Lori",
-      "memberTaxCode": "#N/A",
-      "hasIssue": true,
-      "issue": "member_ambiguous",
-      "candidateMemberIds": [
-        "4aa4155c-d11e-4895-9022-8c2791f8f581",
-        "2cf15a86-d407-402b-9ae4-05ad63201387"
-      ]
+      "memberTaxCode": "LROVNT80S61H501T",
+      "hasIssue": false,
+      "issue": ""
     },
     {
       "id": "e6d9d9ec-c0b7-44a5-902a-449193b6aa28",
@@ -10049,16 +9985,12 @@
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
       "amount": 20,
-      "memberId": null,
+      "memberId": "4aa4155c-d11e-4895-9022-8c2791f8f581",
       "memberName": "Valentina",
       "memberSurname": "Lori",
-      "memberTaxCode": "#N/A",
-      "hasIssue": true,
-      "issue": "member_ambiguous",
-      "candidateMemberIds": [
-        "4aa4155c-d11e-4895-9022-8c2791f8f581",
-        "2cf15a86-d407-402b-9ae4-05ad63201387"
-      ]
+      "memberTaxCode": "LROVNT80S61H501T",
+      "hasIssue": false,
+      "issue": ""
     },
     {
       "id": "d59d1037-6fed-45d6-b36d-b0c2aefdff1b",
@@ -10607,16 +10539,12 @@
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
       "amount": 10,
-      "memberId": null,
+      "memberId": "4aa4155c-d11e-4895-9022-8c2791f8f581",
       "memberName": "Valentina",
       "memberSurname": "Lori",
-      "memberTaxCode": "#N/A",
-      "hasIssue": true,
-      "issue": "member_ambiguous",
-      "candidateMemberIds": [
-        "4aa4155c-d11e-4895-9022-8c2791f8f581",
-        "2cf15a86-d407-402b-9ae4-05ad63201387"
-      ]
+      "memberTaxCode": "LROVNT80S61H501T",
+      "hasIssue": false,
+      "issue": ""
     },
     {
       "id": "d10b8653-d310-481b-9499-d19f60fd52ca",
@@ -12115,16 +12043,12 @@
       "expenseType": "Lezione Privata",
       "paymentMethod": "Bancomat",
       "amount": 25,
-      "memberId": null,
+      "memberId": "4aa4155c-d11e-4895-9022-8c2791f8f581",
       "memberName": "Valentina",
       "memberSurname": "Lori",
-      "memberTaxCode": "#N/A",
-      "hasIssue": true,
-      "issue": "member_ambiguous",
-      "candidateMemberIds": [
-        "4aa4155c-d11e-4895-9022-8c2791f8f581",
-        "2cf15a86-d407-402b-9ae4-05ad63201387"
-      ]
+      "memberTaxCode": "LROVNT80S61H501T",
+      "hasIssue": false,
+      "issue": ""
     },
     {
       "id": "4c026c9a-73f5-47bd-8b55-41fc5c29d649",
@@ -14565,16 +14489,12 @@
       "expenseType": "Quota campo lezione partita",
       "paymentMethod": "Contanti",
       "amount": 20,
-      "memberId": null,
+      "memberId": "4aa4155c-d11e-4895-9022-8c2791f8f581",
       "memberName": "Valentina",
       "memberSurname": "Lori",
-      "memberTaxCode": "#N/A",
-      "hasIssue": true,
-      "issue": "member_ambiguous",
-      "candidateMemberIds": [
-        "4aa4155c-d11e-4895-9022-8c2791f8f581",
-        "2cf15a86-d407-402b-9ae4-05ad63201387"
-      ]
+      "memberTaxCode": "LROVNT80S61H501T",
+      "hasIssue": false,
+      "issue": ""
     },
     {
       "id": "3314b3cf-d383-4311-b01b-5899d3950158",
@@ -15591,16 +15511,12 @@
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
       "amount": 10,
-      "memberId": null,
+      "memberId": "4aa4155c-d11e-4895-9022-8c2791f8f581",
       "memberName": "Valentina",
       "memberSurname": "Lori",
-      "memberTaxCode": "#N/A",
-      "hasIssue": true,
-      "issue": "member_ambiguous",
-      "candidateMemberIds": [
-        "4aa4155c-d11e-4895-9022-8c2791f8f581",
-        "2cf15a86-d407-402b-9ae4-05ad63201387"
-      ]
+      "memberTaxCode": "LROVNT80S61H501T",
+      "hasIssue": false,
+      "issue": ""
     },
     {
       "id": "9dc87b5d-2a3b-469b-9b9c-3d3544679760",
