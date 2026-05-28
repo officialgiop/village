@@ -105,8 +105,18 @@ const dataPath = withBase('data/club-data.json');
 
 				<section class="grid gap-6 lg:grid-cols-2">
 					<div class="glass-card p-5">
-						<h2 class="font-display text-xl font-semibold text-slate-900">Anagrafica soci</h2>
-						<form id="memberForm" class="mt-4 grid gap-3 sm:grid-cols-3">
+						<div class="flex flex-wrap items-center justify-between gap-3">
+							<h2 class="font-display text-xl font-semibold text-slate-900">Anagrafica soci</h2>
+							<button
+								id="toggleMembersButton"
+								type="button"
+								class="rounded-xl border border-brand-300 bg-white px-4 py-2 text-sm font-semibold text-brand-700 hover:bg-brand-50"
+							>
+								Apri anagrafica soci
+							</button>
+						</div>
+						<div id="membersPanel" class="mt-4 hidden">
+						<form id="memberForm" class="grid gap-3 sm:grid-cols-3">
 							<label class="text-sm">
 								<span class="mb-1 block font-medium text-slate-700">Nome</span>
 								<input id="memberName" required class="w-full rounded-xl border border-slate-300 px-3 py-2 focus:border-brand-600 focus:outline-none" />
@@ -139,6 +149,7 @@ const dataPath = withBase('data/club-data.json');
 								</thead>
 								<tbody id="membersTableBody"></tbody>
 							</table>
+						</div>
 						</div>
 					</div>
 
@@ -277,6 +288,8 @@ const dataPath = withBase('data/club-data.json');
 			const memberForm = document.getElementById('memberForm');
 			const memberStatus = document.getElementById('memberStatus');
 			const membersTableBody = document.getElementById('membersTableBody');
+			const toggleMembersButton = document.getElementById('toggleMembersButton');
+			const membersPanel = document.getElementById('membersPanel');
 			const memberSelect = document.getElementById('memberSelect');
 			const transactionForm = document.getElementById('transactionForm');
 			const transactionsTableBody = document.getElementById('transactionsTableBody');
@@ -629,6 +642,24 @@ const dataPath = withBase('data/club-data.json');
 					return;
 				}
 				closeConfigPanel();
+			});
+
+			function openMembersPanel() {
+				membersPanel.classList.remove('hidden');
+				toggleMembersButton.textContent = 'Chiudi anagrafica soci';
+			}
+
+			function closeMembersPanel() {
+				membersPanel.classList.add('hidden');
+				toggleMembersButton.textContent = 'Apri anagrafica soci';
+			}
+
+			toggleMembersButton.addEventListener('click', () => {
+				if (membersPanel.classList.contains('hidden')) {
+					openMembersPanel();
+					return;
+				}
+				closeMembersPanel();
 			});
 
 			unlockForm.addEventListener('submit', (event) => {
@@ -1014,6 +1045,7 @@ const dataPath = withBase('data/club-data.json');
 			bootstrapAuth();
 			fillConfigForm();
 			closeConfigPanel();
+			closeMembersPanel();
 			loadClubDataFromPublic();
 		</script>
 	</body>
