@@ -693,7 +693,64 @@ const dataPath = withBase('data/club-data.json');
 					.join('');
 			}
 
+			function normalizeFullName(name, surname) {
+				const full = `${name || ''} ${surname || ''}`.trim().toLowerCase();
+				return full.replace(/\s+/g, ' ');
+			}
+
+			function reconcileTransactionsWithMembers() {
+				const memberById = new Map(clubData.members.map((member) => [member.id, member]));
+				const membersByName = new Map();
+				clubData.members.forEach((member) => {
+					const key = normalizeFullName(member.name, member.surname);
+					const bucket = membersByName.get(key) || [];
+					bucket.push(member);
+					membersByName.set(key, bucket);
+				});
+
+				clubData.transactions = clubData.transactions.map((tx) => {
+					const linked = tx.memberId ? memberById.get(tx.memberId) : null;
+					if (linked) {
+						return {
+							...tx,
+							memberName: linked.name,
+							memberSurname: linked.surname,
+							memberTaxCode: linked.taxCode,
+							hasIssue: false,
+							issue: '',
+							candidateMemberIds: undefined
+						};
+					}
+
+					const key = normalizeFullName(tx.memberName, tx.memberSurname);
+					const matches = key ? membersByName.get(key) || [] : [];
+					if (matches.length === 1) {
+						const member = matches[0];
+						return {
+							...tx,
+							memberId: member.id,
+							memberName: member.name,
+							memberSurname: member.surname,
+							memberTaxCode: member.taxCode,
+							hasIssue: false,
+							issue: '',
+							candidateMemberIds: undefined
+						};
+					}
+
+					return {
+						...tx,
+						memberId: null,
+						memberTaxCode: '#N/A',
+						hasIssue: true,
+						issue: matches.length > 1 ? 'member_ambiguous' : 'member_not_found',
+						candidateMemberIds: matches.length > 1 ? matches.map((member) => member.id) : undefined
+					};
+				});
+			}
+
 			function renderAll() {
+				reconcileTransactionsWithMembers();
 				renderMembersTable();
 				renderMemberOptions();
 				renderExpenseTypeOptions();
