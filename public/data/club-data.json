@@ -5,13 +5,17 @@
       "name": "Ismano",
       "surname": "Ripani",
       "taxCode": "ISMARIP334DSSDFKJHD"
-    },
-    {
-      "id": "f17be13a-faed-464d-a28c-6cb5f4ae780d",
-      "name": "mario",
-      "surname": "rossi",
-      "taxCode": "ASDJKASDADJS"
     }
   ],
-  "transactions": []
+  "transactions": [
+    {
+      "id": "e17b9e0a-eae7-4a18-ac80-6bbf9c824220",
+      "receiptId": "001",
+      "date": "2026-05-28",
+      "memberId": "2cbb2bb0-d60b-45f4-be39-274b38fd4a9c",
+      "expenseType": "Quota campo",
+      "paymentMethod": "Bancomat",
+      "amount": 10
+    }
+  ]
 }
