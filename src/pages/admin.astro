@@ -1247,16 +1247,6 @@ const dataPath = withBase('data/club-data.json');
 					return;
 				}
 
-				if (action === 'receipt') {
-					try {
-						await generateSingleReceiptPdf(tx);
-						transactionStatus.textContent = `Ricevuta ${tx.receiptId} generata con successo.`;
-					} catch (error) {
-						transactionStatus.textContent = error.message || 'Errore durante la generazione della ricevuta.';
-					}
-					return;
-				}
-
 				if (action === 'delete') {
 					const linkedTransactions = clubData.transactions.some((tx) => tx.memberId === member.id);
 					if (linkedTransactions) {
@@ -1377,6 +1367,16 @@ const dataPath = withBase('data/club-data.json');
 					paymentMethodInput.value = tx.paymentMethod;
 					amountInput.value = String(tx.amount);
 					transactionStatus.textContent = `Modifica ricevuta ${tx.receiptId}: aggiorna i campi e salva.`;
+					return;
+				}
+
+				if (action === 'receipt') {
+					try {
+						await generateSingleReceiptPdf(tx);
+						transactionStatus.textContent = `Ricevuta ${tx.receiptId} generata con successo.`;
+					} catch (error) {
+						transactionStatus.textContent = error.message || 'Errore durante la generazione della ricevuta.';
+					}
 					return;
 				}
 
