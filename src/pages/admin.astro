@@ -323,6 +323,15 @@ const dataPath = withBase('data/club-data.json');
 				</section>
 			</section>
 		</main>
+		<div id="bulkSaveOverlay" class="fixed inset-0 z-50 hidden items-center justify-center bg-slate-900/50 px-4">
+			<div class="w-full max-w-md rounded-2xl bg-white p-5 shadow-2xl">
+				<p class="text-sm font-semibold uppercase tracking-[0.12em] text-slate-500">Salvataggio ricevute</p>
+				<p id="bulkSaveMessage" class="mt-2 text-sm text-slate-700">Preparazione in corso...</p>
+				<div class="mt-4 h-2 w-full overflow-hidden rounded-full bg-slate-200">
+					<div id="bulkSaveProgressBar" class="h-full w-0 rounded-full bg-brand-700 transition-all"></div>
+				</div>
+			</div>
+		</div>
 
 		<script src="https://cdn.jsdelivr.net/npm/jspdf@2.5.1/dist/jspdf.umd.min.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/jspdf-autotable@3.8.2/dist/jspdf.plugin.autotable.min.js"></script>
@@ -371,6 +380,9 @@ const dataPath = withBase('data/club-data.json');
 			const paymentMethodsTextarea = document.getElementById('paymentMethodsTextarea');
 			const savePaymentMethodsButton = document.getElementById('savePaymentMethodsButton');
 			const paymentMethodsStatus = document.getElementById('paymentMethodsStatus');
+			const bulkSaveOverlay = document.getElementById('bulkSaveOverlay');
+			const bulkSaveMessage = document.getElementById('bulkSaveMessage');
+			const bulkSaveProgressBar = document.getElementById('bulkSaveProgressBar');
 
 			const githubOwnerInput = document.getElementById('githubOwner');
 			const githubRepoInput = document.getElementById('githubRepo');
@@ -694,6 +706,35 @@ const dataPath = withBase('data/club-data.json');
 					return;
 				}
 				doc.save(defaultFileName);
+			}
+
+			async function savePdfToDirectoryHandle(doc, directoryHandle, fileName) {
+				const fileHandle = await directoryHandle.getFileHandle(fileName, { create: true });
+				const writable = await fileHandle.createWritable();
+				await writable.write(doc.output('blob'));
+				await writable.close();
+			}
+
+			function showBulkSaveOverlay(total) {
+				if (!bulkSaveOverlay || !bulkSaveMessage || !bulkSaveProgressBar) return;
+				bulkSaveOverlay.classList.remove('hidden');
+				bulkSaveOverlay.classList.add('flex');
+				updateBulkSaveProgress(0, total);
+			}
+
+			function updateBulkSaveProgress(done, total) {
+				if (!bulkSaveMessage || !bulkSaveProgressBar) return;
+				const safeTotal = Math.max(1, Number(total) || 1);
+				const safeDone = Math.min(Math.max(0, Number(done) || 0), safeTotal);
+				const percent = Math.round((safeDone / safeTotal) * 100);
+				bulkSaveMessage.textContent = `Salvataggio ricevute ${safeDone} / ${safeTotal}`;
+				bulkSaveProgressBar.style.width = `${percent}%`;
+			}
+
+			function hideBulkSaveOverlay() {
+				if (!bulkSaveOverlay) return;
+				bulkSaveOverlay.classList.add('hidden');
+				bulkSaveOverlay.classList.remove('flex');
 			}
 
 			async function drawReceiptPage(doc, tx) {
@@ -1582,9 +1623,22 @@ const dataPath = withBase('data/club-data.json');
 				}
 
 				try {
-					for (const tx of missing) {
+					let selectedDirectory = null;
+					const canPickDirectory = 'showDirectoryPicker' in window;
+					if (canPickDirectory) {
+						selectedDirectory = await window.showDirectoryPicker();
+					}
+					showBulkSaveOverlay(missing.length);
+					for (let index = 0; index < missing.length; index += 1) {
+						const tx = missing[index];
 						const doc = await buildReceiptDocument([tx]);
-						await savePdfWithPickerOrDownload(doc, `ricevuta-${tx.receiptId}.pdf`);
+						const fileName = `ricevuta-${tx.receiptId}.pdf`;
+						if (selectedDirectory) {
+							await savePdfToDirectoryHandle(doc, selectedDirectory, fileName);
+						} else {
+							await savePdfWithPickerOrDownload(doc, fileName);
+						}
+						updateBulkSaveProgress(index + 1, missing.length);
 					}
 
 					const previous = missing.map((tx) => ({ id: tx.id, receiptGenerated: tx.receiptGenerated, receiptGeneratedAt: tx.receiptGeneratedAt }));
@@ -1606,9 +1660,15 @@ const dataPath = withBase('data/club-data.json');
 						throw saveError;
 					}
 					renderTransactionsTable();
-					transactionStatus.textContent = `Generate ${missing.length} ricevute mancanti in file separati.`;
+					if (selectedDirectory) {
+						transactionStatus.textContent = `Generate ${missing.length} ricevute mancanti nella cartella selezionata.`;
+					} else {
+						transactionStatus.textContent = `Generate ${missing.length} ricevute mancanti in file separati.`;
+					}
 				} catch (error) {
 					transactionStatus.textContent = error.message || 'Errore durante la generazione bulk delle ricevute.';
+				} finally {
+					hideBulkSaveOverlay();
 				}
 			});
 
