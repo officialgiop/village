@@ -68,38 +68,90 @@ const dataPath = withBase('data/club-data.json');
 						Questa sezione serve solo per setup iniziale o manutenzione. Durante l'uso normale puo restare chiusa.
 					</p>
 					<div id="configPanel" class="mt-4 hidden">
-					<h2 class="font-display text-xl font-semibold text-slate-900">Configurazione GitHub (una volta sola)</h2>
-					<p class="mt-2 text-sm text-slate-700">
-						Compila questi campi la prima volta sul PC della segreteria. Servono per aggiornare online il file dati.
-					</p>
-					<form id="githubConfigForm" class="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-5">
-						<label class="text-sm">
-							<span class="mb-1 block font-medium text-slate-700">Owner</span>
-							<input id="githubOwner" required class="w-full rounded-xl border border-slate-300 px-3 py-2 focus:border-brand-600 focus:outline-none" />
+					<div class="mt-6 rounded-xl border border-slate-200 bg-white p-4">
+						<h3 class="font-display text-lg font-semibold text-slate-900">Causali pagamento</h3>
+						<p class="mt-1 text-sm text-slate-700">
+							Una causale per riga. Questa lista alimenta il menu "Causale pagamento" nella sezione operazioni.
+						</p>
+						<label class="mt-3 block text-sm">
+							<span class="mb-1 block font-medium text-slate-700">Elenco causali</span>
+							<textarea
+								id="expenseTypesTextarea"
+								rows="8"
+								class="w-full rounded-xl border border-slate-300 px-3 py-2 focus:border-brand-600 focus:outline-none"
+								placeholder="Es. Quota Campo"
+							></textarea>
 						</label>
-						<label class="text-sm">
-							<span class="mb-1 block font-medium text-slate-700">Repository</span>
-							<input id="githubRepo" required class="w-full rounded-xl border border-slate-300 px-3 py-2 focus:border-brand-600 focus:outline-none" />
-						</label>
-						<label class="text-sm">
-							<span class="mb-1 block font-medium text-slate-700">Branch</span>
-							<input id="githubBranch" value="main" required class="w-full rounded-xl border border-slate-300 px-3 py-2 focus:border-brand-600 focus:outline-none" />
-						</label>
-						<label class="text-sm">
-							<span class="mb-1 block font-medium text-slate-700">Path file dati</span>
-							<input id="githubDataPath" value="public/data/club-data.json" required class="w-full rounded-xl border border-slate-300 px-3 py-2 focus:border-brand-600 focus:outline-none" />
-						</label>
-						<label class="text-sm">
-							<span class="mb-1 block font-medium text-slate-700">Token (PAT)</span>
-							<input id="githubToken" type="password" required class="w-full rounded-xl border border-slate-300 px-3 py-2 focus:border-brand-600 focus:outline-none" />
-						</label>
-						<div class="sm:col-span-2 lg:col-span-5">
-							<button type="submit" class="rounded-xl bg-brand-700 px-4 py-2 text-sm font-semibold text-white hover:bg-brand-800">
-								Salva configurazione
+						<div class="mt-3">
+							<button
+								id="saveExpenseTypesButton"
+								type="button"
+								class="rounded-xl bg-brand-700 px-4 py-2 text-sm font-semibold text-white hover:bg-brand-800"
+							>
+								Salva causali
 							</button>
 						</div>
-					</form>
-					<p id="configStatus" class="mt-3 text-sm text-slate-600"></p>
+						<p id="expenseTypesStatus" class="mt-2 text-sm text-slate-600"></p>
+					</div>
+					<div class="mt-4 rounded-xl border border-slate-200 bg-white p-4">
+						<h3 class="font-display text-lg font-semibold text-slate-900">Metodi di pagamento</h3>
+						<p class="mt-1 text-sm text-slate-700">
+							Un metodo per riga. Questa lista alimenta i menu "Metodo pagamento" nella dashboard.
+						</p>
+						<label class="mt-3 block text-sm">
+							<span class="mb-1 block font-medium text-slate-700">Elenco metodi</span>
+							<textarea
+								id="paymentMethodsTextarea"
+								rows="4"
+								class="w-full rounded-xl border border-slate-300 px-3 py-2 focus:border-brand-600 focus:outline-none"
+								placeholder="Es. Bancomat"
+							></textarea>
+						</label>
+						<div class="mt-3">
+							<button
+								id="savePaymentMethodsButton"
+								type="button"
+								class="rounded-xl bg-brand-700 px-4 py-2 text-sm font-semibold text-white hover:bg-brand-800"
+							>
+								Salva metodi
+							</button>
+						</div>
+						<p id="paymentMethodsStatus" class="mt-2 text-sm text-slate-600"></p>
+					</div>
+					<div class="mt-6 rounded-xl border border-slate-200 bg-white p-4">
+						<h3 class="font-display text-lg font-semibold text-slate-900">Configurazione GitHub (una volta sola)</h3>
+						<p class="mt-1 text-sm text-slate-700">
+							Compila questi campi la prima volta sul PC della segreteria. Servono per aggiornare online il file dati.
+						</p>
+						<form id="githubConfigForm" class="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-5">
+							<label class="text-sm">
+								<span class="mb-1 block font-medium text-slate-700">Owner</span>
+								<input id="githubOwner" required class="w-full rounded-xl border border-slate-300 px-3 py-2 focus:border-brand-600 focus:outline-none" />
+							</label>
+							<label class="text-sm">
+								<span class="mb-1 block font-medium text-slate-700">Repository</span>
+								<input id="githubRepo" required class="w-full rounded-xl border border-slate-300 px-3 py-2 focus:border-brand-600 focus:outline-none" />
+							</label>
+							<label class="text-sm">
+								<span class="mb-1 block font-medium text-slate-700">Branch</span>
+								<input id="githubBranch" value="main" required class="w-full rounded-xl border border-slate-300 px-3 py-2 focus:border-brand-600 focus:outline-none" />
+							</label>
+							<label class="text-sm">
+								<span class="mb-1 block font-medium text-slate-700">Path file dati</span>
+								<input id="githubDataPath" value="public/data/club-data.json" required class="w-full rounded-xl border border-slate-300 px-3 py-2 focus:border-brand-600 focus:outline-none" />
+							</label>
+							<label class="text-sm">
+								<span class="mb-1 block font-medium text-slate-700">Token (PAT)</span>
+								<input id="githubToken" type="password" required class="w-full rounded-xl border border-slate-300 px-3 py-2 focus:border-brand-600 focus:outline-none" />
+							</label>
+							<div class="sm:col-span-2 lg:col-span-5">
+								<button type="submit" class="rounded-xl bg-brand-700 px-4 py-2 text-sm font-semibold text-white hover:bg-brand-800">
+									Salva configurazione
+								</button>
+							</div>
+						</form>
+						<p id="configStatus" class="mt-3 text-sm text-slate-600"></p>
+					</div>
 					</div>
 				</section>
 
@@ -248,16 +300,16 @@ const dataPath = withBase('data/club-data.json');
 					</div>
 					<div class="mt-4 grid gap-3 sm:grid-cols-3">
 						<div class="rounded-xl border border-slate-200 bg-white p-4">
-							<p class="text-xs font-semibold uppercase tracking-[0.12em] text-slate-500">Entrate totali</p>
-							<p id="summaryTotal" class="mt-1 text-lg font-bold text-slate-900">€0,00</p>
+							<p class="text-xs font-semibold uppercase tracking-[0.12em] text-slate-500">Entrate Contanti</p>
+							<p id="summaryContanti" class="mt-1 text-lg font-bold text-slate-900">€0,00</p>
 						</div>
 						<div class="rounded-xl border border-slate-200 bg-white p-4">
 							<p class="text-xs font-semibold uppercase tracking-[0.12em] text-slate-500">Entrate Bancomat</p>
 							<p id="summaryBancomat" class="mt-1 text-lg font-bold text-slate-900">€0,00</p>
 						</div>
 						<div class="rounded-xl border border-slate-200 bg-white p-4">
-							<p class="text-xs font-semibold uppercase tracking-[0.12em] text-slate-500">Entrate Contanti</p>
-							<p id="summaryContanti" class="mt-1 text-lg font-bold text-slate-900">€0,00</p>
+							<p class="text-xs font-semibold uppercase tracking-[0.12em] text-slate-500">Entrate totali</p>
+							<p id="summaryTotal" class="mt-1 text-lg font-bold text-slate-900">€0,00</p>
 						</div>
 					</div>
 				</section>
@@ -304,6 +356,12 @@ const dataPath = withBase('data/club-data.json');
 			const summaryTotal = document.getElementById('summaryTotal');
 			const summaryBancomat = document.getElementById('summaryBancomat');
 			const summaryContanti = document.getElementById('summaryContanti');
+			const expenseTypesTextarea = document.getElementById('expenseTypesTextarea');
+			const saveExpenseTypesButton = document.getElementById('saveExpenseTypesButton');
+			const expenseTypesStatus = document.getElementById('expenseTypesStatus');
+			const paymentMethodsTextarea = document.getElementById('paymentMethodsTextarea');
+			const savePaymentMethodsButton = document.getElementById('savePaymentMethodsButton');
+			const paymentMethodsStatus = document.getElementById('paymentMethodsStatus');
 
 			const githubOwnerInput = document.getElementById('githubOwner');
 			const githubRepoInput = document.getElementById('githubRepo');
@@ -318,11 +376,25 @@ const dataPath = withBase('data/club-data.json');
 			reportQuarterInput.value = String(currentQuarter);
 			transactionDateInput.value = today.toISOString().slice(0, 10);
 
-			let clubData = { members: [], transactions: [] };
+			let clubData = { members: [], transactions: [], settings: { expenseTypes: [], paymentMethods: [] } };
 			let memberEditingId = null;
 			let transactionEditingId = null;
 			let transactionRowError = { id: null, message: '' };
 			let saveQueue = Promise.resolve();
+			const DEFAULT_EXPENSE_TYPES = [
+				'Quota Campo',
+				'Quota Tessera Socio',
+				'Lezione Privata',
+				'Lezione Doppia',
+				'Corso Settimanale',
+				'Quota campo + quota associativa',
+				'Contributo Kit allenamento',
+				'Corso Mensile',
+				'Quota campo lezione partita',
+				'Corso Trimestrale accademy',
+				'Quota Iscrizione Campionato'
+			];
+			const DEFAULT_PAYMENT_METHODS = ['Bancomat', 'Contanti', 'Bonifico'];
 
 			function parseJSONSafely(text, fallback) {
 				try {
@@ -415,6 +487,59 @@ const dataPath = withBase('data/club-data.json');
 			function updateReceiptField() {
 				if (transactionEditingId) return;
 				receiptIdInput.value = getNextReceiptId();
+			}
+
+			function getExpenseTypes() {
+				const raw = clubData.settings?.expenseTypes;
+				if (Array.isArray(raw) && raw.length > 0) {
+					return raw.map((item) => String(item).trim()).filter(Boolean);
+				}
+				return [...DEFAULT_EXPENSE_TYPES];
+			}
+
+			function renderExpenseTypeOptions(selectedValue = '') {
+				const options = getExpenseTypes();
+				expenseTypeInput.innerHTML = options
+					.map((item) => `<option value="${item}">${item}</option>`)
+					.join('');
+				if (selectedValue && options.includes(selectedValue)) {
+					expenseTypeInput.value = selectedValue;
+				}
+			}
+
+			function renderExpenseTypesEditor() {
+				expenseTypesTextarea.value = getExpenseTypes().join('\n');
+			}
+
+			function getPaymentMethods() {
+				const raw = clubData.settings?.paymentMethods;
+				if (Array.isArray(raw) && raw.length > 0) {
+					return raw.map((item) => String(item).trim()).filter(Boolean);
+				}
+				return [...DEFAULT_PAYMENT_METHODS];
+			}
+
+			function renderPaymentMethodOptions(selectedValue = '') {
+				const options = getPaymentMethods();
+				paymentMethodInput.innerHTML = options
+					.map((item) => `<option value="${item}">${item}</option>`)
+					.join('');
+				if (selectedValue && options.includes(selectedValue)) {
+					paymentMethodInput.value = selectedValue;
+				}
+
+				const currentFilter = reportPaymentFilterInput.value;
+				const dynamicOptions = ['<option value="all">Entrambi</option>']
+					.concat(options.map((item) => `<option value="${item}">Solo ${item}</option>`))
+					.join('');
+				reportPaymentFilterInput.innerHTML = dynamicOptions;
+				if (currentFilter && (currentFilter === 'all' || options.includes(currentFilter))) {
+					reportPaymentFilterInput.value = currentFilter;
+				}
+			}
+
+			function renderPaymentMethodsEditor() {
+				paymentMethodsTextarea.value = getPaymentMethods().join('\n');
 			}
 
 			function renderMembersTable() {
@@ -542,6 +667,10 @@ const dataPath = withBase('data/club-data.json');
 			function renderAll() {
 				renderMembersTable();
 				renderMemberOptions();
+				renderExpenseTypeOptions();
+				renderExpenseTypesEditor();
+				renderPaymentMethodOptions();
+				renderPaymentMethodsEditor();
 				renderTransactionsTable();
 				updateQuarterSummary();
 				updateReceiptField();
@@ -554,11 +683,25 @@ const dataPath = withBase('data/club-data.json');
 					const payload = await response.json();
 					clubData = {
 						members: Array.isArray(payload.members) ? payload.members : [],
-						transactions: Array.isArray(payload.transactions) ? payload.transactions : []
+						transactions: Array.isArray(payload.transactions) ? payload.transactions : [],
+						settings:
+							payload.settings && typeof payload.settings === 'object'
+								? payload.settings
+								: {
+									expenseTypes: [...DEFAULT_EXPENSE_TYPES],
+									paymentMethods: [...DEFAULT_PAYMENT_METHODS]
+								}
 					};
 				} catch (error) {
 					console.error(error);
-					clubData = { members: [], transactions: [] };
+					clubData = {
+						members: [],
+						transactions: [],
+						settings: {
+							expenseTypes: [...DEFAULT_EXPENSE_TYPES],
+							paymentMethods: [...DEFAULT_PAYMENT_METHODS]
+						}
+					};
 				}
 				renderAll();
 			}
@@ -584,7 +727,14 @@ const dataPath = withBase('data/club-data.json');
 					const parsed = parseJSONSafely(decoded, { members: [], transactions: [] });
 					clubData = {
 						members: Array.isArray(parsed.members) ? parsed.members : [],
-						transactions: Array.isArray(parsed.transactions) ? parsed.transactions : []
+						transactions: Array.isArray(parsed.transactions) ? parsed.transactions : [],
+						settings:
+							parsed.settings && typeof parsed.settings === 'object'
+								? parsed.settings
+								: {
+									expenseTypes: [...DEFAULT_EXPENSE_TYPES],
+									paymentMethods: [...DEFAULT_PAYMENT_METHODS]
+								}
 					};
 				} catch (error) {
 					console.error(error);
@@ -756,6 +906,64 @@ const dataPath = withBase('data/club-data.json');
 				};
 				localStorage.setItem(STORAGE_KEYS.githubConfig, JSON.stringify(config));
 				configStatus.textContent = 'Configurazione salvata in locale su questo browser.';
+			});
+
+			saveExpenseTypesButton.addEventListener('click', async () => {
+				const config = getGitHubConfig();
+				if (!config || !config.owner || !config.repo || !config.branch || !config.dataPath || !config.token) {
+					expenseTypesStatus.textContent = 'Config GitHub mancante: completa prima la sezione "Configurazione GitHub".';
+					return;
+				}
+				const parsed = expenseTypesTextarea.value
+					.split('\n')
+					.map((item) => item.trim())
+					.filter(Boolean);
+				const unique = [...new Set(parsed)];
+				if (unique.length === 0) {
+					expenseTypesStatus.textContent = 'Inserisci almeno una causale valida.';
+					return;
+				}
+
+				const previousSettings = { ...(clubData.settings || {}) };
+				clubData.settings = { ...(clubData.settings || {}), expenseTypes: unique };
+				try {
+					await saveDataToGitHub('Aggiorna causali pagamento');
+					renderExpenseTypeOptions();
+					renderExpenseTypesEditor();
+					expenseTypesStatus.textContent = `Causali aggiornate (${unique.length}).`;
+				} catch (error) {
+					clubData.settings = previousSettings;
+					expenseTypesStatus.textContent = error.message || 'Errore durante il salvataggio causali.';
+				}
+			});
+
+			savePaymentMethodsButton.addEventListener('click', async () => {
+				const config = getGitHubConfig();
+				if (!config || !config.owner || !config.repo || !config.branch || !config.dataPath || !config.token) {
+					paymentMethodsStatus.textContent = 'Config GitHub mancante: completa prima la sezione "Configurazione GitHub".';
+					return;
+				}
+				const parsed = paymentMethodsTextarea.value
+					.split('\n')
+					.map((item) => item.trim())
+					.filter(Boolean);
+				const unique = [...new Set(parsed)];
+				if (unique.length === 0) {
+					paymentMethodsStatus.textContent = 'Inserisci almeno un metodo valido.';
+					return;
+				}
+
+				const previousSettings = { ...(clubData.settings || {}) };
+				clubData.settings = { ...(clubData.settings || {}), paymentMethods: unique };
+				try {
+					await saveDataToGitHub('Aggiorna metodi pagamento');
+					renderPaymentMethodOptions();
+					renderPaymentMethodsEditor();
+					paymentMethodsStatus.textContent = `Metodi aggiornati (${unique.length}).`;
+				} catch (error) {
+					clubData.settings = previousSettings;
+					paymentMethodsStatus.textContent = error.message || 'Errore durante il salvataggio metodi.';
+				}
 			});
 
 			memberForm.addEventListener('submit', async (event) => {
