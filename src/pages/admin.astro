@@ -280,6 +280,13 @@ const dataPath = withBase('data/club-data.json');
 							<button type="submit" class="rounded-xl bg-brand-700 px-4 py-2 text-sm font-semibold text-white hover:bg-brand-800">
 								Esporta PDF
 							</button>
+							<button
+								id="bulkGenerateReceiptsButton"
+								type="button"
+								class="rounded-xl border border-emerald-300 bg-white px-4 py-2 text-sm font-semibold text-emerald-700 hover:bg-emerald-50"
+							>
+								Genera ricevute mancanti
+							</button>
 						</form>
 					</div>
 					<div class="mt-4 grid gap-3 sm:grid-cols-3">
@@ -351,6 +358,7 @@ const dataPath = withBase('data/club-data.json');
 			const paymentMethodInput = document.getElementById('paymentMethod');
 			const amountInput = document.getElementById('amountInput');
 			const reportForm = document.getElementById('reportForm');
+			const bulkGenerateReceiptsButton = document.getElementById('bulkGenerateReceiptsButton');
 			const reportYearInput = document.getElementById('reportYear');
 			const reportQuarterInput = document.getElementById('reportQuarter');
 			const reportPaymentFilterInput = document.getElementById('reportPaymentFilter');
@@ -654,9 +662,22 @@ const dataPath = withBase('data/club-data.json');
 			}
 
 			async function generateSingleReceiptPdf(tx) {
-				const person = resolveTransactionPerson(tx);
+				const doc = await buildReceiptDocument([tx]);
+				doc.save(`ricevuta-${tx.receiptId}.pdf`);
+			}
+
+			async function buildReceiptDocument(transactions) {
 				const jsPDF = await ensurePdfLibraries();
 				const doc = new jsPDF({ orientation: 'portrait', unit: 'mm', format: 'a4' });
+				for (let index = 0; index < transactions.length; index += 1) {
+					if (index > 0) doc.addPage();
+					await drawReceiptPage(doc, transactions[index]);
+				}
+				return doc;
+			}
+
+			async function drawReceiptPage(doc, tx) {
+				const person = resolveTransactionPerson(tx);
 				const marginX = 14;
 				let cursorY = 16;
 
@@ -725,8 +746,6 @@ const dataPath = withBase('data/club-data.json');
 					doc.text('Nota: anagrafica cliente da verificare (CF #N/A).', marginX, cursorY + 20);
 					doc.setTextColor(0, 0, 0);
 				}
-
-				doc.save(`ricevuta-${tx.receiptId}.pdf`);
 			}
 
 			function renderTransactionsTable() {
@@ -752,7 +771,15 @@ const dataPath = withBase('data/club-data.json');
 								? `<p class="mt-2 text-xs font-medium text-red-700">${transactionRowError.message}</p>`
 								: '';
 						const issueMarkup = person.hasIssue && issueText ? `<p class="mt-2 text-xs font-medium text-red-700">${issueText}</p>` : '';
-						const rowClass = person.hasIssue ? 'border-t border-red-200 bg-red-50/40' : 'border-t border-slate-200';
+						const isGenerated = Boolean(tx.receiptGenerated);
+						const generatedMarkup = isGenerated
+							? '<p class="mt-2 inline-flex rounded-full bg-emerald-100 px-2 py-1 text-xs font-semibold text-emerald-700">Ricevuta generata</p>'
+							: '';
+						const rowClass = person.hasIssue
+							? 'border-t border-red-200 bg-red-50/40'
+							: isGenerated
+								? 'border-t border-emerald-200 bg-emerald-50/30'
+								: 'border-t border-slate-200';
 						return `<tr class="${rowClass}">
 							<td class="px-3 py-2 font-medium">${tx.receiptId}</td>
 							<td class="px-3 py-2">${formatDateIt(tx.date)}</td>
@@ -765,19 +792,19 @@ const dataPath = withBase('data/club-data.json');
 								<div class="flex flex-wrap gap-2">
 									<button
 										type="button"
-										data-transaction-action="edit"
-										data-transaction-id="${tx.id}"
-										class="rounded-lg border border-brand-300 px-2 py-1 text-xs font-semibold text-brand-700 hover:bg-brand-50"
-									>
-										Modifica
-									</button>
-									<button
-										type="button"
 										data-transaction-action="receipt"
 										data-transaction-id="${tx.id}"
 										class="rounded-lg border border-emerald-300 px-2 py-1 text-xs font-semibold text-emerald-700 hover:bg-emerald-50"
 									>
 										Genera ricevuta
+									</button>
+									<button
+										type="button"
+										data-transaction-action="edit"
+										data-transaction-id="${tx.id}"
+										class="rounded-lg border border-brand-300 px-2 py-1 text-xs font-semibold text-brand-700 hover:bg-brand-50"
+									>
+										Modifica
 									</button>
 									<button
 										type="button"
@@ -788,6 +815,7 @@ const dataPath = withBase('data/club-data.json');
 										Elimina
 									</button>
 								</div>
+								${generatedMarkup}
 								${issueMarkup}
 								${rowErrorMarkup}
 							</td>
@@ -1373,6 +1401,17 @@ const dataPath = withBase('data/club-data.json');
 				if (action === 'receipt') {
 					try {
 						await generateSingleReceiptPdf(tx);
+						const previous = { ...tx };
+						tx.receiptGenerated = true;
+						tx.receiptGeneratedAt = new Date().toISOString();
+						try {
+							await saveDataToGitHub(`Genera ricevuta ${tx.receiptId}`);
+						} catch (saveError) {
+							Object.assign(tx, previous);
+							renderTransactionsTable();
+							throw saveError;
+						}
+						renderTransactionsTable();
 						transactionStatus.textContent = `Ricevuta ${tx.receiptId} generata con successo.`;
 					} catch (error) {
 						transactionStatus.textContent = error.message || 'Errore durante la generazione della ricevuta.';
@@ -1510,6 +1549,44 @@ const dataPath = withBase('data/club-data.json');
 					transactionStatus.textContent = `PDF Q${quarter} ${year} generato con successo.`;
 				} catch (error) {
 					transactionStatus.textContent = error.message || 'Errore durante la generazione del PDF.';
+				}
+			});
+
+			bulkGenerateReceiptsButton.addEventListener('click', async () => {
+				const missing = clubData.transactions
+					.filter((tx) => !tx.receiptGenerated)
+					.sort((a, b) => Number.parseInt(a.receiptId, 10) - Number.parseInt(b.receiptId, 10));
+				if (missing.length === 0) {
+					transactionStatus.textContent = 'Tutte le ricevute risultano gia generate.';
+					return;
+				}
+
+				try {
+					const doc = await buildReceiptDocument(missing);
+					doc.save(`ricevute-mancanti-${new Date().toISOString().slice(0, 10)}.pdf`);
+
+					const previous = missing.map((tx) => ({ id: tx.id, receiptGenerated: tx.receiptGenerated, receiptGeneratedAt: tx.receiptGeneratedAt }));
+					const stamp = new Date().toISOString();
+					missing.forEach((tx) => {
+						tx.receiptGenerated = true;
+						tx.receiptGeneratedAt = stamp;
+					});
+					try {
+						await saveDataToGitHub(`Genera ricevute mancanti (${missing.length})`);
+					} catch (saveError) {
+						previous.forEach((item) => {
+							const target = clubData.transactions.find((tx) => tx.id === item.id);
+							if (!target) return;
+							target.receiptGenerated = item.receiptGenerated;
+							target.receiptGeneratedAt = item.receiptGeneratedAt;
+						});
+						renderTransactionsTable();
+						throw saveError;
+					}
+					renderTransactionsTable();
+					transactionStatus.textContent = `Generate ${missing.length} ricevute mancanti in un PDF unico.`;
+				} catch (error) {
+					transactionStatus.textContent = error.message || 'Errore durante la generazione bulk delle ricevute.';
 				}
 			});
 
