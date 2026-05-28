@@ -31,6 +31,15 @@
       "expenseType": "Palline",
       "paymentMethod": "Contanti",
       "amount": 5
+    },
+    {
+      "id": "57eeb96e-ba9d-4599-84ef-cc454085151e",
+      "receiptId": "003",
+      "date": "2026-05-28",
+      "memberId": "2cbb2bb0-d60b-45f4-be39-274b38fd4a9c",
+      "expenseType": "Quota campo",
+      "paymentMethod": "Bancomat",
+      "amount": 10
     }
   ]
 }
