@@ -1582,8 +1582,10 @@ const dataPath = withBase('data/club-data.json');
 				}
 
 				try {
-					const doc = await buildReceiptDocument(missing);
-					await savePdfWithPickerOrDownload(doc, `ricevute-mancanti-${new Date().toISOString().slice(0, 10)}.pdf`);
+					for (const tx of missing) {
+						const doc = await buildReceiptDocument([tx]);
+						await savePdfWithPickerOrDownload(doc, `ricevuta-${tx.receiptId}.pdf`);
+					}
 
 					const previous = missing.map((tx) => ({ id: tx.id, receiptGenerated: tx.receiptGenerated, receiptGeneratedAt: tx.receiptGeneratedAt }));
 					const stamp = new Date().toISOString();
@@ -1604,7 +1606,7 @@ const dataPath = withBase('data/club-data.json');
 						throw saveError;
 					}
 					renderTransactionsTable();
-					transactionStatus.textContent = `Generate ${missing.length} ricevute mancanti in un PDF unico.`;
+					transactionStatus.textContent = `Generate ${missing.length} ricevute mancanti in file separati.`;
 				} catch (error) {
 					transactionStatus.textContent = error.message || 'Errore durante la generazione bulk delle ricevute.';
 				}
