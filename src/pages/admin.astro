@@ -54,6 +54,20 @@ const dataPath = withBase('data/club-data.json');
 
 			<section id="adminApp" class="hidden space-y-6">
 				<section class="glass-card p-5">
+					<div class="flex flex-wrap items-center justify-between gap-3">
+						<h2 class="font-display text-xl font-semibold text-slate-900">Configurazione tecnica</h2>
+						<button
+							id="toggleConfigButton"
+							type="button"
+							class="rounded-xl border border-brand-300 bg-white px-4 py-2 text-sm font-semibold text-brand-700 hover:bg-brand-50"
+						>
+							Apri configurazione tecnica
+						</button>
+					</div>
+					<p class="mt-2 text-sm text-slate-700">
+						Questa sezione serve solo per setup iniziale o manutenzione. Durante l'uso normale puo restare chiusa.
+					</p>
+					<div id="configPanel" class="mt-4 hidden">
 					<h2 class="font-display text-xl font-semibold text-slate-900">Configurazione GitHub (una volta sola)</h2>
 					<p class="mt-2 text-sm text-slate-700">
 						Compila questi campi la prima volta sul PC della segreteria. Servono per aggiornare online il file dati.
@@ -86,6 +100,7 @@ const dataPath = withBase('data/club-data.json');
 						</div>
 					</form>
 					<p id="configStatus" class="mt-3 text-sm text-slate-600"></p>
+					</div>
 				</section>
 
 				<section class="grid gap-6 lg:grid-cols-2">
@@ -115,9 +130,11 @@ const dataPath = withBase('data/club-data.json');
 							<table class="min-w-full text-left text-sm">
 								<thead class="bg-slate-50 text-xs uppercase tracking-[0.12em] text-slate-600">
 									<tr>
+										<th class="px-3 py-2">N.</th>
 										<th class="px-3 py-2">Nome</th>
 										<th class="px-3 py-2">Cognome</th>
 										<th class="px-3 py-2">Codice fiscale</th>
+										<th class="px-3 py-2">Azioni</th>
 									</tr>
 								</thead>
 								<tbody id="membersTableBody"></tbody>
@@ -206,6 +223,7 @@ const dataPath = withBase('data/club-data.json');
 									<th class="px-3 py-2">Causale</th>
 									<th class="px-3 py-2">Metodo</th>
 									<th class="px-3 py-2">Importo</th>
+									<th class="px-3 py-2">Azioni</th>
 								</tr>
 							</thead>
 							<tbody id="transactionsTableBody"></tbody>
@@ -232,6 +250,8 @@ const dataPath = withBase('data/club-data.json');
 			const adminPasswordInput = document.getElementById('adminPasswordInput');
 			const githubConfigForm = document.getElementById('githubConfigForm');
 			const configStatus = document.getElementById('configStatus');
+			const toggleConfigButton = document.getElementById('toggleConfigButton');
+			const configPanel = document.getElementById('configPanel');
 			const memberForm = document.getElementById('memberForm');
 			const memberStatus = document.getElementById('memberStatus');
 			const membersTableBody = document.getElementById('membersTableBody');
@@ -241,6 +261,9 @@ const dataPath = withBase('data/club-data.json');
 			const transactionStatus = document.getElementById('transactionStatus');
 			const receiptIdInput = document.getElementById('receiptId');
 			const transactionDateInput = document.getElementById('transactionDate');
+			const expenseTypeInput = document.getElementById('expenseType');
+			const paymentMethodInput = document.getElementById('paymentMethod');
+			const amountInput = document.getElementById('amountInput');
 			const reportForm = document.getElementById('reportForm');
 			const reportYearInput = document.getElementById('reportYear');
 			const reportQuarterInput = document.getElementById('reportQuarter');
@@ -259,6 +282,8 @@ const dataPath = withBase('data/club-data.json');
 			transactionDateInput.value = today.toISOString().slice(0, 10);
 
 			let clubData = { members: [], transactions: [] };
+			let memberEditingId = null;
+			let transactionEditingId = null;
 
 			function parseJSONSafely(text, fallback) {
 				try {
@@ -276,6 +301,13 @@ const dataPath = withBase('data/club-data.json');
 
 			function formatCurrency(value) {
 				return new Intl.NumberFormat('it-IT', { style: 'currency', currency: 'EUR' }).format(value);
+			}
+
+			function formatDateIt(isoDate) {
+				if (!isoDate) return '';
+				const date = new Date(`${isoDate}T00:00:00`);
+				if (Number.isNaN(date.getTime())) return isoDate;
+				return date.toLocaleDateString('it-IT');
 			}
 
 			function formatReceiptId(value) {
@@ -296,21 +328,43 @@ const dataPath = withBase('data/club-data.json');
 			}
 
 			function updateReceiptField() {
+				if (transactionEditingId) return;
 				receiptIdInput.value = getNextReceiptId();
 			}
 
 			function renderMembersTable() {
 				if (clubData.members.length === 0) {
 					membersTableBody.innerHTML =
-						'<tr><td colspan="3" class="px-3 py-3 text-sm text-slate-500">Nessun socio inserito.</td></tr>';
+						'<tr><td colspan="5" class="px-3 py-3 text-sm text-slate-500">Nessun socio inserito.</td></tr>';
 					return;
 				}
 				membersTableBody.innerHTML = clubData.members
 					.map(
-						(member) => `<tr class="border-t border-slate-200">
+						(member, index) => `<tr class="border-t border-slate-200">
+							<td class="px-3 py-2 font-semibold text-slate-700">${index + 1}</td>
 							<td class="px-3 py-2">${member.name}</td>
 							<td class="px-3 py-2">${member.surname}</td>
 							<td class="px-3 py-2 uppercase">${member.taxCode}</td>
+							<td class="px-3 py-2">
+								<div class="flex flex-wrap gap-2">
+									<button
+										type="button"
+										data-member-action="edit"
+										data-member-id="${member.id}"
+										class="rounded-lg border border-brand-300 px-2 py-1 text-xs font-semibold text-brand-700 hover:bg-brand-50"
+									>
+										Modifica
+									</button>
+									<button
+										type="button"
+										data-member-action="delete"
+										data-member-id="${member.id}"
+										class="rounded-lg border border-red-300 px-2 py-1 text-xs font-semibold text-red-700 hover:bg-red-50"
+									>
+										Elimina
+									</button>
+								</div>
+							</td>
 						</tr>`
 					)
 					.join('');
@@ -333,7 +387,7 @@ const dataPath = withBase('data/club-data.json');
 				const sorted = [...clubData.transactions].sort((a, b) => (a.date < b.date ? 1 : -1));
 				if (sorted.length === 0) {
 					transactionsTableBody.innerHTML =
-						'<tr><td colspan="7" class="px-3 py-3 text-sm text-slate-500">Nessuna operazione registrata.</td></tr>';
+						'<tr><td colspan="8" class="px-3 py-3 text-sm text-slate-500">Nessuna operazione registrata.</td></tr>';
 					return;
 				}
 				transactionsTableBody.innerHTML = sorted
@@ -343,12 +397,32 @@ const dataPath = withBase('data/club-data.json');
 						const taxCode = member ? member.taxCode.toUpperCase() : '-';
 						return `<tr class="border-t border-slate-200">
 							<td class="px-3 py-2 font-medium">${tx.receiptId}</td>
-							<td class="px-3 py-2">${tx.date}</td>
+							<td class="px-3 py-2">${formatDateIt(tx.date)}</td>
 							<td class="px-3 py-2">${fullName}</td>
 							<td class="px-3 py-2 uppercase">${taxCode}</td>
 							<td class="px-3 py-2">${tx.expenseType}</td>
 							<td class="px-3 py-2">${tx.paymentMethod}</td>
 							<td class="px-3 py-2">${formatCurrency(tx.amount)}</td>
+							<td class="px-3 py-2">
+								<div class="flex flex-wrap gap-2">
+									<button
+										type="button"
+										data-transaction-action="edit"
+										data-transaction-id="${tx.id}"
+										class="rounded-lg border border-brand-300 px-2 py-1 text-xs font-semibold text-brand-700 hover:bg-brand-50"
+									>
+										Modifica
+									</button>
+									<button
+										type="button"
+										data-transaction-action="delete"
+										data-transaction-id="${tx.id}"
+										class="rounded-lg border border-red-300 px-2 py-1 text-xs font-semibold text-red-700 hover:bg-red-50"
+									>
+										Elimina
+									</button>
+								</div>
+							</td>
 						</tr>`;
 					})
 					.join('');
@@ -466,6 +540,24 @@ const dataPath = withBase('data/club-data.json');
 				githubTokenInput.value = config.token || '';
 			}
 
+			function openConfigPanel() {
+				configPanel.classList.remove('hidden');
+				toggleConfigButton.textContent = 'Chiudi configurazione tecnica';
+			}
+
+			function closeConfigPanel() {
+				configPanel.classList.add('hidden');
+				toggleConfigButton.textContent = 'Apri configurazione tecnica';
+			}
+
+			toggleConfigButton.addEventListener('click', () => {
+				if (configPanel.classList.contains('hidden')) {
+					openConfigPanel();
+					return;
+				}
+				closeConfigPanel();
+			});
+
 			unlockForm.addEventListener('submit', (event) => {
 				event.preventDefault();
 				const typed = adminPasswordInput.value.trim();
@@ -505,27 +597,108 @@ const dataPath = withBase('data/club-data.json');
 				}
 
 				const duplicate = clubData.members.some((member) => member.taxCode.toUpperCase() === taxCode);
-				if (duplicate) {
+				const isDuplicateForDifferentMember = duplicate &&
+					(memberEditingId === null ||
+						clubData.members.some(
+							(member) => member.taxCode.toUpperCase() === taxCode && member.id !== memberEditingId
+						));
+				if (isDuplicateForDifferentMember) {
 					memberStatus.textContent = 'Socio gia presente con questo codice fiscale.';
 					return;
 				}
 
-				const newMember = {
-					id: crypto.randomUUID(),
-					name,
-					surname,
-					taxCode
-				};
-				clubData.members.push(newMember);
+				let rollbackSnapshot = null;
+				let operationLabel = '';
+				if (memberEditingId) {
+					const target = clubData.members.find((member) => member.id === memberEditingId);
+					if (!target) {
+						memberStatus.textContent = 'Socio da modificare non trovato.';
+						memberEditingId = null;
+						memberForm.reset();
+						return;
+					}
+					rollbackSnapshot = { ...target };
+					target.name = name;
+					target.surname = surname;
+					target.taxCode = taxCode;
+					operationLabel = `Aggiorna socio ${name} ${surname}`;
+				} else {
+					const newMember = {
+						id: crypto.randomUUID(),
+						name,
+						surname,
+						taxCode
+					};
+					clubData.members.push(newMember);
+					rollbackSnapshot = { id: newMember.id, created: true };
+					operationLabel = `Aggiunge socio ${name} ${surname}`;
+				}
 
 				try {
-					await saveDataToGitHub(`Aggiunge socio ${name} ${surname}`);
+					await saveDataToGitHub(operationLabel);
 					memberForm.reset();
+					memberEditingId = null;
 					renderAll();
-					memberStatus.textContent = `Socio ${name} ${surname} salvato con successo.`;
+					const successLabel = operationLabel.startsWith('Aggiorna') ? 'aggiornato' : 'salvato';
+					memberStatus.textContent = `Socio ${name} ${surname} ${successLabel} con successo.`;
 				} catch (error) {
-					clubData.members = clubData.members.filter((item) => item.id !== newMember.id);
+					if (rollbackSnapshot?.created) {
+						clubData.members = clubData.members.filter((item) => item.id !== rollbackSnapshot.id);
+					} else if (rollbackSnapshot?.id) {
+						const index = clubData.members.findIndex((item) => item.id === rollbackSnapshot.id);
+						if (index >= 0) {
+							clubData.members[index] = rollbackSnapshot;
+						}
+					}
 					memberStatus.textContent = error.message;
+				}
+			});
+
+			membersTableBody.addEventListener('click', async (event) => {
+				const trigger = event.target.closest('[data-member-action]');
+				if (!trigger) return;
+				const action = trigger.getAttribute('data-member-action');
+				const memberId = trigger.getAttribute('data-member-id');
+				if (!action || !memberId) return;
+
+				const member = clubData.members.find((item) => item.id === memberId);
+				if (!member) {
+					memberStatus.textContent = 'Socio non trovato.';
+					return;
+				}
+
+				if (action === 'edit') {
+					document.getElementById('memberName').value = member.name;
+					document.getElementById('memberSurname').value = member.surname;
+					document.getElementById('memberTaxCode').value = member.taxCode.toUpperCase();
+					memberEditingId = member.id;
+					memberStatus.textContent = `Modifica socio: ${member.name} ${member.surname}. Premi "Aggiungi socio" per salvare.`;
+					return;
+				}
+
+				if (action === 'delete') {
+					const linkedTransactions = clubData.transactions.some((tx) => tx.memberId === member.id);
+					if (linkedTransactions) {
+						memberStatus.textContent = 'Non puoi eliminare questo socio: ha operazioni registrate.';
+						return;
+					}
+					const confirmed = window.confirm(`Eliminare il socio ${member.name} ${member.surname}?`);
+					if (!confirmed) return;
+
+					const previousMembers = [...clubData.members];
+					clubData.members = clubData.members.filter((item) => item.id !== member.id);
+					try {
+						await saveDataToGitHub(`Elimina socio ${member.name} ${member.surname}`);
+						if (memberEditingId === member.id) {
+							memberEditingId = null;
+							memberForm.reset();
+						}
+						renderAll();
+						memberStatus.textContent = `Socio ${member.name} ${member.surname} eliminato con successo.`;
+					} catch (error) {
+						clubData.members = previousMembers;
+						memberStatus.textContent = error.message;
+					}
 				}
 			});
 
@@ -535,33 +708,114 @@ const dataPath = withBase('data/club-data.json');
 					transactionStatus.textContent = 'Inserisci almeno un socio prima di registrare operazioni.';
 					return;
 				}
-				const amountRaw = document.getElementById('amountInput').value;
+				const amountRaw = amountInput.value;
 				const amount = Number.parseFloat(amountRaw);
 				if (Number.isNaN(amount) || amount <= 0) {
 					transactionStatus.textContent = 'Inserisci un importo valido.';
 					return;
 				}
 
-				const newTransaction = {
-					id: crypto.randomUUID(),
-					receiptId: getNextReceiptId(),
-					date: transactionDateInput.value,
-					memberId: memberSelect.value,
-					expenseType: document.getElementById('expenseType').value,
-					paymentMethod: document.getElementById('paymentMethod').value,
-					amount: Math.round(amount * 100) / 100
-				};
-				clubData.transactions.push(newTransaction);
+				let commitMessage = '';
+				let rollbackSnapshot = null;
+				let workingTransaction = null;
+				if (transactionEditingId) {
+					const target = clubData.transactions.find((tx) => tx.id === transactionEditingId);
+					if (!target) {
+						transactionStatus.textContent = 'Ricevuta da modificare non trovata.';
+						transactionEditingId = null;
+						transactionForm.reset();
+						updateReceiptField();
+						return;
+					}
+					rollbackSnapshot = { ...target };
+					target.date = transactionDateInput.value;
+					target.memberId = memberSelect.value;
+					target.expenseType = expenseTypeInput.value;
+					target.paymentMethod = paymentMethodInput.value;
+					target.amount = Math.round(amount * 100) / 100;
+					workingTransaction = target;
+					commitMessage = `Aggiorna ricevuta ${target.receiptId}`;
+				} else {
+					const newTransaction = {
+						id: crypto.randomUUID(),
+						receiptId: getNextReceiptId(),
+						date: transactionDateInput.value,
+						memberId: memberSelect.value,
+						expenseType: expenseTypeInput.value,
+						paymentMethod: paymentMethodInput.value,
+						amount: Math.round(amount * 100) / 100
+					};
+					clubData.transactions.push(newTransaction);
+					rollbackSnapshot = { id: newTransaction.id, created: true };
+					workingTransaction = newTransaction;
+					commitMessage = `Registra ricevuta ${newTransaction.receiptId}`;
+				}
 
 				try {
-					await saveDataToGitHub(`Registra ricevuta ${newTransaction.receiptId}`);
+					await saveDataToGitHub(commitMessage);
 					transactionForm.reset();
+					transactionEditingId = null;
 					transactionDateInput.value = new Date().toISOString().slice(0, 10);
 					renderAll();
-					transactionStatus.textContent = `Ricevuta ${newTransaction.receiptId} salvata con successo.`;
+					const statusVerb = commitMessage.startsWith('Aggiorna') ? 'aggiornata' : 'salvata';
+					transactionStatus.textContent = `Ricevuta ${workingTransaction.receiptId} ${statusVerb} con successo.`;
 				} catch (error) {
-					clubData.transactions = clubData.transactions.filter((item) => item.id !== newTransaction.id);
+					if (rollbackSnapshot?.created) {
+						clubData.transactions = clubData.transactions.filter((item) => item.id !== rollbackSnapshot.id);
+					} else if (rollbackSnapshot?.id) {
+						const index = clubData.transactions.findIndex((item) => item.id === rollbackSnapshot.id);
+						if (index >= 0) {
+							clubData.transactions[index] = rollbackSnapshot;
+						}
+					}
 					transactionStatus.textContent = error.message;
+				}
+			});
+
+			transactionsTableBody.addEventListener('click', async (event) => {
+				const trigger = event.target.closest('[data-transaction-action]');
+				if (!trigger) return;
+				const action = trigger.getAttribute('data-transaction-action');
+				const transactionId = trigger.getAttribute('data-transaction-id');
+				if (!action || !transactionId) return;
+
+				const tx = clubData.transactions.find((item) => item.id === transactionId);
+				if (!tx) {
+					transactionStatus.textContent = 'Ricevuta non trovata.';
+					return;
+				}
+
+				if (action === 'edit') {
+					transactionEditingId = tx.id;
+					receiptIdInput.value = tx.receiptId;
+					transactionDateInput.value = tx.date;
+					memberSelect.value = tx.memberId;
+					expenseTypeInput.value = tx.expenseType;
+					paymentMethodInput.value = tx.paymentMethod;
+					amountInput.value = String(tx.amount);
+					transactionStatus.textContent = `Modifica ricevuta ${tx.receiptId}: aggiorna i campi e salva.`;
+					return;
+				}
+
+				if (action === 'delete') {
+					const confirmed = window.confirm(`Eliminare la ricevuta ${tx.receiptId}?`);
+					if (!confirmed) return;
+
+					const previousTransactions = [...clubData.transactions];
+					clubData.transactions = clubData.transactions.filter((item) => item.id !== tx.id);
+					try {
+						await saveDataToGitHub(`Elimina ricevuta ${tx.receiptId}`);
+						if (transactionEditingId === tx.id) {
+							transactionEditingId = null;
+							transactionForm.reset();
+							transactionDateInput.value = new Date().toISOString().slice(0, 10);
+						}
+						renderAll();
+						transactionStatus.textContent = `Ricevuta ${tx.receiptId} eliminata con successo.`;
+					} catch (error) {
+						clubData.transactions = previousTransactions;
+						transactionStatus.textContent = error.message;
+					}
 				}
 			});
 
@@ -631,6 +885,7 @@ const dataPath = withBase('data/club-data.json');
 
 			bootstrapAuth();
 			fillConfigForm();
+			closeConfigPanel();
 			loadClubDataFromPublic();
 		</script>
 	</body>
