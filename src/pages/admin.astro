@@ -310,6 +310,52 @@ const dataPath = withBase('data/club-data.json');
 				return date.toLocaleDateString('it-IT');
 			}
 
+			function loadExternalScript(src) {
+				return new Promise((resolve, reject) => {
+					const existing = document.querySelector(`script[src="${src}"]`);
+					if (existing) {
+						if (existing.dataset.loaded === '1') {
+							resolve();
+							return;
+						}
+						existing.addEventListener('load', () => resolve(), { once: true });
+						existing.addEventListener('error', () => reject(new Error(`Impossibile caricare ${src}`)), { once: true });
+						return;
+					}
+					const script = document.createElement('script');
+					script.src = src;
+					script.async = true;
+					script.addEventListener('load', () => {
+						script.dataset.loaded = '1';
+						resolve();
+					});
+					script.addEventListener('error', () => reject(new Error(`Impossibile caricare ${src}`)));
+					document.head.appendChild(script);
+				});
+			}
+
+			async function ensurePdfLibraries() {
+				if (!window.jspdf?.jsPDF) {
+					await loadExternalScript('https://cdn.jsdelivr.net/npm/jspdf@2.5.1/dist/jspdf.umd.min.js');
+				}
+				if (!window.jspdf?.jsPDF) {
+					await loadExternalScript('https://unpkg.com/jspdf@2.5.1/dist/jspdf.umd.min.js');
+				}
+				if (!window.jspdf?.jsPDF) {
+					throw new Error('Libreria PDF non disponibile. Ricarica la pagina e riprova.');
+				}
+
+				const testDoc = new window.jspdf.jsPDF();
+				if (typeof testDoc.autoTable !== 'function') {
+					await loadExternalScript('https://cdn.jsdelivr.net/npm/jspdf-autotable@3.8.2/dist/jspdf.plugin.autotable.min.js');
+				}
+				if (typeof testDoc.autoTable !== 'function') {
+					await loadExternalScript('https://unpkg.com/jspdf-autotable@3.8.2/dist/jspdf.plugin.autotable.min.js');
+				}
+
+				return window.jspdf.jsPDF;
+			}
+
 			function formatReceiptId(value) {
 				return String(value).padStart(3, '0');
 			}
@@ -849,7 +895,7 @@ const dataPath = withBase('data/club-data.json');
 					});
 			}
 
-			reportForm.addEventListener('submit', (event) => {
+			reportForm.addEventListener('submit', async (event) => {
 				event.preventDefault();
 				const year = Number.parseInt(reportYearInput.value, 10);
 				const quarter = Number.parseInt(reportQuarterInput.value, 10);
@@ -859,28 +905,53 @@ const dataPath = withBase('data/club-data.json');
 					return;
 				}
 
-				const { jsPDF } = window.jspdf;
-				const doc = new jsPDF({ orientation: 'portrait', unit: 'mm', format: 'a4' });
-				doc.setFontSize(16);
-				doc.text(`Village - Report trimestrale Q${quarter} ${year}`, 14, 16);
-				doc.setFontSize(10);
-				doc.text(`Generato il ${new Date().toLocaleDateString('it-IT')}`, 14, 22);
-				doc.autoTable({
-					startY: 28,
-					styles: { fontSize: 9 },
-					head: [['ID ricevuta', 'Data', 'Cliente', 'Codice fiscale', 'Tipo spesa', 'Importo']],
-					body: rows.map((row) => [
-						row.receiptId,
-						row.date,
-						row.client,
-						row.taxCode,
-						row.expenseType,
-						formatCurrency(row.amount)
-					])
-				});
-				const total = rows.reduce((sum, row) => sum + row.amount, 0);
-				doc.text(`Totale trimestre: ${formatCurrency(total)}`, 14, doc.lastAutoTable.finalY + 10);
-				doc.save(`village-report-q${quarter}-${year}.pdf`);
+				try {
+					const jsPDF = await ensurePdfLibraries();
+					const doc = new jsPDF({ orientation: 'portrait', unit: 'mm', format: 'a4' });
+					doc.setFontSize(16);
+					doc.text(`Village - Report trimestrale Q${quarter} ${year}`, 14, 16);
+					doc.setFontSize(10);
+					doc.text(`Generato il ${new Date().toLocaleDateString('it-IT')}`, 14, 22);
+
+					if (typeof doc.autoTable === 'function') {
+						doc.autoTable({
+							startY: 28,
+							styles: { fontSize: 9 },
+							head: [['ID ricevuta', 'Data', 'Cliente', 'Codice fiscale', 'Tipo spesa', 'Importo']],
+							body: rows.map((row) => [
+								row.receiptId,
+								formatDateIt(row.date),
+								row.client,
+								row.taxCode,
+								row.expenseType,
+								formatCurrency(row.amount)
+							])
+						});
+						const total = rows.reduce((sum, row) => sum + row.amount, 0);
+						doc.text(`Totale trimestre: ${formatCurrency(total)}`, 14, doc.lastAutoTable.finalY + 10);
+					} else {
+						let y = 30;
+						rows.forEach((row) => {
+							if (y > 280) {
+								doc.addPage();
+								y = 16;
+							}
+							doc.text(
+								`${row.receiptId} | ${formatDateIt(row.date)} | ${row.client} | ${row.taxCode} | ${row.expenseType} | ${formatCurrency(row.amount)}`,
+								14,
+								y
+							);
+							y += 6;
+						});
+						const total = rows.reduce((sum, row) => sum + row.amount, 0);
+						doc.text(`Totale trimestre: ${formatCurrency(total)}`, 14, y + 6);
+					}
+
+					doc.save(`village-report-q${quarter}-${year}.pdf`);
+					transactionStatus.textContent = `PDF Q${quarter} ${year} generato con successo.`;
+				} catch (error) {
+					transactionStatus.textContent = error.message || 'Errore durante la generazione del PDF.';
+				}
 			});
 
 			bootstrapAuth();
