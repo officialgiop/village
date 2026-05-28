@@ -1,4 +1,2013 @@
 {
-  "members": [],
+  "members": [
+    {
+      "id": "c59ce8e8-0ad5-407b-ab7b-a90ffd4d6e76",
+      "name": "Roberto",
+      "surname": "Ricciardi",
+      "taxCode": "RCCRRT69H24H501B",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "0877ed34-ce93-4b9a-b8de-58752475a229",
+      "name": "Carlo",
+      "surname": "Ciampichetti",
+      "taxCode": "CMPCRL67T17H501L",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "1e0033eb-1a26-4fb5-9d02-a5b47cead7dd",
+      "name": "Chiara",
+      "surname": "Cesarini",
+      "taxCode": "CSRCHR99D69H501V",
+      "hasIssue": true,
+      "issue": "duplicate_tax_code"
+    },
+    {
+      "id": "09ae4695-c0cb-484c-9f9e-8d4fd7208be7",
+      "name": "irene",
+      "surname": "serraino fiory",
+      "taxCode": "SRRRNI88H49H501P",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "5d49d57c-995d-4781-a0b1-dfa5eb3b59e7",
+      "name": "Pedro",
+      "surname": "Iranzo Martinez",
+      "taxCode": "RNZPDR66A13Z131L",
+      "hasIssue": true,
+      "issue": "duplicate_tax_code"
+    },
+    {
+      "id": "040d4ef7-73a6-4c7c-b667-ffbf7105f69c",
+      "name": "Gian Luigi",
+      "surname": "Lopez",
+      "taxCode": "LPZGLG71R11H501B",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "cc327e63-3478-4dab-b510-920203478903",
+      "name": "Roberto Ernesto",
+      "surname": "Maragno",
+      "taxCode": "MRGRRT78D11Z401F",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "7218f697-aa98-4e3c-aeac-e77a5088d7bc",
+      "name": "Andrea",
+      "surname": "Pavone",
+      "taxCode": "PVNNDR93E02H501J",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "357337bc-18c3-446c-9c3a-b2c7c9a10d2c",
+      "name": "Alessandra",
+      "surname": "Garufi",
+      "taxCode": "GRFLSN76R41H501G",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "30b8893a-fd21-4a0d-a740-279876aa4404",
+      "name": "Mila",
+      "surname": "Franchi",
+      "taxCode": "FRNMLI79S67H501Z",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "39afa2ba-d706-4e48-b963-f94b082e8da7",
+      "name": "Federica",
+      "surname": "Leurini",
+      "taxCode": "LRNFRC65H68H501I",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "8119ad82-0b05-409e-86c4-90e039d30e1c",
+      "name": "Ilaria",
+      "surname": "Buccioni",
+      "taxCode": "BCCLRI78D46H501B",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "36812203-1f98-4537-afea-e4c58006d93b",
+      "name": "Benedetta",
+      "surname": "Franzoni",
+      "taxCode": "FRNBDT02P59H501Z",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "e2c5f1a8-5d28-496d-9524-ec64c3ccc262",
+      "name": "Simona",
+      "surname": "Briganti",
+      "taxCode": "BRGSMN89L43L049F",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "6d5e4f16-b4f0-435a-851e-99a0e3e4e70e",
+      "name": "Jacopo",
+      "surname": "Di Marzio",
+      "taxCode": "DMRJCP96A06H501P",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "1668fcd9-6379-4e47-806b-865f5fa80a12",
+      "name": "Anastasia",
+      "surname": "Biagioni",
+      "taxCode": "BGNNTS02M48H501F",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "2425c99b-1fbf-41f1-992c-fd87108016e7",
+      "name": "Jessica",
+      "surname": "Testa",
+      "taxCode": "TSTJSC78B51H501P",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "4aa4155c-d11e-4895-9022-8c2791f8f581",
+      "name": "Valentina",
+      "surname": "Lori",
+      "taxCode": "LROVNT80S61H501T",
+      "hasIssue": true,
+      "issue": "duplicate_tax_code"
+    },
+    {
+      "id": "9bd74f98-24a3-43a0-8235-4bcb5068de05",
+      "name": "Flavia",
+      "surname": "Zardetto",
+      "taxCode": "ZRDFLV00S69H501H",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "e234a705-8cc0-4f81-b66f-66d5dd8a3d20",
+      "name": "Serena",
+      "surname": "Barnabei",
+      "taxCode": "BRNSRN83H60H501M",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "dbcb6162-461c-42e8-9fe0-24313097d0c3",
+      "name": "Simona",
+      "surname": "Bernardi",
+      "taxCode": "BRNSMN74P47H501V",
+      "hasIssue": true,
+      "issue": "duplicate_tax_code"
+    },
+    {
+      "id": "5cbf6b52-979f-4a5e-a740-6af635049f8e",
+      "name": "Davide",
+      "surname": "Feltoni Gurini",
+      "taxCode": "FLTDVD84T20H501K",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "204676fd-8ea7-4733-ac8f-32ea0f0ddd6a",
+      "name": "Alessio",
+      "surname": "Florenzani",
+      "taxCode": "FLRLSS89R20H501C",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "72401209-cdc1-4ce3-b7e9-466f897aa97a",
+      "name": "Emanuele",
+      "surname": "Ciotti",
+      "taxCode": "CTTMNL71L04H501C",
+      "hasIssue": true,
+      "issue": "duplicate_tax_code"
+    },
+    {
+      "id": "b04a1a72-9874-4945-8022-97df5caa43ee",
+      "name": "Marco",
+      "surname": "Bartolini",
+      "taxCode": "BRTMRC77S21H501H",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "00fb9f30-be13-44de-8689-640b8f00a557",
+      "name": "Alfonso",
+      "surname": "Pietropaolo",
+      "taxCode": "PTRLNS83T09L219S",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "e7b61412-ce7a-4b31-8026-440f1046e93e",
+      "name": "Matteo",
+      "surname": "Maceroni",
+      "taxCode": "MCRMTT68C27H501K",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "b5ed0348-d9f4-44fe-923c-1fd821b2a2a3",
+      "name": "Alex",
+      "surname": "Fratarcangeli",
+      "taxCode": "FRTLXA87C07D810W",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "87014c1a-d299-486a-86cb-4d81ee4e6929",
+      "name": "Matteo",
+      "surname": "De Logu",
+      "taxCode": "DLGMTT88R25H501S",
+      "hasIssue": true,
+      "issue": "duplicate_tax_code"
+    },
+    {
+      "id": "b25cb93e-2106-43af-ae20-6acaf1911b79",
+      "name": "Mattia",
+      "surname": "Gava",
+      "taxCode": "GVAMTT89T14H501Y",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "fa145c73-0cb0-4f6d-8925-750fb1f6798a",
+      "name": "Sonia",
+      "surname": "Maffezzoli",
+      "taxCode": "MFFSNO73R69H501H",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "3e34e519-ed09-45ad-8d79-e389df61cb74",
+      "name": "Chiara",
+      "surname": "Cardinali",
+      "taxCode": "CRDCHR95E43D612F",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "20bc7153-27f8-49df-a040-537c80859216",
+      "name": "Pedro",
+      "surname": "Iranzo",
+      "taxCode": "RNZPDR66A13Z131L",
+      "hasIssue": true,
+      "issue": "duplicate_tax_code"
+    },
+    {
+      "id": "a9f5b7b6-f054-4dbd-b650-878cdc0c4236",
+      "name": "Carlotta",
+      "surname": "Trivelli",
+      "taxCode": "TRVCLT91D56H501F",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "8a11f362-3b5e-4e92-a27e-ced7b1c3fb9c",
+      "name": "Massimo",
+      "surname": "Giannese",
+      "taxCode": "GNNMSM71R07L049I",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "db29ee33-a103-4d90-9efc-5fd519019957",
+      "name": "Claudio",
+      "surname": "Belli",
+      "taxCode": "BLLCLD56L24H501A",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "f24f4d93-1039-4e6c-baf6-f79a0ae69272",
+      "name": "Gabriele",
+      "surname": "Ciampichetti",
+      "taxCode": "CMPGRL09H03H501V",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "23843b98-1424-42e0-be5b-b43c0985c44b",
+      "name": "Stefano",
+      "surname": "Valvo",
+      "taxCode": "VLVSFN83M09H501A",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "1f04e142-9d94-48fa-bf98-88a92a8f313e",
+      "name": "Chiara",
+      "surname": "Mancioli",
+      "taxCode": "MNCCHR73L69E388F",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "bdac6f27-a5f7-4964-ab80-198e014537b1",
+      "name": "Carlos",
+      "surname": "Bernal Espeso",
+      "taxCode": "BRNCLS01E10Z131Y",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "0db41064-272e-426a-87ec-05ae8f8a33aa",
+      "name": "Claudio",
+      "surname": "Zarantonello",
+      "taxCode": "ZRNCLD67C25H501B",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "95c2e640-a65f-4d19-86a2-b16711e8eb24",
+      "name": "Mara",
+      "surname": "Laurenti",
+      "taxCode": "LRNMRA64C61H501H",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "2cf15a86-d407-402b-9ae4-05ad63201387",
+      "name": "Valentina",
+      "surname": "Lori",
+      "taxCode": "LROVNT80S61H501T",
+      "hasIssue": true,
+      "issue": "duplicate_tax_code"
+    },
+    {
+      "id": "1ad9c34c-895c-4289-92a6-a432730aee9c",
+      "name": "Katia",
+      "surname": "Maturilli",
+      "taxCode": "MTRKTA78E56H501N",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "42a15094-25e7-4010-b47a-29f42a335467",
+      "name": "Giulia",
+      "surname": "Tempesta",
+      "taxCode": "TMPGLI01H49H501H",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "164dd512-142e-4876-a88e-e6181a1fa88d",
+      "name": "Tiziana",
+      "surname": "Olivi",
+      "taxCode": "LVOTZN69E66H501J",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "3ea30578-cf47-4fb9-8d91-e8d3d279ae1c",
+      "name": "Riccardo",
+      "surname": "Borraccino",
+      "taxCode": "BRRRCR66T25H501E",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "a9d1ebab-8c3a-4653-b5b3-a0090b253d8d",
+      "name": "Claudia",
+      "surname": "Fabris",
+      "taxCode": "FBRCLD75S52F205U",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "efd6092a-39aa-4e20-bc9e-0c28fd40a09f",
+      "name": "Barbara",
+      "surname": "Pichi",
+      "taxCode": "PCHBBR73H69H501U",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "0a20ae74-fdc1-4f6d-ac04-57a2f39a64a0",
+      "name": "Claudio Matteo",
+      "surname": "Basili",
+      "taxCode": "BSLCDM60T14E038F",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "2df90730-452f-4060-94a8-3d3c1c6ad4cc",
+      "name": "Giovanni Luca",
+      "surname": "Cannizzaro",
+      "taxCode": "CNNGNN71P12H501U",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "da257f2c-2eed-4f20-8368-8893e4f10502",
+      "name": "Roberto",
+      "surname": "Pagnotti",
+      "taxCode": "PGNRRT65D19H501M",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "037712c2-d381-4e71-8ce3-ad5c5515078e",
+      "name": "Osvaldo Nicolas",
+      "surname": "Girado",
+      "taxCode": "GRDSLD90D22Z600L",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "f0f91663-be55-4c56-a727-d1f712e69092",
+      "name": "Elvira",
+      "surname": "Russo",
+      "taxCode": "RSSLVR75S57C129B",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "9d9fcaa4-a109-49a4-8b46-599a2273789b",
+      "name": "Claudia",
+      "surname": "Carbini",
+      "taxCode": "CRBCLD81R64H501Q",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "20bd5bc1-658b-4230-8ffb-c874715ad292",
+      "name": "Lorenzo",
+      "surname": "Piromalli",
+      "taxCode": "PRMLNZ70T16H501F",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "443f7a8b-402e-4a13-ae7a-e46e4ae5f9da",
+      "name": "Nur",
+      "surname": "Laela",
+      "taxCode": "LLANRU71P46Z223G",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "58ebea71-c096-4de4-a875-7924490b93b6",
+      "name": "Tiziana",
+      "surname": "Del Pelo",
+      "taxCode": "DLPTZN64A55H501E",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "5fac248d-35ec-4670-88cc-52be4fc5ac29",
+      "name": "Agata",
+      "surname": "Landolina",
+      "taxCode": "LNDGTA89C64D938F",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "6af5ea01-c2b6-4869-9ffe-268c8217f2df",
+      "name": "Emanuele",
+      "surname": "Ciotti",
+      "taxCode": "CTTMNL71L04H501C",
+      "hasIssue": true,
+      "issue": "duplicate_tax_code"
+    },
+    {
+      "id": "018f24af-338d-4544-b1af-111e59a8f4b2",
+      "name": "Marco Antonio",
+      "surname": "Franco Moreno",
+      "taxCode": "FRNMCN97P19Z131F",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "bd01660d-f6ca-4e9f-9cfe-30e6aa7f311e",
+      "name": "Monica",
+      "surname": "Missori",
+      "taxCode": "MSSMNC73L63H501J",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "1620910e-87bc-4c6b-9e8c-f07527b5c3ab",
+      "name": "Claudio",
+      "surname": "Candio",
+      "taxCode": "CNDCLD68H14H501A",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "631c181e-8403-4471-b072-31b768a5a9ca",
+      "name": "Chiara",
+      "surname": "Tritarelli",
+      "taxCode": "TRTCHR75H59H501K",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "bc16c9e5-c822-4341-afdb-c7e2ee64d337",
+      "name": "Paolo",
+      "surname": "Martorano",
+      "taxCode": "MRTPLA68S06L219A",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "5b0e5ee7-d423-4eba-80c4-4d82963fe100",
+      "name": "Paolo",
+      "surname": "Ceccaroni",
+      "taxCode": "CCCPLA56L16H501M",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "10e4f32e-eabb-4451-a753-ab7a66b8daf6",
+      "name": "Arianna",
+      "surname": "Buccioni",
+      "taxCode": "BCCRNN79E44H501V",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "e5a282da-aef2-40be-bc68-e4841dfad265",
+      "name": "Maria Teresa",
+      "surname": "Palmisiani",
+      "taxCode": "PLMMTR63P52H501W",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "3c93fe56-c36c-46ec-bb5d-d991f33d3c8e",
+      "name": "Paolo",
+      "surname": "Andrielli",
+      "taxCode": "NDRPLA63T18H501S",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "4647a8f4-d907-480d-900c-538c13aea9dc",
+      "name": "Laura",
+      "surname": "D'Ambrosio",
+      "taxCode": "DMBLRA69E42H501W",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "42c4fd20-8a98-4f73-883e-c0271fb5955a",
+      "name": "Riccardo",
+      "surname": "Cardinali",
+      "taxCode": "CRDRCR82E19H501K",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "b4d2f588-e748-4363-b397-4ec295e7cfeb",
+      "name": "Amedea",
+      "surname": "Funari",
+      "taxCode": "FNRMDA63C49H501R",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "2f9bd6e8-7f56-42ce-b433-62eb1b2a5758",
+      "name": "Massimo",
+      "surname": "Vergnani",
+      "taxCode": "VRGMSM55P18H501J",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "a768534e-2ada-4e82-80a9-715870bdca15",
+      "name": "Filippo",
+      "surname": "Mazzei",
+      "taxCode": "MZZFPP15P04H501W",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "1e206086-5ea1-4658-b569-35e576d16b3a",
+      "name": "Andrea",
+      "surname": "Milito",
+      "taxCode": "MLTNDR74B17H501L",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "304c1d1d-f943-4066-81a7-b6bfae84bd63",
+      "name": "Simone",
+      "surname": "Riad",
+      "taxCode": "RDISMN91B26H501I",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "91b2ea89-2a64-46e8-a69d-106eaa5d5c03",
+      "name": "Emanuele",
+      "surname": "Pozzi",
+      "taxCode": "PZZMNL70D22H501P",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "e489c094-3598-45b6-ad7d-26de6d575721",
+      "name": "Tommaso",
+      "surname": "Zaltron",
+      "taxCode": "ZLTTMS02L19H501W",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "12f77b2c-bbf0-48de-856d-052b5b6a7624",
+      "name": "Tommaso",
+      "surname": "Garuti",
+      "taxCode": "GRTTMS13M30H501Q",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "fbdf34a3-613b-4fcf-aa72-92cfda976222",
+      "name": "Simone",
+      "surname": "Cenacchi",
+      "taxCode": "CNCSMN97B10H501S",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "df038001-10de-4d29-b5af-f364b39fd0fc",
+      "name": "Irene",
+      "surname": "Tagliente",
+      "taxCode": "TGLRNI82A55H501Z",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "21dfd933-4f10-4284-9ea9-e3d014bf3365",
+      "name": "Massimiliano",
+      "surname": "Ceiner",
+      "taxCode": "CNRMSM68R29H501G",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "e9d09f71-8191-4928-8b49-23f4b2351745",
+      "name": "Alessandro",
+      "surname": "Purificato",
+      "taxCode": "PRFLSN80L11H501J",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "c6889d43-81bd-4205-b995-dbfef1069a3a",
+      "name": "Giuseppe",
+      "surname": "Maresca",
+      "taxCode": "MRSGPP56A27H501A",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "297f934a-9198-4ab0-89ad-e384fa80f8ad",
+      "name": "Jacopo",
+      "surname": "Caruana",
+      "taxCode": "CRNJCP02T22H501L",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "8cacd9f5-8255-4b37-a278-9e4c0c8e871b",
+      "name": "Anna",
+      "surname": "Buga",
+      "taxCode": "BGUNNA82R60Z140R",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "c3814b12-5676-44d4-9501-ce0dc004490a",
+      "name": "Laura",
+      "surname": "Cavicchia",
+      "taxCode": "CVCLRA70C68H501N",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "a9ba435a-12a8-4ffe-860f-ae6898fb6cae",
+      "name": "Giorgio",
+      "surname": "Piergentili",
+      "taxCode": "PRGGRG17B12H501K",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "5ee763b5-9eb8-4b38-a40a-a6c5afa29777",
+      "name": "Alessio",
+      "surname": "Celi",
+      "taxCode": "CLELSS03L25H501F",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "9f186051-62e7-4b2d-98ff-3628077af252",
+      "name": "Lita Gabriela",
+      "surname": "Troncoso",
+      "taxCode": "TRNLGB59P70Z611W",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "8316bbb1-48e9-4757-b54a-8f72c42fb734",
+      "name": "Massimiliano",
+      "surname": "Gisci",
+      "taxCode": "GSCMSM74S06H501M",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "7f42faf6-dffa-42a1-bf90-32a536591fed",
+      "name": "Gabriele",
+      "surname": "Halimi",
+      "taxCode": "HLMGRL02L27H501M",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "921e307e-a478-4c47-89e1-0097d8e1b6a3",
+      "name": "Emma",
+      "surname": "Zucconi Mazzini",
+      "taxCode": "ZCCMME63D44H501S",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "60e04dca-3e75-4fdf-9a77-e0787618e74d",
+      "name": "Andrea",
+      "surname": "Piazzesi",
+      "taxCode": "PZZNDR55E24D612U",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "750caff0-3de3-4869-8732-cee2884d11bc",
+      "name": "Simona Serenella",
+      "surname": "Miale",
+      "taxCode": "MLISNS67M57H501E",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "b60f9890-c714-4c70-823f-873d81afec49",
+      "name": "Anna Maria",
+      "surname": "Paulis",
+      "taxCode": "PLSNMR70B59F205K",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "3fcaa7a3-ccdd-4f58-9f38-e3741be596cc",
+      "name": "Fabrizio",
+      "surname": "Chiari",
+      "taxCode": "CHRFRZ61M05H501V",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "ae5d7ff7-66ed-4d9a-8cbe-4dade864f6cd",
+      "name": "Patrizia",
+      "surname": "Levroni",
+      "taxCode": "LVRPRZ72A50H501X",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "8002c71e-16b0-45a7-959e-a1f21b74c9d2",
+      "name": "Nicolo'",
+      "surname": "Stenbock",
+      "taxCode": "STNNCL91E07H501S",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "c5dd2de6-42c0-48ee-9222-c56c62af2a10",
+      "name": "Eva",
+      "surname": "Freda",
+      "taxCode": "FRDVEA12L45H501G",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "8e3681af-a506-4d94-980b-ca2f5e837688",
+      "name": "Patrizio",
+      "surname": "Bonaventura",
+      "taxCode": "BNVPRZ86C28H501M",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "3d9b393d-e390-4b39-a2b5-d71c2227b6e6",
+      "name": "Michele",
+      "surname": "Curatolo",
+      "taxCode": "CRTMHL91H21H501H",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "86792c05-fb55-4393-a172-9636cb69bfb3",
+      "name": "Rita",
+      "surname": "Monni",
+      "taxCode": "MNNRTI77A53H501R",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "8eadeaf6-b1d1-4d25-b74a-11b2e115399b",
+      "name": "Simone",
+      "surname": "Folgori",
+      "taxCode": "FLGSMN71S24H501T",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "d2758115-1dcf-42d4-9804-8f42ee1adc16",
+      "name": "Giuseppe",
+      "surname": "Falbo",
+      "taxCode": "FLBGPP69H13C665D",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "bd40d84c-9211-4fc0-bc2d-3c55e130367f",
+      "name": "Gianpiero",
+      "surname": "Salvatori",
+      "taxCode": "SLVGPR62S30H501I",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "f841e60c-0ffe-4175-8939-361fce411989",
+      "name": "Rinaldo",
+      "surname": "Soldatelli",
+      "taxCode": "SLDRLD69R23H501L",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "e614bd25-c783-4d97-a4ed-d6b59f3ed4c6",
+      "name": "Rosanna",
+      "surname": "La Pace",
+      "taxCode": "LPCRNN72L57D969O",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "6cf313c8-3ed8-4e15-a616-a56a9ade81e9",
+      "name": "Giancarlo",
+      "surname": "Bojano",
+      "taxCode": "BJNGCR74E30H503S",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "6f15b567-e4f1-4744-b2ab-d37fc6a3d17e",
+      "name": "Massimo",
+      "surname": "Feltoni Gurini",
+      "taxCode": "FLTMSM54P17H211V",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "8bfdf184-c4f2-42c2-a778-5e307edd7a27",
+      "name": "Sara",
+      "surname": "Dell'Ariccia",
+      "taxCode": "DLLSRA78E58H501W",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "8cd41ed3-f0de-4d21-8382-091f3b3425d6",
+      "name": "Alessio",
+      "surname": "Olivieri",
+      "taxCode": "LVRLSS75P06H501E",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "f5506cce-f1a9-4370-a0ee-2178a2df9054",
+      "name": "Viola",
+      "surname": "Tagliaferri",
+      "taxCode": "TGLVLI14H58H501S",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "bb46f250-9567-4cd0-997f-9e43ee7a9814",
+      "name": "Daniele",
+      "surname": "Marchi",
+      "taxCode": "MRCDNL71L15H501A",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "8b718bd0-1acc-429f-bb3f-6c4c6942c1cd",
+      "name": "Mattia",
+      "surname": "De Logu",
+      "taxCode": "DLGMTT88R25H501S",
+      "hasIssue": true,
+      "issue": "duplicate_tax_code"
+    },
+    {
+      "id": "c10bf7ca-9476-4907-8c47-23f5a2b7efbf",
+      "name": "Mauro",
+      "surname": "Di Marzio",
+      "taxCode": "DMRMRA61T30H501X",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "bcd1c6d3-2b78-49f6-a9b9-b541c86ab47b",
+      "name": "Aurora",
+      "surname": "Tricomi",
+      "taxCode": "TRCRRA02E42H501Y",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "73a442c6-1cfe-451d-99dc-3b63fcf901ff",
+      "name": "Lorenzo",
+      "surname": "Mastino",
+      "taxCode": "MSTLNZ86H21H501O",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "723bfc88-e760-414f-8a29-c5652a6820bd",
+      "name": "Francesco",
+      "surname": "Leone",
+      "taxCode": "LNEFNC67B18H501L",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "6194ce27-6d45-42aa-9164-21e3269f9e05",
+      "name": "Patrizia",
+      "surname": "Ianni",
+      "taxCode": "NNIPRZ70S44H501G",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "b32d3d30-2b71-4006-9311-8fa06b905a22",
+      "name": "Antonella",
+      "surname": "Mariani",
+      "taxCode": "MRNNNL62R54H501C",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "aa2592b8-bb9c-405f-9779-1c6f6b67c184",
+      "name": "Claudia",
+      "surname": "Brannetti",
+      "taxCode": "BRNCLD01C47H501Q",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "1d661a00-a812-455c-b1fa-8776cbda1102",
+      "name": "Marco",
+      "surname": "Perotti",
+      "taxCode": "PRTMRC85E20H501I",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "1c2916a1-9093-41dc-810d-b57ca2abe972",
+      "name": "Silvia",
+      "surname": "Tosti",
+      "taxCode": "TSTSLV61H60H501T",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "5f6d4af3-7746-4a41-8b35-eda9c3431062",
+      "name": "Marilena",
+      "surname": "Di Luca",
+      "taxCode": "DLCMLN73C59H501T",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "a1270ccb-7820-452e-815d-af3671b8e777",
+      "name": "Marco",
+      "surname": "Lombardi",
+      "taxCode": "LMBMRC76T19H501N",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "5edb921d-52bd-4053-852e-62f4391d79c6",
+      "name": "Cecilia",
+      "surname": "Pincelli",
+      "taxCode": "PNCCCL92A58H501D",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "8a68a62a-2d5e-487c-b29f-614307e4ed8f",
+      "name": "Marco",
+      "surname": "Arduini",
+      "taxCode": "RDNMRC64C28H501O",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "5ed76aef-c2bf-4c94-a4fc-cfc5c7281e0c",
+      "name": "Tommaso",
+      "surname": "Frioni",
+      "taxCode": "FRNTMS02M05H501D",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "6a05b2cf-708e-48a9-92e7-14beb3814ab5",
+      "name": "Giovanna",
+      "surname": "Ulivi",
+      "taxCode": "LVUGNN63B47H501J",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "f8def747-05ea-4d69-b94d-0f357eea1adc",
+      "name": "Cassandra",
+      "surname": "Falconetti",
+      "taxCode": "FLCCSN83H51B963F",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "e46c8a7a-3081-4874-be89-0d2564d14019",
+      "name": "Raimondo",
+      "surname": "Ruda",
+      "taxCode": "RDURND69L26H501C",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "d8d6d935-3c62-4335-8589-f33cfe698133",
+      "name": "Marco",
+      "surname": "Di Marino",
+      "taxCode": "DMRMRC75H18L328R",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "5ecbb614-4b94-4360-9259-b4684477ba85",
+      "name": "Alessandra",
+      "surname": "Barnabei",
+      "taxCode": "BRNLSN79A56H501K",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "f332f887-afff-4385-a221-f8bbc56d005f",
+      "name": "Monica",
+      "surname": "Bottan",
+      "taxCode": "BTTMNC70A42H501K",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "da095813-c588-47de-afbe-c5b0376e8247",
+      "name": "Fabio",
+      "surname": "Franzoni",
+      "taxCode": "FRNFBA66L30H501A",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "55ad3402-cfd4-46f6-8ed9-6c7622859bb6",
+      "name": "Fabrizio",
+      "surname": "Gindre",
+      "taxCode": "GNDFRZ63E19H501M",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "fdd7df70-929d-4514-87f4-627ccc03c63e",
+      "name": "Ilaria",
+      "surname": "Pavia",
+      "taxCode": "PVALRI85P47H501Q",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "63581d3d-4443-46bc-b3fd-4341ca858851",
+      "name": "Marcella",
+      "surname": "Giannini",
+      "taxCode": "GNNMCL69D64H501M",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "f93c78f4-aade-4982-aa1e-e46804c6fb9f",
+      "name": "Massimo",
+      "surname": "La Pietra",
+      "taxCode": "LPTMSM66H26H501O",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "ca0f9dc9-ddda-41db-8db6-91b16d0fe5b2",
+      "name": "Stefano",
+      "surname": "Discreti",
+      "taxCode": "DSCSFN77C12H501Z",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "dc7a90ce-1506-4648-9911-7f3a619de5c2",
+      "name": "Giovanni",
+      "surname": "Cioffi",
+      "taxCode": "CFFGNN80A26H501P",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "5a18a0aa-5387-44c2-8af8-ca98dd0843ac",
+      "name": "Cristiana",
+      "surname": "Bianchi",
+      "taxCode": "BNCCST75C71H501B",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "a08ede04-2ff8-4d94-9c04-717cb5a2a5f2",
+      "name": "Marco",
+      "surname": "Fenzato",
+      "taxCode": "FNZMRC66C03C552Z",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "b1d61b53-3eae-48e7-b4ac-011fa0ab25f9",
+      "name": "Gaia",
+      "surname": "Spagnoletto",
+      "taxCode": "SPGGAI79T50H501T",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "ae0114cc-1d15-48ea-a0c5-2670433e800f",
+      "name": "Edoardo",
+      "surname": "Malapena",
+      "taxCode": "MLPDRD94L16H501H",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "d9ad37d5-094f-4053-b276-7824bb96393a",
+      "name": "Andreea Camelia",
+      "surname": "Stefanescu",
+      "taxCode": "STFNRC88T52Z129K",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "33dbfb3d-2f46-436d-b0c4-aa2560c12947",
+      "name": "Antonio",
+      "surname": "Maldera",
+      "taxCode": "MLDNTN82T06L483F",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "cc7bcb7c-17b7-4929-897b-a0f92a07db72",
+      "name": "Alessia",
+      "surname": "Pop",
+      "taxCode": "PPOLSS12R42H501F",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "6aa52742-4116-4594-848d-8b36fe130ecb",
+      "name": "Enrico",
+      "surname": "Camurri",
+      "taxCode": "CMRNRC71L03H501T",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "fe133c1e-b582-4ca3-9128-2780729bdc99",
+      "name": "Vincenzo",
+      "surname": "Aronica",
+      "taxCode": "RNCVCN75L08G337N",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "b228fb72-e1bd-4c26-b722-9313301e70f5",
+      "name": "Alessandro",
+      "surname": "Memoli",
+      "taxCode": "MMLLSN78C02H501V",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "6a795176-f836-4614-a819-8e20bdf0d037",
+      "name": "Chiara",
+      "surname": "Cesarini",
+      "taxCode": "CSRCHR99D69H501V",
+      "hasIssue": true,
+      "issue": "duplicate_tax_code"
+    },
+    {
+      "id": "6111a738-0ba3-4e09-b397-51977a65ddd1",
+      "name": "Armando",
+      "surname": "Carpineti",
+      "taxCode": "CRPRND61R21H501H",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "e4c11ecc-f6a9-4f2a-b33a-f9e11c531fba",
+      "name": "Adriano",
+      "surname": "Verzino",
+      "taxCode": "VRZDRN17L26H501S",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "84aafd86-8f1b-459a-ae5a-317077cff3a2",
+      "name": "Marco",
+      "surname": "Serafini",
+      "taxCode": "SRFMRC80C28H501Z",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "47aeed3a-36f1-46d6-b915-84c810a3153c",
+      "name": "Pietro",
+      "surname": "Ascenzi",
+      "taxCode": "SCNPTR63E15H501L",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "572e7b06-f72b-4586-a257-436b3ae775bd",
+      "name": "Omar",
+      "surname": "Alassuad",
+      "taxCode": "LSSMRO86R28E456Z",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "16fa8ef6-c54b-4344-892d-d02c689d5daa",
+      "name": "Federica",
+      "surname": "Bartocci",
+      "taxCode": "BRTFRC77T43H501L",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "9fa4f763-d4af-4b84-ba52-6a21cad36e15",
+      "name": "Giuseppe",
+      "surname": "Versace",
+      "taxCode": "VRSGPP70B24H501H",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "3b17aca2-1138-494e-bf4f-bdb2aacec01b",
+      "name": "Roberta",
+      "surname": "Rinaldi",
+      "taxCode": "RNLRRT70T51D653F",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "4f9d6f92-c1b5-4772-82fd-02146807d430",
+      "name": "Alessia",
+      "surname": "Asuni",
+      "taxCode": "SNALSS72T48B354P",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "f354b849-b5f2-4bad-9a8b-a8326e4ea5f1",
+      "name": "Fabio",
+      "surname": "Gili",
+      "taxCode": "GLIFBA64M19H501Z",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "ecb88962-f2e3-451b-9d77-a43d4d551b43",
+      "name": "Simona",
+      "surname": "Bernardi",
+      "taxCode": "BRNSMN74P47H501V",
+      "hasIssue": true,
+      "issue": "duplicate_tax_code"
+    },
+    {
+      "id": "dc7f171f-1db1-4ec8-9e2e-91fc88a49239",
+      "name": "Andrea",
+      "surname": "Capriani",
+      "taxCode": "CPRNDR70H23H501Y",
+      "hasIssue": true,
+      "issue": "duplicate_tax_code"
+    },
+    {
+      "id": "54a22d10-98e3-43c3-b623-2efe121613ca",
+      "name": "Camilla",
+      "surname": "Di Stefano",
+      "taxCode": "DSTCLL05A70H501N",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "fd7a844f-6ee6-46a5-92b8-74bd462bf24f",
+      "name": "Manuel",
+      "surname": "Florenzani",
+      "taxCode": "FLRMNL15T18H501E",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "7cf22f35-593e-4ed1-a4e9-c669f96dd5f4",
+      "name": "Sara",
+      "surname": "Borgondo",
+      "taxCode": "BRGSRA72R42B885F",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "1ec314fe-ccca-4745-a8a5-1693c6057cce",
+      "name": "Nicole",
+      "surname": "Fratarcangeli",
+      "taxCode": "FRTNCL15C65H501S",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "55ccfb1a-cbd9-45f2-a1d6-462691d9373d",
+      "name": "Nicolo'",
+      "surname": "Tiozzo",
+      "taxCode": "TZZNCL94P15H501X",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "e135e96a-d572-436b-be80-42b97f5265b2",
+      "name": "Aniello",
+      "surname": "Visconti",
+      "taxCode": "VSCNLL78B18G541Z",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "b7e2d248-da64-46d9-b4e4-a0606824877f",
+      "name": "Bartolomeo",
+      "surname": "Mastino",
+      "taxCode": "MSTBTL93L02H501Z",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "abb58aec-ea6e-448f-be71-ae021e32f9cd",
+      "name": "Simona",
+      "surname": "Oliviero",
+      "taxCode": "LVRSMN09M62H501L",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "80cfd5c6-7c52-4a95-b1fd-9a8f8b22809a",
+      "name": "Sara",
+      "surname": "Del Buono",
+      "taxCode": "DLBSRA71P55H501Z",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "c4cd9c85-f6be-4e58-9596-bc8aad5eb8b5",
+      "name": "Pietro",
+      "surname": "Marchesani",
+      "taxCode": "MRCPTR71A25Z133Z",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "a3feea25-47ff-46dc-a568-ffaf39258b10",
+      "name": "Silvia",
+      "surname": "Giovanrosa",
+      "taxCode": "GVNSLV80P64H501A",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "daa817e1-f4e2-4cf6-b579-e2979e428762",
+      "name": "Luca",
+      "surname": "Tosoroni",
+      "taxCode": "TSRLCU72A27H501F",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "7ac05edf-8bdc-43e8-ab2a-7553b9a76954",
+      "name": "Alessandro",
+      "surname": "Dottori",
+      "taxCode": "DTTLSN09D11H501K",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "92cca69c-abec-4843-bd2c-fdafdc68e4a4",
+      "name": "Federico",
+      "surname": "Cacco",
+      "taxCode": "CCCFRC09A27H501Z",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "b7efbdca-d92c-4e89-94a7-ec110faed3b7",
+      "name": "Laura",
+      "surname": "Buonaguidi",
+      "taxCode": "BNGLRA66M63G843F",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "74f40c62-1df9-4bdb-8de4-3bed0e74e185",
+      "name": "Cristina",
+      "surname": "Chiocca",
+      "taxCode": "CHCCST69C62H501G",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "ef1f49d4-ca5a-4f67-b8f9-7bc6ff204b21",
+      "name": "Erberto",
+      "surname": "Manfredi",
+      "taxCode": "MNFRRT66A20G482L",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "f375e200-0b3b-468c-a485-19456b054942",
+      "name": "Gabriella",
+      "surname": "Leonzio",
+      "taxCode": "LNZGRL66H61C632E",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "cd5c077e-547a-4440-ba6a-effa50b84a64",
+      "name": "Stefano",
+      "surname": "Melone",
+      "taxCode": "MLNSFN60T26H501D",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "0386943b-5af4-48da-9692-21dd60c0b650",
+      "name": "Vanessa",
+      "surname": "Gusmeroli",
+      "taxCode": "GSMVSS76C63H501H",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "926550aa-a640-47f7-87d0-380e4cec9b3e",
+      "name": "Stefano",
+      "surname": "Annibali",
+      "taxCode": "NNBSFN59A20H501T",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "9feb51ac-c508-47ed-ad42-a9e8bddc9f0f",
+      "name": "Eduard Gabriel",
+      "surname": "Drimus",
+      "taxCode": "DRMDDG17L20Z129Q",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "eb2e3276-6a6e-4a5f-a74a-121c09edc1c6",
+      "name": "Gaia",
+      "surname": "Falbo",
+      "taxCode": "FLBGAI06C59C665J",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "f97c7ac2-344c-4699-9b41-0ae0871066b4",
+      "name": "Vincenzo",
+      "surname": "Mazzei",
+      "taxCode": "MZZVCN73L14H501D",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "cc527b77-8400-421d-b102-0937898b29d2",
+      "name": "Simone",
+      "surname": "Ciampichetti",
+      "taxCode": "CMPSMN12C03H501Z",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "f856704e-89df-48bc-a071-6cb5ab271f4b",
+      "name": "Alessio",
+      "surname": "Mattiuzzo",
+      "taxCode": "MTTLSS91S26H501H",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "68329449-d472-4404-a654-4974d37bb060",
+      "name": "Filippo",
+      "surname": "Tomassini",
+      "taxCode": "TMSFPP12L03H501Q",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "8fa96de8-53b8-418b-acb2-8913ba331cbf",
+      "name": "Alessandra",
+      "surname": "Petroni",
+      "taxCode": "PTRLSN70C41H501I",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "fdba25c3-4eac-4525-bb3f-509a9a7dc82b",
+      "name": "David",
+      "surname": "Santini",
+      "taxCode": "SNTDVD71H02H501L",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "2a32e907-91ca-49ee-abe2-197160ed0ed3",
+      "name": "Antonella",
+      "surname": "Folgori",
+      "taxCode": "FLGNNL66L58H501W",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "e391acf5-187c-43bd-98a8-b58efc19a832",
+      "name": "Manuel",
+      "surname": "Luciani",
+      "taxCode": "LCNMNL17E30H501F",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "46fdbb70-a36e-4778-a6f3-591f89a817b8",
+      "name": "Daniela",
+      "surname": "Prestinicola",
+      "taxCode": "PRSDNL53T52C351Q",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "c9254689-1b2f-49b4-b7c7-73c62b7f6f83",
+      "name": "Giorgia",
+      "surname": "Ridolfi",
+      "taxCode": "RDLGRG73H44H501B",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "24cb34fd-bdb2-46e2-b436-8ccffe190527",
+      "name": "Francesca",
+      "surname": "Calandra",
+      "taxCode": "CLNFNC79M41H501B",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "a169c612-d5e7-4249-90f3-7a200f14a715",
+      "name": "Fabio",
+      "surname": "Garuti",
+      "taxCode": "GRTFBA69B22H501Y",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "2a20b9c0-6d59-40ca-a99e-4a2a7aa42d32",
+      "name": "Matilde",
+      "surname": "Maldera",
+      "taxCode": "MLDMLD02A63H501O",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "5ee7759b-0043-44d2-9c4c-723fd71ec58b",
+      "name": "Luciano",
+      "surname": "Tizzano",
+      "taxCode": "TZZLCN72S09H501H",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "2b3a972f-44e3-4b66-b720-8a452d54d831",
+      "name": "Valentina",
+      "surname": "Pietrangeli",
+      "taxCode": "PTRVNT84H67H501R",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "acbbc224-fada-447d-b43c-f234b6e022ac",
+      "name": "Alessandra",
+      "surname": "Romano",
+      "taxCode": "RMNLSN78R57H501V",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "3be0e180-daa9-4520-a258-4ecb1d6ac131",
+      "name": "Stefano",
+      "surname": "Di Francesco",
+      "taxCode": "DFRSFN60H01H501M",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "967bdd59-0d38-4e27-a653-2ffe2e02d9de",
+      "name": "Raffaele",
+      "surname": "Crognale",
+      "taxCode": "CRGRFL55B26C286N",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "60d0d3ff-189f-4422-94f1-9fe6f9a17a2c",
+      "name": "Lucyna Maria",
+      "surname": "Maszotta",
+      "taxCode": "MSZLYN89R48Z127C",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "a45e0949-e675-47b6-8b48-e9da77997136",
+      "name": "Angela",
+      "surname": "Dottorini",
+      "taxCode": "DTTNGL86H60B114J",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "4fbc21f5-c996-4a8e-8689-673c88fcf4da",
+      "name": "Giampiero",
+      "surname": "Palmieri",
+      "taxCode": "PLMGPR67L09A706H",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "d20c42f2-4c80-4c33-b1f0-534eb86acfeb",
+      "name": "Francesca",
+      "surname": "Lelli",
+      "taxCode": "LLLFNC74H64H501P",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "d35bffcf-da1c-47aa-acd5-d10e2796c59e",
+      "name": "Giulia",
+      "surname": "Altomonte",
+      "taxCode": "LTMGLI80H49H501K",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "ac71b741-2ff6-44fe-8896-a93892303c81",
+      "name": "Fabrizio",
+      "surname": "Nardoni",
+      "taxCode": "NRDFRZ01D20H501K",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "1636e238-05c3-4701-8b31-0eed026930bc",
+      "name": "Marco",
+      "surname": "Lollini",
+      "taxCode": "LLLMRC87A16D612E",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "c945a01f-500f-4366-b199-a353ce89ea9b",
+      "name": "Luca",
+      "surname": "Guicciardi",
+      "taxCode": "GCCLCU78M24H501C",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "cd0e2413-8415-45fe-8cc6-92d3b2be75e6",
+      "name": "Giorgio",
+      "surname": "Viscione",
+      "taxCode": "VSCGRG77C26H501P",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "db1f6291-55cd-479c-829c-a47aa8059dba",
+      "name": "Javier",
+      "surname": "Diaz",
+      "taxCode": "DZRJVR73LZZ",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "e58b0955-77b8-4b87-89a8-4f01e0309c98",
+      "name": "Andrea",
+      "surname": "Caprari",
+      "taxCode": "CPRNDR70H23H501Y",
+      "hasIssue": true,
+      "issue": "duplicate_tax_code"
+    },
+    {
+      "id": "28ae3ee7-e6cb-4204-8731-27eb508b4740",
+      "name": "Pierfrancesco",
+      "surname": "Scremin",
+      "taxCode": "SCRPFR91S07H501I",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "199effed-772f-493a-ae6a-a2edc451a1f1",
+      "name": "Davide",
+      "surname": "Fiorillo",
+      "taxCode": "FRLDVD82A201H501R",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "ea77edc8-fa26-4160-9a3d-97978985bc3a",
+      "name": "Danilo",
+      "surname": "Migliori",
+      "taxCode": "MGLDNL73L23H501L",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "ea32028e-6e16-4d1d-90d8-440faaf802ec",
+      "name": "Roberto",
+      "surname": "Calvarese",
+      "taxCode": "CLVRRT71O03H501Q",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "1dbd8f6c-9540-4017-8a0c-d78af1e21413",
+      "name": "Andrea",
+      "surname": "Catarinella",
+      "taxCode": "CTRNDR74M16H501O",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "d4a4a303-53aa-43e0-b785-071fa9a4c620",
+      "name": "Chiara",
+      "surname": "Petocchi",
+      "taxCode": "PTCCHR83E63H501X",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "e583e00b-952e-4ae0-be25-1b9e94981cf9",
+      "name": "Giorgia Viviana",
+      "surname": "Guiglia",
+      "taxCode": "GGLGGV93M41A859C",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "0f874065-59ef-42e6-a41a-0f01714dec28",
+      "name": "Stefano",
+      "surname": "Pallottini",
+      "taxCode": "PLLSFN64E26H501X",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "fafa96ef-2dba-4b73-8a66-cd38a54e8a8c",
+      "name": "Ugo",
+      "surname": "Bornengo",
+      "taxCode": "BRNGUO76P28H501K",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "37cb01ca-c70a-43e4-8c1f-0db55a56ddde",
+      "name": "Giampaolo",
+      "surname": "Perrone",
+      "taxCode": "PRRGPL86H14C136Q",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "a94b12d7-d151-4f33-b17b-7b4e1d476bbe",
+      "name": "Takis",
+      "surname": "Capitini",
+      "taxCode": "CPTTKS76L06H501F",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "06852f19-1969-4a08-a1bd-5d86d0504db0",
+      "name": "Marco",
+      "surname": "Delle Cave",
+      "taxCode": "DLLMRC73S14H501C",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "c6fb1ef9-be4f-443c-a93c-861be69239ed",
+      "name": "Alessandro",
+      "surname": "Ciocca",
+      "taxCode": "CCCLSN67R17H501M",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "c8ce083a-b7ed-4de0-8ba9-f51f68f7285a",
+      "name": "PierPaolo",
+      "surname": "Pandolfi",
+      "taxCode": "PNDPPL71H30I838K",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "69acb598-9812-46db-83b5-59fa7aaed1c7",
+      "name": "David",
+      "surname": "Da Lozzo",
+      "taxCode": "DLZDVD84M11H501P",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "6b8b0817-bd1e-4e7c-9a85-319a28bcea31",
+      "name": "Omar",
+      "surname": "Ferri",
+      "taxCode": "FRMMR79H23H534N",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "324058af-5a4e-422d-85b2-5288cfbf3bd7",
+      "name": "Tiziana",
+      "surname": "Ciccolini",
+      "taxCode": "CCCTZN72C68H501G",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "18cefe12-19cf-4bfa-b10b-36c4d52ed98f",
+      "name": "Federica",
+      "surname": "Crescenzi",
+      "taxCode": "CRSFRC69D63H501J",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "73afe85a-3d39-47a5-a290-fdbbc7755a1e",
+      "name": "Eleonora",
+      "surname": "Dall'Acqua",
+      "taxCode": "DLLLNR84M51H501G",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "586ad049-7f2d-4628-89d5-c474c8024f99",
+      "name": "Simona",
+      "surname": "Latini",
+      "taxCode": "LTNSMN82R63H501Y",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "48fb3121-cb3f-421c-8241-c5e72925dab6",
+      "name": "Denise",
+      "surname": "Ascione",
+      "taxCode": "SCNDNS84M61H501M",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "845518ce-5c97-4133-afab-e1db4c8945cc",
+      "name": "Girinelli",
+      "surname": "Sara",
+      "taxCode": "GRNSRA82B51H501U",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "ff08b734-9979-41aa-9776-eaec3c039b45",
+      "name": "Yukiko",
+      "surname": "Kondo",
+      "taxCode": "KNDYKK74R42Z219S",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "1e53c557-4520-4db5-94e7-d45e63673c45",
+      "name": "Marco",
+      "surname": "Gentile",
+      "taxCode": "GNTMRC79B05H501T",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "ff8662e3-0edd-446b-b2ae-076c4e07ae1b",
+      "name": "Camilla",
+      "surname": "Mastroiacovo",
+      "taxCode": "MSTCLL80L65H501Z",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "ac0540f1-7836-4a99-b194-3076ac7e6a7d",
+      "name": "Ivan",
+      "surname": "Pasinato",
+      "taxCode": "PVNVNI78L18H501G",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "3c79a8cd-2d16-4779-ad81-3c5623c74afb",
+      "name": "Benedetta",
+      "surname": "Bianco",
+      "taxCode": "BNCBDT85T67H501W",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "08168b3b-e2c7-49a4-ad37-829d4fc7fd95",
+      "name": "Savin",
+      "surname": "Bogdan",
+      "taxCode": "SVNGRG90L03Z129X",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "5a79c608-586d-4909-b6a3-8209503f4bf5",
+      "name": "Giammarco",
+      "surname": "Lei",
+      "taxCode": "LEIGMR01S18H501S",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "ff98cc48-5342-4efe-9d77-9bc580b0b70e",
+      "name": "Luca",
+      "surname": "Genioli",
+      "taxCode": "GNLLCU76L28H501G",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "c0d98894-0a76-4e60-a421-17ad26e9ad7e",
+      "name": "Marco",
+      "surname": "Zappellini",
+      "taxCode": "ZPPMRC94P30B832T",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "b304aefe-326f-4655-8102-253f37a6f575",
+      "name": "Simone",
+      "surname": "Taliani",
+      "taxCode": "TLNSMN94B08H501C",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "d6dc23d0-8d50-4cb2-b1f0-6413f6e9c3ea",
+      "name": "Giuseppe",
+      "surname": "Ciarleta",
+      "taxCode": "CRLGPP71E16H501S",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "76b8fe96-c9e8-4a57-9844-0c7ac5ffeaf7",
+      "name": "Marco",
+      "surname": "De Liddo",
+      "taxCode": "DLDMRC87T02G712R",
+      "hasIssue": false,
+      "issue": ""
+    }
+  ],
   "transactions": []
 }
