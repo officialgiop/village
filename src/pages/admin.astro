@@ -281,6 +281,20 @@ const dataPath = withBase('data/club-data.json');
 							</button>
 						</form>
 					</div>
+					<div class="mt-4 grid gap-3 sm:grid-cols-3">
+						<div class="rounded-xl border border-slate-200 bg-white p-4">
+							<p class="text-xs font-semibold uppercase tracking-[0.12em] text-slate-500">Entrate Contanti</p>
+							<p id="summaryContanti" class="mt-1 text-lg font-bold text-slate-900">€0,00</p>
+						</div>
+						<div class="rounded-xl border border-slate-200 bg-white p-4">
+							<p class="text-xs font-semibold uppercase tracking-[0.12em] text-slate-500">Entrate Bancomat</p>
+							<p id="summaryBancomat" class="mt-1 text-lg font-bold text-slate-900">€0,00</p>
+						</div>
+						<div class="rounded-xl border border-slate-200 bg-white p-4">
+							<p class="text-xs font-semibold uppercase tracking-[0.12em] text-slate-500">Entrate totali</p>
+							<p id="summaryTotal" class="mt-1 text-lg font-bold text-slate-900">€0,00</p>
+						</div>
+					</div>
 					<div class="mt-4 overflow-auto rounded-xl border border-slate-200 bg-white">
 						<table class="min-w-full text-left text-sm">
 							<thead class="bg-slate-50 text-xs uppercase tracking-[0.12em] text-slate-600">
@@ -297,20 +311,6 @@ const dataPath = withBase('data/club-data.json');
 							</thead>
 							<tbody id="transactionsTableBody"></tbody>
 						</table>
-					</div>
-					<div class="mt-4 grid gap-3 sm:grid-cols-3">
-						<div class="rounded-xl border border-slate-200 bg-white p-4">
-							<p class="text-xs font-semibold uppercase tracking-[0.12em] text-slate-500">Entrate Contanti</p>
-							<p id="summaryContanti" class="mt-1 text-lg font-bold text-slate-900">€0,00</p>
-						</div>
-						<div class="rounded-xl border border-slate-200 bg-white p-4">
-							<p class="text-xs font-semibold uppercase tracking-[0.12em] text-slate-500">Entrate Bancomat</p>
-							<p id="summaryBancomat" class="mt-1 text-lg font-bold text-slate-900">€0,00</p>
-						</div>
-						<div class="rounded-xl border border-slate-200 bg-white p-4">
-							<p class="text-xs font-semibold uppercase tracking-[0.12em] text-slate-500">Entrate totali</p>
-							<p id="summaryTotal" class="mt-1 text-lg font-bold text-slate-900">€0,00</p>
-						</div>
 					</div>
 				</section>
 			</section>
