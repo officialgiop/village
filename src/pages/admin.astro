@@ -323,6 +323,7 @@ const dataPath = withBase('data/club-data.json');
 			let clubData = { members: [], transactions: [] };
 			let memberEditingId = null;
 			let transactionEditingId = null;
+			let transactionRowError = { id: null, message: '' };
 
 			function parseJSONSafely(text, fallback) {
 				try {
@@ -480,6 +481,10 @@ const dataPath = withBase('data/club-data.json');
 						const member = clubData.members.find((item) => item.id === tx.memberId);
 						const fullName = member ? `${member.name} ${member.surname}` : 'Socio non trovato';
 						const taxCode = member ? member.taxCode.toUpperCase() : '-';
+						const rowErrorMarkup =
+							transactionRowError.id === tx.id && transactionRowError.message
+								? `<p class="mt-2 text-xs font-medium text-red-700">${transactionRowError.message}</p>`
+								: '';
 						return `<tr class="border-t border-slate-200">
 							<td class="px-3 py-2 font-medium">${tx.receiptId}</td>
 							<td class="px-3 py-2">${formatDateIt(tx.date)}</td>
@@ -507,6 +512,7 @@ const dataPath = withBase('data/club-data.json');
 										Elimina
 									</button>
 								</div>
+								${rowErrorMarkup}
 							</td>
 						</tr>`;
 					})
@@ -581,19 +587,23 @@ const dataPath = withBase('data/club-data.json');
 			async function saveDataToGitHub(commitMessage) {
 				const config = getGitHubConfig();
 				if (!config) throw new Error('Configurazione GitHub non trovata.');
-				const firstSha = await getCurrentFileSha(config);
-				try {
-					await putDataToGitHub(config, firstSha, commitMessage);
-					return;
-				} catch (error) {
-					const message = String(error?.message || '');
-					const isShaConflict = message.includes('does not match');
-					if (!isShaConflict) {
-						throw error;
+				const maxAttempts = 5;
+				for (let attempt = 1; attempt <= maxAttempts; attempt += 1) {
+					try {
+						const sha = await getCurrentFileSha(config);
+						await putDataToGitHub(config, sha, commitMessage);
+						return;
+					} catch (error) {
+						const message = String(error?.message || '');
+						const isShaConflict = message.includes('does not match');
+						const isLastAttempt = attempt === maxAttempts;
+						if (!isShaConflict || isLastAttempt) {
+							if (isShaConflict && isLastAttempt) {
+								throw new Error('Conflitto di salvataggio ripetuto. Riprova tra qualche secondo.');
+							}
+							throw error;
+						}
 					}
-					// Retry once with a fresh SHA when another write wins race conditions.
-					const freshSha = await getCurrentFileSha(config);
-					await putDataToGitHub(config, freshSha, commitMessage);
 				}
 			}
 
@@ -857,6 +867,7 @@ const dataPath = withBase('data/club-data.json');
 
 				try {
 					await saveDataToGitHub(commitMessage);
+					transactionRowError = { id: null, message: '' };
 					transactionForm.reset();
 					transactionEditingId = null;
 					transactionDateInput.value = new Date().toISOString().slice(0, 10);
@@ -890,6 +901,7 @@ const dataPath = withBase('data/club-data.json');
 				}
 
 				if (action === 'edit') {
+					transactionRowError = { id: null, message: '' };
 					transactionEditingId = tx.id;
 					receiptIdInput.value = tx.receiptId;
 					transactionDateInput.value = tx.date;
@@ -909,6 +921,7 @@ const dataPath = withBase('data/club-data.json');
 					clubData.transactions = clubData.transactions.filter((item) => item.id !== tx.id);
 					try {
 						await saveDataToGitHub(`Elimina ricevuta ${tx.receiptId}`);
+						transactionRowError = { id: null, message: '' };
 						if (transactionEditingId === tx.id) {
 							transactionEditingId = null;
 							transactionForm.reset();
@@ -918,6 +931,8 @@ const dataPath = withBase('data/club-data.json');
 						transactionStatus.textContent = `Ricevuta ${tx.receiptId} eliminata con successo.`;
 					} catch (error) {
 						clubData.transactions = previousTransactions;
+						transactionRowError = { id: tx.id, message: error.message || 'Errore durante la cancellazione.' };
+						renderTransactionsTable();
 						transactionStatus.textContent = error.message;
 					}
 				}
