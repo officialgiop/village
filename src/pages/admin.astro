@@ -5,6 +5,7 @@ const basePath = import.meta.env.BASE_URL.replace(/\/?$/, '/');
 const withBase = (path: string) => `${basePath}${path}`;
 const homePath = basePath;
 const logoPath = withBase('logo-cropped.png');
+const logoReceiptPath = withBase('logo-ricevuta.png');
 const dataPath = withBase('data/club-data.json');
 ---
 
@@ -251,8 +252,8 @@ const dataPath = withBase('data/club-data.json');
 				<section class="glass-card p-5">
 					<div class="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
 						<div>
-							<h2 class="font-display text-xl font-semibold text-slate-900">Export PDF trimestrale</h2>
-							<p class="text-sm text-slate-700">Il report include: Cliente, Codice Fiscale, Tipo spesa, Valore spesa e ID ricevuta.</p>
+							<h2 class="font-display text-xl font-semibold text-slate-900">Crea ricevute</h2>
+							<p class="text-sm text-slate-700">Crea ed esporta i report trimestrali.</p>
 						</div>
 						<form id="reportForm" class="flex flex-wrap items-end gap-3">
 							<label class="text-sm">
@@ -318,7 +319,7 @@ const dataPath = withBase('data/club-data.json');
 
 		<script src="https://cdn.jsdelivr.net/npm/jspdf@2.5.1/dist/jspdf.umd.min.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/jspdf-autotable@3.8.2/dist/jspdf.plugin.autotable.min.js"></script>
-		<script define:vars={{ dataPath }}>
+		<script define:vars={{ dataPath, logoReceiptPath }}>
 			const DEFAULT_PASSWORD = 'village123';
 			const STORAGE_KEYS = {
 				password: 'village_admin_password',
@@ -395,6 +396,12 @@ const dataPath = withBase('data/club-data.json');
 				'Quota Iscrizione Campionato'
 			];
 			const DEFAULT_PAYMENT_METHODS = ['Bancomat', 'Contanti', 'Bonifico'];
+			const RECEIPT_ISSUER = {
+				name: 'ASD Village Fregene Padel',
+				address: 'Via Agropoli 85, Fregene Fiumicino (RM) 00054',
+				taxCode: '96530260585',
+				phone: '3272844757'
+			};
 
 			function parseJSONSafely(text, fallback) {
 				try {
@@ -465,6 +472,18 @@ const dataPath = withBase('data/club-data.json');
 				}
 
 				return window.jspdf.jsPDF;
+			}
+
+			async function loadImageAsDataUrl(src) {
+				const response = await fetch(src);
+				if (!response.ok) throw new Error('Impossibile caricare il logo per la ricevuta.');
+				const blob = await response.blob();
+				return await new Promise((resolve, reject) => {
+					const reader = new FileReader();
+					reader.onloadend = () => resolve(reader.result);
+					reader.onerror = () => reject(new Error('Errore lettura logo.'));
+					reader.readAsDataURL(blob);
+				});
 			}
 
 			function formatReceiptId(value) {
@@ -634,6 +653,82 @@ const dataPath = withBase('data/club-data.json');
 				};
 			}
 
+			async function generateSingleReceiptPdf(tx) {
+				const person = resolveTransactionPerson(tx);
+				const jsPDF = await ensurePdfLibraries();
+				const doc = new jsPDF({ orientation: 'portrait', unit: 'mm', format: 'a4' });
+				const marginX = 14;
+				let cursorY = 16;
+
+				try {
+					const logoDataUrl = await loadImageAsDataUrl(logoReceiptPath);
+					doc.addImage(logoDataUrl, 'PNG', marginX, cursorY - 2, 28, 28);
+				} catch (error) {
+					console.error(error);
+				}
+
+				doc.setFont('helvetica', 'bold');
+				doc.setFontSize(16);
+				doc.text(RECEIPT_ISSUER.name, marginX + 34, cursorY + 4);
+				doc.setFont('helvetica', 'normal');
+				doc.setFontSize(10);
+				doc.text(RECEIPT_ISSUER.address, marginX + 34, cursorY + 10);
+				doc.text(`C.F. ${RECEIPT_ISSUER.taxCode}  |  Tel. ${RECEIPT_ISSUER.phone}`, marginX + 34, cursorY + 15);
+
+				cursorY = 50;
+				doc.setDrawColor(220, 220, 220);
+				doc.line(marginX, cursorY, 196, cursorY);
+
+				cursorY += 10;
+				doc.setFont('helvetica', 'bold');
+				doc.setFontSize(14);
+				doc.text('Ricevuta di pagamento', marginX, cursorY);
+
+				doc.setFont('helvetica', 'normal');
+				doc.setFontSize(10);
+				cursorY += 7;
+				doc.text(`N. ricevuta: ${tx.receiptId}`, marginX, cursorY);
+				doc.text(`Data: ${formatDateIt(tx.date)}`, 120, cursorY);
+
+				cursorY += 8;
+				doc.setFont('helvetica', 'bold');
+				doc.text('Intestatario', marginX, cursorY);
+				doc.setFont('helvetica', 'normal');
+				cursorY += 6;
+				doc.text(`${person.client}`, marginX, cursorY);
+				cursorY += 5;
+				doc.text(`Codice fiscale: ${person.taxCode}`, marginX, cursorY);
+
+				cursorY += 10;
+				doc.setFont('helvetica', 'bold');
+				doc.text('Dettaglio operazione', marginX, cursorY);
+				doc.setFont('helvetica', 'normal');
+				cursorY += 7;
+				doc.text(`Causale: ${tx.expenseType}`, marginX, cursorY);
+				cursorY += 6;
+				doc.text(`Metodo di pagamento: ${tx.paymentMethod}`, marginX, cursorY);
+				cursorY += 6;
+				doc.setFont('helvetica', 'bold');
+				doc.text(`Importo: ${formatCurrency(tx.amount)}`, marginX, cursorY);
+				doc.setFont('helvetica', 'normal');
+
+				cursorY += 16;
+				doc.setDrawColor(220, 220, 220);
+				doc.line(marginX, cursorY, 196, cursorY);
+				cursorY += 10;
+				doc.text('Firma incaricato ASD Village Fregene Padel', marginX, cursorY);
+				doc.line(marginX, cursorY + 12, 90, cursorY + 12);
+
+				if (person.hasIssue) {
+					doc.setTextColor(180, 40, 40);
+					doc.setFontSize(9);
+					doc.text('Nota: anagrafica cliente da verificare (CF #N/A).', marginX, cursorY + 20);
+					doc.setTextColor(0, 0, 0);
+				}
+
+				doc.save(`ricevuta-${tx.receiptId}.pdf`);
+			}
+
 			function renderTransactionsTable() {
 				const sorted = [...clubData.transactions].sort((a, b) => (a.date < b.date ? 1 : -1));
 				if (sorted.length === 0) {
@@ -675,6 +770,14 @@ const dataPath = withBase('data/club-data.json');
 										class="rounded-lg border border-brand-300 px-2 py-1 text-xs font-semibold text-brand-700 hover:bg-brand-50"
 									>
 										Modifica
+									</button>
+									<button
+										type="button"
+										data-transaction-action="receipt"
+										data-transaction-id="${tx.id}"
+										class="rounded-lg border border-emerald-300 px-2 py-1 text-xs font-semibold text-emerald-700 hover:bg-emerald-50"
+									>
+										Genera ricevuta
 									</button>
 									<button
 										type="button"
@@ -1141,6 +1244,16 @@ const dataPath = withBase('data/club-data.json');
 					document.getElementById('memberTaxCode').value = member.taxCode.toUpperCase();
 					memberEditingId = member.id;
 					memberStatus.textContent = `Modifica socio: ${member.name} ${member.surname}. Premi "Aggiungi socio" per salvare.`;
+					return;
+				}
+
+				if (action === 'receipt') {
+					try {
+						await generateSingleReceiptPdf(tx);
+						transactionStatus.textContent = `Ricevuta ${tx.receiptId} generata con successo.`;
+					} catch (error) {
+						transactionStatus.textContent = error.message || 'Errore durante la generazione della ricevuta.';
+					}
 					return;
 				}
 
