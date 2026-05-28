@@ -1,4 +1,11 @@
 {
-  "members": [],
+  "members": [
+    {
+      "id": "2cbb2bb0-d60b-45f4-be39-274b38fd4a9c",
+      "name": "Ismano",
+      "surname": "Ripani",
+      "taxCode": "ISMARIP334DSSDFKJHD"
+    }
+  ],
   "transactions": []
 }
