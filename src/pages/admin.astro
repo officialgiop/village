@@ -614,6 +614,26 @@ const dataPath = withBase('data/club-data.json');
 					.join('');
 			}
 
+			function resolveTransactionPerson(tx) {
+				const linkedMember = tx.memberId ? clubData.members.find((item) => item.id === tx.memberId) : null;
+				if (linkedMember) {
+					return {
+						client: `${linkedMember.name} ${linkedMember.surname}`.trim(),
+						taxCode: String(linkedMember.taxCode || '').toUpperCase() || '#N/A',
+						hasIssue: Boolean(tx.hasIssue),
+						issue: tx.issue || ''
+					};
+				}
+
+				const fallbackClient = `${tx.memberName || ''} ${tx.memberSurname || ''}`.trim() || 'Socio non trovato';
+				return {
+					client: fallbackClient,
+					taxCode: String(tx.memberTaxCode || '#N/A').toUpperCase(),
+					hasIssue: true,
+					issue: tx.issue || 'member_not_found'
+				};
+			}
+
 			function renderTransactionsTable() {
 				const sorted = [...clubData.transactions].sort((a, b) => (a.date < b.date ? 1 : -1));
 				if (sorted.length === 0) {
@@ -623,14 +643,22 @@ const dataPath = withBase('data/club-data.json');
 				}
 				transactionsTableBody.innerHTML = sorted
 					.map((tx) => {
-						const member = clubData.members.find((item) => item.id === tx.memberId);
-						const fullName = member ? `${member.name} ${member.surname}` : 'Socio non trovato';
-						const taxCode = member ? member.taxCode.toUpperCase() : '-';
+						const person = resolveTransactionPerson(tx);
+						const fullName = person.client;
+						const taxCode = person.taxCode;
+						const issueText =
+							person.issue === 'member_ambiguous'
+								? 'Nominativo ambiguo: verifica associazione socio'
+								: person.issue === 'member_not_found'
+									? 'Socio non presente in anagrafica (CF #N/A)'
+									: '';
 						const rowErrorMarkup =
 							transactionRowError.id === tx.id && transactionRowError.message
 								? `<p class="mt-2 text-xs font-medium text-red-700">${transactionRowError.message}</p>`
 								: '';
-						return `<tr class="border-t border-slate-200">
+						const issueMarkup = person.hasIssue && issueText ? `<p class="mt-2 text-xs font-medium text-red-700">${issueText}</p>` : '';
+						const rowClass = person.hasIssue ? 'border-t border-red-200 bg-red-50/40' : 'border-t border-slate-200';
+						return `<tr class="${rowClass}">
 							<td class="px-3 py-2 font-medium">${tx.receiptId}</td>
 							<td class="px-3 py-2">${formatDateIt(tx.date)}</td>
 							<td class="px-3 py-2">${fullName}</td>
@@ -657,6 +685,7 @@ const dataPath = withBase('data/club-data.json');
 										Elimina
 									</button>
 								</div>
+								${issueMarkup}
 								${rowErrorMarkup}
 							</td>
 						</tr>`;
@@ -1173,7 +1202,7 @@ const dataPath = withBase('data/club-data.json');
 					transactionEditingId = tx.id;
 					receiptIdInput.value = tx.receiptId;
 					transactionDateInput.value = tx.date;
-					memberSelect.value = tx.memberId;
+					memberSelect.value = tx.memberId || '';
 					expenseTypeInput.value = tx.expenseType;
 					paymentMethodInput.value = tx.paymentMethod;
 					amountInput.value = String(tx.amount);
@@ -1250,12 +1279,12 @@ const dataPath = withBase('data/club-data.json');
 					})
 					.sort((a, b) => (a.date > b.date ? 1 : -1))
 					.map((tx) => {
-						const member = clubData.members.find((item) => item.id === tx.memberId);
+						const person = resolveTransactionPerson(tx);
 						return {
 							receiptId: tx.receiptId,
 							date: tx.date,
-							client: member ? `${member.name} ${member.surname}` : 'Socio non trovato',
-							taxCode: member ? member.taxCode.toUpperCase() : '-',
+							client: person.client,
+							taxCode: person.taxCode,
 							expenseType: tx.expenseType,
 							amount: tx.amount
 						};
