@@ -663,7 +663,7 @@ const dataPath = withBase('data/club-data.json');
 
 			async function generateSingleReceiptPdf(tx) {
 				const doc = await buildReceiptDocument([tx]);
-				doc.save(`ricevuta-${tx.receiptId}.pdf`);
+				await savePdfWithPickerOrDownload(doc, `ricevuta-${tx.receiptId}.pdf`);
 			}
 
 			async function buildReceiptDocument(transactions) {
@@ -674,6 +674,26 @@ const dataPath = withBase('data/club-data.json');
 					await drawReceiptPage(doc, transactions[index]);
 				}
 				return doc;
+			}
+
+			async function savePdfWithPickerOrDownload(doc, defaultFileName) {
+				const blob = doc.output('blob');
+				if ('showSaveFilePicker' in window) {
+					const handle = await window.showSaveFilePicker({
+						suggestedName: defaultFileName,
+						types: [
+							{
+								description: 'PDF document',
+								accept: { 'application/pdf': ['.pdf'] }
+							}
+						]
+					});
+					const writable = await handle.createWritable();
+					await writable.write(blob);
+					await writable.close();
+					return;
+				}
+				doc.save(defaultFileName);
 			}
 
 			async function drawReceiptPage(doc, tx) {
@@ -1563,7 +1583,7 @@ const dataPath = withBase('data/club-data.json');
 
 				try {
 					const doc = await buildReceiptDocument(missing);
-					doc.save(`ricevute-mancanti-${new Date().toISOString().slice(0, 10)}.pdf`);
+					await savePdfWithPickerOrDownload(doc, `ricevute-mancanti-${new Date().toISOString().slice(0, 10)}.pdf`);
 
 					const previous = missing.map((tx) => ({ id: tx.id, receiptGenerated: tx.receiptGenerated, receiptGeneratedAt: tx.receiptGeneratedAt }));
 					const stamp = new Date().toISOString();
