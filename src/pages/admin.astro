@@ -1,0 +1,614 @@
+---
+import '../styles/global.css';
+
+const basePath = import.meta.env.BASE_URL.replace(/\/?$/, '/');
+const withBase = (path: string) => `${basePath}${path}`;
+const homePath = basePath;
+const logoPath = withBase('logo-cropped.png');
+const dataPath = withBase('data/club-data.json');
+---
+
+<html lang="it">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Dashboard amministrazione | Village</title>
+		<meta name="robots" content="noindex, nofollow" />
+	</head>
+	<body class="selection:bg-brand-200 selection:text-brand-900">
+		<main class="mx-auto max-w-6xl space-y-6 px-4 py-6 sm:px-6">
+			<header class="glass-card flex flex-col gap-4 p-4 sm:flex-row sm:items-center sm:justify-between">
+				<div class="flex items-center gap-3">
+					<img src={logoPath} alt="Village logo" class="h-14 w-14 object-contain" />
+					<div>
+						<p class="text-xs font-semibold uppercase tracking-[0.18em] text-brand-700">Area gestione</p>
+						<h1 class="font-display text-2xl font-bold text-slate-900">Dashboard segreteria</h1>
+					</div>
+				</div>
+				<a href={homePath} class="text-sm font-semibold text-brand-700 hover:text-brand-900">← Torna al sito</a>
+			</header>
+
+			<section id="authBox" class="glass-card p-6">
+				<h2 class="font-display text-xl font-semibold text-slate-900">Accesso rapido</h2>
+				<p class="mt-2 text-sm text-slate-700">
+					Questa e una protezione leggera lato browser adatta solo a una demo. Imposta una password semplice e condividila con la segreteria.
+				</p>
+				<form id="unlockForm" class="mt-4 flex flex-col gap-3 sm:flex-row sm:items-end">
+					<label class="flex-1 text-sm">
+						<span class="mb-1 block font-medium text-slate-700">Password dashboard</span>
+						<input
+							id="adminPasswordInput"
+							type="password"
+							required
+							class="w-full rounded-xl border border-slate-300 bg-white px-3 py-2 text-sm focus:border-brand-600 focus:outline-none"
+							placeholder="Inserisci password"
+						/>
+					</label>
+					<button type="submit" class="rounded-xl bg-brand-700 px-4 py-2 text-sm font-semibold text-white hover:bg-brand-800">
+						Entra
+					</button>
+				</form>
+				<p id="authStatus" class="mt-3 text-sm text-slate-600"></p>
+			</section>
+
+			<section id="adminApp" class="hidden space-y-6">
+				<section class="glass-card p-5">
+					<h2 class="font-display text-xl font-semibold text-slate-900">Configurazione GitHub (una volta sola)</h2>
+					<p class="mt-2 text-sm text-slate-700">
+						Compila questi campi la prima volta sul PC della segreteria. Servono per aggiornare online il file dati.
+					</p>
+					<form id="githubConfigForm" class="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-5">
+						<label class="text-sm">
+							<span class="mb-1 block font-medium text-slate-700">Owner</span>
+							<input id="githubOwner" required class="w-full rounded-xl border border-slate-300 px-3 py-2 focus:border-brand-600 focus:outline-none" />
+						</label>
+						<label class="text-sm">
+							<span class="mb-1 block font-medium text-slate-700">Repository</span>
+							<input id="githubRepo" required class="w-full rounded-xl border border-slate-300 px-3 py-2 focus:border-brand-600 focus:outline-none" />
+						</label>
+						<label class="text-sm">
+							<span class="mb-1 block font-medium text-slate-700">Branch</span>
+							<input id="githubBranch" value="main" required class="w-full rounded-xl border border-slate-300 px-3 py-2 focus:border-brand-600 focus:outline-none" />
+						</label>
+						<label class="text-sm">
+							<span class="mb-1 block font-medium text-slate-700">Path file dati</span>
+							<input id="githubDataPath" value="public/data/club-data.json" required class="w-full rounded-xl border border-slate-300 px-3 py-2 focus:border-brand-600 focus:outline-none" />
+						</label>
+						<label class="text-sm">
+							<span class="mb-1 block font-medium text-slate-700">Token (PAT)</span>
+							<input id="githubToken" type="password" required class="w-full rounded-xl border border-slate-300 px-3 py-2 focus:border-brand-600 focus:outline-none" />
+						</label>
+						<div class="sm:col-span-2 lg:col-span-5">
+							<button type="submit" class="rounded-xl bg-brand-700 px-4 py-2 text-sm font-semibold text-white hover:bg-brand-800">
+								Salva configurazione
+							</button>
+						</div>
+					</form>
+					<p id="configStatus" class="mt-3 text-sm text-slate-600"></p>
+				</section>
+
+				<section class="grid gap-6 lg:grid-cols-2">
+					<div class="glass-card p-5">
+						<h2 class="font-display text-xl font-semibold text-slate-900">Anagrafica soci</h2>
+						<form id="memberForm" class="mt-4 grid gap-3 sm:grid-cols-3">
+							<label class="text-sm">
+								<span class="mb-1 block font-medium text-slate-700">Nome</span>
+								<input id="memberName" required class="w-full rounded-xl border border-slate-300 px-3 py-2 focus:border-brand-600 focus:outline-none" />
+							</label>
+							<label class="text-sm">
+								<span class="mb-1 block font-medium text-slate-700">Cognome</span>
+								<input id="memberSurname" required class="w-full rounded-xl border border-slate-300 px-3 py-2 focus:border-brand-600 focus:outline-none" />
+							</label>
+							<label class="text-sm">
+								<span class="mb-1 block font-medium text-slate-700">Codice fiscale</span>
+								<input id="memberTaxCode" required class="w-full rounded-xl border border-slate-300 px-3 py-2 uppercase focus:border-brand-600 focus:outline-none" />
+							</label>
+							<div class="sm:col-span-3">
+								<button type="submit" class="rounded-xl bg-brand-700 px-4 py-2 text-sm font-semibold text-white hover:bg-brand-800">
+									Aggiungi socio
+								</button>
+							</div>
+						</form>
+						<div class="mt-4 overflow-auto rounded-xl border border-slate-200 bg-white">
+							<table class="min-w-full text-left text-sm">
+								<thead class="bg-slate-50 text-xs uppercase tracking-[0.12em] text-slate-600">
+									<tr>
+										<th class="px-3 py-2">Nome</th>
+										<th class="px-3 py-2">Cognome</th>
+										<th class="px-3 py-2">Codice fiscale</th>
+									</tr>
+								</thead>
+								<tbody id="membersTableBody"></tbody>
+							</table>
+						</div>
+					</div>
+
+					<div class="glass-card p-5">
+						<h2 class="font-display text-xl font-semibold text-slate-900">Nuova operazione</h2>
+						<form id="transactionForm" class="mt-4 grid gap-3 sm:grid-cols-2">
+							<label class="text-sm">
+								<span class="mb-1 block font-medium text-slate-700">ID ricevuta</span>
+								<input id="receiptId" readonly class="w-full rounded-xl border border-slate-300 bg-slate-100 px-3 py-2" />
+							</label>
+							<label class="text-sm">
+								<span class="mb-1 block font-medium text-slate-700">Data</span>
+								<input id="transactionDate" type="date" required class="w-full rounded-xl border border-slate-300 px-3 py-2 focus:border-brand-600 focus:outline-none" />
+							</label>
+							<label class="text-sm sm:col-span-2">
+								<span class="mb-1 block font-medium text-slate-700">Socio</span>
+								<select id="memberSelect" required class="w-full rounded-xl border border-slate-300 px-3 py-2 focus:border-brand-600 focus:outline-none"></select>
+							</label>
+							<label class="text-sm">
+								<span class="mb-1 block font-medium text-slate-700">Causale pagamento</span>
+								<select id="expenseType" required class="w-full rounded-xl border border-slate-300 px-3 py-2 focus:border-brand-600 focus:outline-none">
+									<option value="Quota campo">Quota campo</option>
+									<option value="Lezione">Lezione</option>
+									<option value="Palline">Palline</option>
+									<option value="Altro">Altro</option>
+								</select>
+							</label>
+							<label class="text-sm">
+								<span class="mb-1 block font-medium text-slate-700">Metodo pagamento</span>
+								<select id="paymentMethod" required class="w-full rounded-xl border border-slate-300 px-3 py-2 focus:border-brand-600 focus:outline-none">
+									<option value="Bancomat">Bancomat</option>
+									<option value="Contanti">Contanti</option>
+								</select>
+							</label>
+							<label class="text-sm sm:col-span-2">
+								<span class="mb-1 block font-medium text-slate-700">Importo (EUR)</span>
+								<input id="amountInput" type="number" min="0" step="0.01" required class="w-full rounded-xl border border-slate-300 px-3 py-2 focus:border-brand-600 focus:outline-none" placeholder="es. 10.00" />
+							</label>
+							<div class="sm:col-span-2">
+								<button type="submit" class="rounded-xl bg-brand-700 px-4 py-2 text-sm font-semibold text-white hover:bg-brand-800">
+									Salva operazione
+								</button>
+							</div>
+						</form>
+						<p id="transactionStatus" class="mt-3 text-sm text-slate-600"></p>
+					</div>
+				</section>
+
+				<section class="glass-card p-5">
+					<div class="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
+						<div>
+							<h2 class="font-display text-xl font-semibold text-slate-900">Export PDF trimestrale</h2>
+							<p class="text-sm text-slate-700">Il report include: Cliente, Codice Fiscale, Tipo spesa, Valore spesa e ID ricevuta.</p>
+						</div>
+						<form id="reportForm" class="flex flex-wrap items-end gap-3">
+							<label class="text-sm">
+								<span class="mb-1 block font-medium text-slate-700">Anno</span>
+								<input id="reportYear" type="number" min="2020" max="2100" class="w-28 rounded-xl border border-slate-300 px-3 py-2 focus:border-brand-600 focus:outline-none" />
+							</label>
+							<label class="text-sm">
+								<span class="mb-1 block font-medium text-slate-700">Trimestre</span>
+								<select id="reportQuarter" class="w-28 rounded-xl border border-slate-300 px-3 py-2 focus:border-brand-600 focus:outline-none">
+									<option value="1">Q1</option>
+									<option value="2">Q2</option>
+									<option value="3">Q3</option>
+									<option value="4">Q4</option>
+								</select>
+							</label>
+							<button type="submit" class="rounded-xl bg-brand-700 px-4 py-2 text-sm font-semibold text-white hover:bg-brand-800">
+								Esporta PDF
+							</button>
+						</form>
+					</div>
+					<div class="mt-4 overflow-auto rounded-xl border border-slate-200 bg-white">
+						<table class="min-w-full text-left text-sm">
+							<thead class="bg-slate-50 text-xs uppercase tracking-[0.12em] text-slate-600">
+								<tr>
+									<th class="px-3 py-2">Ricevuta</th>
+									<th class="px-3 py-2">Data</th>
+									<th class="px-3 py-2">Cliente</th>
+									<th class="px-3 py-2">Codice fiscale</th>
+									<th class="px-3 py-2">Causale</th>
+									<th class="px-3 py-2">Metodo</th>
+									<th class="px-3 py-2">Importo</th>
+								</tr>
+							</thead>
+							<tbody id="transactionsTableBody"></tbody>
+						</table>
+					</div>
+				</section>
+			</section>
+		</main>
+
+		<script src="https://cdn.jsdelivr.net/npm/jspdf@2.5.1/dist/jspdf.umd.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/jspdf-autotable@3.8.2/dist/jspdf.plugin.autotable.min.js"></script>
+		<script define:vars={{ dataPath }}>
+			const DEFAULT_PASSWORD = 'village123';
+			const STORAGE_KEYS = {
+				password: 'village_admin_password',
+				access: 'village_admin_access',
+				githubConfig: 'village_github_config'
+			};
+
+			const authBox = document.getElementById('authBox');
+			const adminApp = document.getElementById('adminApp');
+			const authStatus = document.getElementById('authStatus');
+			const unlockForm = document.getElementById('unlockForm');
+			const adminPasswordInput = document.getElementById('adminPasswordInput');
+			const githubConfigForm = document.getElementById('githubConfigForm');
+			const configStatus = document.getElementById('configStatus');
+			const memberForm = document.getElementById('memberForm');
+			const membersTableBody = document.getElementById('membersTableBody');
+			const memberSelect = document.getElementById('memberSelect');
+			const transactionForm = document.getElementById('transactionForm');
+			const transactionsTableBody = document.getElementById('transactionsTableBody');
+			const transactionStatus = document.getElementById('transactionStatus');
+			const receiptIdInput = document.getElementById('receiptId');
+			const transactionDateInput = document.getElementById('transactionDate');
+			const reportForm = document.getElementById('reportForm');
+			const reportYearInput = document.getElementById('reportYear');
+			const reportQuarterInput = document.getElementById('reportQuarter');
+
+			const githubOwnerInput = document.getElementById('githubOwner');
+			const githubRepoInput = document.getElementById('githubRepo');
+			const githubBranchInput = document.getElementById('githubBranch');
+			const githubDataPathInput = document.getElementById('githubDataPath');
+			const githubTokenInput = document.getElementById('githubToken');
+
+			const today = new Date();
+			const currentMonth = today.getMonth() + 1;
+			const currentQuarter = Math.floor((currentMonth - 1) / 3) + 1;
+			reportYearInput.value = String(today.getFullYear());
+			reportQuarterInput.value = String(currentQuarter);
+			transactionDateInput.value = today.toISOString().slice(0, 10);
+
+			let clubData = { members: [], transactions: [] };
+
+			function parseJSONSafely(text, fallback) {
+				try {
+					const parsed = JSON.parse(text);
+					if (!parsed || typeof parsed !== 'object') return fallback;
+					return parsed;
+				} catch {
+					return fallback;
+				}
+			}
+
+			function loadPassword() {
+				return localStorage.getItem(STORAGE_KEYS.password) || DEFAULT_PASSWORD;
+			}
+
+			function formatCurrency(value) {
+				return new Intl.NumberFormat('it-IT', { style: 'currency', currency: 'EUR' }).format(value);
+			}
+
+			function formatReceiptId(value) {
+				return String(value).padStart(3, '0');
+			}
+
+			function getNextReceiptId() {
+				if (clubData.transactions.length === 0) return '001';
+				const maxId = clubData.transactions.reduce((max, tx) => {
+					const numericId = Number.parseInt(String(tx.receiptId || '0'), 10);
+					return Number.isNaN(numericId) ? max : Math.max(max, numericId);
+				}, 0);
+				return formatReceiptId(maxId + 1);
+			}
+
+			function getGitHubConfig() {
+				return parseJSONSafely(localStorage.getItem(STORAGE_KEYS.githubConfig) || '', null);
+			}
+
+			function updateReceiptField() {
+				receiptIdInput.value = getNextReceiptId();
+			}
+
+			function renderMembersTable() {
+				if (clubData.members.length === 0) {
+					membersTableBody.innerHTML =
+						'<tr><td colspan="3" class="px-3 py-3 text-sm text-slate-500">Nessun socio inserito.</td></tr>';
+					return;
+				}
+				membersTableBody.innerHTML = clubData.members
+					.map(
+						(member) => `<tr class="border-t border-slate-200">
+							<td class="px-3 py-2">${member.name}</td>
+							<td class="px-3 py-2">${member.surname}</td>
+							<td class="px-3 py-2 uppercase">${member.taxCode}</td>
+						</tr>`
+					)
+					.join('');
+			}
+
+			function renderMemberOptions() {
+				if (clubData.members.length === 0) {
+					memberSelect.innerHTML = '<option value="">Prima inserisci almeno un socio</option>';
+					return;
+				}
+				memberSelect.innerHTML = clubData.members
+					.map(
+						(member) =>
+							`<option value="${member.id}">${member.name} ${member.surname} (${member.taxCode.toUpperCase()})</option>`
+					)
+					.join('');
+			}
+
+			function renderTransactionsTable() {
+				const sorted = [...clubData.transactions].sort((a, b) => (a.date < b.date ? 1 : -1));
+				if (sorted.length === 0) {
+					transactionsTableBody.innerHTML =
+						'<tr><td colspan="7" class="px-3 py-3 text-sm text-slate-500">Nessuna operazione registrata.</td></tr>';
+					return;
+				}
+				transactionsTableBody.innerHTML = sorted
+					.map((tx) => {
+						const member = clubData.members.find((item) => item.id === tx.memberId);
+						const fullName = member ? `${member.name} ${member.surname}` : 'Socio non trovato';
+						const taxCode = member ? member.taxCode.toUpperCase() : '-';
+						return `<tr class="border-t border-slate-200">
+							<td class="px-3 py-2 font-medium">${tx.receiptId}</td>
+							<td class="px-3 py-2">${tx.date}</td>
+							<td class="px-3 py-2">${fullName}</td>
+							<td class="px-3 py-2 uppercase">${taxCode}</td>
+							<td class="px-3 py-2">${tx.expenseType}</td>
+							<td class="px-3 py-2">${tx.paymentMethod}</td>
+							<td class="px-3 py-2">${formatCurrency(tx.amount)}</td>
+						</tr>`;
+					})
+					.join('');
+			}
+
+			function renderAll() {
+				renderMembersTable();
+				renderMemberOptions();
+				renderTransactionsTable();
+				updateReceiptField();
+			}
+
+			async function loadClubDataFromPublic() {
+				try {
+					const response = await fetch(dataPath, { cache: 'no-store' });
+					if (!response.ok) throw new Error('Impossibile leggere il file dati pubblico.');
+					const payload = await response.json();
+					clubData = {
+						members: Array.isArray(payload.members) ? payload.members : [],
+						transactions: Array.isArray(payload.transactions) ? payload.transactions : []
+					};
+				} catch (error) {
+					console.error(error);
+					clubData = { members: [], transactions: [] };
+				}
+				renderAll();
+			}
+
+			function toBase64Unicode(value) {
+				return btoa(unescape(encodeURIComponent(value)));
+			}
+
+			async function getCurrentFileSha(config) {
+				const url = `https://api.github.com/repos/${config.owner}/${config.repo}/contents/${config.dataPath}?ref=${encodeURIComponent(config.branch)}`;
+				const response = await fetch(url, {
+					headers: {
+						Authorization: `Bearer ${config.token}`,
+						Accept: 'application/vnd.github+json'
+					}
+				});
+				if (!response.ok) {
+					throw new Error('Impossibile leggere il file dati su GitHub.');
+				}
+				const payload = await response.json();
+				return payload.sha;
+			}
+
+			async function saveDataToGitHub(commitMessage) {
+				const config = getGitHubConfig();
+				if (!config) throw new Error('Configurazione GitHub non trovata.');
+				const sha = await getCurrentFileSha(config);
+				const url = `https://api.github.com/repos/${config.owner}/${config.repo}/contents/${config.dataPath}`;
+				const body = {
+					message: commitMessage,
+					branch: config.branch,
+					sha,
+					content: toBase64Unicode(JSON.stringify(clubData, null, 2))
+				};
+				const response = await fetch(url, {
+					method: 'PUT',
+					headers: {
+						Authorization: `Bearer ${config.token}`,
+						Accept: 'application/vnd.github+json',
+						'Content-Type': 'application/json'
+					},
+					body: JSON.stringify(body)
+				});
+				if (!response.ok) {
+					const error = await response.json().catch(() => ({}));
+					throw new Error(error.message || 'Errore durante il salvataggio su GitHub.');
+				}
+				await loadClubDataFromPublic();
+			}
+
+			function unlockApp() {
+				authBox.classList.add('hidden');
+				adminApp.classList.remove('hidden');
+			}
+
+			function lockApp() {
+				authBox.classList.remove('hidden');
+				adminApp.classList.add('hidden');
+			}
+
+			function bootstrapAuth() {
+				const hasAccess = localStorage.getItem(STORAGE_KEYS.access) === '1';
+				if (hasAccess) {
+					unlockApp();
+				} else {
+					lockApp();
+				}
+			}
+
+			function fillConfigForm() {
+				const config = getGitHubConfig();
+				if (!config) return;
+				githubOwnerInput.value = config.owner || '';
+				githubRepoInput.value = config.repo || '';
+				githubBranchInput.value = config.branch || 'main';
+				githubDataPathInput.value = config.dataPath || 'public/data/club-data.json';
+				githubTokenInput.value = config.token || '';
+			}
+
+			unlockForm.addEventListener('submit', (event) => {
+				event.preventDefault();
+				const typed = adminPasswordInput.value.trim();
+				const expected = loadPassword();
+				if (typed !== expected) {
+					authStatus.textContent = 'Password errata. Riprova.';
+					return;
+				}
+				localStorage.setItem(STORAGE_KEYS.access, '1');
+				authStatus.textContent = '';
+				unlockApp();
+			});
+
+			githubConfigForm.addEventListener('submit', (event) => {
+				event.preventDefault();
+				const config = {
+					owner: githubOwnerInput.value.trim(),
+					repo: githubRepoInput.value.trim(),
+					branch: githubBranchInput.value.trim(),
+					dataPath: githubDataPathInput.value.trim(),
+					token: githubTokenInput.value.trim()
+				};
+				localStorage.setItem(STORAGE_KEYS.githubConfig, JSON.stringify(config));
+				configStatus.textContent = 'Configurazione salvata in locale su questo browser.';
+			});
+
+			memberForm.addEventListener('submit', async (event) => {
+				event.preventDefault();
+				const name = document.getElementById('memberName').value.trim();
+				const surname = document.getElementById('memberSurname').value.trim();
+				const taxCode = document.getElementById('memberTaxCode').value.trim().toUpperCase();
+				if (!name || !surname || !taxCode) return;
+
+				const duplicate = clubData.members.some((member) => member.taxCode.toUpperCase() === taxCode);
+				if (duplicate) {
+					configStatus.textContent = 'Socio gia presente con questo codice fiscale.';
+					return;
+				}
+
+				const newMember = {
+					id: crypto.randomUUID(),
+					name,
+					surname,
+					taxCode
+				};
+				clubData.members.push(newMember);
+
+				try {
+					await saveDataToGitHub(`Aggiunge socio ${name} ${surname}`);
+					memberForm.reset();
+					configStatus.textContent = `Socio ${name} ${surname} salvato con successo.`;
+				} catch (error) {
+					clubData.members = clubData.members.filter((item) => item.id !== newMember.id);
+					configStatus.textContent = error.message;
+				}
+			});
+
+			transactionForm.addEventListener('submit', async (event) => {
+				event.preventDefault();
+				if (clubData.members.length === 0) {
+					transactionStatus.textContent = 'Inserisci almeno un socio prima di registrare operazioni.';
+					return;
+				}
+				const amountRaw = document.getElementById('amountInput').value;
+				const amount = Number.parseFloat(amountRaw);
+				if (Number.isNaN(amount) || amount <= 0) {
+					transactionStatus.textContent = 'Inserisci un importo valido.';
+					return;
+				}
+
+				const newTransaction = {
+					id: crypto.randomUUID(),
+					receiptId: getNextReceiptId(),
+					date: transactionDateInput.value,
+					memberId: memberSelect.value,
+					expenseType: document.getElementById('expenseType').value,
+					paymentMethod: document.getElementById('paymentMethod').value,
+					amount: Math.round(amount * 100) / 100
+				};
+				clubData.transactions.push(newTransaction);
+
+				try {
+					await saveDataToGitHub(`Registra ricevuta ${newTransaction.receiptId}`);
+					transactionForm.reset();
+					transactionDateInput.value = new Date().toISOString().slice(0, 10);
+					transactionStatus.textContent = `Ricevuta ${newTransaction.receiptId} salvata con successo.`;
+				} catch (error) {
+					clubData.transactions = clubData.transactions.filter((item) => item.id !== newTransaction.id);
+					transactionStatus.textContent = error.message;
+				}
+			});
+
+			function quarterDateRange(year, quarter) {
+				const startMonth = (quarter - 1) * 3;
+				const start = new Date(Date.UTC(year, startMonth, 1));
+				const end = new Date(Date.UTC(year, startMonth + 3, 0, 23, 59, 59));
+				return { start, end };
+			}
+
+			function transactionInQuarter(tx, year, quarter) {
+				const date = new Date(`${tx.date}T00:00:00Z`);
+				const { start, end } = quarterDateRange(year, quarter);
+				return date >= start && date <= end;
+			}
+
+			function buildReportRows(year, quarter) {
+				return clubData.transactions
+					.filter((tx) => transactionInQuarter(tx, year, quarter))
+					.sort((a, b) => (a.date > b.date ? 1 : -1))
+					.map((tx) => {
+						const member = clubData.members.find((item) => item.id === tx.memberId);
+						return {
+							receiptId: tx.receiptId,
+							date: tx.date,
+							client: member ? `${member.name} ${member.surname}` : 'Socio non trovato',
+							taxCode: member ? member.taxCode.toUpperCase() : '-',
+							expenseType: tx.expenseType,
+							amount: tx.amount
+						};
+					});
+			}
+
+			reportForm.addEventListener('submit', (event) => {
+				event.preventDefault();
+				const year = Number.parseInt(reportYearInput.value, 10);
+				const quarter = Number.parseInt(reportQuarterInput.value, 10);
+				const rows = buildReportRows(year, quarter);
+				if (rows.length === 0) {
+					transactionStatus.textContent = `Nessun dato disponibile per Q${quarter} ${year}.`;
+					return;
+				}
+
+				const { jsPDF } = window.jspdf;
+				const doc = new jsPDF({ orientation: 'portrait', unit: 'mm', format: 'a4' });
+				doc.setFontSize(16);
+				doc.text(`Village - Report trimestrale Q${quarter} ${year}`, 14, 16);
+				doc.setFontSize(10);
+				doc.text(`Generato il ${new Date().toLocaleDateString('it-IT')}`, 14, 22);
+				doc.autoTable({
+					startY: 28,
+					styles: { fontSize: 9 },
+					head: [['ID ricevuta', 'Data', 'Cliente', 'Codice fiscale', 'Tipo spesa', 'Importo']],
+					body: rows.map((row) => [
+						row.receiptId,
+						row.date,
+						row.client,
+						row.taxCode,
+						row.expenseType,
+						formatCurrency(row.amount)
+					])
+				});
+				const total = rows.reduce((sum, row) => sum + row.amount, 0);
+				doc.text(`Totale trimestre: ${formatCurrency(total)}`, 14, doc.lastAutoTable.finalY + 10);
+				doc.save(`village-report-q${quarter}-${year}.pdf`);
+			});
+
+			bootstrapAuth();
+			fillConfigForm();
+			loadClubDataFromPublic();
+		</script>
+	</body>
+</html>

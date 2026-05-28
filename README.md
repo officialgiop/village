@@ -31,3 +31,24 @@ Quando acquisti il dominio:
 1. aggiungi il dominio in `Settings > Pages`;
 2. configura i record DNS dal tuo registrar verso GitHub Pages;
 3. abilita `Enforce HTTPS` appena disponibile.
+
+## Dashboard segreteria (demo)
+
+E disponibile una dashboard in `admin` pensata per la segreteria:
+- anagrafica soci (`nome`, `cognome`, `codice fiscale`);
+- registrazione operazioni con `ID ricevuta` progressivo (`001`, `002`, ...), causale, importo e metodo pagamento;
+- export PDF trimestrale con dettaglio cliente/spesa.
+
+### Setup iniziale (una sola volta)
+
+1. Apri `/admin` dal sito.
+2. Password predefinita: `village123` (protezione leggera lato browser, adatta a demo).
+3. Compila la sezione "Configurazione GitHub":
+   - `Owner`
+   - `Repository`
+   - `Branch` (di solito `main`)
+   - `Path file dati` (`public/data/club-data.json`)
+   - `Token (PAT)` con permesso `contents:write` sul repository
+4. Salva la configurazione.
+
+Da quel momento la segreteria usa solo la dashboard e i dati vengono salvati online su `public/data/club-data.json`.
