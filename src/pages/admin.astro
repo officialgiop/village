@@ -324,6 +324,7 @@ const dataPath = withBase('data/club-data.json');
 			let memberEditingId = null;
 			let transactionEditingId = null;
 			let transactionRowError = { id: null, message: '' };
+			let saveQueue = Promise.resolve();
 
 			function parseJSONSafely(text, fallback) {
 				try {
@@ -543,8 +544,43 @@ const dataPath = withBase('data/club-data.json');
 				renderAll();
 			}
 
+			async function loadClubDataFromGitHub() {
+				const config = getGitHubConfig();
+				if (!config || !config.owner || !config.repo || !config.branch || !config.dataPath || !config.token) {
+					await loadClubDataFromPublic();
+					return;
+				}
+				try {
+					const url = `https://api.github.com/repos/${config.owner}/${config.repo}/contents/${config.dataPath}?ref=${encodeURIComponent(config.branch)}`;
+					const response = await fetch(url, {
+						headers: {
+							Authorization: `Bearer ${config.token}`,
+							Accept: 'application/vnd.github+json'
+						},
+						cache: 'no-store'
+					});
+					if (!response.ok) throw new Error('Impossibile leggere il file dati da GitHub.');
+					const payload = await response.json();
+					const decoded = fromBase64Unicode(String(payload.content || '').replace(/\n/g, ''));
+					const parsed = parseJSONSafely(decoded, { members: [], transactions: [] });
+					clubData = {
+						members: Array.isArray(parsed.members) ? parsed.members : [],
+						transactions: Array.isArray(parsed.transactions) ? parsed.transactions : []
+					};
+				} catch (error) {
+					console.error(error);
+					await loadClubDataFromPublic();
+					return;
+				}
+				renderAll();
+			}
+
 			function toBase64Unicode(value) {
 				return btoa(unescape(encodeURIComponent(value)));
+			}
+
+			function fromBase64Unicode(value) {
+				return decodeURIComponent(escape(atob(value)));
 			}
 
 			async function getCurrentFileSha(config) {
@@ -584,27 +620,32 @@ const dataPath = withBase('data/club-data.json');
 				throw new Error(error.message || 'Errore durante il salvataggio su GitHub.');
 			}
 
-			async function saveDataToGitHub(commitMessage) {
-				const config = getGitHubConfig();
-				if (!config) throw new Error('Configurazione GitHub non trovata.');
-				const maxAttempts = 5;
-				for (let attempt = 1; attempt <= maxAttempts; attempt += 1) {
-					try {
-						const sha = await getCurrentFileSha(config);
-						await putDataToGitHub(config, sha, commitMessage);
-						return;
-					} catch (error) {
-						const message = String(error?.message || '');
-						const isShaConflict = message.includes('does not match');
-						const isLastAttempt = attempt === maxAttempts;
-						if (!isShaConflict || isLastAttempt) {
-							if (isShaConflict && isLastAttempt) {
-								throw new Error('Conflitto di salvataggio ripetuto. Riprova tra qualche secondo.');
+			function saveDataToGitHub(commitMessage) {
+				const runSave = async () => {
+					const config = getGitHubConfig();
+					if (!config) throw new Error('Configurazione GitHub non trovata.');
+					const maxAttempts = 6;
+					for (let attempt = 1; attempt <= maxAttempts; attempt += 1) {
+						try {
+							const sha = await getCurrentFileSha(config);
+							await putDataToGitHub(config, sha, commitMessage);
+							return;
+						} catch (error) {
+							const message = String(error?.message || '');
+							const isShaConflict = message.includes('does not match');
+							const isLastAttempt = attempt === maxAttempts;
+							if (!isShaConflict || isLastAttempt) {
+								if (isShaConflict && isLastAttempt) {
+									throw new Error('Conflitto di salvataggio ripetuto. Riprova tra qualche secondo.');
+								}
+								throw error;
 							}
-							throw error;
 						}
 					}
-				}
+				};
+
+				saveQueue = saveQueue.then(runSave, runSave);
+				return saveQueue;
 			}
 
 			function unlockApp() {
@@ -1061,7 +1102,7 @@ const dataPath = withBase('data/club-data.json');
 			fillConfigForm();
 			closeConfigPanel();
 			closeMembersPanel();
-			loadClubDataFromPublic();
+			loadClubDataFromGitHub();
 		</script>
 	</body>
 </html>
