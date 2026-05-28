@@ -15,18 +15,9 @@
   ],
   "transactions": [
     {
-      "id": "15f6a45f-d5cf-49f9-84ef-42d7b09156c6",
-      "receiptId": "002",
+      "id": "e17b9e0a-eae7-4a18-ac80-6bbf9c824220",
+      "receiptId": "001",
       "date": "2026-05-28",
-      "memberId": "1125118e-3fb5-4235-99ce-ed3a75565df2",
-      "expenseType": "Palline",
-      "paymentMethod": "Contanti",
-      "amount": 5
-    },
-    {
-      "id": "43f9ff37-4847-4570-b1b7-fcfc327a6b7c",
-      "receiptId": "003",
-      "date": "2026-05-29",
       "memberId": "2cbb2bb0-d60b-45f4-be39-274b38fd4a9c",
       "expenseType": "Quota campo",
       "paymentMethod": "Bancomat",
