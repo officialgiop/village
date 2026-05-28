@@ -396,10 +396,7 @@ const dataPath = withBase('data/club-data.json');
 				return payload.sha;
 			}
 
-			async function saveDataToGitHub(commitMessage) {
-				const config = getGitHubConfig();
-				if (!config) throw new Error('Configurazione GitHub non trovata.');
-				const sha = await getCurrentFileSha(config);
+			async function putDataToGitHub(config, sha, commitMessage) {
 				const url = `https://api.github.com/repos/${config.owner}/${config.repo}/contents/${config.dataPath}`;
 				const body = {
 					message: commitMessage,
@@ -416,9 +413,27 @@ const dataPath = withBase('data/club-data.json');
 					},
 					body: JSON.stringify(body)
 				});
-				if (!response.ok) {
-					const error = await response.json().catch(() => ({}));
-					throw new Error(error.message || 'Errore durante il salvataggio su GitHub.');
+				if (response.ok) return;
+				const error = await response.json().catch(() => ({}));
+				throw new Error(error.message || 'Errore durante il salvataggio su GitHub.');
+			}
+
+			async function saveDataToGitHub(commitMessage) {
+				const config = getGitHubConfig();
+				if (!config) throw new Error('Configurazione GitHub non trovata.');
+				const firstSha = await getCurrentFileSha(config);
+				try {
+					await putDataToGitHub(config, firstSha, commitMessage);
+					return;
+				} catch (error) {
+					const message = String(error?.message || '');
+					const isShaConflict = message.includes('does not match');
+					if (!isShaConflict) {
+						throw error;
+					}
+					// Retry once with a fresh SHA when another write wins race conditions.
+					const freshSha = await getCurrentFileSha(config);
+					await putDataToGitHub(config, freshSha, commitMessage);
 				}
 			}
 
