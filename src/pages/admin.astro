@@ -559,7 +559,7 @@ const dataPath = withBase('data/club-data.json');
 					.map(
 						(member, index) => {
 							const taxCode = String(member.taxCode || '').toUpperCase();
-							const hasIssue = taxCodeCounts[taxCode] > 1 || Boolean(member.hasIssue);
+							const hasIssue = taxCodeCounts[taxCode] > 1;
 							const rowClass = hasIssue ? 'border-t border-red-200 bg-red-50/40' : 'border-t border-slate-200';
 							const taxCodeClass = hasIssue
 								? 'px-3 py-2 uppercase underline decoration-red-600 decoration-2 underline-offset-4'
