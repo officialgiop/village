@@ -183,7 +183,11 @@ const dataPath = withBase('data/club-data.json');
 								<input id="memberTaxCode" required class="w-full rounded-xl border border-slate-300 px-3 py-2 uppercase focus:border-brand-600 focus:outline-none" />
 							</label>
 							<div class="sm:col-span-3">
-								<button type="submit" class="rounded-xl bg-brand-700 px-4 py-2 text-sm font-semibold text-white hover:bg-brand-800">
+								<button
+									id="memberSubmitButton"
+									type="submit"
+									class="rounded-xl bg-brand-700 px-4 py-2 text-sm font-semibold text-white hover:bg-brand-800"
+								>
 									Aggiungi socio
 								</button>
 							</div>
@@ -355,6 +359,7 @@ const dataPath = withBase('data/club-data.json');
 			const toggleConfigButton = document.getElementById('toggleConfigButton');
 			const configPanel = document.getElementById('configPanel');
 			const memberForm = document.getElementById('memberForm');
+			const memberSubmitButton = document.getElementById('memberSubmitButton');
 			const memberStatus = document.getElementById('memberStatus');
 			const membersTableBody = document.getElementById('membersTableBody');
 			const toggleMembersButton = document.getElementById('toggleMembersButton');
@@ -482,6 +487,17 @@ const dataPath = withBase('data/club-data.json');
 				}
 				element.textContent = message;
 				element.className = getStatusMessageClass(type, options.includeTopMargin !== false);
+			}
+
+			function updateMemberSubmitButton() {
+				if (!memberSubmitButton) return;
+				memberSubmitButton.textContent = memberEditingId ? 'Modifica' : 'Aggiungi socio';
+			}
+
+			function resetMemberFormState() {
+				memberEditingId = null;
+				memberForm.reset();
+				updateMemberSubmitButton();
 			}
 
 			function notify(scope, message, type = 'info') {
@@ -1342,8 +1358,7 @@ const dataPath = withBase('data/club-data.json');
 					const target = clubData.members.find((member) => member.id === memberEditingId);
 					if (!target) {
 						notify('members', 'Socio da modificare non trovato.', 'error');
-						memberEditingId = null;
-						memberForm.reset();
+						resetMemberFormState();
 						return;
 					}
 					rollbackSnapshot = { ...target };
@@ -1365,8 +1380,7 @@ const dataPath = withBase('data/club-data.json');
 
 				try {
 					await saveDataToGitHub(operationLabel);
-					memberForm.reset();
-					memberEditingId = null;
+					resetMemberFormState();
 					renderAll();
 					const successLabel = operationLabel.startsWith('Aggiorna') ? 'aggiornato' : 'salvato';
 					notify('members', `Socio ${name} ${surname} ${successLabel} con successo.`, 'success');
@@ -1401,7 +1415,8 @@ const dataPath = withBase('data/club-data.json');
 					document.getElementById('memberSurname').value = member.surname;
 					document.getElementById('memberTaxCode').value = member.taxCode.toUpperCase();
 					memberEditingId = member.id;
-					notify('members', `Modifica socio: ${member.name} ${member.surname}. Premi "Aggiungi socio" per salvare.`, 'info');
+					updateMemberSubmitButton();
+					notify('members', `Modifica socio: ${member.name} ${member.surname}. Premi "Modifica" per salvare.`, 'info');
 					return;
 				}
 
@@ -1419,8 +1434,7 @@ const dataPath = withBase('data/club-data.json');
 					try {
 						await saveDataToGitHub(`Elimina socio ${member.name} ${member.surname}`);
 						if (memberEditingId === member.id) {
-							memberEditingId = null;
-							memberForm.reset();
+							resetMemberFormState();
 						}
 						renderAll();
 						notify('members', `Socio ${member.name} ${member.surname} eliminato con successo.`, 'success');
