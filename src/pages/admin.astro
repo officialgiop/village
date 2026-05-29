@@ -50,10 +50,11 @@ const dataPath = withBase('data/club-data.json');
 						Entra
 					</button>
 				</form>
-				<p id="authStatus" class="mt-3 text-sm text-slate-600"></p>
+				<p id="authStatus" class="status-message hidden" role="status"></p>
 			</section>
 
 			<section id="adminApp" class="hidden space-y-6">
+				<div id="adminGlobalStatus" class="status-message hidden" role="status" aria-live="polite"></div>
 				<section class="glass-card p-5">
 					<div class="flex flex-wrap items-center justify-between gap-3">
 						<h2 class="font-display text-xl font-semibold text-slate-900">Configurazione tecnica</h2>
@@ -92,7 +93,7 @@ const dataPath = withBase('data/club-data.json');
 								Salva causali
 							</button>
 						</div>
-						<p id="expenseTypesStatus" class="mt-2 text-sm text-slate-600"></p>
+						<p id="expenseTypesStatus" class="status-message hidden" role="status"></p>
 					</div>
 					<div class="mt-4 rounded-xl border border-slate-200 bg-white p-4">
 						<h3 class="font-display text-lg font-semibold text-slate-900">Metodi di pagamento</h3>
@@ -117,7 +118,7 @@ const dataPath = withBase('data/club-data.json');
 								Salva metodi
 							</button>
 						</div>
-						<p id="paymentMethodsStatus" class="mt-2 text-sm text-slate-600"></p>
+						<p id="paymentMethodsStatus" class="status-message hidden" role="status"></p>
 					</div>
 					<div class="mt-6 rounded-xl border border-slate-200 bg-white p-4">
 						<h3 class="font-display text-lg font-semibold text-slate-900">Configurazione GitHub (una volta sola)</h3>
@@ -151,7 +152,7 @@ const dataPath = withBase('data/club-data.json');
 								</button>
 							</div>
 						</form>
-						<p id="configStatus" class="mt-3 text-sm text-slate-600"></p>
+						<p id="configStatus" class="status-message hidden" role="status"></p>
 					</div>
 					</div>
 				</section>
@@ -187,7 +188,7 @@ const dataPath = withBase('data/club-data.json');
 								</button>
 							</div>
 						</form>
-						<p id="memberStatus" class="mt-3 text-sm text-slate-600"></p>
+						<p id="memberStatus" class="status-message hidden" role="status"></p>
 						<div class="mt-4 overflow-auto rounded-xl border border-slate-200 bg-white">
 							<table class="min-w-full text-left text-sm">
 								<thead class="bg-slate-50 text-xs uppercase tracking-[0.12em] text-slate-600">
@@ -246,7 +247,7 @@ const dataPath = withBase('data/club-data.json');
 								</button>
 							</div>
 						</form>
-						<p id="transactionStatus" class="mt-3 text-sm text-slate-600"></p>
+						<p id="operationStatus" class="status-message hidden" role="status"></p>
 				</section>
 
 				<section class="glass-card p-5">
@@ -289,6 +290,7 @@ const dataPath = withBase('data/club-data.json');
 							</button>
 						</form>
 					</div>
+					<p id="receiptsStatus" class="status-message hidden" role="status"></p>
 					<div class="mt-4 grid gap-3 sm:grid-cols-3">
 						<div class="rounded-xl border border-slate-200 bg-white p-4">
 							<p class="text-xs font-semibold uppercase tracking-[0.12em] text-slate-500">Entrate Contanti</p>
@@ -360,7 +362,9 @@ const dataPath = withBase('data/club-data.json');
 			const memberSelect = document.getElementById('memberSelect');
 			const transactionForm = document.getElementById('transactionForm');
 			const transactionsTableBody = document.getElementById('transactionsTableBody');
-			const transactionStatus = document.getElementById('transactionStatus');
+			const adminGlobalStatus = document.getElementById('adminGlobalStatus');
+			const operationStatus = document.getElementById('operationStatus');
+			const receiptsStatus = document.getElementById('receiptsStatus');
 			const receiptIdInput = document.getElementById('receiptId');
 			const transactionDateInput = document.getElementById('transactionDate');
 			const expenseTypeInput = document.getElementById('expenseType');
@@ -416,6 +420,13 @@ const dataPath = withBase('data/club-data.json');
 				'Quota Iscrizione Campionato'
 			];
 			const DEFAULT_PAYMENT_METHODS = ['Bancomat', 'Contanti', 'Bonifico'];
+			const DEFAULT_EXPENSE_AMOUNTS = {
+				'quota campo': 10,
+				'lezione privata': 25,
+				'lezione doppia': 35,
+				'quota iscrizione campionato': 25,
+				'corso mensile': 100
+			};
 			const RECEIPT_ISSUER = {
 				name: 'ASD Village Fregene Padel',
 				address: 'Via Agropoli 85, Fregene Fiumicino (RM) 00054',
@@ -446,6 +457,48 @@ const dataPath = withBase('data/club-data.json');
 				const date = new Date(`${isoDate}T00:00:00`);
 				if (Number.isNaN(date.getTime())) return isoDate;
 				return date.toLocaleDateString('it-IT');
+			}
+
+			const STATUS_MESSAGE_BASE = 'status-message mt-3 rounded-xl border px-3 py-2 text-sm font-medium';
+
+			function getStatusMessageClass(type = 'info', includeTopMargin = true) {
+				const base = includeTopMargin
+					? STATUS_MESSAGE_BASE
+					: 'status-message rounded-xl border px-4 py-3 text-sm font-medium';
+				const variants = {
+					success: `${base} border-emerald-200 bg-emerald-50 text-emerald-800`,
+					error: `${base} border-red-200 bg-red-50 text-red-800`,
+					info: `${base} border-slate-200 bg-slate-50 text-slate-700`
+				};
+				return variants[type] || variants.info;
+			}
+
+			function setStatusMessage(element, message, type = 'info', options = {}) {
+				if (!element) return;
+				if (!message) {
+					element.textContent = '';
+					element.className = 'status-message hidden';
+					return;
+				}
+				element.textContent = message;
+				element.className = getStatusMessageClass(type, options.includeTopMargin !== false);
+			}
+
+			function notify(scope, message, type = 'info') {
+				const targets = {
+					auth: authStatus,
+					config: configStatus,
+					expenseTypes: expenseTypesStatus,
+					paymentMethods: paymentMethodsStatus,
+					members: memberStatus,
+					operation: operationStatus,
+					receipts: receiptsStatus
+				};
+				const target = targets[scope];
+				setStatusMessage(target, message, type);
+				if (scope !== 'auth') {
+					setStatusMessage(adminGlobalStatus, message, type, { includeTopMargin: false });
+				}
 			}
 
 			function loadExternalScript(src) {
@@ -536,6 +589,21 @@ const dataPath = withBase('data/club-data.json');
 				return [...DEFAULT_EXPENSE_TYPES];
 			}
 
+			function normalizeExpenseTypeKey(value) {
+				return String(value || '').trim().toLowerCase();
+			}
+
+			function getDefaultAmountForExpenseType(expenseType) {
+				return DEFAULT_EXPENSE_AMOUNTS[normalizeExpenseTypeKey(expenseType)];
+			}
+
+			function applyDefaultAmountForExpenseType() {
+				if (transactionEditingId) return;
+				const defaultAmount = getDefaultAmountForExpenseType(expenseTypeInput.value);
+				if (defaultAmount === undefined) return;
+				amountInput.value = defaultAmount.toFixed(2);
+			}
+
 			function renderExpenseTypeOptions(selectedValue = '') {
 				const options = getExpenseTypes();
 				expenseTypeInput.innerHTML = options
@@ -544,6 +612,7 @@ const dataPath = withBase('data/club-data.json');
 				if (selectedValue && options.includes(selectedValue)) {
 					expenseTypeInput.value = selectedValue;
 				}
+				applyDefaultAmountForExpenseType();
 			}
 
 			function renderExpenseTypesEditor() {
@@ -1165,11 +1234,11 @@ const dataPath = withBase('data/club-data.json');
 				const typed = adminPasswordInput.value.trim();
 				const expected = loadPassword();
 				if (typed !== expected) {
-					authStatus.textContent = 'Password errata. Riprova.';
+					notify('auth', 'Password errata. Riprova.', 'error');
 					return;
 				}
 				localStorage.setItem(STORAGE_KEYS.access, '1');
-				authStatus.textContent = '';
+				setStatusMessage(authStatus, '');
 				unlockApp();
 			});
 
@@ -1183,13 +1252,13 @@ const dataPath = withBase('data/club-data.json');
 					token: githubTokenInput.value.trim()
 				};
 				localStorage.setItem(STORAGE_KEYS.githubConfig, JSON.stringify(config));
-				configStatus.textContent = 'Configurazione salvata in locale su questo browser.';
+				notify('config', 'Configurazione salvata in locale su questo browser.', 'success');
 			});
 
 			saveExpenseTypesButton.addEventListener('click', async () => {
 				const config = getGitHubConfig();
 				if (!config || !config.owner || !config.repo || !config.branch || !config.dataPath || !config.token) {
-					expenseTypesStatus.textContent = 'Config GitHub mancante: completa prima la sezione "Configurazione GitHub".';
+					notify('expenseTypes', 'Config GitHub mancante: completa prima la sezione "Configurazione GitHub".', 'error');
 					return;
 				}
 				const parsed = expenseTypesTextarea.value
@@ -1198,7 +1267,7 @@ const dataPath = withBase('data/club-data.json');
 					.filter(Boolean);
 				const unique = [...new Set(parsed)];
 				if (unique.length === 0) {
-					expenseTypesStatus.textContent = 'Inserisci almeno una causale valida.';
+					notify('expenseTypes', 'Inserisci almeno una causale valida.', 'error');
 					return;
 				}
 
@@ -1208,17 +1277,17 @@ const dataPath = withBase('data/club-data.json');
 					await saveDataToGitHub('Aggiorna causali pagamento');
 					renderExpenseTypeOptions();
 					renderExpenseTypesEditor();
-					expenseTypesStatus.textContent = `Causali aggiornate (${unique.length}).`;
+					notify('expenseTypes', `Causali aggiornate (${unique.length}).`, 'success');
 				} catch (error) {
 					clubData.settings = previousSettings;
-					expenseTypesStatus.textContent = error.message || 'Errore durante il salvataggio causali.';
+					notify('expenseTypes', error.message || 'Errore durante il salvataggio causali.', 'error');
 				}
 			});
 
 			savePaymentMethodsButton.addEventListener('click', async () => {
 				const config = getGitHubConfig();
 				if (!config || !config.owner || !config.repo || !config.branch || !config.dataPath || !config.token) {
-					paymentMethodsStatus.textContent = 'Config GitHub mancante: completa prima la sezione "Configurazione GitHub".';
+					notify('paymentMethods', 'Config GitHub mancante: completa prima la sezione "Configurazione GitHub".', 'error');
 					return;
 				}
 				const parsed = paymentMethodsTextarea.value
@@ -1227,7 +1296,7 @@ const dataPath = withBase('data/club-data.json');
 					.filter(Boolean);
 				const unique = [...new Set(parsed)];
 				if (unique.length === 0) {
-					paymentMethodsStatus.textContent = 'Inserisci almeno un metodo valido.';
+					notify('paymentMethods', 'Inserisci almeno un metodo valido.', 'error');
 					return;
 				}
 
@@ -1237,10 +1306,10 @@ const dataPath = withBase('data/club-data.json');
 					await saveDataToGitHub('Aggiorna metodi pagamento');
 					renderPaymentMethodOptions();
 					renderPaymentMethodsEditor();
-					paymentMethodsStatus.textContent = `Metodi aggiornati (${unique.length}).`;
+					notify('paymentMethods', `Metodi aggiornati (${unique.length}).`, 'success');
 				} catch (error) {
 					clubData.settings = previousSettings;
-					paymentMethodsStatus.textContent = error.message || 'Errore durante il salvataggio metodi.';
+					notify('paymentMethods', error.message || 'Errore durante il salvataggio metodi.', 'error');
 				}
 			});
 
@@ -1252,7 +1321,7 @@ const dataPath = withBase('data/club-data.json');
 				if (!name || !surname || !taxCode) return;
 				const config = getGitHubConfig();
 				if (!config || !config.owner || !config.repo || !config.branch || !config.dataPath || !config.token) {
-					memberStatus.textContent = 'Config GitHub mancante: completa prima la sezione "Configurazione GitHub".';
+					notify('members', 'Config GitHub mancante: completa prima la sezione "Configurazione GitHub".', 'error');
 					return;
 				}
 
@@ -1263,7 +1332,7 @@ const dataPath = withBase('data/club-data.json');
 							(member) => member.taxCode.toUpperCase() === taxCode && member.id !== memberEditingId
 						));
 				if (isDuplicateForDifferentMember) {
-					memberStatus.textContent = 'Socio gia presente con questo codice fiscale.';
+					notify('members', 'Socio gia presente con questo codice fiscale.', 'error');
 					return;
 				}
 
@@ -1272,7 +1341,7 @@ const dataPath = withBase('data/club-data.json');
 				if (memberEditingId) {
 					const target = clubData.members.find((member) => member.id === memberEditingId);
 					if (!target) {
-						memberStatus.textContent = 'Socio da modificare non trovato.';
+						notify('members', 'Socio da modificare non trovato.', 'error');
 						memberEditingId = null;
 						memberForm.reset();
 						return;
@@ -1300,7 +1369,7 @@ const dataPath = withBase('data/club-data.json');
 					memberEditingId = null;
 					renderAll();
 					const successLabel = operationLabel.startsWith('Aggiorna') ? 'aggiornato' : 'salvato';
-					memberStatus.textContent = `Socio ${name} ${surname} ${successLabel} con successo.`;
+					notify('members', `Socio ${name} ${surname} ${successLabel} con successo.`, 'success');
 				} catch (error) {
 					if (rollbackSnapshot?.created) {
 						clubData.members = clubData.members.filter((item) => item.id !== rollbackSnapshot.id);
@@ -1310,7 +1379,7 @@ const dataPath = withBase('data/club-data.json');
 							clubData.members[index] = rollbackSnapshot;
 						}
 					}
-					memberStatus.textContent = error.message;
+					notify('members', error.message, 'error');
 				}
 			});
 
@@ -1323,7 +1392,7 @@ const dataPath = withBase('data/club-data.json');
 
 				const member = clubData.members.find((item) => item.id === memberId);
 				if (!member) {
-					memberStatus.textContent = 'Socio non trovato.';
+					notify('members', 'Socio non trovato.', 'error');
 					return;
 				}
 
@@ -1332,14 +1401,14 @@ const dataPath = withBase('data/club-data.json');
 					document.getElementById('memberSurname').value = member.surname;
 					document.getElementById('memberTaxCode').value = member.taxCode.toUpperCase();
 					memberEditingId = member.id;
-					memberStatus.textContent = `Modifica socio: ${member.name} ${member.surname}. Premi "Aggiungi socio" per salvare.`;
+					notify('members', `Modifica socio: ${member.name} ${member.surname}. Premi "Aggiungi socio" per salvare.`, 'info');
 					return;
 				}
 
 				if (action === 'delete') {
 					const linkedTransactions = clubData.transactions.some((tx) => tx.memberId === member.id);
 					if (linkedTransactions) {
-						memberStatus.textContent = 'Non puoi eliminare questo socio: ha operazioni registrate.';
+						notify('members', 'Non puoi eliminare questo socio: ha operazioni registrate.', 'error');
 						return;
 					}
 					const confirmed = window.confirm(`Eliminare il socio ${member.name} ${member.surname}?`);
@@ -1354,24 +1423,28 @@ const dataPath = withBase('data/club-data.json');
 							memberForm.reset();
 						}
 						renderAll();
-						memberStatus.textContent = `Socio ${member.name} ${member.surname} eliminato con successo.`;
+						notify('members', `Socio ${member.name} ${member.surname} eliminato con successo.`, 'success');
 					} catch (error) {
 						clubData.members = previousMembers;
-						memberStatus.textContent = error.message;
+						notify('members', error.message, 'error');
 					}
 				}
+			});
+
+			expenseTypeInput.addEventListener('change', () => {
+				applyDefaultAmountForExpenseType();
 			});
 
 			transactionForm.addEventListener('submit', async (event) => {
 				event.preventDefault();
 				if (clubData.members.length === 0) {
-					transactionStatus.textContent = 'Inserisci almeno un socio prima di registrare operazioni.';
+					notify('operation', 'Inserisci almeno un socio prima di registrare operazioni.', 'error');
 					return;
 				}
 				const amountRaw = amountInput.value;
 				const amount = Number.parseFloat(amountRaw);
 				if (Number.isNaN(amount) || amount <= 0) {
-					transactionStatus.textContent = 'Inserisci un importo valido.';
+					notify('operation', 'Inserisci un importo valido.', 'error');
 					return;
 				}
 
@@ -1381,7 +1454,7 @@ const dataPath = withBase('data/club-data.json');
 				if (transactionEditingId) {
 					const target = clubData.transactions.find((tx) => tx.id === transactionEditingId);
 					if (!target) {
-						transactionStatus.textContent = 'Ricevuta da modificare non trovata.';
+						notify('operation', 'Ricevuta da modificare non trovata.', 'error');
 						transactionEditingId = null;
 						transactionForm.reset();
 						updateReceiptField();
@@ -1419,7 +1492,7 @@ const dataPath = withBase('data/club-data.json');
 					transactionDateInput.value = new Date().toISOString().slice(0, 10);
 					renderAll();
 					const statusVerb = commitMessage.startsWith('Aggiorna') ? 'aggiornata' : 'salvata';
-					transactionStatus.textContent = `Ricevuta ${workingTransaction.receiptId} ${statusVerb} con successo.`;
+					notify('operation', `Ricevuta ${workingTransaction.receiptId} ${statusVerb} con successo.`, 'success');
 				} catch (error) {
 					if (rollbackSnapshot?.created) {
 						clubData.transactions = clubData.transactions.filter((item) => item.id !== rollbackSnapshot.id);
@@ -1429,7 +1502,7 @@ const dataPath = withBase('data/club-data.json');
 							clubData.transactions[index] = rollbackSnapshot;
 						}
 					}
-					transactionStatus.textContent = error.message;
+					notify('operation', error.message, 'error');
 				}
 			});
 
@@ -1442,7 +1515,7 @@ const dataPath = withBase('data/club-data.json');
 
 				const tx = clubData.transactions.find((item) => item.id === transactionId);
 				if (!tx) {
-					transactionStatus.textContent = 'Ricevuta non trovata.';
+					notify('receipts', 'Ricevuta non trovata.', 'error');
 					return;
 				}
 
@@ -1455,7 +1528,8 @@ const dataPath = withBase('data/club-data.json');
 					expenseTypeInput.value = tx.expenseType;
 					paymentMethodInput.value = tx.paymentMethod;
 					amountInput.value = String(tx.amount);
-					transactionStatus.textContent = `Modifica ricevuta ${tx.receiptId}: aggiorna i campi e salva.`;
+					notify('operation', `Modifica ricevuta ${tx.receiptId}: aggiorna i campi e salva.`, 'info');
+					transactionForm.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
 					return;
 				}
 
@@ -1473,9 +1547,9 @@ const dataPath = withBase('data/club-data.json');
 							throw saveError;
 						}
 						renderTransactionsTable();
-						transactionStatus.textContent = `Ricevuta ${tx.receiptId} generata con successo.`;
+						notify('receipts', `Ricevuta ${tx.receiptId} generata con successo.`, 'success');
 					} catch (error) {
-						transactionStatus.textContent = error.message || 'Errore durante la generazione della ricevuta.';
+						notify('receipts', error.message || 'Errore durante la generazione della ricevuta.', 'error');
 					}
 					return;
 				}
@@ -1495,12 +1569,12 @@ const dataPath = withBase('data/club-data.json');
 							transactionDateInput.value = new Date().toISOString().slice(0, 10);
 						}
 						renderAll();
-						transactionStatus.textContent = `Ricevuta ${tx.receiptId} eliminata con successo.`;
+						notify('receipts', `Ricevuta ${tx.receiptId} eliminata con successo.`, 'success');
 					} catch (error) {
 						clubData.transactions = previousTransactions;
 						transactionRowError = { id: tx.id, message: error.message || 'Errore durante la cancellazione.' };
 						renderTransactionsTable();
-						transactionStatus.textContent = error.message;
+						notify('receipts', error.message, 'error');
 					}
 				}
 			});
@@ -1560,7 +1634,7 @@ const dataPath = withBase('data/club-data.json');
 				const paymentFilter = reportPaymentFilterInput.value;
 				const rows = buildReportRows(year, quarter, paymentFilter);
 				if (rows.length === 0) {
-					transactionStatus.textContent = `Nessun dato disponibile per Q${quarter} ${year} con il filtro selezionato.`;
+					notify('receipts', `Nessun dato disponibile per Q${quarter} ${year} con il filtro selezionato.`, 'info');
 					return;
 				}
 
@@ -1607,9 +1681,9 @@ const dataPath = withBase('data/club-data.json');
 					}
 
 					doc.save(`village-report-q${quarter}-${year}.pdf`);
-					transactionStatus.textContent = `PDF Q${quarter} ${year} generato con successo.`;
+					notify('receipts', `PDF Q${quarter} ${year} generato con successo.`, 'success');
 				} catch (error) {
-					transactionStatus.textContent = error.message || 'Errore durante la generazione del PDF.';
+					notify('receipts', error.message || 'Errore durante la generazione del PDF.', 'error');
 				}
 			});
 
@@ -1618,7 +1692,7 @@ const dataPath = withBase('data/club-data.json');
 					.filter((tx) => !tx.receiptGenerated)
 					.sort((a, b) => Number.parseInt(a.receiptId, 10) - Number.parseInt(b.receiptId, 10));
 				if (missing.length === 0) {
-					transactionStatus.textContent = 'Tutte le ricevute risultano gia generate.';
+					notify('receipts', 'Tutte le ricevute risultano gia generate.', 'info');
 					return;
 				}
 
@@ -1661,12 +1735,12 @@ const dataPath = withBase('data/club-data.json');
 					}
 					renderTransactionsTable();
 					if (selectedDirectory) {
-						transactionStatus.textContent = `Generate ${missing.length} ricevute mancanti nella cartella selezionata.`;
+						notify('receipts', `Generate ${missing.length} ricevute mancanti nella cartella selezionata.`, 'success');
 					} else {
-						transactionStatus.textContent = `Generate ${missing.length} ricevute mancanti in file separati.`;
+						notify('receipts', `Generate ${missing.length} ricevute mancanti in file separati.`, 'success');
 					}
 				} catch (error) {
-					transactionStatus.textContent = error.message || 'Errore durante la generazione bulk delle ricevute.';
+					notify('receipts', error.message || 'Errore durante la generazione bulk delle ricevute.', 'error');
 				} finally {
 					hideBulkSaveOverlay();
 				}
