@@ -3013,16 +3013,12 @@
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
       "amount": 10,
-      "memberId": null,
+      "memberId": "1e0033eb-1a26-4fb5-9d02-a5b47cead7dd",
       "memberName": "Chiara",
       "memberSurname": "Cesarini",
-      "memberTaxCode": "#N/A",
-      "hasIssue": true,
-      "issue": "member_ambiguous",
-      "candidateMemberIds": [
-        "1e0033eb-1a26-4fb5-9d02-a5b47cead7dd",
-        "6a795176-f836-4614-a819-8e20bdf0d037"
-      ],
+      "memberTaxCode": "CSRCHR99D69H501V",
+      "hasIssue": false,
+      "issue": "",
       "receiptGenerated": true,
       "receiptGeneratedAt": "2026-05-28T00:00:00.000Z"
     },
@@ -3113,16 +3109,12 @@
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
       "amount": 10,
-      "memberId": null,
+      "memberId": "1e0033eb-1a26-4fb5-9d02-a5b47cead7dd",
       "memberName": "Chiara",
       "memberSurname": "Cesarini",
-      "memberTaxCode": "#N/A",
-      "hasIssue": true,
-      "issue": "member_ambiguous",
-      "candidateMemberIds": [
-        "1e0033eb-1a26-4fb5-9d02-a5b47cead7dd",
-        "6a795176-f836-4614-a819-8e20bdf0d037"
-      ],
+      "memberTaxCode": "CSRCHR99D69H501V",
+      "hasIssue": false,
+      "issue": "",
       "receiptGenerated": true,
       "receiptGeneratedAt": "2026-05-28T00:00:00.000Z"
     },
@@ -3181,16 +3173,12 @@
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
       "amount": 10,
-      "memberId": null,
+      "memberId": "1e0033eb-1a26-4fb5-9d02-a5b47cead7dd",
       "memberName": "Chiara",
       "memberSurname": "Cesarini",
-      "memberTaxCode": "#N/A",
-      "hasIssue": true,
-      "issue": "member_ambiguous",
-      "candidateMemberIds": [
-        "1e0033eb-1a26-4fb5-9d02-a5b47cead7dd",
-        "6a795176-f836-4614-a819-8e20bdf0d037"
-      ],
+      "memberTaxCode": "CSRCHR99D69H501V",
+      "hasIssue": false,
+      "issue": "",
       "receiptGenerated": true,
       "receiptGeneratedAt": "2026-05-28T00:00:00.000Z"
     },
@@ -3449,16 +3437,12 @@
       "expenseType": "Quota campo lezione partita",
       "paymentMethod": "Bancomat",
       "amount": 20,
-      "memberId": null,
+      "memberId": "1e0033eb-1a26-4fb5-9d02-a5b47cead7dd",
       "memberName": "Chiara",
       "memberSurname": "Cesarini",
-      "memberTaxCode": "#N/A",
-      "hasIssue": true,
-      "issue": "member_ambiguous",
-      "candidateMemberIds": [
-        "1e0033eb-1a26-4fb5-9d02-a5b47cead7dd",
-        "6a795176-f836-4614-a819-8e20bdf0d037"
-      ],
+      "memberTaxCode": "CSRCHR99D69H501V",
+      "hasIssue": false,
+      "issue": "",
       "receiptGenerated": true,
       "receiptGeneratedAt": "2026-05-28T00:00:00.000Z"
     },
@@ -3725,16 +3709,12 @@
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
       "amount": 10,
-      "memberId": null,
+      "memberId": "1e0033eb-1a26-4fb5-9d02-a5b47cead7dd",
       "memberName": "Chiara",
       "memberSurname": "Cesarini",
-      "memberTaxCode": "#N/A",
-      "hasIssue": true,
-      "issue": "member_ambiguous",
-      "candidateMemberIds": [
-        "1e0033eb-1a26-4fb5-9d02-a5b47cead7dd",
-        "6a795176-f836-4614-a819-8e20bdf0d037"
-      ],
+      "memberTaxCode": "CSRCHR99D69H501V",
+      "hasIssue": false,
+      "issue": "",
       "receiptGenerated": true,
       "receiptGeneratedAt": "2026-05-28T00:00:00.000Z"
     },
@@ -4145,16 +4125,12 @@
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
       "amount": 10,
-      "memberId": null,
+      "memberId": "1e0033eb-1a26-4fb5-9d02-a5b47cead7dd",
       "memberName": "Chiara",
       "memberSurname": "Cesarini",
-      "memberTaxCode": "#N/A",
-      "hasIssue": true,
-      "issue": "member_ambiguous",
-      "candidateMemberIds": [
-        "1e0033eb-1a26-4fb5-9d02-a5b47cead7dd",
-        "6a795176-f836-4614-a819-8e20bdf0d037"
-      ],
+      "memberTaxCode": "CSRCHR99D69H501V",
+      "hasIssue": false,
+      "issue": "",
       "receiptGenerated": true,
       "receiptGeneratedAt": "2026-05-28T00:00:00.000Z"
     },
@@ -4541,16 +4517,12 @@
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
       "amount": 12.5,
-      "memberId": null,
+      "memberId": "1e0033eb-1a26-4fb5-9d02-a5b47cead7dd",
       "memberName": "Chiara",
       "memberSurname": "Cesarini",
-      "memberTaxCode": "#N/A",
-      "hasIssue": true,
-      "issue": "member_ambiguous",
-      "candidateMemberIds": [
-        "1e0033eb-1a26-4fb5-9d02-a5b47cead7dd",
-        "6a795176-f836-4614-a819-8e20bdf0d037"
-      ],
+      "memberTaxCode": "CSRCHR99D69H501V",
+      "hasIssue": false,
+      "issue": "",
       "receiptGenerated": true,
       "receiptGeneratedAt": "2026-05-28T00:00:00.000Z"
     },
@@ -5265,16 +5237,12 @@
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
       "amount": 10,
-      "memberId": null,
+      "memberId": "1e0033eb-1a26-4fb5-9d02-a5b47cead7dd",
       "memberName": "Chiara",
       "memberSurname": "Cesarini",
-      "memberTaxCode": "#N/A",
-      "hasIssue": true,
-      "issue": "member_ambiguous",
-      "candidateMemberIds": [
-        "1e0033eb-1a26-4fb5-9d02-a5b47cead7dd",
-        "6a795176-f836-4614-a819-8e20bdf0d037"
-      ],
+      "memberTaxCode": "CSRCHR99D69H501V",
+      "hasIssue": false,
+      "issue": "",
       "receiptGenerated": true,
       "receiptGeneratedAt": "2026-05-28T00:00:00.000Z"
     },
@@ -5285,16 +5253,12 @@
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
       "amount": 11,
-      "memberId": null,
+      "memberId": "1e0033eb-1a26-4fb5-9d02-a5b47cead7dd",
       "memberName": "Chiara",
       "memberSurname": "Cesarini",
-      "memberTaxCode": "#N/A",
-      "hasIssue": true,
-      "issue": "member_ambiguous",
-      "candidateMemberIds": [
-        "1e0033eb-1a26-4fb5-9d02-a5b47cead7dd",
-        "6a795176-f836-4614-a819-8e20bdf0d037"
-      ],
+      "memberTaxCode": "CSRCHR99D69H501V",
+      "hasIssue": false,
+      "issue": "",
       "receiptGenerated": true,
       "receiptGeneratedAt": "2026-05-28T00:00:00.000Z"
     },
@@ -5561,16 +5525,12 @@
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
       "amount": 12.5,
-      "memberId": null,
+      "memberId": "1e0033eb-1a26-4fb5-9d02-a5b47cead7dd",
       "memberName": "Chiara",
       "memberSurname": "Cesarini",
-      "memberTaxCode": "#N/A",
-      "hasIssue": true,
-      "issue": "member_ambiguous",
-      "candidateMemberIds": [
-        "1e0033eb-1a26-4fb5-9d02-a5b47cead7dd",
-        "6a795176-f836-4614-a819-8e20bdf0d037"
-      ],
+      "memberTaxCode": "CSRCHR99D69H501V",
+      "hasIssue": false,
+      "issue": "",
       "receiptGenerated": true,
       "receiptGeneratedAt": "2026-05-28T00:00:00.000Z"
     },
@@ -7761,16 +7721,12 @@
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
       "amount": 10,
-      "memberId": null,
+      "memberId": "1e0033eb-1a26-4fb5-9d02-a5b47cead7dd",
       "memberName": "Chiara",
       "memberSurname": "Cesarini",
-      "memberTaxCode": "#N/A",
-      "hasIssue": true,
-      "issue": "member_ambiguous",
-      "candidateMemberIds": [
-        "1e0033eb-1a26-4fb5-9d02-a5b47cead7dd",
-        "6a795176-f836-4614-a819-8e20bdf0d037"
-      ],
+      "memberTaxCode": "CSRCHR99D69H501V",
+      "hasIssue": false,
+      "issue": "",
       "receiptGenerated": true,
       "receiptGeneratedAt": "2026-05-28T00:00:00.000Z"
     },
@@ -7913,16 +7869,12 @@
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
       "amount": 10,
-      "memberId": null,
+      "memberId": "1e0033eb-1a26-4fb5-9d02-a5b47cead7dd",
       "memberName": "Chiara",
       "memberSurname": "Cesarini",
-      "memberTaxCode": "#N/A",
-      "hasIssue": true,
-      "issue": "member_ambiguous",
-      "candidateMemberIds": [
-        "1e0033eb-1a26-4fb5-9d02-a5b47cead7dd",
-        "6a795176-f836-4614-a819-8e20bdf0d037"
-      ],
+      "memberTaxCode": "CSRCHR99D69H501V",
+      "hasIssue": false,
+      "issue": "",
       "receiptGenerated": true,
       "receiptGeneratedAt": "2026-05-28T00:00:00.000Z"
     },
@@ -7981,16 +7933,12 @@
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
       "amount": 10,
-      "memberId": null,
+      "memberId": "1e0033eb-1a26-4fb5-9d02-a5b47cead7dd",
       "memberName": "Chiara",
       "memberSurname": "Cesarini",
-      "memberTaxCode": "#N/A",
-      "hasIssue": true,
-      "issue": "member_ambiguous",
-      "candidateMemberIds": [
-        "1e0033eb-1a26-4fb5-9d02-a5b47cead7dd",
-        "6a795176-f836-4614-a819-8e20bdf0d037"
-      ],
+      "memberTaxCode": "CSRCHR99D69H501V",
+      "hasIssue": false,
+      "issue": "",
       "receiptGenerated": true,
       "receiptGeneratedAt": "2026-05-28T00:00:00.000Z"
     },
@@ -8641,16 +8589,12 @@
       "expenseType": "Quota Campo",
       "paymentMethod": "Contanti",
       "amount": 10,
-      "memberId": null,
+      "memberId": "1e0033eb-1a26-4fb5-9d02-a5b47cead7dd",
       "memberName": "Chiara",
       "memberSurname": "Cesarini",
-      "memberTaxCode": "#N/A",
-      "hasIssue": true,
-      "issue": "member_ambiguous",
-      "candidateMemberIds": [
-        "1e0033eb-1a26-4fb5-9d02-a5b47cead7dd",
-        "6a795176-f836-4614-a819-8e20bdf0d037"
-      ],
+      "memberTaxCode": "CSRCHR99D69H501V",
+      "hasIssue": false,
+      "issue": "",
       "receiptGenerated": true,
       "receiptGeneratedAt": "2026-05-28T00:00:00.000Z"
     },
@@ -9029,16 +8973,12 @@
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
       "amount": 10,
-      "memberId": null,
+      "memberId": "1e0033eb-1a26-4fb5-9d02-a5b47cead7dd",
       "memberName": "Chiara",
       "memberSurname": "Cesarini",
-      "memberTaxCode": "#N/A",
-      "hasIssue": true,
-      "issue": "member_ambiguous",
-      "candidateMemberIds": [
-        "1e0033eb-1a26-4fb5-9d02-a5b47cead7dd",
-        "6a795176-f836-4614-a819-8e20bdf0d037"
-      ],
+      "memberTaxCode": "CSRCHR99D69H501V",
+      "hasIssue": false,
+      "issue": "",
       "receiptGenerated": true,
       "receiptGeneratedAt": "2026-05-28T00:00:00.000Z"
     },
@@ -10397,16 +10337,12 @@
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
       "amount": 10,
-      "memberId": null,
+      "memberId": "1e0033eb-1a26-4fb5-9d02-a5b47cead7dd",
       "memberName": "Chiara",
       "memberSurname": "Cesarini",
-      "memberTaxCode": "#N/A",
-      "hasIssue": true,
-      "issue": "member_ambiguous",
-      "candidateMemberIds": [
-        "1e0033eb-1a26-4fb5-9d02-a5b47cead7dd",
-        "6a795176-f836-4614-a819-8e20bdf0d037"
-      ],
+      "memberTaxCode": "CSRCHR99D69H501V",
+      "hasIssue": false,
+      "issue": "",
       "receiptGenerated": true,
       "receiptGeneratedAt": "2026-05-28T00:00:00.000Z"
     },
@@ -11525,16 +11461,12 @@
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
       "amount": 10,
-      "memberId": null,
+      "memberId": "1e0033eb-1a26-4fb5-9d02-a5b47cead7dd",
       "memberName": "Chiara",
       "memberSurname": "Cesarini",
-      "memberTaxCode": "#N/A",
-      "hasIssue": true,
-      "issue": "member_ambiguous",
-      "candidateMemberIds": [
-        "1e0033eb-1a26-4fb5-9d02-a5b47cead7dd",
-        "6a795176-f836-4614-a819-8e20bdf0d037"
-      ],
+      "memberTaxCode": "CSRCHR99D69H501V",
+      "hasIssue": false,
+      "issue": "",
       "receiptGenerated": true,
       "receiptGeneratedAt": "2026-05-28T00:00:00.000Z"
     },
@@ -11689,16 +11621,12 @@
       "expenseType": "Lezione Privata",
       "paymentMethod": "Bancomat",
       "amount": 25,
-      "memberId": null,
+      "memberId": "1e0033eb-1a26-4fb5-9d02-a5b47cead7dd",
       "memberName": "Chiara",
       "memberSurname": "Cesarini",
-      "memberTaxCode": "#N/A",
-      "hasIssue": true,
-      "issue": "member_ambiguous",
-      "candidateMemberIds": [
-        "1e0033eb-1a26-4fb5-9d02-a5b47cead7dd",
-        "6a795176-f836-4614-a819-8e20bdf0d037"
-      ],
+      "memberTaxCode": "CSRCHR99D69H501V",
+      "hasIssue": false,
+      "issue": "",
       "receiptGenerated": true,
       "receiptGeneratedAt": "2026-05-28T00:00:00.000Z"
     },
@@ -11805,16 +11733,12 @@
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
       "amount": 10,
-      "memberId": null,
+      "memberId": "1e0033eb-1a26-4fb5-9d02-a5b47cead7dd",
       "memberName": "Chiara",
       "memberSurname": "Cesarini",
-      "memberTaxCode": "#N/A",
-      "hasIssue": true,
-      "issue": "member_ambiguous",
-      "candidateMemberIds": [
-        "1e0033eb-1a26-4fb5-9d02-a5b47cead7dd",
-        "6a795176-f836-4614-a819-8e20bdf0d037"
-      ],
+      "memberTaxCode": "CSRCHR99D69H501V",
+      "hasIssue": false,
+      "issue": "",
       "receiptGenerated": true,
       "receiptGeneratedAt": "2026-05-28T00:00:00.000Z"
     },
@@ -12341,16 +12265,12 @@
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
       "amount": 10,
-      "memberId": null,
+      "memberId": "1e0033eb-1a26-4fb5-9d02-a5b47cead7dd",
       "memberName": "Chiara",
       "memberSurname": "Cesarini",
-      "memberTaxCode": "#N/A",
-      "hasIssue": true,
-      "issue": "member_ambiguous",
-      "candidateMemberIds": [
-        "1e0033eb-1a26-4fb5-9d02-a5b47cead7dd",
-        "6a795176-f836-4614-a819-8e20bdf0d037"
-      ]
+      "memberTaxCode": "CSRCHR99D69H501V",
+      "hasIssue": false,
+      "issue": ""
     },
     {
       "id": "03fba5dc-d825-42b7-bcbf-e947795be032",
@@ -12555,16 +12475,12 @@
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
       "amount": 10,
-      "memberId": null,
+      "memberId": "1e0033eb-1a26-4fb5-9d02-a5b47cead7dd",
       "memberName": "Chiara",
       "memberSurname": "Cesarini",
-      "memberTaxCode": "#N/A",
-      "hasIssue": true,
-      "issue": "member_ambiguous",
-      "candidateMemberIds": [
-        "1e0033eb-1a26-4fb5-9d02-a5b47cead7dd",
-        "6a795176-f836-4614-a819-8e20bdf0d037"
-      ]
+      "memberTaxCode": "CSRCHR99D69H501V",
+      "hasIssue": false,
+      "issue": ""
     },
     {
       "id": "3fcf3072-444b-489c-b011-6f2f316b2b71",
@@ -13855,16 +13771,12 @@
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
       "amount": 10,
-      "memberId": null,
+      "memberId": "1e0033eb-1a26-4fb5-9d02-a5b47cead7dd",
       "memberName": "Chiara",
       "memberSurname": "Cesarini",
-      "memberTaxCode": "#N/A",
-      "hasIssue": true,
-      "issue": "member_ambiguous",
-      "candidateMemberIds": [
-        "1e0033eb-1a26-4fb5-9d02-a5b47cead7dd",
-        "6a795176-f836-4614-a819-8e20bdf0d037"
-      ]
+      "memberTaxCode": "CSRCHR99D69H501V",
+      "hasIssue": false,
+      "issue": ""
     },
     {
       "id": "60159eb6-4b97-413e-9472-3537721c3607",
@@ -16793,6 +16705,15 @@
       "memberTaxCode": "DTTNGL86H60B114J",
       "hasIssue": false,
       "issue": ""
+    },
+    {
+      "id": "b66fe2e4-85ea-4eb8-87dd-e24171f4e14b",
+      "receiptId": "958",
+      "date": "2026-05-20",
+      "memberId": "00fb9f30-be13-44de-8689-640b8f00a557",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Bancomat",
+      "amount": 10
     }
   ],
   "settings": {}
