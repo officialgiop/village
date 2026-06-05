@@ -346,7 +346,8 @@ const dataPath = withBase('data/club-data.json');
 			const STORAGE_KEYS = {
 				password: 'village_admin_password',
 				access: 'village_admin_access',
-				githubConfig: 'village_github_config'
+				githubConfig: 'village_github_config',
+				lastTransactionDate: 'village_last_transaction_date'
 			};
 
 			const authBox = document.getElementById('authBox');
@@ -404,7 +405,34 @@ const dataPath = withBase('data/club-data.json');
 			const currentQuarter = Math.floor((currentMonth - 1) / 3) + 1;
 			reportYearInput.value = String(today.getFullYear());
 			reportQuarterInput.value = String(currentQuarter);
-			transactionDateInput.value = today.toISOString().slice(0, 10);
+
+			function getDefaultTransactionDate() {
+				return new Date().toISOString().slice(0, 10);
+			}
+
+			function getStickyTransactionDate() {
+				return localStorage.getItem(STORAGE_KEYS.lastTransactionDate) || getDefaultTransactionDate();
+			}
+
+			function setStickyTransactionDate(value) {
+				if (!value) return;
+				localStorage.setItem(STORAGE_KEYS.lastTransactionDate, value);
+			}
+
+			function restoreStickyTransactionDate() {
+				transactionDateInput.value = getStickyTransactionDate();
+			}
+
+			function resetNewTransactionForm() {
+				const preservedDate = transactionDateInput.value || getStickyTransactionDate();
+				setStickyTransactionDate(preservedDate);
+				transactionForm.reset();
+				transactionEditingId = null;
+				transactionDateInput.value = preservedDate;
+				updateReceiptField();
+			}
+
+			restoreStickyTransactionDate();
 
 			let clubData = { members: [], transactions: [], settings: { expenseTypes: [], paymentMethods: [] } };
 			let memberEditingId = null;
@@ -1459,6 +1487,10 @@ const dataPath = withBase('data/club-data.json');
 				applyDefaultAmountForExpenseType();
 			});
 
+			transactionDateInput.addEventListener('change', () => {
+				setStickyTransactionDate(transactionDateInput.value);
+			});
+
 			transactionForm.addEventListener('submit', async (event) => {
 				event.preventDefault();
 				if (clubData.members.length === 0) {
@@ -1479,9 +1511,7 @@ const dataPath = withBase('data/club-data.json');
 					const target = clubData.transactions.find((tx) => tx.id === transactionEditingId);
 					if (!target) {
 						notify('operation', 'Ricevuta da modificare non trovata.', 'error');
-						transactionEditingId = null;
-						transactionForm.reset();
-						updateReceiptField();
+						resetNewTransactionForm();
 						return;
 					}
 					rollbackSnapshot = { ...target };
@@ -1511,9 +1541,8 @@ const dataPath = withBase('data/club-data.json');
 				try {
 					await saveDataToGitHub(commitMessage);
 					transactionRowError = { id: null, message: '' };
-					transactionForm.reset();
-					transactionEditingId = null;
-					transactionDateInput.value = new Date().toISOString().slice(0, 10);
+					setStickyTransactionDate(transactionDateInput.value);
+					resetNewTransactionForm();
 					renderAll();
 					const statusVerb = commitMessage.startsWith('Aggiorna') ? 'aggiornata' : 'salvata';
 					notify('operation', `Ricevuta ${workingTransaction.receiptId} ${statusVerb} con successo.`, 'success');
@@ -1588,9 +1617,7 @@ const dataPath = withBase('data/club-data.json');
 						await saveDataToGitHub(`Elimina ricevuta ${tx.receiptId}`);
 						transactionRowError = { id: null, message: '' };
 						if (transactionEditingId === tx.id) {
-							transactionEditingId = null;
-							transactionForm.reset();
-							transactionDateInput.value = new Date().toISOString().slice(0, 10);
+							resetNewTransactionForm();
 						}
 						renderAll();
 						notify('receipts', `Ricevuta ${tx.receiptId} eliminata con successo.`, 'success');
