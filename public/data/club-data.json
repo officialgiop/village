@@ -16633,6 +16633,15 @@
       "memberTaxCode": "LTMGLI80H49H501K",
       "hasIssue": false,
       "issue": ""
+    },
+    {
+      "id": "01fff818-18b7-46b1-a5e3-e3dc146a973f",
+      "receiptId": "960",
+      "date": "2026-05-20",
+      "memberId": "572e7b06-f72b-4586-a257-436b3ae775bd",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Bancomat",
+      "amount": 10
     }
   ],
   "settings": {}
