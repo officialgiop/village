@@ -1154,9 +1154,19 @@ const dataPath = withBase('data/club-data.json');
 			function githubHeaders(token) {
 				return {
 					Authorization: `Bearer ${token}`,
-					Accept: 'application/vnd.github+json',
-					'Cache-Control': 'no-cache'
+					Accept: 'application/vnd.github+json'
 				};
+			}
+
+			function toFetchError(error, fallbackMessage) {
+				const message = String(error?.message || '');
+				if (message === 'Failed to fetch' || error instanceof TypeError) {
+					return new Error(
+						fallbackMessage ||
+							'Impossibile contattare GitHub dal browser. Verifica connessione, token e configurazione.'
+					);
+				}
+				return error instanceof Error ? error : new Error(message || fallbackMessage || 'Errore di rete.');
 			}
 
 			function contentsApiUrl(config, withCacheBust = true) {
@@ -1165,10 +1175,15 @@ const dataPath = withBase('data/club-data.json');
 			}
 
 			async function fetchRemoteFile(config, { includeContent = false } = {}) {
-				const response = await fetch(contentsApiUrl(config), {
-					headers: githubHeaders(config.token),
-					cache: 'no-store'
-				});
+				let response;
+				try {
+					response = await fetch(contentsApiUrl(config), {
+						headers: githubHeaders(config.token),
+						cache: 'no-store'
+					});
+				} catch (error) {
+					throw toFetchError(error, 'Impossibile leggere il file dati su GitHub.');
+				}
 				if (!response.ok) {
 					throw new Error('Impossibile leggere il file dati su GitHub.');
 				}
@@ -1215,15 +1230,20 @@ const dataPath = withBase('data/club-data.json');
 					sha,
 					content: toBase64Unicode(JSON.stringify(clubData, null, 2))
 				};
-				const response = await fetch(url, {
-					method: 'PUT',
-					headers: {
-						...githubHeaders(config.token),
-						'Content-Type': 'application/json'
-					},
-					cache: 'no-store',
-					body: JSON.stringify(body)
-				});
+				let response;
+				try {
+					response = await fetch(url, {
+						method: 'PUT',
+						headers: {
+							...githubHeaders(config.token),
+							'Content-Type': 'application/json'
+						},
+						cache: 'no-store',
+						body: JSON.stringify(body)
+					});
+				} catch (error) {
+					throw toFetchError(error, 'Impossibile salvare su GitHub.');
+				}
 				if (response.ok) {
 					const payload = await response.json().catch(() => ({}));
 					remoteFileSha = payload.content?.sha || remoteFileSha;
