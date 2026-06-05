@@ -1281,14 +1281,6 @@
       "issue": ""
     },
     {
-      "id": "ecb88962-f2e3-451b-9d77-a43d4d551b43",
-      "name": "Simona",
-      "surname": "Bernardi",
-      "taxCode": "BRNSMN74P47H501V",
-      "hasIssue": true,
-      "issue": "duplicate_tax_code"
-    },
-    {
       "id": "dc7f171f-1db1-4ec8-9e2e-91fc88a49239",
       "name": "Andrea",
       "surname": "Capriani",
@@ -16741,7 +16733,12 @@
       "memberId": "204676fd-8ea7-4733-ac8f-32ea0f0ddd6a",
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
-      "amount": 10
+      "amount": 10,
+      "memberName": "Alessio",
+      "memberSurname": "Florenzani",
+      "memberTaxCode": "FLRLSS89R20H501C",
+      "hasIssue": false,
+      "issue": ""
     }
   ],
   "settings": {}
