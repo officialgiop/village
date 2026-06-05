@@ -897,14 +897,6 @@
       "issue": ""
     },
     {
-      "id": "8b718bd0-1acc-429f-bb3f-6c4c6942c1cd",
-      "name": "Mattia",
-      "surname": "De Logu",
-      "taxCode": "DLGMTT88R25H501S",
-      "hasIssue": true,
-      "issue": "duplicate_tax_code"
-    },
-    {
       "id": "c10bf7ca-9476-4907-8c47-23f5a2b7efbf",
       "name": "Mauro",
       "surname": "Di Marzio",
@@ -2161,16 +2153,12 @@
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
       "amount": 10,
-      "memberId": null,
+      "memberId": "dbcb6162-461c-42e8-9fe0-24313097d0c3",
       "memberName": "Simona",
       "memberSurname": "Bernardi",
-      "memberTaxCode": "#N/A",
-      "hasIssue": true,
-      "issue": "member_ambiguous",
-      "candidateMemberIds": [
-        "dbcb6162-461c-42e8-9fe0-24313097d0c3",
-        "ecb88962-f2e3-451b-9d77-a43d4d551b43"
-      ],
+      "memberTaxCode": "BRNSMN74P47H501V",
+      "hasIssue": false,
+      "issue": "",
       "receiptGenerated": true,
       "receiptGeneratedAt": "2026-05-28T00:00:00.000Z"
     },
@@ -2709,16 +2697,12 @@
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
       "amount": 10,
-      "memberId": null,
+      "memberId": "dbcb6162-461c-42e8-9fe0-24313097d0c3",
       "memberName": "Simona",
       "memberSurname": "Bernardi",
-      "memberTaxCode": "#N/A",
-      "hasIssue": true,
-      "issue": "member_ambiguous",
-      "candidateMemberIds": [
-        "dbcb6162-461c-42e8-9fe0-24313097d0c3",
-        "ecb88962-f2e3-451b-9d77-a43d4d551b43"
-      ],
+      "memberTaxCode": "BRNSMN74P47H501V",
+      "hasIssue": false,
+      "issue": "",
       "receiptGenerated": true,
       "receiptGeneratedAt": "2026-05-28T00:00:00.000Z"
     },
@@ -2953,16 +2937,12 @@
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
       "amount": 10,
-      "memberId": null,
+      "memberId": "dbcb6162-461c-42e8-9fe0-24313097d0c3",
       "memberName": "Simona",
       "memberSurname": "Bernardi",
-      "memberTaxCode": "#N/A",
-      "hasIssue": true,
-      "issue": "member_ambiguous",
-      "candidateMemberIds": [
-        "dbcb6162-461c-42e8-9fe0-24313097d0c3",
-        "ecb88962-f2e3-451b-9d77-a43d4d551b43"
-      ],
+      "memberTaxCode": "BRNSMN74P47H501V",
+      "hasIssue": false,
+      "issue": "",
       "receiptGenerated": true,
       "receiptGeneratedAt": "2026-05-28T00:00:00.000Z"
     },
@@ -3181,16 +3161,12 @@
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
       "amount": 10,
-      "memberId": null,
+      "memberId": "dbcb6162-461c-42e8-9fe0-24313097d0c3",
       "memberName": "Simona",
       "memberSurname": "Bernardi",
-      "memberTaxCode": "#N/A",
-      "hasIssue": true,
-      "issue": "member_ambiguous",
-      "candidateMemberIds": [
-        "dbcb6162-461c-42e8-9fe0-24313097d0c3",
-        "ecb88962-f2e3-451b-9d77-a43d4d551b43"
-      ],
+      "memberTaxCode": "BRNSMN74P47H501V",
+      "hasIssue": false,
+      "issue": "",
       "receiptGenerated": true,
       "receiptGeneratedAt": "2026-05-28T00:00:00.000Z"
     },
@@ -3249,16 +3225,12 @@
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
       "amount": 10,
-      "memberId": null,
+      "memberId": "dbcb6162-461c-42e8-9fe0-24313097d0c3",
       "memberName": "Simona",
       "memberSurname": "Bernardi",
-      "memberTaxCode": "#N/A",
-      "hasIssue": true,
-      "issue": "member_ambiguous",
-      "candidateMemberIds": [
-        "dbcb6162-461c-42e8-9fe0-24313097d0c3",
-        "ecb88962-f2e3-451b-9d77-a43d4d551b43"
-      ],
+      "memberTaxCode": "BRNSMN74P47H501V",
+      "hasIssue": false,
+      "issue": "",
       "receiptGenerated": true,
       "receiptGeneratedAt": "2026-05-28T00:00:00.000Z"
     },
@@ -4181,16 +4153,12 @@
       "expenseType": "Quota Campo",
       "paymentMethod": "Contanti",
       "amount": 10,
-      "memberId": null,
+      "memberId": "dbcb6162-461c-42e8-9fe0-24313097d0c3",
       "memberName": "Simona",
       "memberSurname": "Bernardi",
-      "memberTaxCode": "#N/A",
-      "hasIssue": true,
-      "issue": "member_ambiguous",
-      "candidateMemberIds": [
-        "dbcb6162-461c-42e8-9fe0-24313097d0c3",
-        "ecb88962-f2e3-451b-9d77-a43d4d551b43"
-      ],
+      "memberTaxCode": "BRNSMN74P47H501V",
+      "hasIssue": false,
+      "issue": "",
       "receiptGenerated": true,
       "receiptGeneratedAt": "2026-05-28T00:00:00.000Z"
     },
@@ -4313,16 +4281,12 @@
       "expenseType": "QUOTA ISCRIZIONE CAMPIONATO",
       "paymentMethod": "Bancomat",
       "amount": 55,
-      "memberId": null,
+      "memberId": "dbcb6162-461c-42e8-9fe0-24313097d0c3",
       "memberName": "Simona",
       "memberSurname": "Bernardi",
-      "memberTaxCode": "#N/A",
-      "hasIssue": true,
-      "issue": "member_ambiguous",
-      "candidateMemberIds": [
-        "dbcb6162-461c-42e8-9fe0-24313097d0c3",
-        "ecb88962-f2e3-451b-9d77-a43d4d551b43"
-      ],
+      "memberTaxCode": "BRNSMN74P47H501V",
+      "hasIssue": false,
+      "issue": "",
       "receiptGenerated": true,
       "receiptGeneratedAt": "2026-05-28T00:00:00.000Z"
     },
@@ -5789,16 +5753,12 @@
       "expenseType": "Quota Campo",
       "paymentMethod": "Contanti",
       "amount": 10,
-      "memberId": null,
+      "memberId": "dbcb6162-461c-42e8-9fe0-24313097d0c3",
       "memberName": "Simona",
       "memberSurname": "Bernardi",
-      "memberTaxCode": "#N/A",
-      "hasIssue": true,
-      "issue": "member_ambiguous",
-      "candidateMemberIds": [
-        "dbcb6162-461c-42e8-9fe0-24313097d0c3",
-        "ecb88962-f2e3-451b-9d77-a43d4d551b43"
-      ],
+      "memberTaxCode": "BRNSMN74P47H501V",
+      "hasIssue": false,
+      "issue": "",
       "receiptGenerated": true,
       "receiptGeneratedAt": "2026-05-28T00:00:00.000Z"
     },
@@ -6177,16 +6137,12 @@
       "expenseType": "Corso Trimestrale accademy",
       "paymentMethod": "Bancomat",
       "amount": 250,
-      "memberId": null,
+      "memberId": "dbcb6162-461c-42e8-9fe0-24313097d0c3",
       "memberName": "Simona",
       "memberSurname": "Bernardi",
-      "memberTaxCode": "#N/A",
-      "hasIssue": true,
-      "issue": "member_ambiguous",
-      "candidateMemberIds": [
-        "dbcb6162-461c-42e8-9fe0-24313097d0c3",
-        "ecb88962-f2e3-451b-9d77-a43d4d551b43"
-      ],
+      "memberTaxCode": "BRNSMN74P47H501V",
+      "hasIssue": false,
+      "issue": "",
       "receiptGenerated": true,
       "receiptGeneratedAt": "2026-05-28T00:00:00.000Z"
     },
@@ -6261,16 +6217,12 @@
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
       "amount": 20,
-      "memberId": null,
+      "memberId": "dbcb6162-461c-42e8-9fe0-24313097d0c3",
       "memberName": "Simona",
       "memberSurname": "Bernardi",
-      "memberTaxCode": "#N/A",
-      "hasIssue": true,
-      "issue": "member_ambiguous",
-      "candidateMemberIds": [
-        "dbcb6162-461c-42e8-9fe0-24313097d0c3",
-        "ecb88962-f2e3-451b-9d77-a43d4d551b43"
-      ],
+      "memberTaxCode": "BRNSMN74P47H501V",
+      "hasIssue": false,
+      "issue": "",
       "receiptGenerated": true,
       "receiptGeneratedAt": "2026-05-28T00:00:00.000Z"
     },
@@ -6377,16 +6329,12 @@
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
       "amount": 13.5,
-      "memberId": null,
+      "memberId": "dbcb6162-461c-42e8-9fe0-24313097d0c3",
       "memberName": "Simona",
       "memberSurname": "Bernardi",
-      "memberTaxCode": "#N/A",
-      "hasIssue": true,
-      "issue": "member_ambiguous",
-      "candidateMemberIds": [
-        "dbcb6162-461c-42e8-9fe0-24313097d0c3",
-        "ecb88962-f2e3-451b-9d77-a43d4d551b43"
-      ],
+      "memberTaxCode": "BRNSMN74P47H501V",
+      "hasIssue": false,
+      "issue": "",
       "receiptGenerated": true,
       "receiptGeneratedAt": "2026-05-28T00:00:00.000Z"
     },
@@ -6621,16 +6569,12 @@
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
       "amount": 40,
-      "memberId": null,
+      "memberId": "dbcb6162-461c-42e8-9fe0-24313097d0c3",
       "memberName": "Simona",
       "memberSurname": "Bernardi",
-      "memberTaxCode": "#N/A",
-      "hasIssue": true,
-      "issue": "member_ambiguous",
-      "candidateMemberIds": [
-        "dbcb6162-461c-42e8-9fe0-24313097d0c3",
-        "ecb88962-f2e3-451b-9d77-a43d4d551b43"
-      ],
+      "memberTaxCode": "BRNSMN74P47H501V",
+      "hasIssue": false,
+      "issue": "",
       "receiptGenerated": true,
       "receiptGeneratedAt": "2026-05-28T00:00:00.000Z"
     },
@@ -7841,16 +7785,12 @@
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
       "amount": 10,
-      "memberId": null,
+      "memberId": "dbcb6162-461c-42e8-9fe0-24313097d0c3",
       "memberName": "Simona",
       "memberSurname": "Bernardi",
-      "memberTaxCode": "#N/A",
-      "hasIssue": true,
-      "issue": "member_ambiguous",
-      "candidateMemberIds": [
-        "dbcb6162-461c-42e8-9fe0-24313097d0c3",
-        "ecb88962-f2e3-451b-9d77-a43d4d551b43"
-      ],
+      "memberTaxCode": "BRNSMN74P47H501V",
+      "hasIssue": false,
+      "issue": "",
       "receiptGenerated": true,
       "receiptGeneratedAt": "2026-05-28T00:00:00.000Z"
     },
@@ -9125,16 +9065,12 @@
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
       "amount": 40,
-      "memberId": null,
+      "memberId": "dbcb6162-461c-42e8-9fe0-24313097d0c3",
       "memberName": "Simona",
       "memberSurname": "Bernardi",
-      "memberTaxCode": "#N/A",
-      "hasIssue": true,
-      "issue": "member_ambiguous",
-      "candidateMemberIds": [
-        "dbcb6162-461c-42e8-9fe0-24313097d0c3",
-        "ecb88962-f2e3-451b-9d77-a43d4d551b43"
-      ],
+      "memberTaxCode": "BRNSMN74P47H501V",
+      "hasIssue": false,
+      "issue": "",
       "receiptGenerated": true,
       "receiptGeneratedAt": "2026-05-28T00:00:00.000Z"
     },
@@ -10345,16 +10281,12 @@
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
       "amount": 10,
-      "memberId": null,
+      "memberId": "dbcb6162-461c-42e8-9fe0-24313097d0c3",
       "memberName": "Simona",
       "memberSurname": "Bernardi",
-      "memberTaxCode": "#N/A",
-      "hasIssue": true,
-      "issue": "member_ambiguous",
-      "candidateMemberIds": [
-        "dbcb6162-461c-42e8-9fe0-24313097d0c3",
-        "ecb88962-f2e3-451b-9d77-a43d4d551b43"
-      ],
+      "memberTaxCode": "BRNSMN74P47H501V",
+      "hasIssue": false,
+      "issue": "",
       "receiptGenerated": true,
       "receiptGeneratedAt": "2026-05-28T00:00:00.000Z"
     },
@@ -12481,16 +12413,12 @@
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
       "amount": 10,
-      "memberId": null,
+      "memberId": "dbcb6162-461c-42e8-9fe0-24313097d0c3",
       "memberName": "Simona",
       "memberSurname": "Bernardi",
-      "memberTaxCode": "#N/A",
-      "hasIssue": true,
-      "issue": "member_ambiguous",
-      "candidateMemberIds": [
-        "dbcb6162-461c-42e8-9fe0-24313097d0c3",
-        "ecb88962-f2e3-451b-9d77-a43d4d551b43"
-      ]
+      "memberTaxCode": "BRNSMN74P47H501V",
+      "hasIssue": false,
+      "issue": ""
     },
     {
       "id": "f56df3fa-d39f-4b9f-9acd-8a5934a7fd8b",
@@ -12975,16 +12903,12 @@
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
       "amount": 20,
-      "memberId": null,
+      "memberId": "dbcb6162-461c-42e8-9fe0-24313097d0c3",
       "memberName": "Simona",
       "memberSurname": "Bernardi",
-      "memberTaxCode": "#N/A",
-      "hasIssue": true,
-      "issue": "member_ambiguous",
-      "candidateMemberIds": [
-        "dbcb6162-461c-42e8-9fe0-24313097d0c3",
-        "ecb88962-f2e3-451b-9d77-a43d4d551b43"
-      ]
+      "memberTaxCode": "BRNSMN74P47H501V",
+      "hasIssue": false,
+      "issue": ""
     },
     {
       "id": "6c051f73-77f6-4c7d-be15-8997d06407ce",
@@ -14659,16 +14583,12 @@
       "expenseType": "Quota Campo",
       "paymentMethod": "Contanti",
       "amount": 10,
-      "memberId": null,
+      "memberId": "dbcb6162-461c-42e8-9fe0-24313097d0c3",
       "memberName": "Simona",
       "memberSurname": "Bernardi",
-      "memberTaxCode": "#N/A",
-      "hasIssue": true,
-      "issue": "member_ambiguous",
-      "candidateMemberIds": [
-        "dbcb6162-461c-42e8-9fe0-24313097d0c3",
-        "ecb88962-f2e3-451b-9d77-a43d4d551b43"
-      ]
+      "memberTaxCode": "BRNSMN74P47H501V",
+      "hasIssue": false,
+      "issue": ""
     },
     {
       "id": "5db40ac4-370a-42cf-8b06-4b1ff0d40939",
@@ -14845,16 +14765,12 @@
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
       "amount": 10,
-      "memberId": null,
+      "memberId": "dbcb6162-461c-42e8-9fe0-24313097d0c3",
       "memberName": "Simona",
       "memberSurname": "Bernardi",
-      "memberTaxCode": "#N/A",
-      "hasIssue": true,
-      "issue": "member_ambiguous",
-      "candidateMemberIds": [
-        "dbcb6162-461c-42e8-9fe0-24313097d0c3",
-        "ecb88962-f2e3-451b-9d77-a43d4d551b43"
-      ]
+      "memberTaxCode": "BRNSMN74P47H501V",
+      "hasIssue": false,
+      "issue": ""
     },
     {
       "id": "bb2b4513-22a2-486d-8237-a982b1143194",
@@ -15087,16 +15003,12 @@
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
       "amount": 17,
-      "memberId": null,
+      "memberId": "dbcb6162-461c-42e8-9fe0-24313097d0c3",
       "memberName": "Simona",
       "memberSurname": "Bernardi",
-      "memberTaxCode": "#N/A",
-      "hasIssue": true,
-      "issue": "member_ambiguous",
-      "candidateMemberIds": [
-        "dbcb6162-461c-42e8-9fe0-24313097d0c3",
-        "ecb88962-f2e3-451b-9d77-a43d4d551b43"
-      ]
+      "memberTaxCode": "BRNSMN74P47H501V",
+      "hasIssue": false,
+      "issue": ""
     },
     {
       "id": "4467673b-8167-4cbf-a44b-1cb4bd3174d6",
@@ -15343,16 +15255,12 @@
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
       "amount": 10,
-      "memberId": null,
+      "memberId": "dbcb6162-461c-42e8-9fe0-24313097d0c3",
       "memberName": "Simona",
       "memberSurname": "Bernardi",
-      "memberTaxCode": "#N/A",
-      "hasIssue": true,
-      "issue": "member_ambiguous",
-      "candidateMemberIds": [
-        "dbcb6162-461c-42e8-9fe0-24313097d0c3",
-        "ecb88962-f2e3-451b-9d77-a43d4d551b43"
-      ]
+      "memberTaxCode": "BRNSMN74P47H501V",
+      "hasIssue": false,
+      "issue": ""
     },
     {
       "id": "560dad52-b286-4c5f-a39a-c2119b083a4a",
