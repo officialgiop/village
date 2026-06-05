@@ -246,7 +246,11 @@ const dataPath = withBase('data/club-data.json');
 								<input id="amountInput" type="number" min="0" step="0.01" required class="w-full rounded-xl border border-slate-300 px-3 py-2 focus:border-brand-600 focus:outline-none" placeholder="es. 10.00" />
 							</label>
 							<div class="sm:col-span-2">
-								<button type="submit" class="rounded-xl bg-brand-700 px-4 py-2 text-sm font-semibold text-white hover:bg-brand-800">
+								<button
+									id="transactionSubmitButton"
+									type="submit"
+									class="rounded-xl bg-brand-700 px-4 py-2 text-sm font-semibold text-white hover:bg-brand-800 disabled:cursor-not-allowed disabled:opacity-60"
+								>
 									Salva operazione
 								</button>
 							</div>
@@ -367,6 +371,7 @@ const dataPath = withBase('data/club-data.json');
 			const membersPanel = document.getElementById('membersPanel');
 			const memberSelect = document.getElementById('memberSelect');
 			const transactionForm = document.getElementById('transactionForm');
+			const transactionSubmitButton = document.getElementById('transactionSubmitButton');
 			const transactionsTableBody = document.getElementById('transactionsTableBody');
 			const adminGlobalStatus = document.getElementById('adminGlobalStatus');
 			const operationStatus = document.getElementById('operationStatus');
@@ -439,6 +444,8 @@ const dataPath = withBase('data/club-data.json');
 			let transactionEditingId = null;
 			let transactionRowError = { id: null, message: '' };
 			let saveQueue = Promise.resolve();
+			let remoteFileSha = null;
+			let saveInProgress = false;
 			const DEFAULT_EXPENSE_TYPES = [
 				'Quota Campo',
 				'Quota Tessera Socio',
@@ -526,6 +533,12 @@ const dataPath = withBase('data/club-data.json');
 				memberEditingId = null;
 				memberForm.reset();
 				updateMemberSubmitButton();
+			}
+
+			function setTransactionSubmitBusy(isBusy) {
+				if (!transactionSubmitButton) return;
+				transactionSubmitButton.disabled = isBusy;
+				transactionSubmitButton.textContent = isBusy ? 'Salvataggio...' : 'Salva operazione';
 			}
 
 			function notify(scope, message, type = 'info') {
@@ -1078,31 +1091,15 @@ const dataPath = withBase('data/club-data.json');
 			}
 
 			async function loadClubDataFromPublic() {
+				remoteFileSha = null;
 				try {
 					const response = await fetch(dataPath, { cache: 'no-store' });
 					if (!response.ok) throw new Error('Impossibile leggere il file dati pubblico.');
 					const payload = await response.json();
-					clubData = {
-						members: Array.isArray(payload.members) ? payload.members : [],
-						transactions: Array.isArray(payload.transactions) ? payload.transactions : [],
-						settings:
-							payload.settings && typeof payload.settings === 'object'
-								? payload.settings
-								: {
-									expenseTypes: [...DEFAULT_EXPENSE_TYPES],
-									paymentMethods: [...DEFAULT_PAYMENT_METHODS]
-								}
-					};
+					clubData = normalizeClubData(payload);
 				} catch (error) {
 					console.error(error);
-					clubData = {
-						members: [],
-						transactions: [],
-						settings: {
-							expenseTypes: [...DEFAULT_EXPENSE_TYPES],
-							paymentMethods: [...DEFAULT_PAYMENT_METHODS]
-						}
-					};
+					clubData = normalizeClubData({});
 				}
 				renderAll();
 			}
@@ -1114,37 +1111,89 @@ const dataPath = withBase('data/club-data.json');
 					return;
 				}
 				try {
-					const url = `https://api.github.com/repos/${config.owner}/${config.repo}/contents/${config.dataPath}?ref=${encodeURIComponent(config.branch)}`;
-					const response = await fetch(url, {
-						headers: {
-							Authorization: `Bearer ${config.token}`,
-							Accept: 'application/vnd.github+json'
-						},
-						cache: 'no-store'
-					});
-					if (!response.ok) throw new Error('Impossibile leggere il file dati da GitHub.');
-					const payload = await response.json();
-					const decoded = fromBase64Unicode(String(payload.content || '').replace(/\n/g, ''));
-					const parsed = parseJSONSafely(decoded, { members: [], transactions: [] });
-					clubData = {
-						members: Array.isArray(parsed.members) ? parsed.members : [],
-						transactions: Array.isArray(parsed.transactions) ? parsed.transactions : [],
-						settings:
-							parsed.settings && typeof parsed.settings === 'object'
-								? parsed.settings
-								: {
-									expenseTypes: [...DEFAULT_EXPENSE_TYPES],
-									paymentMethods: [...DEFAULT_PAYMENT_METHODS]
-								}
-					};
+					const remote = await fetchRemoteFile(config, { includeContent: true });
+					remoteFileSha = remote.sha;
+					clubData = normalizeClubData(remote.data);
 				} catch (error) {
 					console.error(error);
+					remoteFileSha = null;
 					await loadClubDataFromPublic();
 					return;
 				}
 				renderAll();
 			}
 
+			function sleep(ms) {
+				return new Promise((resolve) => setTimeout(resolve, ms));
+			}
+
+			function mergeClubData(remoteData, localData) {
+				const remote = {
+					members: Array.isArray(remoteData?.members) ? remoteData.members : [],
+					transactions: Array.isArray(remoteData?.transactions) ? remoteData.transactions : [],
+					settings:
+						remoteData?.settings && typeof remoteData.settings === 'object' ? remoteData.settings : {}
+				};
+				const local = {
+					members: Array.isArray(localData?.members) ? localData.members : [],
+					transactions: Array.isArray(localData?.transactions) ? localData.transactions : [],
+					settings:
+						localData?.settings && typeof localData.settings === 'object' ? localData.settings : {}
+				};
+				const memberById = new Map(remote.members.map((member) => [member.id, member]));
+				for (const member of local.members) memberById.set(member.id, member);
+				const txById = new Map(remote.transactions.map((tx) => [tx.id, tx]));
+				for (const tx of local.transactions) txById.set(tx.id, tx);
+				return {
+					members: Array.from(memberById.values()),
+					transactions: Array.from(txById.values()),
+					settings: { ...remote.settings, ...local.settings }
+				};
+			}
+
+			function githubHeaders(token) {
+				return {
+					Authorization: `Bearer ${token}`,
+					Accept: 'application/vnd.github+json',
+					'Cache-Control': 'no-cache'
+				};
+			}
+
+			function contentsApiUrl(config, withCacheBust = true) {
+				const base = `https://api.github.com/repos/${config.owner}/${config.repo}/contents/${config.dataPath}?ref=${encodeURIComponent(config.branch)}`;
+				return withCacheBust ? `${base}&t=${Date.now()}` : base;
+			}
+
+			async function fetchRemoteFile(config, { includeContent = false } = {}) {
+				const response = await fetch(contentsApiUrl(config), {
+					headers: githubHeaders(config.token),
+					cache: 'no-store'
+				});
+				if (!response.ok) {
+					throw new Error('Impossibile leggere il file dati su GitHub.');
+				}
+				const payload = await response.json();
+				const result = { sha: payload.sha };
+				if (includeContent) {
+					const decoded = fromBase64Unicode(String(payload.content || '').replace(/\n/g, ''));
+					result.data = parseJSONSafely(decoded, { members: [], transactions: [], settings: {} });
+				}
+				return result;
+			}
+
+			function normalizeClubData(parsed) {
+				return {
+					members: Array.isArray(parsed.members) ? parsed.members : [],
+					transactions: Array.isArray(parsed.transactions) ? parsed.transactions : [],
+					settings:
+						parsed.settings && typeof parsed.settings === 'object'
+							? parsed.settings
+							: {
+								expenseTypes: [...DEFAULT_EXPENSE_TYPES],
+								paymentMethods: [...DEFAULT_PAYMENT_METHODS]
+							}
+				};
+			}
 			function toBase64Unicode(value) {
 				return btoa(unescape(encodeURIComponent(value)));
 			}
@@ -1153,19 +1202,9 @@ const dataPath = withBase('data/club-data.json');
 				return decodeURIComponent(escape(atob(value)));
 			}
 
-			async function getCurrentFileSha(config) {
-				const url = `https://api.github.com/repos/${config.owner}/${config.repo}/contents/${config.dataPath}?ref=${encodeURIComponent(config.branch)}`;
-				const response = await fetch(url, {
-					headers: {
-						Authorization: `Bearer ${config.token}`,
-						Accept: 'application/vnd.github+json'
-					}
-				});
-				if (!response.ok) {
-					throw new Error('Impossibile leggere il file dati su GitHub.');
-				}
-				const payload = await response.json();
-				return payload.sha;
+			function isShaConflictError(message) {
+				const text = String(message || '').toLowerCase();
+				return text.includes('does not match') || text.includes('sha') && text.includes('conflict');
 			}
 
 			async function putDataToGitHub(config, sha, commitMessage) {
@@ -1179,38 +1218,61 @@ const dataPath = withBase('data/club-data.json');
 				const response = await fetch(url, {
 					method: 'PUT',
 					headers: {
-						Authorization: `Bearer ${config.token}`,
-						Accept: 'application/vnd.github+json',
+						...githubHeaders(config.token),
 						'Content-Type': 'application/json'
 					},
+					cache: 'no-store',
 					body: JSON.stringify(body)
 				});
-				if (response.ok) return;
+				if (response.ok) {
+					const payload = await response.json().catch(() => ({}));
+					remoteFileSha = payload.content?.sha || remoteFileSha;
+					return remoteFileSha;
+				}
 				const error = await response.json().catch(() => ({}));
 				throw new Error(error.message || 'Errore durante il salvataggio su GitHub.');
 			}
 
 			function saveDataToGitHub(commitMessage) {
 				const runSave = async () => {
-					const config = getGitHubConfig();
-					if (!config) throw new Error('Configurazione GitHub non trovata.');
-					const maxAttempts = 6;
-					for (let attempt = 1; attempt <= maxAttempts; attempt += 1) {
-						try {
-							const sha = await getCurrentFileSha(config);
-							await putDataToGitHub(config, sha, commitMessage);
-							return;
-						} catch (error) {
-							const message = String(error?.message || '');
-							const isShaConflict = message.includes('does not match');
-							const isLastAttempt = attempt === maxAttempts;
-							if (!isShaConflict || isLastAttempt) {
-								if (isShaConflict && isLastAttempt) {
-									throw new Error('Conflitto di salvataggio ripetuto. Riprova tra qualche secondo.');
+					saveInProgress = true;
+					try {
+						const config = getGitHubConfig();
+						if (!config) throw new Error('Configurazione GitHub non trovata.');
+						const localSnapshot = JSON.parse(JSON.stringify(clubData));
+						const maxAttempts = 8;
+
+						for (let attempt = 1; attempt <= maxAttempts; attempt += 1) {
+							try {
+								let sha = remoteFileSha;
+								if (!sha) {
+									const remote = await fetchRemoteFile(config);
+									sha = remote.sha;
+									remoteFileSha = sha;
 								}
-								throw error;
+								await putDataToGitHub(config, sha, commitMessage);
+								return;
+							} catch (error) {
+								const message = String(error?.message || '');
+								const isShaConflict = isShaConflictError(message);
+								const isLastAttempt = attempt === maxAttempts;
+								if (!isShaConflict || isLastAttempt) {
+									if (isShaConflict && isLastAttempt) {
+										throw new Error('Conflitto di salvataggio ripetuto. Riprova tra qualche secondo.');
+									}
+									throw error;
+								}
+
+								remoteFileSha = null;
+								await sleep(Math.min(300 * attempt, 2000));
+
+								const remote = await fetchRemoteFile(config, { includeContent: true });
+								remoteFileSha = remote.sha;
+								clubData = mergeClubData(normalizeClubData(remote.data), localSnapshot);
 							}
 						}
+					} finally {
+						saveInProgress = false;
 					}
 				};
 
@@ -1493,6 +1555,10 @@ const dataPath = withBase('data/club-data.json');
 
 			transactionForm.addEventListener('submit', async (event) => {
 				event.preventDefault();
+				if (saveInProgress) {
+					notify('operation', 'Salvataggio in corso, attendi il completamento.', 'info');
+					return;
+				}
 				if (clubData.members.length === 0) {
 					notify('operation', 'Inserisci almeno un socio prima di registrare operazioni.', 'error');
 					return;
@@ -1539,6 +1605,7 @@ const dataPath = withBase('data/club-data.json');
 				}
 
 				try {
+					setTransactionSubmitBusy(true);
 					await saveDataToGitHub(commitMessage);
 					transactionRowError = { id: null, message: '' };
 					setStickyTransactionDate(transactionDateInput.value);
@@ -1556,6 +1623,8 @@ const dataPath = withBase('data/club-data.json');
 						}
 					}
 					notify('operation', error.message, 'error');
+				} finally {
+					setTransactionSubmitBusy(false);
 				}
 			});
 
