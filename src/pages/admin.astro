@@ -171,12 +171,12 @@ const dataPath = withBase('data/club-data.json');
 						<div id="membersPanel" class="mt-4 hidden">
 						<form id="memberForm" class="grid gap-3 sm:grid-cols-3">
 							<label class="text-sm">
-								<span class="mb-1 block font-medium text-slate-700">Nome</span>
-								<input id="memberName" required class="w-full rounded-xl border border-slate-300 px-3 py-2 focus:border-brand-600 focus:outline-none" />
-							</label>
-							<label class="text-sm">
 								<span class="mb-1 block font-medium text-slate-700">Cognome</span>
 								<input id="memberSurname" required class="w-full rounded-xl border border-slate-300 px-3 py-2 focus:border-brand-600 focus:outline-none" />
+							</label>
+							<label class="text-sm">
+								<span class="mb-1 block font-medium text-slate-700">Nome</span>
+								<input id="memberName" required class="w-full rounded-xl border border-slate-300 px-3 py-2 focus:border-brand-600 focus:outline-none" />
 							</label>
 							<label class="text-sm">
 								<span class="mb-1 block font-medium text-slate-700">Codice fiscale</span>
@@ -198,8 +198,8 @@ const dataPath = withBase('data/club-data.json');
 								<thead class="bg-slate-50 text-xs uppercase tracking-[0.12em] text-slate-600">
 									<tr>
 										<th class="px-3 py-2">N.</th>
-										<th class="px-3 py-2">Nome</th>
 										<th class="px-3 py-2">Cognome</th>
+										<th class="px-3 py-2">Nome</th>
 										<th class="px-3 py-2">Codice fiscale</th>
 										<th class="px-3 py-2">Azioni</th>
 									</tr>
@@ -666,6 +666,16 @@ const dataPath = withBase('data/club-data.json');
 				paymentMethodsTextarea.value = getPaymentMethods().join('\n');
 			}
 
+			function sortMembersBySurname(members) {
+				return [...members].sort((a, b) => {
+					const surnameCompare = String(a.surname || '').localeCompare(String(b.surname || ''), 'it', {
+						sensitivity: 'base'
+					});
+					if (surnameCompare !== 0) return surnameCompare;
+					return String(a.name || '').localeCompare(String(b.name || ''), 'it', { sensitivity: 'base' });
+				});
+			}
+
 			function renderMembersTable() {
 				if (clubData.members.length === 0) {
 					membersTableBody.innerHTML =
@@ -679,7 +689,7 @@ const dataPath = withBase('data/club-data.json');
 					return acc;
 				}, {});
 
-				membersTableBody.innerHTML = clubData.members
+				membersTableBody.innerHTML = sortMembersBySurname(clubData.members)
 					.map(
 						(member, index) => {
 							const taxCode = String(member.taxCode || '').toUpperCase();
@@ -693,8 +703,8 @@ const dataPath = withBase('data/club-data.json');
 								: '';
 							return `<tr class="${rowClass}">
 							<td class="px-3 py-2 font-semibold text-slate-700">${index + 1}</td>
-							<td class="px-3 py-2">${member.name}</td>
 							<td class="px-3 py-2">${member.surname}</td>
+							<td class="px-3 py-2">${member.name}</td>
 							<td class="${taxCodeClass}">
 								${taxCode}
 								${issueTag}
@@ -730,10 +740,10 @@ const dataPath = withBase('data/club-data.json');
 					memberSelect.innerHTML = '<option value="">Prima inserisci almeno un socio</option>';
 					return;
 				}
-				memberSelect.innerHTML = clubData.members
+				memberSelect.innerHTML = sortMembersBySurname(clubData.members)
 					.map(
 						(member) =>
-							`<option value="${member.id}">${member.name} ${member.surname} (${member.taxCode.toUpperCase()})</option>`
+							`<option value="${member.id}">${member.surname} ${member.name} (${member.taxCode.toUpperCase()})</option>`
 					)
 					.join('');
 			}
