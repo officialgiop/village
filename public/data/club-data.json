@@ -16649,20 +16649,6 @@
       "issue": ""
     },
     {
-      "id": "60b765be-1d75-457d-9235-6bafce09bd5e",
-      "receiptId": "963",
-      "date": "2026-05-21",
-      "memberId": "16fa8ef6-c54b-4344-892d-d02c689d5daa",
-      "expenseType": "Quota Campo",
-      "paymentMethod": "Bancomat",
-      "amount": 10,
-      "memberName": "Federica",
-      "memberSurname": "Bartocci",
-      "memberTaxCode": "BRTFRC77T43H501L",
-      "hasIssue": false,
-      "issue": ""
-    },
-    {
       "id": "5deac100-4efd-4b11-8c0c-bf1d646b463f",
       "receiptId": "964",
       "date": "2026-05-21",
