@@ -11003,7 +11003,7 @@
       "amount": 10,
       "memberId": "5d49d57c-995d-4781-a0b1-dfa5eb3b59e7",
       "memberName": "Pedro",
-      "memberSurname": "Iranzo",
+      "memberSurname": "Iranzo Martinez",
       "memberTaxCode": "RNZPDR66A13Z131L",
       "hasIssue": false,
       "issue": "",
@@ -16631,20 +16631,6 @@
       "memberName": "Giulia",
       "memberSurname": "Altomonte",
       "memberTaxCode": "LTMGLI80H49H501K",
-      "hasIssue": false,
-      "issue": ""
-    },
-    {
-      "id": "c3a5ff83-daff-463b-8a9b-122f08799477",
-      "receiptId": "960",
-      "date": "2026-06-05",
-      "memberId": "204676fd-8ea7-4733-ac8f-32ea0f0ddd6a",
-      "expenseType": "Quota Campo",
-      "paymentMethod": "Bancomat",
-      "amount": 10,
-      "memberName": "Alessio",
-      "memberSurname": "Florenzani",
-      "memberTaxCode": "FLRLSS89R20H501C",
       "hasIssue": false,
       "issue": ""
     }
