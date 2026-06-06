@@ -16647,6 +16647,15 @@
       "memberTaxCode": "SVNGRG90L03Z129X",
       "hasIssue": false,
       "issue": ""
+    },
+    {
+      "id": "decdcc2c-f0ff-4964-bf84-724fa3b55086",
+      "receiptId": "961",
+      "date": "2026-05-20",
+      "memberId": "ac0540f1-7836-4a99-b194-3076ac7e6a7d",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Bancomat",
+      "amount": 10
     }
   ],
   "settings": {}
