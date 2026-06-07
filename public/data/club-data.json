@@ -1967,6 +1967,12 @@
       "taxCode": "DLDMRC87T02G712R",
       "hasIssue": false,
       "issue": ""
+    },
+    {
+      "id": "33a0ebde-770e-4517-8c91-d31c0b283618",
+      "name": "LUCA",
+      "surname": "BONUCCI",
+      "taxCode": "BNCLCU89D07H501W"
     }
   ],
   "transactions": [
@@ -16669,7 +16675,12 @@
       "memberId": "b304aefe-326f-4655-8102-253f37a6f575",
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
-      "amount": 10
+      "amount": 10,
+      "memberName": "Simone",
+      "memberSurname": "Taliani",
+      "memberTaxCode": "TLNSMN94B08H501C",
+      "hasIssue": false,
+      "issue": ""
     }
   ],
   "settings": {}
