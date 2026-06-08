@@ -16685,18 +16685,59 @@
   ],
   "settings": {
     "expenseTypes": [
-      "Quota Campo",
-      "Quota Campo Doppia",
-      "Quota Tessera Socio",
-      "Lezione Privata",
-      "Lezione Doppia",
-      "Corso Settimanale",
-      "Quota campo + quota associativa",
-      "Contributo Kit allenamento",
-      "Corso Mensile",
-      "Quota campo lezione partita",
-      "Corso Trimestrale Accademy",
-      "Quota Iscrizione Campionato"
+      {
+        "name": "Quota Campo",
+        "defaultAmount": 10
+      },
+      {
+        "name": "Quota Campo Doppia",
+        "defaultAmount": 20
+      },
+      {
+        "name": "Quota Tessera Socio",
+        "defaultAmount": null
+      },
+      {
+        "name": "Lezione Privata",
+        "defaultAmount": 25
+      },
+      {
+        "name": "Lezione Doppia",
+        "defaultAmount": 35
+      },
+      {
+        "name": "Corso Settimanale",
+        "defaultAmount": null
+      },
+      {
+        "name": "Quota campo + quota associativa",
+        "defaultAmount": null
+      },
+      {
+        "name": "Contributo Kit allenamento",
+        "defaultAmount": null
+      },
+      {
+        "name": "Corso Mensile",
+        "defaultAmount": 100
+      },
+      {
+        "name": "Quota campo lezione partita",
+        "defaultAmount": null
+      },
+      {
+        "name": "Corso Trimestrale Accademy",
+        "defaultAmount": null
+      },
+      {
+        "name": "Quota Iscrizione Campionato",
+        "defaultAmount": 25
+      }
+    ],
+    "paymentMethods": [
+      "Bancomat",
+      "Contanti",
+      "Bonifico"
     ]
   }
 }
