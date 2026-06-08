@@ -223,7 +223,21 @@ const dataPath = withBase('data/club-data.json');
 							</label>
 							<label class="text-sm sm:col-span-2">
 								<span class="mb-1 block font-medium text-slate-700">Socio</span>
-								<select id="memberSelect" required class="w-full rounded-xl border border-slate-300 px-3 py-2 focus:border-brand-600 focus:outline-none"></select>
+								<div class="relative">
+									<input
+										id="memberSearchInput"
+										type="text"
+										autocomplete="off"
+										placeholder="Cerca per nome o cognome..."
+										class="w-full rounded-xl border border-slate-300 px-3 py-2 focus:border-brand-600 focus:outline-none"
+									/>
+									<input id="memberIdInput" type="hidden" />
+									<ul
+										id="memberSearchResults"
+										class="absolute z-20 mt-1 hidden max-h-56 w-full overflow-auto rounded-xl border border-slate-200 bg-white py-1 shadow-lg"
+										role="listbox"
+									></ul>
+								</div>
 							</label>
 							<label class="text-sm">
 								<span class="mb-1 block font-medium text-slate-700">Causale pagamento</span>
@@ -369,7 +383,9 @@ const dataPath = withBase('data/club-data.json');
 			const membersTableBody = document.getElementById('membersTableBody');
 			const toggleMembersButton = document.getElementById('toggleMembersButton');
 			const membersPanel = document.getElementById('membersPanel');
-			const memberSelect = document.getElementById('memberSelect');
+			const memberSearchInput = document.getElementById('memberSearchInput');
+			const memberIdInput = document.getElementById('memberIdInput');
+			const memberSearchResults = document.getElementById('memberSearchResults');
 			const transactionForm = document.getElementById('transactionForm');
 			const transactionSubmitButton = document.getElementById('transactionSubmitButton');
 			const transactionsTableBody = document.getElementById('transactionsTableBody');
@@ -434,7 +450,122 @@ const dataPath = withBase('data/club-data.json');
 				transactionForm.reset();
 				transactionEditingId = null;
 				transactionDateInput.value = preservedDate;
+				clearMemberSelection();
 				updateReceiptField();
+			}
+
+			let memberSearchActiveIndex = -1;
+
+			function formatMemberLabel(member) {
+				return `${member.surname} ${member.name} (${String(member.taxCode || '').toUpperCase()})`;
+			}
+
+			function memberMatchesQuery(member, query) {
+				const q = String(query || '').trim().toLowerCase();
+				if (!q) return true;
+				const name = String(member.name || '').toLowerCase();
+				const surname = String(member.surname || '').toLowerCase();
+				const full = `${surname} ${name}`;
+				const taxCode = String(member.taxCode || '').toLowerCase();
+				return (
+					name.startsWith(q) ||
+					surname.startsWith(q) ||
+					name.includes(q) ||
+					surname.includes(q) ||
+					full.includes(q) ||
+					taxCode.includes(q)
+				);
+			}
+
+			function getFilteredMembers(query) {
+				return sortMembersBySurname(clubData.members).filter((member) => memberMatchesQuery(member, query));
+			}
+
+			function hideMemberSearchResults() {
+				memberSearchActiveIndex = -1;
+				memberSearchResults.classList.add('hidden');
+				memberSearchResults.innerHTML = '';
+			}
+
+			function clearMemberSelection() {
+				memberIdInput.value = '';
+				memberSearchInput.value = '';
+				hideMemberSearchResults();
+			}
+
+			function selectMember(member) {
+				memberIdInput.value = member.id;
+				memberSearchInput.value = formatMemberLabel(member);
+				hideMemberSearchResults();
+			}
+
+			function setSelectedMemberById(memberId) {
+				const member = clubData.members.find((item) => item.id === memberId);
+				if (member) {
+					selectMember(member);
+					return;
+				}
+				clearMemberSelection();
+			}
+
+			function renderMemberSearchResults(query = memberSearchInput.value) {
+				if (clubData.members.length === 0) {
+					memberSearchInput.placeholder = 'Prima inserisci almeno un socio';
+					memberSearchInput.disabled = true;
+					hideMemberSearchResults();
+					return;
+				}
+				memberSearchInput.placeholder = 'Cerca per nome o cognome...';
+				memberSearchInput.disabled = false;
+
+				const matches = getFilteredMembers(query).slice(0, 20);
+				memberSearchActiveIndex = -1;
+				if (matches.length === 0) {
+					memberSearchResults.innerHTML =
+						'<li class="px-3 py-2 text-sm text-slate-500">Nessun socio trovato.</li>';
+					memberSearchResults.classList.remove('hidden');
+					return;
+				}
+
+				memberSearchResults.innerHTML = matches
+					.map(
+						(member, index) =>
+							`<li
+								class="member-search-option cursor-pointer px-3 py-2 text-sm text-slate-800 hover:bg-brand-50"
+								data-member-option-id="${member.id}"
+								data-member-option-index="${index}"
+								role="option"
+							>${formatMemberLabel(member)}</li>`
+					)
+					.join('');
+				memberSearchResults.classList.remove('hidden');
+			}
+
+			function highlightMemberSearchOption(index) {
+				const options = memberSearchResults.querySelectorAll('.member-search-option');
+				options.forEach((option, optionIndex) => {
+					option.classList.toggle('bg-brand-50', optionIndex === index);
+				});
+				const active = options[index];
+				if (active) active.scrollIntoView({ block: 'nearest' });
+			}
+
+			function syncMemberSearchSelection() {
+				if (clubData.members.length === 0) {
+					memberSearchInput.placeholder = 'Prima inserisci almeno un socio';
+					memberSearchInput.disabled = true;
+					clearMemberSelection();
+					return;
+				}
+				memberSearchInput.placeholder = 'Cerca per nome o cognome...';
+				memberSearchInput.disabled = false;
+				if (!memberIdInput.value) return;
+				const member = clubData.members.find((item) => item.id === memberIdInput.value);
+				if (member) {
+					memberSearchInput.value = formatMemberLabel(member);
+					return;
+				}
+				clearMemberSelection();
 			}
 
 			restoreStickyTransactionDate();
@@ -776,19 +907,6 @@ const dataPath = withBase('data/club-data.json');
 					.join('');
 			}
 
-			function renderMemberOptions() {
-				if (clubData.members.length === 0) {
-					memberSelect.innerHTML = '<option value="">Prima inserisci almeno un socio</option>';
-					return;
-				}
-				memberSelect.innerHTML = sortMembersBySurname(clubData.members)
-					.map(
-						(member) =>
-							`<option value="${member.id}">${member.surname} ${member.name} (${member.taxCode.toUpperCase()})</option>`
-					)
-					.join('');
-			}
-
 			function resolveTransactionPerson(tx) {
 				const linkedMember = tx.memberId ? clubData.members.find((item) => item.id === tx.memberId) : null;
 				if (linkedMember) {
@@ -1080,7 +1198,7 @@ const dataPath = withBase('data/club-data.json');
 			function renderAll() {
 				reconcileTransactionsWithMembers();
 				renderMembersTable();
-				renderMemberOptions();
+				syncMemberSearchSelection();
 				renderExpenseTypeOptions();
 				renderExpenseTypesEditor();
 				renderPaymentMethodOptions();
@@ -1573,6 +1691,61 @@ const dataPath = withBase('data/club-data.json');
 				setStickyTransactionDate(transactionDateInput.value);
 			});
 
+			memberSearchInput.addEventListener('input', () => {
+				memberIdInput.value = '';
+				renderMemberSearchResults(memberSearchInput.value);
+			});
+
+			memberSearchInput.addEventListener('focus', () => {
+				renderMemberSearchResults(memberSearchInput.value);
+			});
+
+			memberSearchInput.addEventListener('keydown', (event) => {
+				const options = memberSearchResults.querySelectorAll('.member-search-option');
+				if (event.key === 'ArrowDown') {
+					event.preventDefault();
+					if (options.length === 0) return;
+					memberSearchActiveIndex = Math.min(memberSearchActiveIndex + 1, options.length - 1);
+					highlightMemberSearchOption(memberSearchActiveIndex);
+					return;
+				}
+				if (event.key === 'ArrowUp') {
+					event.preventDefault();
+					if (options.length === 0) return;
+					memberSearchActiveIndex = Math.max(memberSearchActiveIndex - 1, 0);
+					highlightMemberSearchOption(memberSearchActiveIndex);
+					return;
+				}
+				if (event.key === 'Enter' && memberSearchActiveIndex >= 0) {
+					event.preventDefault();
+					const active = options[memberSearchActiveIndex];
+					const memberId = active?.getAttribute('data-member-option-id');
+					const member = clubData.members.find((item) => item.id === memberId);
+					if (member) selectMember(member);
+					return;
+				}
+				if (event.key === 'Escape') {
+					hideMemberSearchResults();
+				}
+			});
+
+			memberSearchResults.addEventListener('mousedown', (event) => {
+				event.preventDefault();
+			});
+
+			memberSearchResults.addEventListener('click', (event) => {
+				const option = event.target.closest('[data-member-option-id]');
+				if (!option) return;
+				const memberId = option.getAttribute('data-member-option-id');
+				const member = clubData.members.find((item) => item.id === memberId);
+				if (member) selectMember(member);
+			});
+
+			document.addEventListener('click', (event) => {
+				if (event.target.closest('#memberSearchInput, #memberSearchResults')) return;
+				hideMemberSearchResults();
+			});
+
 			transactionForm.addEventListener('submit', async (event) => {
 				event.preventDefault();
 				if (saveInProgress) {
@@ -1581,6 +1754,12 @@ const dataPath = withBase('data/club-data.json');
 				}
 				if (clubData.members.length === 0) {
 					notify('operation', 'Inserisci almeno un socio prima di registrare operazioni.', 'error');
+					return;
+				}
+				if (!memberIdInput.value) {
+					notify('operation', 'Seleziona un socio dalla lista di ricerca.', 'error');
+					memberSearchInput.focus();
+					renderMemberSearchResults(memberSearchInput.value);
 					return;
 				}
 				const amountRaw = amountInput.value;
@@ -1602,7 +1781,7 @@ const dataPath = withBase('data/club-data.json');
 					}
 					rollbackSnapshot = { ...target };
 					target.date = transactionDateInput.value;
-					target.memberId = memberSelect.value;
+					target.memberId = memberIdInput.value;
 					target.expenseType = expenseTypeInput.value;
 					target.paymentMethod = paymentMethodInput.value;
 					target.amount = Math.round(amount * 100) / 100;
@@ -1613,7 +1792,7 @@ const dataPath = withBase('data/club-data.json');
 						id: crypto.randomUUID(),
 						receiptId: getNextReceiptId(),
 						date: transactionDateInput.value,
-						memberId: memberSelect.value,
+						memberId: memberIdInput.value,
 						expenseType: expenseTypeInput.value,
 						paymentMethod: paymentMethodInput.value,
 						amount: Math.round(amount * 100) / 100
@@ -1666,7 +1845,7 @@ const dataPath = withBase('data/club-data.json');
 					transactionEditingId = tx.id;
 					receiptIdInput.value = tx.receiptId;
 					transactionDateInput.value = tx.date;
-					memberSelect.value = tx.memberId || '';
+					setSelectedMemberById(tx.memberId || '');
 					expenseTypeInput.value = tx.expenseType;
 					paymentMethodInput.value = tx.paymentMethod;
 					amountInput.value = String(tx.amount);
