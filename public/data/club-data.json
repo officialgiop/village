@@ -16683,5 +16683,20 @@
       "issue": ""
     }
   ],
-  "settings": {}
+  "settings": {
+    "expenseTypes": [
+      "Quota Campo",
+      "Quota Campo Doppia",
+      "Quota Tessera Socio",
+      "Lezione Privata",
+      "Lezione Doppia",
+      "Corso Settimanale",
+      "Quota campo + quota associativa",
+      "Contributo Kit allenamento",
+      "Corso Mensile",
+      "Quota campo lezione partita",
+      "Corso Trimestrale accademy",
+      "Quota Iscrizione Campionato"
+    ]
+  }
 }
