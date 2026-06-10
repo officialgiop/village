@@ -17199,6 +17199,20 @@
       "memberId": "324058af-5a4e-422d-85b2-5288cfbf3bd7",
       "expenseType": "Quota campo lezione partita",
       "paymentMethod": "Bancomat",
+      "amount": 15,
+      "memberName": "Tiziana",
+      "memberSurname": "Ciccolini",
+      "memberTaxCode": "CCCTZN72C68H501G",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "40788d29-a11f-485e-bd26-c11e326982f0",
+      "receiptId": "1001",
+      "date": "2026-05-25",
+      "memberId": "a94b12d7-d151-4f33-b17b-7b4e1d476bbe",
+      "expenseType": "Quota campo lezione partita",
+      "paymentMethod": "Contanti",
       "amount": 15
     }
   ],
