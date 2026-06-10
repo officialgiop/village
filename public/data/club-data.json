@@ -17812,7 +17812,7 @@
       "id": "305ed74b-c3c5-4a07-aea0-215a5fd666fa",
       "receiptId": "1044",
       "date": "2026-06-01",
-      "memberId": "ff8662e3-0edd-446b-b2ae-076c4e07ae1b",
+      "memberId": "e583e00b-952e-4ae0-be25-1b9e94981cf9",
       "expenseType": "Quota campo lezione partita",
       "paymentMethod": "Bancomat",
       "amount": 15,
@@ -17857,7 +17857,12 @@
       "memberId": "d35bffcf-da1c-47aa-acd5-d10e2796c59e",
       "expenseType": "Quota Campo Doppia",
       "paymentMethod": "Bancomat",
-      "amount": 20
+      "amount": 20,
+      "memberName": "Giulia",
+      "memberSurname": "Altomonte",
+      "memberTaxCode": "LTMGLI80H49H501K",
+      "hasIssue": false,
+      "issue": ""
     }
   ],
   "settings": {
