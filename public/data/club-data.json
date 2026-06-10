@@ -17339,7 +17339,21 @@
       "memberId": "e583e00b-952e-4ae0-be25-1b9e94981cf9",
       "expenseType": "Quota Campo",
       "paymentMethod": "Contanti",
-      "amount": 10
+      "amount": 10,
+      "memberName": "Giorgia Viviana",
+      "memberSurname": "Guiglia",
+      "memberTaxCode": "GGLGGV93M41A859C",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "d479b451-c8cb-4945-a94f-18f9d3c3bfa7",
+      "receiptId": "1011",
+      "date": "2026-05-28",
+      "memberId": "60d0d3ff-189f-4422-94f1-9fe6f9a17a2c",
+      "expenseType": "Quota Campo Doppia",
+      "paymentMethod": "Bancomat",
+      "amount": 20
     }
   ],
   "settings": {
