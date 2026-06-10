@@ -1973,6 +1973,12 @@
       "name": "LUCA",
       "surname": "BONUCCI",
       "taxCode": "BNCLCU89D07H501W"
+    },
+    {
+      "id": "b6af7c20-af68-4491-a12e-6103283e6a5e",
+      "name": "Cosimo",
+      "surname": "Costantini",
+      "taxCode": "CSTCSM75B25F152L"
     }
   ],
   "transactions": [
