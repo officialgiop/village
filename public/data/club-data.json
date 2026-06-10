@@ -17073,7 +17073,21 @@
       "memberId": "e58b0955-77b8-4b87-89a8-4f01e0309c98",
       "expenseType": "Lezione Privata",
       "paymentMethod": "Bancomat",
-      "amount": 125
+      "amount": 125,
+      "memberName": "Andrea",
+      "memberSurname": "Caprari",
+      "memberTaxCode": "CPRNDR70H23H501Y",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "4e8c590d-b406-4673-abfa-829a193265fb",
+      "receiptId": "992",
+      "date": "2026-05-24",
+      "memberId": "164dd512-142e-4876-a88e-e6181a1fa88d",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Bancomat",
+      "amount": 10
     }
   ],
   "settings": {
