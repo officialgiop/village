@@ -16751,6 +16751,20 @@
       "memberId": "1620910e-87bc-4c6b-9e8c-f07527b5c3ab",
       "expenseType": "Quota Campo",
       "paymentMethod": "Contanti",
+      "amount": 10,
+      "memberName": "Claudio",
+      "memberSurname": "Candio",
+      "memberTaxCode": "CNDCLD68H14H501A",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "6ab06697-bc91-4b38-a157-50f98e44df13",
+      "receiptId": "968",
+      "date": "2026-05-21",
+      "memberId": "e7b61412-ce7a-4b31-8026-440f1046e93e",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Bancomat",
       "amount": 10
     }
   ],
