@@ -17213,7 +17213,21 @@
       "memberId": "a94b12d7-d151-4f33-b17b-7b4e1d476bbe",
       "expenseType": "Quota campo lezione partita",
       "paymentMethod": "Contanti",
-      "amount": 15
+      "amount": 15,
+      "memberName": "Takis",
+      "memberSurname": "Capitini",
+      "memberTaxCode": "CPTTKS76L06H501F",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "b818ef9c-f954-4736-9633-e7d7c7fa496c",
+      "receiptId": "1002",
+      "date": "2026-05-26",
+      "memberId": "76b8fe96-c9e8-4a57-9844-0c7ac5ffeaf7",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Bancomat",
+      "amount": 10
     }
   ],
   "settings": {
