@@ -16835,6 +16835,20 @@
       "memberId": "60d0d3ff-189f-4422-94f1-9fe6f9a17a2c",
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
+      "amount": 10,
+      "memberName": "Lucyna Maria",
+      "memberSurname": "Maszotta",
+      "memberTaxCode": "MSZLYN89R48Z127C",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "f1ac66a0-a390-404f-b79a-5beb1f1748ab",
+      "receiptId": "974",
+      "date": "2026-05-22",
+      "memberId": "e583e00b-952e-4ae0-be25-1b9e94981cf9",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Bancomat",
       "amount": 10
     }
   ],
