@@ -17787,7 +17787,21 @@
       "memberId": "ff8662e3-0edd-446b-b2ae-076c4e07ae1b",
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
-      "amount": 10
+      "amount": 10,
+      "memberName": "Camilla",
+      "memberSurname": "Mastroiacovo",
+      "memberTaxCode": "MSTCLL80L65H501Z",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "d638d513-6d6c-4124-b3ca-c3f764d50145",
+      "receiptId": "1043",
+      "date": "2026-06-01",
+      "memberId": "4f9d6f92-c1b5-4772-82fd-02146807d430",
+      "expenseType": "Quota campo lezione partita",
+      "paymentMethod": "Bancomat",
+      "amount": 15
     }
   ],
   "settings": {
