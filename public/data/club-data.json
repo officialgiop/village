@@ -17549,7 +17549,21 @@
       "memberId": "3ea30578-cf47-4fb9-8d91-e8d3d279ae1c",
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
-      "amount": 13
+      "amount": 13,
+      "memberName": "Riccardo",
+      "memberSurname": "Borraccino",
+      "memberTaxCode": "BRRRCR66T25H501E",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "180858c5-c74c-46e5-b3fb-7d7a2dc1b9cb",
+      "receiptId": "1026",
+      "date": "2026-05-30",
+      "memberId": "443f7a8b-402e-4a13-ae7a-e46e4ae5f9da",
+      "expenseType": "Lezione Privata",
+      "paymentMethod": "Bancomat",
+      "amount": 25
     }
   ],
   "settings": {
