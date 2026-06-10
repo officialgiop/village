@@ -16861,7 +16861,7 @@
       "receiptId": "975",
       "date": "2026-05-22",
       "memberId": "23843b98-1424-42e0-be5b-b43c0985c44b",
-      "expenseType": "Quota Campo",
+      "expenseType": "Quota Campo Doppia",
       "paymentMethod": "Bancomat",
       "amount": 20,
       "memberName": "Stefano",
@@ -16905,7 +16905,12 @@
       "memberId": "6aa52742-4116-4594-848d-8b36fe130ecb",
       "expenseType": "Quota Campo",
       "paymentMethod": "Contanti",
-      "amount": 10
+      "amount": 10,
+      "memberName": "Enrico",
+      "memberSurname": "Camurri",
+      "memberTaxCode": "CMRNRC71L03H501T",
+      "hasIssue": false,
+      "issue": ""
     }
   ],
   "settings": {
