@@ -17241,7 +17241,21 @@
       "memberId": "bdac6f27-a5f7-4964-ab80-198e014537b1",
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
-      "amount": 12
+      "amount": 12,
+      "memberName": "Carlos",
+      "memberSurname": "Bernal Espeso",
+      "memberTaxCode": "BRNCLS01E10Z131Y",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "210bfde3-fd1b-425b-bff9-f836838f01ae",
+      "receiptId": "1004",
+      "date": "2026-05-26",
+      "memberId": "357337bc-18c3-446c-9c3a-b2c7c9a10d2c",
+      "expenseType": "Lezione Privata",
+      "paymentMethod": "Bancomat",
+      "amount": 26
     }
   ],
   "settings": {
