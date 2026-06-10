@@ -16981,6 +16981,15 @@
       "memberTaxCode": "GRFLSN76R41H501G",
       "hasIssue": false,
       "issue": ""
+    },
+    {
+      "id": "fa4e52f4-712b-4454-8708-97d2eb564e37",
+      "receiptId": "985",
+      "date": "2026-05-23",
+      "memberId": "1e0033eb-1a26-4fb5-9d02-a5b47cead7dd",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Bancomat",
+      "amount": 10
     }
   ],
   "settings": {
