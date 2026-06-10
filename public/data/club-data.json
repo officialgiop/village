@@ -16919,7 +16919,21 @@
       "memberId": "b6af7c20-af68-4491-a12e-6103283e6a5e",
       "expenseType": "Quota Campo",
       "paymentMethod": "Contanti",
-      "amount": 10
+      "amount": 10,
+      "memberName": "Cosimo",
+      "memberSurname": "Costantini",
+      "memberTaxCode": "CSTCSM75B25F152L",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "3c71663c-bc6d-4788-94c8-1b63f3e70c31",
+      "receiptId": "980",
+      "date": "2026-05-23",
+      "memberId": "39afa2ba-d706-4e48-b963-f94b082e8da7",
+      "expenseType": "Lezione Privata",
+      "paymentMethod": "Bancomat",
+      "amount": 25
     }
   ],
   "settings": {
