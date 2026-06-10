@@ -17830,9 +17830,9 @@
       "expenseType": "Quota campo lezione partita",
       "paymentMethod": "Bancomat",
       "amount": 15,
-      "memberName": "Giulia",
-      "memberSurname": "Altomonte",
-      "memberTaxCode": "LTMGLI80H49H501K",
+      "memberName": "Giorgia Viviana",
+      "memberSurname": "Guiglia",
+      "memberTaxCode": "GGLGGV93M41A859C",
       "hasIssue": false,
       "issue": ""
     },
@@ -17863,6 +17863,15 @@
       "memberTaxCode": "LTMGLI80H49H501K",
       "hasIssue": false,
       "issue": ""
+    },
+    {
+      "id": "a8a85ee4-0262-471b-a890-88d1eb2aac06",
+      "receiptId": "1048",
+      "date": "2026-06-01",
+      "memberId": "1636e238-05c3-4701-8b31-0eed026930bc",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Bancomat",
+      "amount": 12.5
     }
   ],
   "settings": {
