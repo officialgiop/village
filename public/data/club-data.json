@@ -16827,15 +16827,6 @@
       "memberTaxCode": "DTTNGL86H60B114J",
       "hasIssue": false,
       "issue": ""
-    },
-    {
-      "id": "4380e183-b463-48d9-9d47-b325c27eb7db",
-      "receiptId": "973",
-      "date": "2026-05-21",
-      "memberId": "60d0d3ff-189f-4422-94f1-9fe6f9a17a2c",
-      "expenseType": "Quota Campo",
-      "paymentMethod": "Contanti",
-      "amount": 10
     }
   ],
   "settings": {
