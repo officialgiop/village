@@ -16687,6 +16687,15 @@
       "memberTaxCode": "TLNSMN94B08H501C",
       "hasIssue": false,
       "issue": ""
+    },
+    {
+      "id": "8bbb521a-037f-42fc-a795-1f00a5360e1d",
+      "receiptId": "963",
+      "date": "2026-05-20",
+      "memberId": "4aa4155c-d11e-4895-9022-8c2791f8f581",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Bancomat",
+      "amount": 10
     }
   ],
   "settings": {
