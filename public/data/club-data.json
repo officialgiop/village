@@ -17801,6 +17801,20 @@
       "memberId": "4f9d6f92-c1b5-4772-82fd-02146807d430",
       "expenseType": "Quota campo lezione partita",
       "paymentMethod": "Bancomat",
+      "amount": 15,
+      "memberName": "Alessia",
+      "memberSurname": "Asuni",
+      "memberTaxCode": "SNALSS72T48B354P",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "305ed74b-c3c5-4a07-aea0-215a5fd666fa",
+      "receiptId": "1044",
+      "date": "2026-06-01",
+      "memberId": "ff8662e3-0edd-446b-b2ae-076c4e07ae1b",
+      "expenseType": "Quota campo lezione partita",
+      "paymentMethod": "Bancomat",
       "amount": 15
     }
   ],
