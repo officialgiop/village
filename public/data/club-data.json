@@ -17577,7 +17577,21 @@
       "memberId": "b4d2f588-e748-4363-b397-4ec295e7cfeb",
       "expenseType": "Lezione Privata",
       "paymentMethod": "Bancomat",
-      "amount": 25
+      "amount": 25,
+      "memberName": "Amedea",
+      "memberSurname": "Funari",
+      "memberTaxCode": "FNRMDA63C49H501R",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "785e1f64-b4de-4118-b1e3-8711031f5631",
+      "receiptId": "1028",
+      "date": "2026-05-30",
+      "memberId": "72401209-cdc1-4ce3-b7e9-466f897aa97a",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Bancomat",
+      "amount": 10
     }
   ],
   "settings": {
