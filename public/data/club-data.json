@@ -17633,7 +17633,21 @@
       "memberId": "9f186051-62e7-4b2d-98ff-3628077af252",
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
-      "amount": 10
+      "amount": 10,
+      "memberName": "Lita Gabriela",
+      "memberSurname": "Troncoso",
+      "memberTaxCode": "TRNLGB59P70Z611W",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "0076e401-d186-40d8-ab07-dbbf196c950a",
+      "receiptId": "1032",
+      "date": "2026-05-30",
+      "memberId": "f0f91663-be55-4c56-a727-d1f712e69092",
+      "expenseType": "Quota Campo Doppia",
+      "paymentMethod": "Bancomat",
+      "amount": 20
     }
   ],
   "settings": {
