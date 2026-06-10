@@ -16911,6 +16911,15 @@
       "memberTaxCode": "CMRNRC71L03H501T",
       "hasIssue": false,
       "issue": ""
+    },
+    {
+      "id": "40d883b3-e078-481b-9a10-d00f89130f0d",
+      "receiptId": "979",
+      "date": "2026-05-22",
+      "memberId": "b6af7c20-af68-4491-a12e-6103283e6a5e",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Contanti",
+      "amount": 10
     }
   ],
   "settings": {
