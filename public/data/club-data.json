@@ -17981,7 +17981,7 @@
       "receiptId": "1056",
       "date": "2026-06-02",
       "memberId": "9f186051-62e7-4b2d-98ff-3628077af252",
-      "expenseType": "Lezione Privata",
+      "expenseType": "Quota Campo Doppia",
       "paymentMethod": "Bancomat",
       "amount": 27,
       "memberName": "Lita Gabriela",
@@ -18011,7 +18011,12 @@
       "memberId": "1dbd8f6c-9540-4017-8a0c-d78af1e21413",
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
-      "amount": 12.5
+      "amount": 12.5,
+      "memberName": "Andrea",
+      "memberSurname": "Catarinella",
+      "memberTaxCode": "CTRNDR74M16H501O",
+      "hasIssue": false,
+      "issue": ""
     }
   ],
   "settings": {
