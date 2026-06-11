@@ -18535,6 +18535,15 @@
       "memberTaxCode": "LPTMSM66H26H501O",
       "hasIssue": false,
       "issue": ""
+    },
+    {
+      "id": "9581f15b-26ec-49d0-973b-81c34a06bbeb",
+      "receiptId": "1096",
+      "date": "2026-06-09",
+      "memberId": "2425c99b-1fbf-41f1-992c-fd87108016e7",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Bancomat",
+      "amount": 10
     }
   ],
   "settings": {
