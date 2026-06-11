@@ -18485,7 +18485,7 @@
       "receiptId": "1092",
       "date": "2026-06-08",
       "memberId": "f97c7ac2-344c-4699-9b41-0ae0871066b4",
-      "expenseType": "Quota Campo Doppia",
+      "expenseType": "Lezione Privata",
       "paymentMethod": "Bancomat",
       "amount": 21,
       "memberName": "Vincenzo",
@@ -18529,7 +18529,12 @@
       "memberId": "f93c78f4-aade-4982-aa1e-e46804c6fb9f",
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
-      "amount": 10
+      "amount": 10,
+      "memberName": "Massimo",
+      "memberSurname": "La Pietra",
+      "memberTaxCode": "LPTMSM66H26H501O",
+      "hasIssue": false,
+      "issue": ""
     }
   ],
   "settings": {
