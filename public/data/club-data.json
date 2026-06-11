@@ -1991,6 +1991,12 @@
       "name": "Alessio",
       "surname": "Iacobelli",
       "taxCode": "CBLLSS81E17H501O"
+    },
+    {
+      "id": "514173c4-562f-43a6-87b3-a77e2fa3505c",
+      "name": "Carlos",
+      "surname": "Carp",
+      "taxCode": "CRPCLS02A12H501B"
     }
   ],
   "transactions": [
