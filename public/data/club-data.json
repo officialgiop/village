@@ -18459,7 +18459,21 @@
       "memberId": "db1f6291-55cd-479c-829c-a47aa8059dba",
       "expenseType": "Quota Campo",
       "paymentMethod": "Contanti",
-      "amount": 10
+      "amount": 10,
+      "memberName": "Javier",
+      "memberSurname": "Diaz",
+      "memberTaxCode": "DZRJVR73LZZ",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "5171a76b-b084-4a84-8f32-92c5b6108f6f",
+      "receiptId": "1091",
+      "date": "2026-06-08",
+      "memberId": "d35bffcf-da1c-47aa-acd5-d10e2796c59e",
+      "expenseType": "Corso Mensile",
+      "paymentMethod": "Bancomat",
+      "amount": 100
     }
   ],
   "settings": {
