@@ -18123,6 +18123,20 @@
       "memberId": "6aa52742-4116-4594-848d-8b36fe130ecb",
       "expenseType": "Quota Campo",
       "paymentMethod": "Contanti",
+      "amount": 10,
+      "memberName": "Enrico",
+      "memberSurname": "Camurri",
+      "memberTaxCode": "CMRNRC71L03H501T",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "e556049c-4f88-4f8d-b2d8-563de97df9d3",
+      "receiptId": "1067",
+      "date": "2026-06-04",
+      "memberId": "33a0ebde-770e-4517-8c91-d31c0b283618",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Contanti",
       "amount": 10
     }
   ],
