@@ -18165,7 +18165,21 @@
       "memberId": "e583e00b-952e-4ae0-be25-1b9e94981cf9",
       "expenseType": "Quota Campo Doppia",
       "paymentMethod": "Bancomat",
-      "amount": 20
+      "amount": 20,
+      "memberName": "Giorgia Viviana",
+      "memberSurname": "Guiglia",
+      "memberTaxCode": "GGLGGV93M41A859C",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "6da816a1-8ae4-4bd6-b253-e8b19de2d344",
+      "receiptId": "1070",
+      "date": "2026-06-05",
+      "memberId": "9f186051-62e7-4b2d-98ff-3628077af252",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Bancomat",
+      "amount": 10
     }
   ],
   "settings": {
