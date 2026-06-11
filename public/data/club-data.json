@@ -18374,8 +18374,13 @@
       "date": "2026-06-06",
       "memberId": "0a20ae74-fdc1-4f6d-ac04-57a2f39a64a0",
       "expenseType": "Quota Campo",
-      "paymentMethod": "Bancomat",
-      "amount": 10
+      "paymentMethod": "Contanti",
+      "amount": 10,
+      "memberName": "Claudio Matteo",
+      "memberSurname": "Basili",
+      "memberTaxCode": "BSLCDM60T14E038F",
+      "hasIssue": false,
+      "issue": ""
     }
   ],
   "settings": {
