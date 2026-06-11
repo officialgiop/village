@@ -18347,7 +18347,21 @@
       "memberId": "a08ede04-2ff8-4d94-9c04-717cb5a2a5f2",
       "expenseType": "Quota campo lezione partita",
       "paymentMethod": "Contanti",
-      "amount": 20
+      "amount": 20,
+      "memberName": "Marco",
+      "memberSurname": "Fenzato",
+      "memberTaxCode": "FNZMRC66C03C552Z",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "69aa95d3-89e2-452e-82fc-ddcc35cbb7bd",
+      "receiptId": "1083",
+      "date": "2026-06-06",
+      "memberId": "1620910e-87bc-4c6b-9e8c-f07527b5c3ab",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Contanti",
+      "amount": 10
     }
   ],
   "settings": {
