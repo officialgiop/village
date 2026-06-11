@@ -17941,7 +17941,21 @@
       "memberId": "63581d3d-4443-46bc-b3fd-4341ca858851",
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
-      "amount": 10
+      "amount": 10,
+      "memberName": "Marcella",
+      "memberSurname": "Giannini",
+      "memberTaxCode": "GNNMCL69D64H501M",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "b01e3ae1-5006-4fd4-a160-f4dece455921",
+      "receiptId": "1054",
+      "date": "2026-06-02",
+      "memberId": "39afa2ba-d706-4e48-b963-f94b082e8da7",
+      "expenseType": "Lezione Privata",
+      "paymentMethod": "Bancomat",
+      "amount": 25
     }
   ],
   "settings": {
