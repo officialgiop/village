@@ -18291,7 +18291,21 @@
       "memberId": "09ae4695-c0cb-484c-9f9e-8d4fd7208be7",
       "expenseType": "Quota campo lezione partita",
       "paymentMethod": "Bancomat",
-      "amount": 20
+      "amount": 20,
+      "memberName": "Irene",
+      "memberSurname": "serraino fiory",
+      "memberTaxCode": "SRRRNI88H49H501P",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "26f47bb7-f9c6-4392-8802-4f0ba40878e1",
+      "receiptId": "1079",
+      "date": "2026-06-06",
+      "memberId": "33a0ebde-770e-4517-8c91-d31c0b283618",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Bancomat",
+      "amount": 14.5
     }
   ],
   "settings": {
