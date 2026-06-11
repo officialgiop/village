@@ -18017,6 +18017,15 @@
       "memberTaxCode": "CTRNDR74M16H501O",
       "hasIssue": false,
       "issue": ""
+    },
+    {
+      "id": "ef57e7f2-1198-4b86-bcdc-0230b2adf841",
+      "receiptId": "1059",
+      "date": "2026-06-02",
+      "memberId": "443f7a8b-402e-4a13-ae7a-e46e4ae5f9da",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Contanti",
+      "amount": 10
     }
   ],
   "settings": {
