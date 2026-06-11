@@ -18207,7 +18207,21 @@
       "memberId": "c8ce083a-b7ed-4de0-8ba9-f51f68f7285a",
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
-      "amount": 10
+      "amount": 10,
+      "memberName": "PierPaolo",
+      "memberSurname": "Pandolfi",
+      "memberTaxCode": "PNDPPL71H30I838K",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "9fe140a9-b4ee-4dc8-b9b5-9f8f51a6e23b",
+      "receiptId": "1073",
+      "date": "2026-06-05",
+      "memberId": "20bd5bc1-658b-4230-8ffb-c874715ad292",
+      "expenseType": "Corso Mensile",
+      "paymentMethod": "Bancomat",
+      "amount": 100
     }
   ],
   "settings": {
