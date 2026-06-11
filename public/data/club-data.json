@@ -18067,7 +18067,21 @@
       "memberId": "a45e0949-e675-47b6-8b48-e9da77997136",
       "expenseType": "Quota Campo",
       "paymentMethod": "Contanti",
-      "amount": 10
+      "amount": 10,
+      "memberName": "Angela",
+      "memberSurname": "Dottorini",
+      "memberTaxCode": "DTTNGL86H60B114J",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "fe249e82-4547-4878-acfc-d4faa9209e9c",
+      "receiptId": "1063",
+      "date": "2026-06-03",
+      "memberId": "d35bffcf-da1c-47aa-acd5-d10e2796c59e",
+      "expenseType": "Quota Campo Doppia",
+      "paymentMethod": "Contanti",
+      "amount": 20
     }
   ],
   "settings": {
