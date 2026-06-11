@@ -18235,7 +18235,21 @@
       "memberId": "d35bffcf-da1c-47aa-acd5-d10e2796c59e",
       "expenseType": "Quota Campo Doppia",
       "paymentMethod": "Bancomat",
-      "amount": 20
+      "amount": 20,
+      "memberName": "Giulia",
+      "memberSurname": "Altomonte",
+      "memberTaxCode": "LTMGLI80H49H501K",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "5f31c448-93e8-4271-95e5-4f9e3e009d80",
+      "receiptId": "1075",
+      "date": "2026-06-05",
+      "memberId": "20bc7153-27f8-49df-a040-537c80859216",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Contanti",
+      "amount": 10
     }
   ],
   "settings": {
