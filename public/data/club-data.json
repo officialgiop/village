@@ -18381,6 +18381,15 @@
       "memberTaxCode": "BSLCDM60T14E038F",
       "hasIssue": false,
       "issue": ""
+    },
+    {
+      "id": "92cdfb3d-95d4-4606-9a7d-48d0d7a3b9ec",
+      "receiptId": "1085",
+      "date": "2026-06-07",
+      "memberId": "e58b0955-77b8-4b87-89a8-4f01e0309c98",
+      "expenseType": "Quota campo lezione partita",
+      "paymentMethod": "Bancomat",
+      "amount": 75
     }
   ],
   "settings": {
