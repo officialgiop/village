@@ -1997,6 +1997,12 @@
       "name": "Carlos",
       "surname": "Carp",
       "taxCode": "CRPCLS02A12H501B"
+    },
+    {
+      "id": "9420fe5c-6ecf-43da-b5b2-f080a4913537",
+      "name": "Enrico",
+      "surname": "Berton",
+      "taxCode": "BRTNRC82A25H501H"
     }
   ],
   "transactions": [
@@ -18715,7 +18721,12 @@
       "memberId": "dbcb6162-461c-42e8-9fe0-24313097d0c3",
       "expenseType": "Quota Campo",
       "paymentMethod": "Contanti",
-      "amount": 10
+      "amount": 10,
+      "memberName": "Simona",
+      "memberSurname": "Bernardi",
+      "memberTaxCode": "BRNSMN74P47H501V",
+      "hasIssue": false,
+      "issue": ""
     }
   ],
   "settings": {
