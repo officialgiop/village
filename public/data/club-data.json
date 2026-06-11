@@ -18473,7 +18473,21 @@
       "memberId": "d35bffcf-da1c-47aa-acd5-d10e2796c59e",
       "expenseType": "Corso Mensile",
       "paymentMethod": "Bancomat",
-      "amount": 100
+      "amount": 100,
+      "memberName": "Giulia",
+      "memberSurname": "Altomonte",
+      "memberTaxCode": "LTMGLI80H49H501K",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "189c47db-330f-4a38-bdf6-b36449c816ee",
+      "receiptId": "1092",
+      "date": "2026-06-08",
+      "memberId": "f97c7ac2-344c-4699-9b41-0ae0871066b4",
+      "expenseType": "Quota Campo Doppia",
+      "paymentMethod": "Bancomat",
+      "amount": 21
     }
   ],
   "settings": {
