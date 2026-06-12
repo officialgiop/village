@@ -18811,6 +18811,15 @@
       "memberTaxCode": "CRPCLS02A12H501B",
       "hasIssue": false,
       "issue": ""
+    },
+    {
+      "id": "ed56f64f-5e52-48ca-acac-dbb9e04670c8",
+      "receiptId": "1114",
+      "date": "2026-06-11",
+      "memberId": "845518ce-5c97-4133-afab-e1db4c8945cc",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Bancomat",
+      "amount": 10
     }
   ],
   "settings": {
