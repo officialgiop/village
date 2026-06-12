@@ -1866,8 +1866,8 @@
     },
     {
       "id": "845518ce-5c97-4133-afab-e1db4c8945cc",
-      "name": "Girinelli",
-      "surname": "Sara",
+      "name": "Sara",
+      "surname": "Girinelli",
       "taxCode": "GRNSRA82B51H501U",
       "hasIssue": false,
       "issue": ""
@@ -18847,7 +18847,12 @@
       "memberId": "36812203-1f98-4537-afea-e4c58006d93b",
       "expenseType": "Quota Campo",
       "paymentMethod": "Contanti",
-      "amount": 10
+      "amount": 10,
+      "memberName": "Benedetta",
+      "memberSurname": "Franzoni",
+      "memberTaxCode": "FRNBDT02P59H501Z",
+      "hasIssue": false,
+      "issue": ""
     }
   ],
   "settings": {
