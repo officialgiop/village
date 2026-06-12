@@ -18727,6 +18727,15 @@
       "memberTaxCode": "BRNSMN74P47H501V",
       "hasIssue": false,
       "issue": ""
+    },
+    {
+      "id": "f6c187e7-8277-4438-8e13-f0a5b0b5f3e2",
+      "receiptId": "1108",
+      "date": "2026-06-11",
+      "memberId": "9f186051-62e7-4b2d-98ff-3628077af252",
+      "expenseType": "Lezione Privata",
+      "paymentMethod": "Bancomat",
+      "amount": 25
     }
   ],
   "settings": {
