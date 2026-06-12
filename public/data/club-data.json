@@ -18805,7 +18805,12 @@
       "memberId": "514173c4-562f-43a6-87b3-a77e2fa3505c",
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
-      "amount": 10
+      "amount": 17,
+      "memberName": "Carlos",
+      "memberSurname": "Carp",
+      "memberTaxCode": "CRPCLS02A12H501B",
+      "hasIssue": false,
+      "issue": ""
     }
   ],
   "settings": {
