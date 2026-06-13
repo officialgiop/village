@@ -2009,6 +2009,12 @@
       "name": "Andrea",
       "surname": "Oliva",
       "taxCode": "LVONDR79R24H501I"
+    },
+    {
+      "id": "cc304973-6e18-46ff-8af9-acfc7a81f3a9",
+      "name": "Carlo",
+      "surname": "Perticaroli",
+      "taxCode": "PRTCRL72H15H501V"
     }
   ],
   "transactions": [
@@ -18909,7 +18915,12 @@
       "memberId": "b25cb93e-2106-43af-ae20-6acaf1911b79",
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
-      "amount": 12
+      "amount": 12,
+      "memberName": "Mattia",
+      "memberSurname": "Gava",
+      "memberTaxCode": "GVAMTT89T14H501Y",
+      "hasIssue": false,
+      "issue": ""
     }
   ],
   "settings": {
