@@ -2003,6 +2003,12 @@
       "name": "Enrico",
       "surname": "Berton",
       "taxCode": "BRTNRC82A25H501H"
+    },
+    {
+      "id": "20e27282-589c-4b38-b274-76d2a91d5f76",
+      "name": "Andrea",
+      "surname": "Oliva",
+      "taxCode": "LVONDR79R24H501I"
     }
   ],
   "transactions": [
@@ -18820,8 +18826,8 @@
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
       "amount": 10,
-      "memberName": "Girinelli",
-      "memberSurname": "Sara",
+      "memberName": "Sara",
+      "memberSurname": "Girinelli",
       "memberTaxCode": "GRNSRA82B51H501U",
       "hasIssue": false,
       "issue": ""
