@@ -2015,6 +2015,12 @@
       "name": "Carlo",
       "surname": "Perticaroli",
       "taxCode": "PRTCRL72H15H501V"
+    },
+    {
+      "id": "d9d9ebcd-7544-444c-ba23-805321262cc8",
+      "name": "Fabio",
+      "surname": "La Puffa",
+      "taxCode": "LPFFBA87C13H501W"
     }
   ],
   "transactions": [
