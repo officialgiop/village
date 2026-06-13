@@ -18421,8 +18421,8 @@
       "paymentMethod": "Bancomat",
       "amount": 75,
       "memberName": "Andrea",
-      "memberSurname": "Caprari",
-      "memberTaxCode": "CPRNDR70H23H501Y",
+      "memberSurname": "Oliva",
+      "memberTaxCode": "LVONDR79R24H501I",
       "hasIssue": false,
       "issue": ""
     },
@@ -18859,6 +18859,15 @@
       "memberTaxCode": "FRNBDT02P59H501Z",
       "hasIssue": false,
       "issue": ""
+    },
+    {
+      "id": "b7e6e0ab-23f8-46d0-a7a1-58c188fbd18f",
+      "receiptId": "1117",
+      "date": "2026-06-12",
+      "memberId": "20bd5bc1-658b-4230-8ffb-c874715ad292",
+      "expenseType": "Lezione Privata",
+      "paymentMethod": "Bancomat",
+      "amount": 25
     }
   ],
   "settings": {
