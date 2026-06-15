@@ -18977,7 +18977,21 @@
       "memberId": "06852f19-1969-4a08-a1bd-5d86d0504db0",
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
-      "amount": 10
+      "amount": 10,
+      "memberName": "Marco",
+      "memberSurname": "Delle Cave",
+      "memberTaxCode": "DLLMRC73S14H501C",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "3da86848-afd8-458b-89db-c3377d00bfb7",
+      "receiptId": "1125",
+      "date": "2026-06-13",
+      "memberId": "39afa2ba-d706-4e48-b963-f94b082e8da7",
+      "expenseType": "Quota campo lezione partita",
+      "paymentMethod": "Bancomat",
+      "amount": 43.5
     }
   ],
   "settings": {
