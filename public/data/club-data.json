@@ -19067,6 +19067,15 @@
       "memberTaxCode": "CRLGPP71E16H501S",
       "hasIssue": false,
       "issue": ""
+    },
+    {
+      "id": "66375554-0c52-4858-90bb-dbdf65e89d54",
+      "receiptId": "1131",
+      "date": "2026-06-13",
+      "memberId": "9f186051-62e7-4b2d-98ff-3628077af252",
+      "expenseType": "Lezione Privata",
+      "paymentMethod": "Contanti",
+      "amount": 25
     }
   ],
   "settings": {
