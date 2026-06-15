@@ -19047,7 +19047,21 @@
       "memberId": "d9d9ebcd-7544-444c-ba23-805321262cc8",
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
-      "amount": 10
+      "amount": 10,
+      "memberName": "Fabio",
+      "memberSurname": "La Puffa",
+      "memberTaxCode": "LPFFBA87C13H501W",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "ae10bf1d-59bb-413a-bc95-638990f0c3ed",
+      "receiptId": "1130",
+      "date": "2026-06-13",
+      "memberId": "d6dc23d0-8d50-4cb2-b1f0-6413f6e9c3ea",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Bancomat",
+      "amount": 15
     }
   ],
   "settings": {
