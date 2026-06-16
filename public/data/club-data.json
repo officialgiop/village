@@ -2021,6 +2021,12 @@
       "name": "Fabio",
       "surname": "La Puffa",
       "taxCode": "LPFFBA87C13H501W"
+    },
+    {
+      "id": "0fc1ec6f-b577-4575-b6df-9cd4388455c6",
+      "name": "Giulio",
+      "surname": "Sangiorgio",
+      "taxCode": "SNGGLI82E07H501I"
     }
   ],
   "transactions": [
@@ -19075,7 +19081,12 @@
       "memberId": "9f186051-62e7-4b2d-98ff-3628077af252",
       "expenseType": "Lezione Privata",
       "paymentMethod": "Contanti",
-      "amount": 25
+      "amount": 25,
+      "memberName": "Lita Gabriela",
+      "memberSurname": "Troncoso",
+      "memberTaxCode": "TRNLGB59P70Z611W",
+      "hasIssue": false,
+      "issue": ""
     }
   ],
   "settings": {
