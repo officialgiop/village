@@ -19465,6 +19465,20 @@
       "memberId": "a169c612-d5e7-4249-90f3-7a200f14a715",
       "expenseType": "Quota Campo",
       "paymentMethod": "Contanti",
+      "amount": 10,
+      "memberName": "Fabio",
+      "memberSurname": "Garuti",
+      "memberTaxCode": "GRTFBA69B22H501Y",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "da285964-83c0-4356-b4bd-22870487f307",
+      "receiptId": "1159",
+      "date": "2026-06-16",
+      "memberId": "164dd512-142e-4876-a88e-e6181a1fa88d",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Bancomat",
       "amount": 10
     }
   ],
