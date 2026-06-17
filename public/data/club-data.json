@@ -19367,7 +19367,21 @@
       "memberId": "5cbf6b52-979f-4a5e-a740-6af635049f8e",
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
-      "amount": 10
+      "amount": 10,
+      "memberName": "Davide",
+      "memberSurname": "Feltoni Gurini",
+      "memberTaxCode": "FLTDVD84T20H501K",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "48edd9c3-422e-498a-802a-1d3ac0a90c30",
+      "receiptId": "1152",
+      "date": "2026-06-15",
+      "memberId": "f93c78f4-aade-4982-aa1e-e46804c6fb9f",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Bancomat",
+      "amount": 17
     }
   ],
   "settings": {
