@@ -19115,7 +19115,21 @@
       "memberId": "926550aa-a640-47f7-87d0-380e4cec9b3e",
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
-      "amount": 10
+      "amount": 10,
+      "memberName": "Stefano",
+      "memberSurname": "Annibali",
+      "memberTaxCode": "NNBSFN59A20H501T",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "0990c761-4e80-496f-a431-ffd897883ee8",
+      "receiptId": "1134",
+      "date": "2026-06-14",
+      "memberId": "ff8662e3-0edd-446b-b2ae-076c4e07ae1b",
+      "expenseType": "Lezione Doppia",
+      "paymentMethod": "Bancomat",
+      "amount": 20
     }
   ],
   "settings": {
