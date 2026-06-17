@@ -19437,7 +19437,21 @@
       "memberId": "cc7bcb7c-17b7-4929-897b-a0f92a07db72",
       "expenseType": "Quota campo lezione partita",
       "paymentMethod": "Bancomat",
-      "amount": 15
+      "amount": 15,
+      "memberName": "Alessia",
+      "memberSurname": "Pop",
+      "memberTaxCode": "PPOLSS12R42H501F",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "5feaa526-afa9-4d85-b55d-b9a188a50d9c",
+      "receiptId": "1157",
+      "date": "2026-06-15",
+      "memberId": "3c93fe56-c36c-46ec-bb5d-d991f33d3c8e",
+      "expenseType": "Quota Campo Doppia",
+      "paymentMethod": "Contanti",
+      "amount": 20
     }
   ],
   "settings": {
