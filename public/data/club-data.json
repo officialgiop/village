@@ -19481,10 +19481,19 @@
       "paymentMethod": "Bancomat",
       "amount": 10,
       "memberName": "Tiziana",
-      "memberSurname": "Olivi",
-      "memberTaxCode": "LVOTZN69E66H501J",
+      "memberSurname": "Ciccolini",
+      "memberTaxCode": "CCCTZN72C68H501G",
       "hasIssue": false,
       "issue": ""
+    },
+    {
+      "id": "99870607-0a56-48e9-9fac-179b9cfe17a5",
+      "receiptId": "1160",
+      "date": "2026-06-16",
+      "memberId": "9f186051-62e7-4b2d-98ff-3628077af252",
+      "expenseType": "Lezione Privata",
+      "paymentMethod": "Bancomat",
+      "amount": 25
     }
   ],
   "settings": {
