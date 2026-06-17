@@ -19521,7 +19521,21 @@
       "memberId": "2e01c029-a297-4dc2-bee4-6deac8ef3db7",
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
-      "amount": 11
+      "amount": 11,
+      "memberName": "Andrea Simone",
+      "memberSurname": "Mariola",
+      "memberTaxCode": "MRLNRS81C10H501V",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "b1968cf1-edca-4292-806f-3da5297375c3",
+      "receiptId": "1163",
+      "date": "2026-06-16",
+      "memberId": "ff8662e3-0edd-446b-b2ae-076c4e07ae1b",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Bancomat",
+      "amount": 10
     }
   ],
   "settings": {
