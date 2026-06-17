@@ -19325,6 +19325,20 @@
       "memberId": "e4c11ecc-f6a9-4f2a-b33a-f9e11c531fba",
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
+      "amount": 10,
+      "memberName": "Adriano",
+      "memberSurname": "Verzino",
+      "memberTaxCode": "VRZDRN17L26H501S",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "9a6d4d9b-e83c-4865-898b-400c1773703f",
+      "receiptId": "1149",
+      "date": "2026-06-15",
+      "memberId": "55ad3402-cfd4-46f6-8ed9-6c7622859bb6",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Bancomat",
       "amount": 10
     }
   ],
