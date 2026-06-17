@@ -19381,7 +19381,21 @@
       "memberId": "f93c78f4-aade-4982-aa1e-e46804c6fb9f",
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
-      "amount": 17
+      "amount": 17,
+      "memberName": "Massimo",
+      "memberSurname": "La Pietra",
+      "memberTaxCode": "LPTMSM66H26H501O",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "7addc885-0238-4ecc-8581-bc00e820d183",
+      "receiptId": "1153",
+      "date": "2026-06-15",
+      "memberId": "54a22d10-98e3-43c3-b623-2efe121613ca",
+      "expenseType": "Quota campo lezione partita",
+      "paymentMethod": "Bancomat",
+      "amount": 15
     }
   ],
   "settings": {
