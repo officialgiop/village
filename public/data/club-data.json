@@ -19577,6 +19577,20 @@
       "memberId": "b304aefe-326f-4655-8102-253f37a6f575",
       "expenseType": "Quota Campo",
       "paymentMethod": "Contanti",
+      "amount": 10,
+      "memberName": "Simone",
+      "memberSurname": "Taliani",
+      "memberTaxCode": "TLNSMN94B08H501C",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "9897d3e6-8adb-47cf-b22a-e9d175d02c59",
+      "receiptId": "1167",
+      "date": "2026-06-17",
+      "memberId": "76b8fe96-c9e8-4a57-9844-0c7ac5ffeaf7",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Contanti",
       "amount": 10
     }
   ],
