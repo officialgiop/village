@@ -19563,6 +19563,20 @@
       "memberId": "91396e66-f5a0-4128-86be-a49bcab68e1d",
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
+      "amount": 10,
+      "memberName": "Giordano",
+      "memberSurname": "Magli",
+      "memberTaxCode": "MGLGDN86L26H501Q",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "eb0af118-e0d8-4822-92d2-2f8288097c48",
+      "receiptId": "1166",
+      "date": "2026-06-17",
+      "memberId": "b304aefe-326f-4655-8102-253f37a6f575",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Contanti",
       "amount": 10
     }
   ],
