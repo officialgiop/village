@@ -2033,6 +2033,12 @@
       "name": "Andrea Simone",
       "surname": "Mariola",
       "taxCode": "MRLNRS81C10H501V"
+    },
+    {
+      "id": "23116c12-d9ba-4ddd-ad0d-9cec2ae6bc4d",
+      "name": "Adriano",
+      "surname": "Pecorare",
+      "taxCode": "PCRDRN61D19H501Y"
     }
   ],
   "transactions": [
@@ -19591,7 +19597,12 @@
       "memberId": "76b8fe96-c9e8-4a57-9844-0c7ac5ffeaf7",
       "expenseType": "Quota Campo",
       "paymentMethod": "Contanti",
-      "amount": 10
+      "amount": 10,
+      "memberName": "Marco",
+      "memberSurname": "De Liddo",
+      "memberTaxCode": "DLDMRC87T02G712R",
+      "hasIssue": false,
+      "issue": ""
     }
   ],
   "settings": {
