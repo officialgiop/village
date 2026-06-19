@@ -2045,6 +2045,12 @@
       "name": "Fabrizio",
       "surname": "Groe",
       "taxCode": "GROFRZ89P30H501G"
+    },
+    {
+      "id": "e0ee7592-8ced-45e4-9c22-53d1267dc655",
+      "name": "Francesco",
+      "surname": "Valente",
+      "taxCode": "VLNFNC89T13H501I"
     }
   ],
   "transactions": [
