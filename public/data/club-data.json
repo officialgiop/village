@@ -19603,6 +19603,15 @@
       "memberTaxCode": "DLDMRC87T02G712R",
       "hasIssue": false,
       "issue": ""
+    },
+    {
+      "id": "b327f0f5-d74e-4338-9cb6-f25d67dc4986",
+      "receiptId": "1168",
+      "date": "2026-06-18",
+      "memberId": "dbcb6162-461c-42e8-9fe0-24313097d0c3",
+      "expenseType": "Corso Mensile",
+      "paymentMethod": "Bancomat",
+      "amount": 125
     }
   ],
   "settings": {
