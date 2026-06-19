@@ -19681,7 +19681,21 @@
       "memberId": "09ae4695-c0cb-484c-9f9e-8d4fd7208be7",
       "expenseType": "Corso Mensile",
       "paymentMethod": "Bancomat",
-      "amount": 100
+      "amount": 100,
+      "memberName": "Irene",
+      "memberSurname": "serraino fiory",
+      "memberTaxCode": "SRRRNI88H49H501P",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "fcbc5c74-a5ab-4d5f-9947-1d20e1c0e285",
+      "receiptId": "1174",
+      "date": "2026-06-18",
+      "memberId": "ff8662e3-0edd-446b-b2ae-076c4e07ae1b",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Bancomat",
+      "amount": 10
     }
   ],
   "settings": {
