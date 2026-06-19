@@ -19667,7 +19667,21 @@
       "memberId": "2e01c029-a297-4dc2-bee4-6deac8ef3db7",
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
-      "amount": 11
+      "amount": 11,
+      "memberName": "Andrea Simone",
+      "memberSurname": "Mariola",
+      "memberTaxCode": "MRLNRS81C10H501V",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "cef31b63-7a0b-41f1-806f-7a284f49e9b3",
+      "receiptId": "1173",
+      "date": "2026-06-18",
+      "memberId": "09ae4695-c0cb-484c-9f9e-8d4fd7208be7",
+      "expenseType": "Corso Mensile",
+      "paymentMethod": "Bancomat",
+      "amount": 100
     }
   ],
   "settings": {
