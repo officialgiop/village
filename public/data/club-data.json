@@ -2039,6 +2039,12 @@
       "name": "Adriano",
       "surname": "Pecorare",
       "taxCode": "PCRDRN61D19H501Y"
+    },
+    {
+      "id": "684994c3-7116-464c-8a42-af3758cf8ad2",
+      "name": "Fabrizio",
+      "surname": "Groe",
+      "taxCode": "GROFRZ89P30H501G"
     }
   ],
   "transactions": [
@@ -19723,7 +19729,12 @@
       "memberId": "73afe85a-3d39-47a5-a290-fdbbc7755a1e",
       "expenseType": "Quota Campo",
       "paymentMethod": "Contanti",
-      "amount": 10
+      "amount": 10,
+      "memberName": "Eleonora",
+      "memberSurname": "Dall'Acqua",
+      "memberTaxCode": "DLLLNR84M51H501G",
+      "hasIssue": false,
+      "issue": ""
     }
   ],
   "settings": {
