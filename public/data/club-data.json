@@ -19625,6 +19625,20 @@
       "memberId": "23116c12-d9ba-4ddd-ad0d-9cec2ae6bc4d",
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
+      "amount": 10,
+      "memberName": "Adriano",
+      "memberSurname": "Pecorare",
+      "memberTaxCode": "PCRDRN61D19H501Y",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "c3dde383-d074-4efd-b0fe-1cb48e8a1717",
+      "receiptId": "1170",
+      "date": "2026-06-18",
+      "memberId": "ff98cc48-5342-4efe-9d77-9bc580b0b70e",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Bancomat",
       "amount": 10
     }
   ],
