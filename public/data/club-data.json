@@ -2063,6 +2063,12 @@
       "name": "Alberto",
       "surname": "Palermo",
       "taxCode": "PLRLRT69A16H501R"
+    },
+    {
+      "id": "e2e7bb85-80a1-414d-8ceb-0879a4cac8bf",
+      "name": "Stefano",
+      "surname": "Manili",
+      "taxCode": "MNLSFN71E03H501D"
     }
   ],
   "transactions": [
