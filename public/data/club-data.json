@@ -2057,6 +2057,12 @@
       "name": "Alessandro",
       "surname": "Bellisio",
       "taxCode": "BLLLSN69H22H501P"
+    },
+    {
+      "id": "8ba44295-31a8-422f-839b-8f65f545a585",
+      "name": "Alberto",
+      "surname": "Palermo",
+      "taxCode": "PLRLRT69A16H501R"
     }
   ],
   "transactions": [
