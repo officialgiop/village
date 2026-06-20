@@ -2075,6 +2075,12 @@
       "name": "Federico",
       "surname": "Graziosi",
       "taxCode": "GRZFRC04P23H501D"
+    },
+    {
+      "id": "1b3e52b3-020c-4344-81ec-3d41ffb4a13c",
+      "name": "Matteo",
+      "surname": "De Robertis",
+      "taxCode": "DRBMTT02D10H501X"
     }
   ],
   "transactions": [
