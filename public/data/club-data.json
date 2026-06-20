@@ -2069,6 +2069,12 @@
       "name": "Stefano",
       "surname": "Manili",
       "taxCode": "MNLSFN71E03H501D"
+    },
+    {
+      "id": "978c1d0d-8f4b-4d6e-b275-933bbe45247c",
+      "name": "Federico",
+      "surname": "Graziosi",
+      "taxCode": "GRZFRC04P23H501D"
     }
   ],
   "transactions": [
@@ -19865,7 +19871,12 @@
       "memberId": "3ea30578-cf47-4fb9-8d91-e8d3d279ae1c",
       "expenseType": "Quota Campo",
       "paymentMethod": "Contanti",
-      "amount": 10
+      "amount": 10,
+      "memberName": "Riccardo",
+      "memberSurname": "Borraccino",
+      "memberTaxCode": "BRRRCR66T25H501E",
+      "hasIssue": false,
+      "issue": ""
     }
   ],
   "settings": {
