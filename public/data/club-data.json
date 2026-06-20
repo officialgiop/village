@@ -19809,7 +19809,21 @@
       "memberId": "f93c78f4-aade-4982-aa1e-e46804c6fb9f",
       "expenseType": "Lezione Doppia",
       "paymentMethod": "Bancomat",
-      "amount": 40
+      "amount": 40,
+      "memberName": "Massimo",
+      "memberSurname": "La Pietra",
+      "memberTaxCode": "LPTMSM66H26H501O",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "297e62c5-48c8-4fe6-a72e-27fa384c77ac",
+      "receiptId": "1181",
+      "date": "2026-06-19",
+      "memberId": "684994c3-7116-464c-8a42-af3758cf8ad2",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Bancomat",
+      "amount": 10
     }
   ],
   "settings": {
