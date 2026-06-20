@@ -19759,6 +19759,15 @@
       "memberTaxCode": "DLLLNR84M51H501G",
       "hasIssue": false,
       "issue": ""
+    },
+    {
+      "id": "3708ae5b-b0d0-4213-b55d-f16b057ab1c9",
+      "receiptId": "1177",
+      "date": "2026-06-19",
+      "memberId": "23116c12-d9ba-4ddd-ad0d-9cec2ae6bc4d",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Bancomat",
+      "amount": 10
     }
   ],
   "settings": {
