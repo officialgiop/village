@@ -19889,6 +19889,15 @@
       "memberTaxCode": "BRRRCR66T25H501E",
       "hasIssue": false,
       "issue": ""
+    },
+    {
+      "id": "5019ea2d-57f8-4ae4-8a9d-aaa6c095a12c",
+      "receiptId": "1185",
+      "date": "2026-06-20",
+      "memberId": "e583e00b-952e-4ae0-be25-1b9e94981cf9",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Bancomat",
+      "amount": 10
     }
   ],
   "settings": {
