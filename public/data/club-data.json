@@ -19981,7 +19981,21 @@
       "memberId": "1b3e52b3-020c-4344-81ec-3d41ffb4a13c",
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
-      "amount": 10
+      "amount": 10,
+      "memberName": "Matteo",
+      "memberSurname": "De Robertis",
+      "memberTaxCode": "DRBMTT02D10H501X",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "9e2e15c5-67b3-4a06-871e-b40430d12728",
+      "receiptId": "1192",
+      "date": "2026-06-20",
+      "memberId": "978c1d0d-8f4b-4d6e-b275-933bbe45247c",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Bancomat",
+      "amount": 11
     }
   ],
   "settings": {
