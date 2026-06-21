@@ -2081,6 +2081,12 @@
       "name": "Matteo",
       "surname": "De Robertis",
       "taxCode": "DRBMTT02D10H501X"
+    },
+    {
+      "id": "56765a1c-30e8-4aca-88b0-f7d3143e864d",
+      "name": "Michele",
+      "surname": "Colasanti",
+      "taxCode": "CLSMHL60R04H501Q"
     }
   ],
   "transactions": [
