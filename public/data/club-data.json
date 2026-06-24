@@ -20149,7 +20149,21 @@
       "memberId": "9f186051-62e7-4b2d-98ff-3628077af252",
       "expenseType": "Lezione Privata",
       "paymentMethod": "Bancomat",
-      "amount": 25
+      "amount": 25,
+      "memberName": "Lita Gabriela",
+      "memberSurname": "Troncoso",
+      "memberTaxCode": "TRNLGB59P70Z611W",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "20949683-5ea1-4a99-ab97-70731e009817",
+      "receiptId": "1204",
+      "date": "2026-06-22",
+      "memberId": "20bd5bc1-658b-4230-8ffb-c874715ad292",
+      "expenseType": "Corso Trimestrale Accademy",
+      "paymentMethod": "Bancomat",
+      "amount": 100
     }
   ],
   "settings": {
