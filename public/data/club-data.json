@@ -20191,7 +20191,21 @@
       "memberId": "5ecbb614-4b94-4360-9259-b4684477ba85",
       "expenseType": "Quota Campo",
       "paymentMethod": "Contanti",
-      "amount": 10
+      "amount": 10,
+      "memberName": "Alessandra",
+      "memberSurname": "Barnabei",
+      "memberTaxCode": "BRNLSN79A56H501K",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "10e7f810-27c3-4f78-9a5b-8e89df24c340",
+      "receiptId": "1207",
+      "date": "2026-06-23",
+      "memberId": "e391acf5-187c-43bd-98a8-b58efc19a832",
+      "expenseType": "Quota campo lezione partita",
+      "paymentMethod": "Bancomat",
+      "amount": 20
     }
   ],
   "settings": {
