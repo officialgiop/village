@@ -20163,7 +20163,21 @@
       "memberId": "20bd5bc1-658b-4230-8ffb-c874715ad292",
       "expenseType": "Corso Trimestrale Accademy",
       "paymentMethod": "Bancomat",
-      "amount": 100
+      "amount": 100,
+      "memberName": "Lorenzo",
+      "memberSurname": "Piromalli",
+      "memberTaxCode": "PRMLNZ70T16H501F",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "d2c916f9-f44d-443d-852b-0818601904fa",
+      "receiptId": "1205",
+      "date": "2026-06-22",
+      "memberId": "3c93fe56-c36c-46ec-bb5d-d991f33d3c8e",
+      "expenseType": "Quota Campo Doppia",
+      "paymentMethod": "Contanti",
+      "amount": 20
     }
   ],
   "settings": {
