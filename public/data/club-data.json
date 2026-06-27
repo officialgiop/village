@@ -20449,7 +20449,21 @@
       "memberId": "a9ba435a-12a8-4ffe-860f-ae6898fb6cae",
       "expenseType": "Quota Campo Doppia",
       "paymentMethod": "Contanti",
-      "amount": 20
+      "amount": 20,
+      "memberName": "Giorgio",
+      "memberSurname": "Piergentili",
+      "memberTaxCode": "PRGGRG17B12H501K",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "8abafe73-dadb-4f53-8e39-a5e600a143ad",
+      "receiptId": "1225",
+      "date": "2026-06-26",
+      "memberId": "a08ede04-2ff8-4d94-9c04-717cb5a2a5f2",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Contanti",
+      "amount": 10
     }
   ],
   "settings": {
