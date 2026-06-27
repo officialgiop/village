@@ -2087,6 +2087,12 @@
       "name": "Michele",
       "surname": "Colasanti",
       "taxCode": "CLSMHL60R04H501Q"
+    },
+    {
+      "id": "eccf34b9-9744-4a8b-86fc-7f0f2a610c0c",
+      "name": "Giordano",
+      "surname": "Robuffo",
+      "taxCode": "RBFRDN93C19G813N"
     }
   ],
   "transactions": [
@@ -20331,7 +20337,12 @@
       "memberId": "9f186051-62e7-4b2d-98ff-3628077af252",
       "expenseType": "Lezione Privata",
       "paymentMethod": "Bancomat",
-      "amount": 25
+      "amount": 25,
+      "memberName": "Lita Gabriela",
+      "memberSurname": "Troncoso",
+      "memberTaxCode": "TRNLGB59P70Z611W",
+      "hasIssue": false,
+      "issue": ""
     }
   ],
   "settings": {
