@@ -20289,7 +20289,21 @@
       "memberId": "1e53c557-4520-4db5-94e7-d45e63673c45",
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
-      "amount": 10
+      "amount": 10,
+      "memberName": "Marco",
+      "memberSurname": "Gentile",
+      "memberTaxCode": "GNTMRC79B05H501T",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "b57ee100-3379-49c0-a7b9-de5b7a716273",
+      "receiptId": "1214",
+      "date": "2026-06-24",
+      "memberId": "3c93fe56-c36c-46ec-bb5d-d991f33d3c8e",
+      "expenseType": "Quota Campo Doppia",
+      "paymentMethod": "Contanti",
+      "amount": 20
     }
   ],
   "settings": {
