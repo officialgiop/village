@@ -20343,6 +20343,15 @@
       "memberTaxCode": "TRNLGB59P70Z611W",
       "hasIssue": false,
       "issue": ""
+    },
+    {
+      "id": "31dacaa8-37cc-4e21-ae3c-3f58ab4d6fcf",
+      "receiptId": "1217",
+      "date": "2026-06-25",
+      "memberId": "d6dc23d0-8d50-4cb2-b1f0-6413f6e9c3ea",
+      "expenseType": "Quota Campo Doppia",
+      "paymentMethod": "Bancomat",
+      "amount": 20
     }
   ],
   "settings": {
