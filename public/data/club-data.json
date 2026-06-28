@@ -2093,6 +2093,12 @@
       "name": "Giordano",
       "surname": "Robuffo",
       "taxCode": "RBFRDN93C19G813N"
+    },
+    {
+      "id": "d900fbbf-2b47-451a-9bd6-9af89be37cce",
+      "name": "Cristiano",
+      "surname": "Galeazzi",
+      "taxCode": "GLZCST69C03H501S"
     }
   ],
   "transactions": [
@@ -20463,7 +20469,12 @@
       "memberId": "a08ede04-2ff8-4d94-9c04-717cb5a2a5f2",
       "expenseType": "Quota Campo",
       "paymentMethod": "Contanti",
-      "amount": 10
+      "amount": 10,
+      "memberName": "Marco",
+      "memberSurname": "Fenzato",
+      "memberTaxCode": "FNZMRC66C03C552Z",
+      "hasIssue": false,
+      "issue": ""
     }
   ],
   "settings": {
