@@ -20481,6 +20481,15 @@
       "memberTaxCode": "FNZMRC66C03C552Z",
       "hasIssue": false,
       "issue": ""
+    },
+    {
+      "id": "16494f10-cb76-4a3a-8e35-91ea560d706c",
+      "receiptId": "1226",
+      "date": "2026-06-27",
+      "memberId": "1636e238-05c3-4701-8b31-0eed026930bc",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Bancomat",
+      "amount": 10
     }
   ],
   "settings": {
