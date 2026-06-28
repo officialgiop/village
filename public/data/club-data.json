@@ -20587,7 +20587,21 @@
       "memberId": "d6dc23d0-8d50-4cb2-b1f0-6413f6e9c3ea",
       "expenseType": "Quota Campo Doppia",
       "paymentMethod": "Bancomat",
-      "amount": 20
+      "amount": 20,
+      "memberName": "Giuseppe",
+      "memberSurname": "Ciarleta",
+      "memberTaxCode": "CRLGPP71E16H501S",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "dcfeebcf-94bf-4ca6-a422-b1a148820a42",
+      "receiptId": "1234",
+      "date": "2026-06-27",
+      "memberId": "2a32e907-91ca-49ee-abe2-197160ed0ed3",
+      "expenseType": "Lezione Privata",
+      "paymentMethod": "Contanti",
+      "amount": 25
     }
   ],
   "settings": {
