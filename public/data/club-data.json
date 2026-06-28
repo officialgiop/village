@@ -2099,6 +2099,12 @@
       "name": "Cristiano",
       "surname": "Galeazzi",
       "taxCode": "GLZCST69C03H501S"
+    },
+    {
+      "id": "221dd79c-5e15-4461-bb72-162ae714325d",
+      "name": "Valerio",
+      "surname": "Marcangeli",
+      "taxCode": "MRCVLR95T18H501G"
     }
   ],
   "transactions": [
