@@ -20671,6 +20671,20 @@
       "memberId": "324058af-5a4e-422d-85b2-5288cfbf3bd7",
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
+      "amount": 10,
+      "memberName": "Tiziana",
+      "memberSurname": "Ciccolini",
+      "memberTaxCode": "CCCTZN72C68H501G",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "16932baf-b60f-4dbe-9cc3-adbc947b18d7",
+      "receiptId": "1240",
+      "date": "2026-06-28",
+      "memberId": "24cb34fd-bdb2-46e2-b436-8ccffe190527",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Bancomat",
       "amount": 10
     }
   ],
