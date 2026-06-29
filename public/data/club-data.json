@@ -20741,7 +20741,21 @@
       "memberId": "750caff0-3de3-4869-8732-cee2884d11bc",
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
-      "amount": 48.5
+      "amount": 48.5,
+      "memberName": "Simona Serenella",
+      "memberSurname": "Miale",
+      "memberTaxCode": "MLISNS67M57H501E",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "d6a3dd9a-9c59-4548-9ab5-6c8f1874d584",
+      "receiptId": "1245",
+      "date": "2026-06-28",
+      "memberId": "d900fbbf-2b47-451a-9bd6-9af89be37cce",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Bancomat",
+      "amount": 10
     }
   ],
   "settings": {
