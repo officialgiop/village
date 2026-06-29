@@ -2105,6 +2105,12 @@
       "name": "Valerio",
       "surname": "Marcangeli",
       "taxCode": "MRCVLR95T18H501G"
+    },
+    {
+      "id": "e07683dd-1ff3-45d6-8554-25da8f062fa0",
+      "name": "Francesco",
+      "surname": "Fraioli",
+      "taxCode": "FRLFNC73C23H501L"
     }
   ],
   "transactions": [
@@ -20825,7 +20831,12 @@
       "memberId": "16fa8ef6-c54b-4344-892d-d02c689d5daa",
       "expenseType": "Quota Campo",
       "paymentMethod": "Contanti",
-      "amount": 10
+      "amount": 10,
+      "memberName": "Federica",
+      "memberSurname": "Bartocci",
+      "memberTaxCode": "BRTFRC77T43H501L",
+      "hasIssue": false,
+      "issue": ""
     }
   ],
   "settings": {
