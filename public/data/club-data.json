@@ -20811,6 +20811,20 @@
       "memberId": "443f7a8b-402e-4a13-ae7a-e46e4ae5f9da",
       "expenseType": "Quota Campo",
       "paymentMethod": "Contanti",
+      "amount": 10,
+      "memberName": "Nur",
+      "memberSurname": "Laela",
+      "memberTaxCode": "LLANRU71P46Z223G",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "1958332a-852b-40a3-b302-a8fa95607f51",
+      "receiptId": "1250",
+      "date": "2026-06-28",
+      "memberId": "16fa8ef6-c54b-4344-892d-d02c689d5daa",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Contanti",
       "amount": 10
     }
   ],
