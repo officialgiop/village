@@ -20601,7 +20601,21 @@
       "memberId": "2a32e907-91ca-49ee-abe2-197160ed0ed3",
       "expenseType": "Lezione Privata",
       "paymentMethod": "Contanti",
-      "amount": 25
+      "amount": 25,
+      "memberName": "Antonella",
+      "memberSurname": "Folgori",
+      "memberTaxCode": "FLGNNL66L58H501W",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "fa2b6aea-1c74-413f-9b2c-43bd0551e6f7",
+      "receiptId": "1235",
+      "date": "2026-06-28",
+      "memberId": "a9d1ebab-8c3a-4653-b5b3-a0090b253d8d",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Bancomat",
+      "amount": 10
     }
   ],
   "settings": {
