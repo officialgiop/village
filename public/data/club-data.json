@@ -20961,7 +20961,21 @@
       "memberId": "8eadeaf6-b1d1-4d25-b74a-11b2e115399b",
       "expenseType": "Quota Campo",
       "paymentMethod": "Contanti",
-      "amount": 10
+      "amount": 10,
+      "memberName": "Simone",
+      "memberSurname": "Folgori",
+      "memberTaxCode": "FLGSMN71S24H501T",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "9d6c4960-5eb3-42c5-8dd9-d279c1b96d32",
+      "receiptId": "1259",
+      "date": "2026-06-30",
+      "memberId": "ae0114cc-1d15-48ea-a0c5-2670433e800f",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Bancomat",
+      "amount": 13.5
     }
   ],
   "settings": {
