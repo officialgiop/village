@@ -20919,7 +20919,21 @@
       "memberId": "72401209-cdc1-4ce3-b7e9-466f897aa97a",
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
-      "amount": 12
+      "amount": 12,
+      "memberName": "Emanuele",
+      "memberSurname": "Ciotti",
+      "memberTaxCode": "CTTMNL71L04H501C",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "6b8a49e6-58b5-486c-b961-b0c45397b473",
+      "receiptId": "1256",
+      "date": "2026-06-29",
+      "memberId": "0a20ae74-fdc1-4f6d-ac04-57a2f39a64a0",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Contanti",
+      "amount": 10
     }
   ],
   "settings": {
