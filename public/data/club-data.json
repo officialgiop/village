@@ -2123,6 +2123,12 @@
       "name": "Cecilia",
       "surname": "Bausano",
       "taxCode": "BSNCCL79S62H501U"
+    },
+    {
+      "id": "e8dabdfc-ca80-4d8c-9a15-3310ff02d2e8",
+      "name": "Federica",
+      "surname": "Musa",
+      "taxCode": "MSUFRC79B41H501N"
     }
   ],
   "transactions": [
