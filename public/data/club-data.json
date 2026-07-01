@@ -20947,6 +20947,20 @@
       "memberId": "e9d09f71-8191-4928-8b49-23f4b2351745",
       "expenseType": "Quota Campo",
       "paymentMethod": "Contanti",
+      "amount": 10,
+      "memberName": "Alessandro",
+      "memberSurname": "Purificato",
+      "memberTaxCode": "PRFLSN80L11H501J",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "2439f275-04a0-48a3-a3b1-ef50d6c66597",
+      "receiptId": "1258",
+      "date": "2026-06-29",
+      "memberId": "8eadeaf6-b1d1-4d25-b74a-11b2e115399b",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Contanti",
       "amount": 10
     }
   ],
