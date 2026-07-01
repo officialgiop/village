@@ -2111,6 +2111,12 @@
       "name": "Francesco",
       "surname": "Fraioli",
       "taxCode": "FRLFNC73C23H501L"
+    },
+    {
+      "id": "b20b237e-08e6-41ef-b2f3-7d7f11007258",
+      "name": "Luna",
+      "surname": "De Sabtis",
+      "taxCode": "DSNLNU87D47B114F"
     }
   ],
   "transactions": [
