@@ -21237,6 +21237,15 @@
       "memberTaxCode": "BRTMRC77S21H501H",
       "hasIssue": false,
       "issue": ""
+    },
+    {
+      "id": "4b43f8bd-bb92-47e7-af01-d40126452d91",
+      "receiptId": "1277",
+      "date": "2026-07-01",
+      "memberId": "ae0114cc-1d15-48ea-a0c5-2670433e800f",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Contanti",
+      "amount": 10
     }
   ],
   "settings": {
