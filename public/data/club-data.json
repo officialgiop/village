@@ -21167,6 +21167,15 @@
       "memberTaxCode": "GNNMSM71R07L049I",
       "hasIssue": false,
       "issue": ""
+    },
+    {
+      "id": "0349e7c5-a1ea-49c5-afae-87a34e935c6b",
+      "receiptId": "1272",
+      "date": "2026-07-01",
+      "memberId": "20bc7153-27f8-49df-a040-537c80859216",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Bancomat",
+      "amount": 10
     }
   ],
   "settings": {
