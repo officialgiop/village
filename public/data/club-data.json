@@ -21189,7 +21189,21 @@
       "memberId": "b20b237e-08e6-41ef-b2f3-7d7f11007258",
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
-      "amount": 10
+      "amount": 10,
+      "memberName": "Luna",
+      "memberSurname": "De Santis",
+      "memberTaxCode": "DSNLNU87D47B114F",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "094bac4a-9fb9-4d02-8934-e0c1e2ce3125",
+      "receiptId": "1274",
+      "date": "2026-07-01",
+      "memberId": "0b9d83df-1398-4c6c-b3c6-3480e639b730",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Bancomat",
+      "amount": 17
     }
   ],
   "settings": {
