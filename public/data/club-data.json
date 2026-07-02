@@ -21245,6 +21245,20 @@
       "memberId": "ae0114cc-1d15-48ea-a0c5-2670433e800f",
       "expenseType": "Quota Campo",
       "paymentMethod": "Contanti",
+      "amount": 10,
+      "memberName": "Edoardo",
+      "memberSurname": "Malapena",
+      "memberTaxCode": "MLPDRD94L16H501H",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "272a9955-9725-40dc-92c3-55d5b4eb78bb",
+      "receiptId": "1278",
+      "date": "2026-07-01",
+      "memberId": "221dd79c-5e15-4461-bb72-162ae714325d",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Contanti",
       "amount": 10
     }
   ],
