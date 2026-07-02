@@ -2135,6 +2135,12 @@
       "name": "Edoardo",
       "surname": "De Vivo",
       "taxCode": "DVVDRD10S19H501C"
+    },
+    {
+      "id": "b69896ab-bb69-4dd7-89ba-835c771c6052",
+      "name": "Matias",
+      "surname": "Falsarella",
+      "taxCode": "FLSMTS02L13H501L"
     }
   ],
   "transactions": [
