@@ -21139,6 +21139,15 @@
       "memberTaxCode": "TRNLGB59P70Z611W",
       "hasIssue": false,
       "issue": ""
+    },
+    {
+      "id": "5fca2827-51f9-494c-bce1-40ffe44d6331",
+      "receiptId": "1270",
+      "date": "2026-06-30",
+      "memberId": "3c93fe56-c36c-46ec-bb5d-d991f33d3c8e",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Contanti",
+      "amount": 10
     }
   ],
   "settings": {
