@@ -21147,6 +21147,20 @@
       "memberId": "3c93fe56-c36c-46ec-bb5d-d991f33d3c8e",
       "expenseType": "Quota Campo",
       "paymentMethod": "Contanti",
+      "amount": 10,
+      "memberName": "Paolo",
+      "memberSurname": "Andrielli",
+      "memberTaxCode": "NDRPLA63T18H501S",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "fcf699d2-6cf1-44af-8cca-7a61f783ee37",
+      "receiptId": "1271",
+      "date": "2026-07-01",
+      "memberId": "8a11f362-3b5e-4e92-a27e-ced7b1c3fb9c",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Bancomat",
       "amount": 10
     }
   ],
