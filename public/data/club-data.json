@@ -21161,7 +21161,12 @@
       "memberId": "8a11f362-3b5e-4e92-a27e-ced7b1c3fb9c",
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
-      "amount": 10
+      "amount": 14,
+      "memberName": "Massimo",
+      "memberSurname": "Giannese",
+      "memberTaxCode": "GNNMSM71R07L049I",
+      "hasIssue": false,
+      "issue": ""
     }
   ],
   "settings": {
