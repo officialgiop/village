@@ -21013,6 +21013,15 @@
       "memberTaxCode": "CMRNRC71L03H501T",
       "hasIssue": false,
       "issue": ""
+    },
+    {
+      "id": "c8f5cbd2-72b2-427d-82ec-6a0e8cf7dfde",
+      "receiptId": "1261",
+      "date": "2026-06-30",
+      "memberId": "5a18a0aa-5387-44c2-8af8-ca98dd0843ac",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Bancomat",
+      "amount": 12.5
     }
   ],
   "settings": {
