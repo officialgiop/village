@@ -21273,7 +21273,21 @@
       "memberId": "0a20ae74-fdc1-4f6d-ac04-57a2f39a64a0",
       "expenseType": "Quota Campo Doppia",
       "paymentMethod": "Bancomat",
-      "amount": 20
+      "amount": 20,
+      "memberName": "Claudio Matteo",
+      "memberSurname": "Basili",
+      "memberTaxCode": "BSLCDM60T14E038F",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "204d46b2-e2ae-46b7-816a-e60f162ccf22",
+      "receiptId": "1280",
+      "date": "2026-07-02",
+      "memberId": "1d661a00-a812-455c-b1fa-8776cbda1102",
+      "expenseType": "Corso Mensile",
+      "paymentMethod": "Bancomat",
+      "amount": 100
     }
   ],
   "settings": {
