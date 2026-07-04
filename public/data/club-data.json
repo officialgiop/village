@@ -21259,7 +21259,21 @@
       "memberId": "221dd79c-5e15-4461-bb72-162ae714325d",
       "expenseType": "Quota Campo",
       "paymentMethod": "Contanti",
-      "amount": 10
+      "amount": 10,
+      "memberName": "Valerio",
+      "memberSurname": "Marcangeli",
+      "memberTaxCode": "MRCVLR95T18H501G",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "082b63dc-2bf8-4db2-aeea-54110fc017a2",
+      "receiptId": "1279",
+      "date": "2026-07-02",
+      "memberId": "0a20ae74-fdc1-4f6d-ac04-57a2f39a64a0",
+      "expenseType": "Quota Campo Doppia",
+      "paymentMethod": "Bancomat",
+      "amount": 20
     }
   ],
   "settings": {
