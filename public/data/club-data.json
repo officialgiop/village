@@ -2195,6 +2195,12 @@
       "name": "Daniele",
       "surname": "Matta",
       "taxCode": "MTTDNL82P22H501G"
+    },
+    {
+      "id": "24823572-1a23-46c5-8a76-63347af685b4",
+      "name": "Niccolò",
+      "surname": "Bergamini",
+      "taxCode": "BRGNCL75L23H501M"
     }
   ],
   "transactions": [
@@ -21601,7 +21607,12 @@
       "memberId": "efd6092a-39aa-4e20-bc9e-0c28fd40a09f",
       "expenseType": "Quota Campo",
       "paymentMethod": "Contanti",
-      "amount": 10
+      "amount": 10,
+      "memberName": "Barbara",
+      "memberSurname": "Pichi",
+      "memberTaxCode": "PCHBBR73H69H501U",
+      "hasIssue": false,
+      "issue": ""
     }
   ],
   "settings": {
