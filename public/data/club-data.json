@@ -2147,6 +2147,12 @@
       "name": "Daniele",
       "surname": "Martinelli",
       "taxCode": "MRTDNL79C15H501S"
+    },
+    {
+      "id": "20606689-64ae-4c8f-9335-663fc231104f",
+      "name": "Matteo",
+      "surname": "Abbati",
+      "taxCode": "BBTMTT75E05L424F"
     }
   ],
   "transactions": [
@@ -21371,7 +21377,12 @@
       "memberId": "42a15094-25e7-4010-b47a-29f42a335467",
       "expenseType": "Lezione Privata",
       "paymentMethod": "Bancomat",
-      "amount": 25
+      "amount": 25,
+      "memberName": "Giulia",
+      "memberSurname": "Tempesta",
+      "memberTaxCode": "TMPGLI01H49H501H",
+      "hasIssue": false,
+      "issue": ""
     }
   ],
   "settings": {
