@@ -2189,6 +2189,12 @@
       "name": "Carlo",
       "surname": "Bozzi",
       "taxCode": "BZZCRL69B04H501S"
+    },
+    {
+      "id": "b71a11c1-9968-43fc-8fbe-ac5eeeb30aa5",
+      "name": "Daniele",
+      "surname": "Matta",
+      "taxCode": "MTTDNL82P22H501G"
     }
   ],
   "transactions": [
