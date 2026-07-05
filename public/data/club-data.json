@@ -21425,6 +21425,15 @@
       "memberTaxCode": "TMPGLI01H49H501H",
       "hasIssue": false,
       "issue": ""
+    },
+    {
+      "id": "525e198a-848a-4578-8e73-d3dfec151345",
+      "receiptId": "1287",
+      "date": "2026-07-03",
+      "memberId": "73a442c6-1cfe-451d-99dc-3b63fcf901ff",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Bancomat",
+      "amount": 10
     }
   ],
   "settings": {
