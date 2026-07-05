@@ -2183,6 +2183,12 @@
       "name": "Fabrizio",
       "surname": "Servi",
       "taxCode": "SRVFRZ83T02H501I"
+    },
+    {
+      "id": "ed22e446-7521-4f19-9f88-f7bb69e74a7c",
+      "name": "Carlo",
+      "surname": "Bozzi",
+      "taxCode": "BZZCRL69B04H501S"
     }
   ],
   "transactions": [
