@@ -21545,7 +21545,21 @@
       "memberId": "dfbee493-fdc7-4577-8378-fb0c12724047",
       "expenseType": "Lezione Doppia",
       "paymentMethod": "Bancomat",
-      "amount": 40
+      "amount": 40,
+      "memberName": "Daniel",
+      "memberSurname": "Germani",
+      "memberTaxCode": "GRMDNL77E28H501C",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "25b3167e-3613-48b8-895b-9710b345c6e3",
+      "receiptId": "1296",
+      "date": "2026-07-04",
+      "memberId": "16fa8ef6-c54b-4344-892d-d02c689d5daa",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Contanti",
+      "amount": 10
     }
   ],
   "settings": {
