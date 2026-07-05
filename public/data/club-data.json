@@ -2159,6 +2159,12 @@
       "name": "Daniel",
       "surname": "Germani",
       "taxCode": "GRMDNL77E28H501C"
+    },
+    {
+      "id": "974ddb6d-5a86-45fd-85d9-9717eb483d2a",
+      "name": "Paolo",
+      "surname": "Ruda",
+      "taxCode": "RDUPLA98L26H501N"
     }
   ],
   "transactions": [
