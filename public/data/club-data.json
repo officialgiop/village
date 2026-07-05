@@ -2177,6 +2177,12 @@
       "name": "Roberto",
       "surname": "Ricci",
       "taxCode": "RCCRRT78D17H501Z"
+    },
+    {
+      "id": "1b7addab-6325-4746-aa9a-779d85cf9e77",
+      "name": "Fabrizio",
+      "surname": "Servi",
+      "taxCode": "SRVFRZ83T02H501I"
     }
   ],
   "transactions": [
