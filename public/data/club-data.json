@@ -22093,6 +22093,15 @@
       "memberTaxCode": "MSTCLL80L65H501Z",
       "hasIssue": false,
       "issue": ""
+    },
+    {
+      "id": "265b5378-dd51-4c23-96ae-165131af4a81",
+      "receiptId": "1333",
+      "date": "2026-07-07",
+      "memberId": "4fbc21f5-c996-4a8e-8689-673c88fcf4da",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Contanti",
+      "amount": 10
     }
   ],
   "settings": {
