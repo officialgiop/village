@@ -21781,7 +21781,21 @@
       "memberId": "24823572-1a23-46c5-8a76-63347af685b4",
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
-      "amount": 15
+      "amount": 15,
+      "memberName": "Niccolò",
+      "memberSurname": "Bergamini",
+      "memberTaxCode": "BRGNCL75L23H501M",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "29933105-ff6e-4b8a-8597-7c157322d87c",
+      "receiptId": "1312",
+      "date": "2026-07-05",
+      "memberId": "b69896ab-bb69-4dd7-89ba-835c771c6052",
+      "expenseType": "Quota Campo Doppia",
+      "paymentMethod": "Bancomat",
+      "amount": 23
     }
   ],
   "settings": {
