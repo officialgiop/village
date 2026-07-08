@@ -21849,7 +21849,21 @@
       "memberId": "dbcb6162-461c-42e8-9fe0-24313097d0c3",
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
-      "amount": 13
+      "amount": 13,
+      "memberName": "Simona",
+      "memberSurname": "Bernardi",
+      "memberTaxCode": "BRNSMN74P47H501V",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "a5a44f0b-e11e-4f6d-9992-3b818e782c14",
+      "receiptId": "1316",
+      "date": "2026-07-06",
+      "memberId": "20606689-64ae-4c8f-9335-663fc231104f",
+      "expenseType": "Corso Mensile",
+      "paymentMethod": "Bancomat",
+      "amount": 131
     }
   ],
   "settings": {
