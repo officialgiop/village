@@ -22003,7 +22003,21 @@
       "memberId": "efd6092a-39aa-4e20-bc9e-0c28fd40a09f",
       "expenseType": "Quota Campo",
       "paymentMethod": "Contanti",
-      "amount": 10
+      "amount": 10,
+      "memberName": "Barbara",
+      "memberSurname": "Pichi",
+      "memberTaxCode": "PCHBBR73H69H501U",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "0d1f22fb-fdf8-4a99-aabc-fc88a81c7476",
+      "receiptId": "1327",
+      "date": "2026-07-07",
+      "memberId": "ed22e446-7521-4f19-9f88-f7bb69e74a7c",
+      "expenseType": "Lezione Privata",
+      "paymentMethod": "Bancomat",
+      "amount": 25
     }
   ],
   "settings": {
