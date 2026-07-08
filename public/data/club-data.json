@@ -21933,6 +21933,20 @@
       "memberId": "24cb34fd-bdb2-46e2-b436-8ccffe190527",
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
+      "amount": 10,
+      "memberName": "Francesca",
+      "memberSurname": "Calandra",
+      "memberTaxCode": "CLNFNC79M41H501B",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "f8197762-d61e-4dcd-ab73-b18420a5e0f2",
+      "receiptId": "1322",
+      "date": "2026-07-06",
+      "memberId": "7cf22f35-593e-4ed1-a4e9-c669f96dd5f4",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Bancomat",
       "amount": 10
     }
   ],
