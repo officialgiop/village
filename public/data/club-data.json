@@ -21619,6 +21619,15 @@
       "memberTaxCode": "PCHBBR73H69H501U",
       "hasIssue": false,
       "issue": ""
+    },
+    {
+      "id": "443081f6-c786-41cc-9916-9e9a4644a65d",
+      "receiptId": "1300",
+      "date": "2026-07-05",
+      "memberId": "b5ed0348-d9f4-44fe-923c-1fd821b2a2a3",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Bancomat",
+      "amount": 10
     }
   ],
   "settings": {
