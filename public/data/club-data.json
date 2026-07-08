@@ -22059,7 +22059,7 @@
       "memberId": "e391acf5-187c-43bd-98a8-b58efc19a832",
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
-      "amount": 10,
+      "amount": 15,
       "memberName": "Manuel",
       "memberSurname": "Luciani",
       "memberTaxCode": "LCNMNL17E30H501F",
@@ -22087,7 +22087,12 @@
       "memberId": "ff8662e3-0edd-446b-b2ae-076c4e07ae1b",
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
-      "amount": 10
+      "amount": 10,
+      "memberName": "Camilla",
+      "memberSurname": "Mastroiacovo",
+      "memberTaxCode": "MSTCLL80L65H501Z",
+      "hasIssue": false,
+      "issue": ""
     }
   ],
   "settings": {
