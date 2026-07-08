@@ -21989,7 +21989,21 @@
       "memberId": "b4d2f588-e748-4363-b397-4ec295e7cfeb",
       "expenseType": "Quota Campo Doppia",
       "paymentMethod": "Contanti",
-      "amount": 20
+      "amount": 20,
+      "memberName": "Amedea",
+      "memberSurname": "Funari",
+      "memberTaxCode": "FNRMDA63C49H501R",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "9815c8ee-9da8-4bc7-9bb0-de200c2fc104",
+      "receiptId": "1326",
+      "date": "2026-07-06",
+      "memberId": "efd6092a-39aa-4e20-bc9e-0c28fd40a09f",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Contanti",
+      "amount": 10
     }
   ],
   "settings": {
