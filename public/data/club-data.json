@@ -2213,6 +2213,12 @@
       "name": "Enrico",
       "surname": "Rosati",
       "taxCode": "RSTNRC74R30H501M"
+    },
+    {
+      "id": "89dc0c52-1979-4f8a-869d-9d4394a8dec3",
+      "name": "Valentino",
+      "surname": "Prosciutti",
+      "taxCode": "PRSVNT71R12H501O"
     }
   ],
   "transactions": [
