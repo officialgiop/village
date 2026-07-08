@@ -21891,6 +21891,20 @@
       "memberId": "2a32e907-91ca-49ee-abe2-197160ed0ed3",
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
+      "amount": 10,
+      "memberName": "Antonella",
+      "memberSurname": "Folgori",
+      "memberTaxCode": "FLGNNL66L58H501W",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "ff583df0-b11f-4b26-b5d2-9157f7a1a3f0",
+      "receiptId": "1319",
+      "date": "2026-07-06",
+      "memberId": "357337bc-18c3-446c-9c3a-b2c7c9a10d2c",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Bancomat",
       "amount": 10
     }
   ],
