@@ -2201,6 +2201,12 @@
       "name": "Niccolò",
       "surname": "Bergamini",
       "taxCode": "BRGNCL75L23H501M"
+    },
+    {
+      "id": "fc56a088-4374-4605-87dd-f40c5a8338b0",
+      "name": "Fabrizio",
+      "surname": "Montani",
+      "taxCode": "MNTFRZ70C16H501L"
     }
   ],
   "transactions": [
