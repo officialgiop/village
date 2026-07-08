@@ -2207,6 +2207,12 @@
       "name": "Fabrizio",
       "surname": "Montani",
       "taxCode": "MNTFRZ70C16H501L"
+    },
+    {
+      "id": "68d75dde-c062-4302-bbe2-6e30f9f61b27",
+      "name": "Enrico",
+      "surname": "Rosati",
+      "taxCode": "RSTNRC74R30H501M"
     }
   ],
   "transactions": [
@@ -21823,7 +21829,12 @@
       "memberId": "443f7a8b-402e-4a13-ae7a-e46e4ae5f9da",
       "expenseType": "Quota Campo",
       "paymentMethod": "Contanti",
-      "amount": 10
+      "amount": 10,
+      "memberName": "Nur",
+      "memberSurname": "Laela",
+      "memberTaxCode": "LLANRU71P46Z223G",
+      "hasIssue": false,
+      "issue": ""
     }
   ],
   "settings": {
