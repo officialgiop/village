@@ -21841,6 +21841,15 @@
       "memberTaxCode": "LLANRU71P46Z223G",
       "hasIssue": false,
       "issue": ""
+    },
+    {
+      "id": "a28a28bd-1f4b-459f-8b89-62e6ad7ec30e",
+      "receiptId": "1315",
+      "date": "2026-07-06",
+      "memberId": "dbcb6162-461c-42e8-9fe0-24313097d0c3",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Bancomat",
+      "amount": 13
     }
   ],
   "settings": {
