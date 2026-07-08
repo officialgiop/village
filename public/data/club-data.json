@@ -21863,7 +21863,21 @@
       "memberId": "20606689-64ae-4c8f-9335-663fc231104f",
       "expenseType": "Corso Mensile",
       "paymentMethod": "Bancomat",
-      "amount": 131
+      "amount": 131,
+      "memberName": "Matteo",
+      "memberSurname": "Abbati",
+      "memberTaxCode": "BBTMTT75E05L424F",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "d283a5f1-16cf-454c-ba3a-1abe30d9805b",
+      "receiptId": "1317",
+      "date": "2026-07-06",
+      "memberId": "3e34e519-ed09-45ad-8d79-e389df61cb74",
+      "expenseType": "Quota Campo Doppia",
+      "paymentMethod": "Bancomat",
+      "amount": 20
     }
   ],
   "settings": {
