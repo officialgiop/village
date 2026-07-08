@@ -21877,7 +21877,21 @@
       "memberId": "3e34e519-ed09-45ad-8d79-e389df61cb74",
       "expenseType": "Quota Campo Doppia",
       "paymentMethod": "Bancomat",
-      "amount": 20
+      "amount": 20,
+      "memberName": "Chiara",
+      "memberSurname": "Cardinali",
+      "memberTaxCode": "CRDCHR95E43D612F",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "15d506f1-d42e-4f7b-9a3c-411da2404429",
+      "receiptId": "1318",
+      "date": "2026-07-06",
+      "memberId": "2a32e907-91ca-49ee-abe2-197160ed0ed3",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Bancomat",
+      "amount": 10
     }
   ],
   "settings": {
