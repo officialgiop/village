@@ -22233,7 +22233,21 @@
       "memberId": "d900fbbf-2b47-451a-9bd6-9af89be37cce",
       "expenseType": "Corso Mensile",
       "paymentMethod": "Bancomat",
-      "amount": 100
+      "amount": 100,
+      "memberName": "Cristiano",
+      "memberSurname": "Galeazzi",
+      "memberTaxCode": "GLZCST69C03H501S",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "726b9d92-1900-4c1e-8f7c-6ad37fa3969a",
+      "receiptId": "1343",
+      "date": "2026-07-08",
+      "memberId": "cd5c077e-547a-4440-ba6a-effa50b84a64",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Contanti",
+      "amount": 10
     }
   ],
   "settings": {
