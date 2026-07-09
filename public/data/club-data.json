@@ -2219,6 +2219,12 @@
       "name": "Valentino",
       "surname": "Prosciutti",
       "taxCode": "PRSVNT71R12H501O"
+    },
+    {
+      "id": "8856400d-59cc-4a64-9e14-890caa2dd097",
+      "name": "Yaroslav",
+      "surname": "Smizrov",
+      "taxCode": "SMRYSL94R04Z138M"
     }
   ],
   "transactions": [
@@ -22101,7 +22107,12 @@
       "memberId": "4fbc21f5-c996-4a8e-8689-673c88fcf4da",
       "expenseType": "Quota Campo",
       "paymentMethod": "Contanti",
-      "amount": 10
+      "amount": 10,
+      "memberName": "Giampiero",
+      "memberSurname": "Palmieri",
+      "memberTaxCode": "PLMGPR67L09A706H",
+      "hasIssue": false,
+      "issue": ""
     }
   ],
   "settings": {
