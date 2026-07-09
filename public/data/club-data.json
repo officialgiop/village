@@ -22219,7 +22219,21 @@
       "memberId": "89dc0c52-1979-4f8a-869d-9d4394a8dec3",
       "expenseType": "Quota Campo Doppia",
       "paymentMethod": "Bancomat",
-      "amount": 20
+      "amount": 20,
+      "memberName": "Valentino",
+      "memberSurname": "Prosciutti",
+      "memberTaxCode": "PRSVNT71R12H501O",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "e2095a69-7fef-44c6-8809-1f433f96a9ef",
+      "receiptId": "1342",
+      "date": "2026-07-08",
+      "memberId": "d900fbbf-2b47-451a-9bd6-9af89be37cce",
+      "expenseType": "Corso Mensile",
+      "paymentMethod": "Bancomat",
+      "amount": 100
     }
   ],
   "settings": {
