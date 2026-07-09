@@ -22113,6 +22113,15 @@
       "memberTaxCode": "PLMGPR67L09A706H",
       "hasIssue": false,
       "issue": ""
+    },
+    {
+      "id": "0dcfdd41-f7d8-480f-bb3b-5bcda0052c7a",
+      "receiptId": "1334",
+      "date": "2026-07-08",
+      "memberId": "20bd5bc1-658b-4230-8ffb-c874715ad292",
+      "expenseType": "Corso Mensile",
+      "paymentMethod": "Bancomat",
+      "amount": 100
     }
   ],
   "settings": {
