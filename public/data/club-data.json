@@ -22135,7 +22135,21 @@
       "memberId": "1620910e-87bc-4c6b-9e8c-f07527b5c3ab",
       "expenseType": "Corso Mensile",
       "paymentMethod": "Bancomat",
-      "amount": 100
+      "amount": 100,
+      "memberName": "Claudio",
+      "memberSurname": "Candio",
+      "memberTaxCode": "CNDCLD68H14H501A",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "012a9d93-dca1-44fa-b62e-c8b304416ef4",
+      "receiptId": "1336",
+      "date": "2026-07-08",
+      "memberId": "3ea30578-cf47-4fb9-8d91-e8d3d279ae1c",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Bancomat",
+      "amount": 17
     }
   ],
   "settings": {
