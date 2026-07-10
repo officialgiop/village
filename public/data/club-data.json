@@ -2231,6 +2231,12 @@
       "name": "Michele",
       "surname": "Napolitano",
       "taxCode": "NPLMHL06L31D843W"
+    },
+    {
+      "id": "dedaa8e9-eff9-43f5-8069-69aa51e633cc",
+      "name": "Federico",
+      "surname": "Spalloni",
+      "taxCode": "SPLFRC78B22H501U"
     }
   ],
   "transactions": [
