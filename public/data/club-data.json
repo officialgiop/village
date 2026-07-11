@@ -22379,7 +22379,21 @@
       "memberId": "1e0033eb-1a26-4fb5-9d02-a5b47cead7dd",
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
-      "amount": 13
+      "amount": 13,
+      "memberName": "Chiara",
+      "memberSurname": "Cesarini",
+      "memberTaxCode": "CSRCHR99D69H501V",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "22bf9955-d12d-4df4-bf15-d19e6f46524e",
+      "receiptId": "1350",
+      "date": "2026-07-09",
+      "memberId": "39afa2ba-d706-4e48-b963-f94b082e8da7",
+      "expenseType": "Contributo Kit allenamento",
+      "paymentMethod": "Bancomat",
+      "amount": 12.5
     }
   ],
   "settings": {
