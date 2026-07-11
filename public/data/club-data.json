@@ -22315,6 +22315,15 @@
       "memberTaxCode": "MRCDNL71L15H501A",
       "hasIssue": false,
       "issue": ""
+    },
+    {
+      "id": "46b28755-502b-46ec-bc1a-68a4fe285540",
+      "receiptId": "1345",
+      "date": "2026-07-09",
+      "memberId": "1e0033eb-1a26-4fb5-9d02-a5b47cead7dd",
+      "expenseType": "Lezione Privata",
+      "paymentMethod": "Bancomat",
+      "amount": 26
     }
   ],
   "settings": {
