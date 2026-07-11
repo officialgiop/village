@@ -22323,7 +22323,21 @@
       "memberId": "1e0033eb-1a26-4fb5-9d02-a5b47cead7dd",
       "expenseType": "Lezione Privata",
       "paymentMethod": "Bancomat",
-      "amount": 26
+      "amount": 26,
+      "memberName": "Chiara",
+      "memberSurname": "Cesarini",
+      "memberTaxCode": "CSRCHR99D69H501V",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "8f1c5b93-0e48-483a-a244-66adac14a785",
+      "receiptId": "1346",
+      "date": "2026-07-09",
+      "memberId": "39afa2ba-d706-4e48-b963-f94b082e8da7",
+      "expenseType": "Quota campo lezione partita",
+      "paymentMethod": "Bancomat",
+      "amount": 46
     }
   ],
   "settings": {
