@@ -22407,7 +22407,21 @@
       "memberId": "1c2916a1-9093-41dc-810d-b57ca2abe972",
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
-      "amount": 14
+      "amount": 14,
+      "memberName": "Silvia",
+      "memberSurname": "Tosti",
+      "memberTaxCode": "TSTSLV61H60H501T",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "762eec13-71f9-4c53-8fd1-8c964a74922a",
+      "receiptId": "1352",
+      "date": "2026-07-09",
+      "memberId": "1c2916a1-9093-41dc-810d-b57ca2abe972",
+      "expenseType": "Contributo Kit allenamento",
+      "paymentMethod": "Bancomat",
+      "amount": 7
     }
   ],
   "settings": {
