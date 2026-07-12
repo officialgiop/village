@@ -22769,7 +22769,21 @@
       "memberId": "1c2916a1-9093-41dc-810d-b57ca2abe972",
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
-      "amount": 13
+      "amount": 13,
+      "memberName": "Silvia",
+      "memberSurname": "Tosti",
+      "memberTaxCode": "TSTSLV61H60H501T",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "4587b3e1-0744-4606-9ac1-e1aebbb17601",
+      "receiptId": "1377",
+      "date": "2026-07-11",
+      "memberId": "39afa2ba-d706-4e48-b963-f94b082e8da7",
+      "expenseType": "Lezione Doppia",
+      "paymentMethod": "Bancomat",
+      "amount": 40
     }
   ],
   "settings": {
