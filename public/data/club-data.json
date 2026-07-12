@@ -2297,6 +2297,12 @@
       "name": "Federico",
       "surname": "La Penna",
       "taxCode": "LPNFRC83M07H501B"
+    },
+    {
+      "id": "4de8016d-c79d-4f99-a352-677360d454be",
+      "name": "Pietro",
+      "surname": "Calabrese",
+      "taxCode": "CLBPTR65E02H501M"
     }
   ],
   "transactions": [
