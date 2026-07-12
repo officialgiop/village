@@ -2291,6 +2291,12 @@
       "name": "Michele",
       "surname": "Russo",
       "taxCode": "RSSMHL88S17H501Z"
+    },
+    {
+      "id": "f02e218a-991f-4618-8e48-b34132726fed",
+      "name": "Federico",
+      "surname": "La Penna",
+      "taxCode": "LPNFRC83M07H501B"
     }
   ],
   "transactions": [
