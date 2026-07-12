@@ -2285,6 +2285,12 @@
       "name": "Giulio",
       "surname": "Vallati",
       "taxCode": "VLLGGL71R24H501M"
+    },
+    {
+      "id": "e48e6c4d-e0a7-497f-8aeb-9fffeb89db52",
+      "name": "Michele",
+      "surname": "Russo",
+      "taxCode": "RSSMHL88S17H501Z"
     }
   ],
   "transactions": [
@@ -22853,7 +22859,12 @@
       "memberId": "da257f2c-2eed-4f20-8368-8893e4f10502",
       "expenseType": "Quota Campo",
       "paymentMethod": "Contanti",
-      "amount": 10
+      "amount": 10,
+      "memberName": "Roberto",
+      "memberSurname": "Pagnotti",
+      "memberTaxCode": "PGNRRT65D19H501M",
+      "hasIssue": false,
+      "issue": ""
     }
   ],
   "settings": {
