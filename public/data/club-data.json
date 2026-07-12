@@ -22691,6 +22691,15 @@
       "memberTaxCode": "MRTDNL79C15H501S",
       "hasIssue": false,
       "issue": ""
+    },
+    {
+      "id": "dd214007-5660-4e38-a4a9-5e5d8e8c04f3",
+      "receiptId": "1371",
+      "date": "2026-07-11",
+      "memberId": "204676fd-8ea7-4733-ac8f-32ea0f0ddd6a",
+      "expenseType": "Quota Campo Doppia",
+      "paymentMethod": "Bancomat",
+      "amount": 20
     }
   ],
   "settings": {
