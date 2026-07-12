@@ -22825,7 +22825,21 @@
       "memberId": "3c93fe56-c36c-46ec-bb5d-d991f33d3c8e",
       "expenseType": "Quota Campo Doppia",
       "paymentMethod": "Contanti",
-      "amount": 20
+      "amount": 20,
+      "memberName": "Paolo",
+      "memberSurname": "Andrielli",
+      "memberTaxCode": "NDRPLA63T18H501S",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "2ae5cd1f-4c18-4b58-b888-f160a27ec864",
+      "receiptId": "1381",
+      "date": "2026-07-11",
+      "memberId": "fa145c73-0cb0-4f6d-8925-750fb1f6798a",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Contanti",
+      "amount": 10
     }
   ],
   "settings": {
