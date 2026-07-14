@@ -2303,6 +2303,12 @@
       "name": "Pietro",
       "surname": "Calabrese",
       "taxCode": "CLBPTR65E02H501M"
+    },
+    {
+      "id": "2194116f-2435-422a-819e-c696be16bc4a",
+      "name": "Valerio Massimo",
+      "surname": "Galloni",
+      "taxCode": "GLLVRM06E09H501Y"
     }
   ],
   "transactions": [
@@ -23011,7 +23017,12 @@
       "memberId": "b04a1a72-9874-4945-8022-97df5caa43ee",
       "expenseType": "Quota Campo",
       "paymentMethod": "Contanti",
-      "amount": 10
+      "amount": 10,
+      "memberName": "Marco",
+      "memberSurname": "Bartolini",
+      "memberTaxCode": "BRTMRC77S21H501H",
+      "hasIssue": false,
+      "issue": ""
     }
   ],
   "settings": {
