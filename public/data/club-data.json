@@ -2333,6 +2333,12 @@
       "name": "Manila",
       "surname": "Rossetti",
       "taxCode": "RSSMNL04A64H501S"
+    },
+    {
+      "id": "d53746f9-253c-4a90-a221-401f29933eb0",
+      "name": "Claudio",
+      "surname": "Dell'Ali",
+      "taxCode": "DLLCLD75P05H501L"
     }
   ],
   "transactions": [
