@@ -23221,6 +23221,20 @@
       "memberId": "b69896ab-bb69-4dd7-89ba-835c771c6052",
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
+      "amount": 10,
+      "memberName": "Matias",
+      "memberSurname": "Falsarella",
+      "memberTaxCode": "FLSMTS02L13H501L",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "f7d4acdd-2b37-466b-9503-df973450bdf1",
+      "receiptId": "1405",
+      "date": "2026-06-15",
+      "memberId": "f841e60c-0ffe-4175-8939-361fce411989",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Contanti",
       "amount": 10
     }
   ],
