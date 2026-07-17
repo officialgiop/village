@@ -23479,6 +23479,15 @@
       "memberTaxCode": "MRTDNL79C15H501S",
       "hasIssue": false,
       "issue": ""
+    },
+    {
+      "id": "3fd898ca-a04f-4926-9473-e0bca5f756d8",
+      "receiptId": "1423",
+      "date": "2026-07-16",
+      "memberId": "f841e60c-0ffe-4175-8939-361fce411989",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Contanti",
+      "amount": 10
     }
   ],
   "settings": {
