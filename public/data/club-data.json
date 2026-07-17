@@ -2321,6 +2321,12 @@
       "name": "Michele",
       "surname": "Scandellari",
       "taxCode": "SCNMHL67R08H199E"
+    },
+    {
+      "id": "4c7dd2d7-4eee-4410-9a0d-052b6ff44f9b",
+      "name": "Paolo",
+      "surname": "Teodoli",
+      "taxCode": "TDLPLA10A29H501G"
     }
   ],
   "transactions": [
