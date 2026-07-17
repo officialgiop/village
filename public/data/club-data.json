@@ -23129,6 +23129,15 @@
       "memberTaxCode": "DLLMRC73S14H501C",
       "hasIssue": false,
       "issue": ""
+    },
+    {
+      "id": "11981447-ac32-48eb-9e6e-e2649d52086e",
+      "receiptId": "1398",
+      "date": "2026-06-15",
+      "memberId": "bb46f250-9567-4cd0-997f-9e43ee7a9814",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Bancomat",
+      "amount": 40
     }
   ],
   "settings": {
