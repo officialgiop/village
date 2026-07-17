@@ -23459,7 +23459,21 @@
       "memberId": "6892494f-2cee-4f85-b8a9-efd79a76eb51",
       "expenseType": "Quota campo lezione partita",
       "paymentMethod": "Bancomat",
-      "amount": 15
+      "amount": 15,
+      "memberName": "Manila",
+      "memberSurname": "Rossetti",
+      "memberTaxCode": "RSSMNL04A64H501S",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "a9961918-0930-4241-9f1c-d8fa396c51bc",
+      "receiptId": "1422",
+      "date": "2026-07-16",
+      "memberId": "233c5a7c-d1e8-49f0-94d5-ce73a395e16e",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Bancomat",
+      "amount": 10
     }
   ],
   "settings": {
