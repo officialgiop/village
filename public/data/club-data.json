@@ -23375,6 +23375,20 @@
       "memberId": "684994c3-7116-464c-8a42-af3758cf8ad2",
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
+      "amount": 10,
+      "memberName": "Fabrizio",
+      "memberSurname": "Groe",
+      "memberTaxCode": "GROFRZ89P30H501G",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "3fc9f1a0-19bc-447f-861e-d1d04fbcc938",
+      "receiptId": "1416",
+      "date": "2026-07-16",
+      "memberId": "e0ee7592-8ced-45e4-9c22-53d1267dc655",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Bancomat",
       "amount": 10
     }
   ],
