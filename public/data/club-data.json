@@ -2339,6 +2339,12 @@
       "name": "Claudio",
       "surname": "Dell'Ali",
       "taxCode": "DLLCLD75P05H501L"
+    },
+    {
+      "id": "21782e50-f9da-4786-9b03-73048c43598e",
+      "name": "Marco",
+      "surname": "Maurizi",
+      "taxCode": "MRZMRC72T19H501Z"
     }
   ],
   "transactions": [
@@ -19716,9 +19722,9 @@
       "expenseType": "Quota campo lezione partita",
       "paymentMethod": "Bancomat",
       "amount": 15,
-      "memberName": "Manuel",
-      "memberSurname": "Luciani",
-      "memberTaxCode": "LCNMNL17E30H501F",
+      "memberName": "Manila",
+      "memberSurname": "Rossetti",
+      "memberTaxCode": "RSSMNL04A64H501S",
       "hasIssue": false,
       "issue": ""
     },
