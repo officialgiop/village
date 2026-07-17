@@ -23133,7 +23133,7 @@
     {
       "id": "11981447-ac32-48eb-9e6e-e2649d52086e",
       "receiptId": "1398",
-      "date": "2026-06-15",
+      "date": "2026-07-15",
       "memberId": "bb46f250-9567-4cd0-997f-9e43ee7a9814",
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
@@ -23235,7 +23235,12 @@
       "memberId": "f841e60c-0ffe-4175-8939-361fce411989",
       "expenseType": "Quota Campo",
       "paymentMethod": "Contanti",
-      "amount": 10
+      "amount": 10,
+      "memberName": "Rinaldo",
+      "memberSurname": "Soldatelli",
+      "memberTaxCode": "SLDRLD69R23H501L",
+      "hasIssue": false,
+      "issue": ""
     }
   ],
   "settings": {
