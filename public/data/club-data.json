@@ -23263,7 +23263,21 @@
       "memberId": "2194116f-2435-422a-819e-c696be16bc4a",
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
-      "amount": 11
+      "amount": 11,
+      "memberName": "Valerio Massimo",
+      "memberSurname": "Galloni",
+      "memberTaxCode": "GLLVRM06E09H501Y",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "46ec47de-b68c-4871-b6b4-11a1147da1ad",
+      "receiptId": "1408",
+      "date": "2026-07-14",
+      "memberId": "23116c12-d9ba-4ddd-ad0d-9cec2ae6bc4d",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Bancomat",
+      "amount": 10
     }
   ],
   "settings": {
