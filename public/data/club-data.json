@@ -23151,7 +23151,21 @@
       "memberId": "bb46f250-9567-4cd0-997f-9e43ee7a9814",
       "expenseType": "Contributo Kit allenamento",
       "paymentMethod": "Bancomat",
-      "amount": 5
+      "amount": 5,
+      "memberName": "Daniele",
+      "memberSurname": "Marchi",
+      "memberTaxCode": "MRCDNL71L15H501A",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "8a77a401-de3f-4bbd-9b10-4ccc683476aa",
+      "receiptId": "1400",
+      "date": "2026-06-15",
+      "memberId": "2a32e907-91ca-49ee-abe2-197160ed0ed3",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Bancomat",
+      "amount": 10
     }
   ],
   "settings": {
