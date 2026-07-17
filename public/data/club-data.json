@@ -2309,6 +2309,12 @@
       "name": "Valerio Massimo",
       "surname": "Galloni",
       "taxCode": "GLLVRM06E09H501Y"
+    },
+    {
+      "id": "fdc27dca-a2a9-4f9a-81b3-a18c2ac8ca20",
+      "name": "Flavio",
+      "surname": "Ceracchi",
+      "taxCode": "CRCFLV02R10H501M"
     }
   ],
   "transactions": [
@@ -23087,7 +23093,12 @@
       "memberId": "06852f19-1969-4a08-a1bd-5d86d0504db0",
       "expenseType": "Quota Campo Doppia",
       "paymentMethod": "Contanti",
-      "amount": 20
+      "amount": 20,
+      "memberName": "Marco",
+      "memberSurname": "Delle Cave",
+      "memberTaxCode": "DLLMRC73S14H501C",
+      "hasIssue": false,
+      "issue": ""
     }
   ],
   "settings": {
