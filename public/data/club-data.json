@@ -2369,6 +2369,12 @@
       "name": "Marco",
       "surname": "Santilli",
       "taxCode": "SNTMRC65E09H501B"
+    },
+    {
+      "id": "846b69c4-4793-4123-b323-9710da8e09f7",
+      "name": "Cristina",
+      "surname": "Bacchiega",
+      "taxCode": "BCCCST89S56H501Q"
     }
   ],
   "transactions": [
