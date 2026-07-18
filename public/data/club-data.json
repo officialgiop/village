@@ -2387,6 +2387,12 @@
       "name": "Francesco",
       "surname": "Mineri",
       "taxCode": "MNRFNC68E26H501F"
+    },
+    {
+      "id": "1107ea12-7bca-4367-9928-60d1cd507d6d",
+      "name": "Mario Michael",
+      "surname": "Zanzuri",
+      "taxCode": "ZNZMMC84T28H501N"
     }
   ],
   "transactions": [
@@ -23683,7 +23689,12 @@
       "memberId": "514173c4-562f-43a6-87b3-a77e2fa3505c",
       "expenseType": "Quota Campo Doppia",
       "paymentMethod": "Contanti",
-      "amount": 20
+      "amount": 20,
+      "memberName": "Carlos",
+      "memberSurname": "Carp",
+      "memberTaxCode": "CRPCLS02A12H501B",
+      "hasIssue": false,
+      "issue": ""
     }
   ],
   "settings": {
