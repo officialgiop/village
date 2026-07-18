@@ -2363,6 +2363,12 @@
       "name": "Paolo",
       "surname": "Risa",
       "taxCode": "RSIPLA69M27H501J"
+    },
+    {
+      "id": "b635878a-889a-4f02-8e11-8cb03a6a6f83",
+      "name": "Marco",
+      "surname": "Santilli",
+      "taxCode": "SNTMRC65E09H501B"
     }
   ],
   "transactions": [
