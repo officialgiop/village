@@ -23733,7 +23733,11 @@
       },
       {
         "name": "Lezione Doppia",
-        "defaultAmount": 35
+        "defaultAmount": 40
+      },
+      {
+        "name": "Quota Lezione Doppia",
+        "defaultAmount": 20
       },
       {
         "name": "Corso Settimanale",
