@@ -23549,6 +23549,15 @@
       "memberTaxCode": "TZZLCN72S09H501H",
       "hasIssue": false,
       "issue": ""
+    },
+    {
+      "id": "6512e9e0-20eb-4224-9b5e-89c3f19e74d4",
+      "receiptId": "1425",
+      "date": "2026-07-17",
+      "memberId": "ed22e446-7521-4f19-9f88-f7bb69e74a7c",
+      "expenseType": "Lezione Privata",
+      "paymentMethod": "Bancomat",
+      "amount": 25
     }
   ],
   "settings": {
