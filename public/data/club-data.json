@@ -23585,6 +23585,20 @@
       "memberId": "d53746f9-253c-4a90-a221-401f29933eb0",
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
+      "amount": 11,
+      "memberName": "Claudio",
+      "memberSurname": "Dell'Ali",
+      "memberTaxCode": "DLLCLD75P05H501L",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "9a612c0e-e924-49ad-bd3f-12633359d7e0",
+      "receiptId": "1428",
+      "date": "2026-07-17",
+      "memberId": "23116c12-d9ba-4ddd-ad0d-9cec2ae6bc4d",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Bancomat",
       "amount": 11
     }
   ],
