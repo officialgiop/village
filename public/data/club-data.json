@@ -23669,7 +23669,21 @@
       "memberId": "b25cb93e-2106-43af-ae20-6acaf1911b79",
       "expenseType": "Quota Campo",
       "paymentMethod": "Contanti",
-      "amount": 10
+      "amount": 10,
+      "memberName": "Mattia",
+      "memberSurname": "Gava",
+      "memberTaxCode": "GVAMTT89T14H501Y",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "1f4319fc-a865-45c3-b50a-bffbe2d60c75",
+      "receiptId": "1434",
+      "date": "2026-07-17",
+      "memberId": "514173c4-562f-43a6-87b3-a77e2fa3505c",
+      "expenseType": "Quota Campo Doppia",
+      "paymentMethod": "Contanti",
+      "amount": 20
     }
   ],
   "settings": {
