@@ -2393,6 +2393,12 @@
       "name": "Mario Michael",
       "surname": "Zanzuri",
       "taxCode": "ZNZMMC84T28H501N"
+    },
+    {
+      "id": "1d1e9809-6392-4261-8454-cbc43307b1ba",
+      "name": "Nicolò",
+      "surname": "Giordano",
+      "taxCode": "GRDNCL67R05H501B"
     }
   ],
   "transactions": [
