@@ -2399,6 +2399,12 @@
       "name": "Nicolò",
       "surname": "Giordano",
       "taxCode": "GRDNCL67R05H501B"
+    },
+    {
+      "id": "ce9e6738-ed0b-47ed-ac2e-abd77eb65ce4",
+      "name": "Luigi",
+      "surname": "Ferri",
+      "taxCode": "FRRLGU55D06H501O"
     }
   ],
   "transactions": [
