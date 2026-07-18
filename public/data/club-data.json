@@ -2357,6 +2357,12 @@
       "name": "Sirio",
       "surname": "DI Lelio",
       "taxCode": "DLLSRI80M04H501S"
+    },
+    {
+      "id": "84c1e016-9651-4851-a9fa-e5fccf3be96b",
+      "name": "Paolo",
+      "surname": "Risa",
+      "taxCode": "RSIPLA69M27H501J"
     }
   ],
   "transactions": [
@@ -23304,9 +23310,9 @@
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
       "amount": 10,
-      "memberName": "Matteo",
-      "memberSurname": "Abbati",
-      "memberTaxCode": "BBTMTT75E05L424F",
+      "memberName": "Sirio",
+      "memberSurname": "DI Lelio",
+      "memberTaxCode": "DLLSRI80M04H501S",
       "hasIssue": false,
       "issue": ""
     },
