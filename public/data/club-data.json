@@ -23720,6 +23720,10 @@
         "defaultAmount": 20
       },
       {
+        "name": "Quota Campo Intero",
+        "defaultAmount": 40
+      },
+      {
         "name": "Quota Tessera Socio",
         "defaultAmount": null
       },
