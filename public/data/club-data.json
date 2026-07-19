@@ -23797,7 +23797,21 @@
       "memberId": "9fa4f763-d4af-4b84-ba52-6a21cad36e15",
       "expenseType": "Quota campo lezione partita",
       "paymentMethod": "Bancomat",
-      "amount": 15
+      "amount": 15,
+      "memberName": "Giuseppe",
+      "memberSurname": "Versace",
+      "memberTaxCode": "VRSGPP70B24H501H",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "2d7c8029-3067-4a34-a857-a119a06a3347",
+      "receiptId": "1441",
+      "date": "2026-07-18",
+      "memberId": "7296001a-07c0-4d0c-9f78-c6ca0aafce0f",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Bancomat",
+      "amount": 10
     }
   ],
   "settings": {
