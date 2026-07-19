@@ -23881,7 +23881,21 @@
       "memberId": "ce9e6738-ed0b-47ed-ac2e-abd77eb65ce4",
       "expenseType": "Quota Campo Intero",
       "paymentMethod": "Bancomat",
-      "amount": 40
+      "amount": 40,
+      "memberName": "Luigi",
+      "memberSurname": "Ferri",
+      "memberTaxCode": "FRRLGU55D06H501O",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "57f08965-bb00-429c-948b-d71c1c433c87",
+      "receiptId": "1447",
+      "date": "2026-07-18",
+      "memberId": "ce9e6738-ed0b-47ed-ac2e-abd77eb65ce4",
+      "expenseType": "Contributo Kit allenamento",
+      "paymentMethod": "Bancomat",
+      "amount": 7
     }
   ],
   "settings": {
