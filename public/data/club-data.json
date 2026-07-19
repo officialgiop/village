@@ -23741,7 +23741,21 @@
       "memberId": "20e27282-589c-4b38-b274-76d2a91d5f76",
       "expenseType": "Quota Lezione Doppia",
       "paymentMethod": "Bancomat",
-      "amount": 50
+      "amount": 50,
+      "memberName": "Andrea",
+      "memberSurname": "Oliva",
+      "memberTaxCode": "LVONDR79R24H501I",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "ffabcd32-977c-4197-bb7a-b7ac3973eccf",
+      "receiptId": "1437",
+      "date": "2026-07-18",
+      "memberId": "84c1e016-9651-4851-a9fa-e5fccf3be96b",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Bancomat",
+      "amount": 10
     }
   ],
   "settings": {
