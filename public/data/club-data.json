@@ -23909,7 +23909,21 @@
       "memberId": "a08ede04-2ff8-4d94-9c04-717cb5a2a5f2",
       "expenseType": "Quota Campo",
       "paymentMethod": "Contanti",
-      "amount": 10
+      "amount": 10,
+      "memberName": "Marco",
+      "memberSurname": "Fenzato",
+      "memberTaxCode": "FNZMRC66C03C552Z",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "95d03aee-f853-4f41-a0ae-74dea7687db1",
+      "receiptId": "1449",
+      "date": "2026-07-18",
+      "memberId": "3c93fe56-c36c-46ec-bb5d-d991f33d3c8e",
+      "expenseType": "Quota Campo Doppia",
+      "paymentMethod": "Contanti",
+      "amount": 20
     }
   ],
   "settings": {
