@@ -23150,7 +23150,7 @@
       "id": "6899687d-4c4b-432d-ba95-293d825c984d",
       "receiptId": "1394",
       "date": "2026-07-13",
-      "memberId": "c6889d43-81bd-4205-b995-dbfef1069a3a",
+      "memberId": "9fa4f763-d4af-4b84-ba52-6a21cad36e15",
       "expenseType": "Lezione Privata",
       "paymentMethod": "Bancomat",
       "amount": 25,
@@ -23923,7 +23923,12 @@
       "memberId": "3c93fe56-c36c-46ec-bb5d-d991f33d3c8e",
       "expenseType": "Quota Campo Doppia",
       "paymentMethod": "Contanti",
-      "amount": 20
+      "amount": 20,
+      "memberName": "Paolo",
+      "memberSurname": "Andrielli",
+      "memberTaxCode": "NDRPLA63T18H501S",
+      "hasIssue": false,
+      "issue": ""
     }
   ],
   "settings": {
