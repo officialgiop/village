@@ -2405,6 +2405,12 @@
       "name": "Luigi",
       "surname": "Ferri",
       "taxCode": "FRRLGU55D06H501O"
+    },
+    {
+      "id": "d978ab30-f75f-4e1e-a00e-cbfa5d3bd028",
+      "name": "Fabio",
+      "surname": "Schiroli",
+      "taxCode": "SHCFBA72A24H501J"
     }
   ],
   "transactions": [
