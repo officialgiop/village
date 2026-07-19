@@ -2411,6 +2411,12 @@
       "name": "Fabio",
       "surname": "Schiroli",
       "taxCode": "SHCFBA72A24H501J"
+    },
+    {
+      "id": "69f0a013-a9b3-46ac-b9df-9a21cd1c5a2b",
+      "name": "Alessandro",
+      "surname": "Russo",
+      "taxCode": "RSSLSN70L26H501C"
     }
   ],
   "transactions": [
