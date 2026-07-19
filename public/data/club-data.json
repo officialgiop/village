@@ -23853,7 +23853,21 @@
       "memberId": "1107ea12-7bca-4367-9928-60d1cd507d6d",
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
-      "amount": 12.5
+      "amount": 12.5,
+      "memberName": "Mario Michael",
+      "memberSurname": "Zanzuri",
+      "memberTaxCode": "ZNZMMC84T28H501N",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "fc3554b1-8bd7-4502-b952-f8c20710671c",
+      "receiptId": "1445",
+      "date": "2026-07-18",
+      "memberId": "1d1e9809-6392-4261-8454-cbc43307b1ba",
+      "expenseType": "Quota Campo Doppia",
+      "paymentMethod": "Bancomat",
+      "amount": 20
     }
   ],
   "settings": {
