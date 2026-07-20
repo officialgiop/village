@@ -23935,6 +23935,15 @@
       "memberTaxCode": "NDRPLA63T18H501S",
       "hasIssue": false,
       "issue": ""
+    },
+    {
+      "id": "7eb8f281-fd35-4ad1-a751-dcd5d65b35e2",
+      "receiptId": "1450",
+      "date": "2026-07-13",
+      "memberId": "e5a282da-aef2-40be-bc68-e4841dfad265",
+      "expenseType": "Quota Campo Doppia",
+      "paymentMethod": "Bancomat",
+      "amount": 21
     }
   ],
   "settings": {
