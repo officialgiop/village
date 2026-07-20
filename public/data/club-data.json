@@ -24075,6 +24075,15 @@
       "memberTaxCode": "FLSMTS02L13H501L",
       "hasIssue": false,
       "issue": ""
+    },
+    {
+      "id": "2f088362-861b-496b-b432-e5ef11500298",
+      "receiptId": "1460",
+      "date": "2026-07-19",
+      "memberId": "3ea30578-cf47-4fb9-8d91-e8d3d279ae1c",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Contanti",
+      "amount": 10
     }
   ],
   "settings": {
