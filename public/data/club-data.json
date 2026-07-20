@@ -23939,7 +23939,7 @@
     {
       "id": "7eb8f281-fd35-4ad1-a751-dcd5d65b35e2",
       "receiptId": "1450",
-      "date": "2026-07-13",
+      "date": "2026-07-19",
       "memberId": "e5a282da-aef2-40be-bc68-e4841dfad265",
       "expenseType": "Quota Campo Doppia",
       "paymentMethod": "Bancomat",
@@ -24069,7 +24069,12 @@
       "memberId": "b69896ab-bb69-4dd7-89ba-835c771c6052",
       "expenseType": "Quota Campo Tripla",
       "paymentMethod": "Bancomat",
-      "amount": 30
+      "amount": 30,
+      "memberName": "Matias",
+      "memberSurname": "Falsarella",
+      "memberTaxCode": "FLSMTS02L13H501L",
+      "hasIssue": false,
+      "issue": ""
     }
   ],
   "settings": {
