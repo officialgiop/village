@@ -23943,7 +23943,21 @@
       "memberId": "e5a282da-aef2-40be-bc68-e4841dfad265",
       "expenseType": "Quota Campo Doppia",
       "paymentMethod": "Bancomat",
-      "amount": 21
+      "amount": 21,
+      "memberName": "Maria Teresa",
+      "memberSurname": "Palmisiani",
+      "memberTaxCode": "PLMMTR63P52H501W",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "519acd13-665d-461b-8815-4ab208b13e89",
+      "receiptId": "1451",
+      "date": "2026-07-13",
+      "memberId": "164dd512-142e-4876-a88e-e6181a1fa88d",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Bancomat",
+      "amount": 10
     }
   ],
   "settings": {
