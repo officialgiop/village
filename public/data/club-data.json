@@ -24055,7 +24055,12 @@
       "memberId": "23843b98-1424-42e0-be5b-b43c0985c44b",
       "expenseType": "Corso Mensile",
       "paymentMethod": "Bancomat",
-      "amount": 100
+      "amount": 100,
+      "memberName": "Stefano",
+      "memberSurname": "Valvo",
+      "memberTaxCode": "VLVSFN83M09H501A",
+      "hasIssue": false,
+      "issue": ""
     }
   ],
   "settings": {
@@ -24067,6 +24072,10 @@
       {
         "name": "Quota Campo Doppia",
         "defaultAmount": 20
+      },
+      {
+        "name": "Quota Campo Tripla",
+        "defaultAmount": 30
       },
       {
         "name": "Quota Campo Intero",
