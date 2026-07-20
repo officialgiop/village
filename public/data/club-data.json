@@ -24027,6 +24027,20 @@
       "memberId": "e48e6c4d-e0a7-497f-8aeb-9fffeb89db52",
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
+      "amount": 10,
+      "memberName": "Michele",
+      "memberSurname": "Russo",
+      "memberTaxCode": "RSSMHL88S17H501Z",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "f60f1a90-cf3a-4eae-9902-8a918e22a675",
+      "receiptId": "1457",
+      "date": "2026-07-13",
+      "memberId": "443f7a8b-402e-4a13-ae7a-e46e4ae5f9da",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Bancomat",
       "amount": 10
     }
   ],
