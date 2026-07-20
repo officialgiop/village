@@ -2417,6 +2417,12 @@
       "name": "Alessandro",
       "surname": "Russo",
       "taxCode": "RSSLSN70L26H501C"
+    },
+    {
+      "id": "2234c3ec-bf10-48a4-82e1-ca5406a4b001",
+      "name": "Marco",
+      "surname": "Marroni",
+      "taxCode": "MRRMRC76G11H501O"
     }
   ],
   "transactions": [
@@ -23155,8 +23161,8 @@
       "paymentMethod": "Bancomat",
       "amount": 25,
       "memberName": "Giuseppe",
-      "memberSurname": "Maresca",
-      "memberTaxCode": "MRSGPP56A27H501A",
+      "memberSurname": "Versace",
+      "memberTaxCode": "VRSGPP70B24H501H",
       "hasIssue": false,
       "issue": ""
     },
