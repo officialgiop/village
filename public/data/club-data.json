@@ -24061,6 +24061,15 @@
       "memberTaxCode": "VLVSFN83M09H501A",
       "hasIssue": false,
       "issue": ""
+    },
+    {
+      "id": "abf9e332-716f-40a9-a164-02bf627bebfe",
+      "receiptId": "1459",
+      "date": "2026-07-13",
+      "memberId": "b69896ab-bb69-4dd7-89ba-835c771c6052",
+      "expenseType": "Quota Campo Tripla",
+      "paymentMethod": "Bancomat",
+      "amount": 30
     }
   ],
   "settings": {
