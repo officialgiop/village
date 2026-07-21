@@ -24109,6 +24109,15 @@
       "memberTaxCode": "TSTSLV61H60H501T",
       "hasIssue": false,
       "issue": ""
+    },
+    {
+      "id": "406ab624-1817-4fad-8460-61fcb18a3079",
+      "receiptId": "1462",
+      "date": "2026-07-20",
+      "memberId": "20bc7153-27f8-49df-a040-537c80859216",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Bancomat",
+      "amount": 10
     }
   ],
   "settings": {
