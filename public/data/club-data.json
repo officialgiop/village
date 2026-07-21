@@ -2429,6 +2429,12 @@
       "name": "Maura",
       "surname": "Folgori",
       "taxCode": "FLGMRA68E70H501P"
+    },
+    {
+      "id": "eea71d90-de70-4a26-a7ae-889b4152a3b2",
+      "name": "Cristian",
+      "surname": "Lo Russo",
+      "taxCode": "LRSCST82A27H501X"
     }
   ],
   "transactions": [
@@ -24201,7 +24207,12 @@
       "memberId": "18cefe12-19cf-4bfa-b10b-36c4d52ed98f",
       "expenseType": "Quota Campo",
       "paymentMethod": "Contanti",
-      "amount": 10
+      "amount": 10,
+      "memberName": "Federica",
+      "memberSurname": "Crescenzi",
+      "memberTaxCode": "CRSFRC69D63H501J",
+      "hasIssue": false,
+      "issue": ""
     }
   ],
   "settings": {
