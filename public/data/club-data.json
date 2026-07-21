@@ -24159,7 +24159,12 @@
       "memberId": "2234c3ec-bf10-48a4-82e1-ca5406a4b001",
       "expenseType": "Quota Campo Doppia",
       "paymentMethod": "Bancomat",
-      "amount": 20
+      "amount": 27,
+      "memberName": "Marco",
+      "memberSurname": "Marroni",
+      "memberTaxCode": "MRRMRC76G11H501O",
+      "hasIssue": false,
+      "issue": ""
     }
   ],
   "settings": {
