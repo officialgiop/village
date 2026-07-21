@@ -24165,6 +24165,15 @@
       "memberTaxCode": "MRRMRC76G11H501O",
       "hasIssue": false,
       "issue": ""
+    },
+    {
+      "id": "c9a1c27e-d051-4d25-b4ee-fdcf48f65094",
+      "receiptId": "1466",
+      "date": "2026-07-20",
+      "memberId": "e234a705-8cc0-4f81-b66f-66d5dd8a3d20",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Contanti",
+      "amount": 10
     }
   ],
   "settings": {
