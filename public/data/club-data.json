@@ -24187,6 +24187,20 @@
       "memberId": "5ecbb614-4b94-4360-9259-b4684477ba85",
       "expenseType": "Quota Campo",
       "paymentMethod": "Contanti",
+      "amount": 10,
+      "memberName": "Alessandra",
+      "memberSurname": "Barnabei",
+      "memberTaxCode": "BRNLSN79A56H501K",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "6aad7166-fd7b-4745-8e42-c9f7b8af1d78",
+      "receiptId": "1468",
+      "date": "2026-07-20",
+      "memberId": "18cefe12-19cf-4bfa-b10b-36c4d52ed98f",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Contanti",
       "amount": 10
     }
   ],
