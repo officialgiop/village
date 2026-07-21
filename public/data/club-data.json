@@ -2435,6 +2435,12 @@
       "name": "Cristian",
       "surname": "Lo Russo",
       "taxCode": "LRSCST82A27H501X"
+    },
+    {
+      "id": "462c41f2-b6e1-4623-a753-76a4ca70b574",
+      "name": "Alessia",
+      "surname": "Cataldo",
+      "taxCode": "CTLLSS03S54H501P"
     }
   ],
   "transactions": [
@@ -22444,9 +22450,9 @@
       "expenseType": "Corso Mensile",
       "paymentMethod": "Bancomat",
       "amount": 100,
-      "memberName": "Cristiano",
-      "memberSurname": "Galeazzi",
-      "memberTaxCode": "GLZCST69C03H501S",
+      "memberName": "Cristian",
+      "memberSurname": "Lo Russo",
+      "memberTaxCode": "LRSCST82A27H501X",
       "hasIssue": false,
       "issue": ""
     },
