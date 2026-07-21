@@ -2423,6 +2423,12 @@
       "name": "Marco",
       "surname": "Marroni",
       "taxCode": "MRRMRC76G11H501O"
+    },
+    {
+      "id": "ef428797-1117-410a-929d-3818774c4875",
+      "name": "Maura",
+      "surname": "Folgori",
+      "taxCode": "FLGMRA68E70H501P"
     }
   ],
   "transactions": [
@@ -24097,7 +24103,12 @@
       "memberId": "1c2916a1-9093-41dc-810d-b57ca2abe972",
       "expenseType": "Quota Campo",
       "paymentMethod": "Contanti",
-      "amount": 10
+      "amount": 10,
+      "memberName": "Silvia",
+      "memberSurname": "Tosti",
+      "memberTaxCode": "TSTSLV61H60H501T",
+      "hasIssue": false,
+      "issue": ""
     }
   ],
   "settings": {
