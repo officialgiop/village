@@ -24331,7 +24331,21 @@
       "memberId": "0353d1b2-5f30-442c-8748-121d1b46e799",
       "expenseType": "Quota campo lezione partita",
       "paymentMethod": "Contanti",
-      "amount": 15
+      "amount": 15,
+      "memberName": "Margherita",
+      "memberSurname": "Di Stefano",
+      "memberTaxCode": "DSTMGH03B54H501H",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "969c387d-f5ab-4bb7-bd65-11d269ffe1b0",
+      "receiptId": "1477",
+      "date": "2026-07-22",
+      "memberId": "42a15094-25e7-4010-b47a-29f42a335467",
+      "expenseType": "Lezione Privata",
+      "paymentMethod": "Bancomat",
+      "amount": 25
     }
   ],
   "settings": {
