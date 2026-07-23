@@ -24387,6 +24387,20 @@
       "memberId": "d5d56048-668b-48e9-b80c-09da0f0180ab",
       "expenseType": "Quota Campo Doppia",
       "paymentMethod": "Bancomat",
+      "amount": 20,
+      "memberName": "Massimiliano",
+      "memberSurname": "Gerardi",
+      "memberTaxCode": "GRRMSM77A24H501C",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "c8572563-5be0-4eff-84f3-e3a95f1e66f7",
+      "receiptId": "1481",
+      "date": "2026-07-22",
+      "memberId": "68d75dde-c062-4302-bbe2-6e30f9f61b27",
+      "expenseType": "Quota Campo Doppia",
+      "paymentMethod": "Bancomat",
       "amount": 20
     }
   ],
