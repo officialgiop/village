@@ -24407,6 +24407,15 @@
       "memberTaxCode": "RSTNRC74R30H501M",
       "hasIssue": false,
       "issue": ""
+    },
+    {
+      "id": "3e1cadb1-cf6d-4f3f-8458-279769cb2b08",
+      "receiptId": "1482",
+      "date": "2026-07-22",
+      "memberId": "a169c612-d5e7-4249-90f3-7a200f14a715",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Contanti",
+      "amount": 10
     }
   ],
   "settings": {
