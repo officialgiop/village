@@ -2447,6 +2447,12 @@
       "name": "Margherita",
       "surname": "Di Stefano",
       "taxCode": "DSTMGH03B54H501H"
+    },
+    {
+      "id": "9a9663f6-a1e3-4799-9028-5bfb56c81850",
+      "name": "Pierpaolo",
+      "surname": "Borghini",
+      "taxCode": "BRGPPL78D19H501F"
     }
   ],
   "transactions": [
@@ -24415,7 +24421,12 @@
       "memberId": "a169c612-d5e7-4249-90f3-7a200f14a715",
       "expenseType": "Quota Campo",
       "paymentMethod": "Contanti",
-      "amount": 10
+      "amount": 10,
+      "memberName": "Fabio",
+      "memberSurname": "Garuti",
+      "memberTaxCode": "GRTFBA69B22H501Y",
+      "hasIssue": false,
+      "issue": ""
     }
   ],
   "settings": {
