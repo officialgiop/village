@@ -24526,11 +24526,20 @@
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
       "amount": 10,
-      "memberName": "Pedro",
-      "memberSurname": "Iranzo",
-      "memberTaxCode": "RNZPDR66A13Z131L",
+      "memberName": "Pierpaolo",
+      "memberSurname": "Borghini",
+      "memberTaxCode": "BRGPPL78D19H501F",
       "hasIssue": false,
       "issue": ""
+    },
+    {
+      "id": "725bd745-a29a-448b-bf95-5831f7e6a723",
+      "receiptId": "1490",
+      "date": "2026-07-23",
+      "memberId": "1e0033eb-1a26-4fb5-9d02-a5b47cead7dd",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Bancomat",
+      "amount": 10
     }
   ],
   "settings": {
