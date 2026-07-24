@@ -24433,6 +24433,15 @@
       "memberTaxCode": "GRTFBA69B22H501Y",
       "hasIssue": false,
       "issue": ""
+    },
+    {
+      "id": "56263ec6-23c0-450d-a8a1-f2a523d1c9ab",
+      "receiptId": "1483",
+      "date": "2026-07-23",
+      "memberId": "20bd5bc1-658b-4230-8ffb-c874715ad292",
+      "expenseType": "Lezione Privata",
+      "paymentMethod": "Bancomat",
+      "amount": 25
     }
   ],
   "settings": {
