@@ -24522,10 +24522,15 @@
       "id": "3bab52f3-8d48-456b-9861-7708517fd5b1",
       "receiptId": "1489",
       "date": "2026-07-23",
-      "memberId": "20bc7153-27f8-49df-a040-537c80859216",
+      "memberId": "9a9663f6-a1e3-4799-9028-5bfb56c81850",
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
-      "amount": 10
+      "amount": 10,
+      "memberName": "Pedro",
+      "memberSurname": "Iranzo",
+      "memberTaxCode": "RNZPDR66A13Z131L",
+      "hasIssue": false,
+      "issue": ""
     }
   ],
   "settings": {
