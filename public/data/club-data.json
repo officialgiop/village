@@ -2459,6 +2459,12 @@
       "name": "Marta",
       "surname": "Alfonsi",
       "taxCode": "LFNMRT70R42H501S"
+    },
+    {
+      "id": "a0c75ab4-9910-4576-8274-cf57ce20df9a",
+      "name": "Simone",
+      "surname": "Corso",
+      "taxCode": "CRSSMN93P27H501T"
     }
   ],
   "transactions": [
@@ -24637,7 +24643,12 @@
       "memberId": "4aa4155c-d11e-4895-9022-8c2791f8f581",
       "expenseType": "Quota Campo",
       "paymentMethod": "Contanti",
-      "amount": 10
+      "amount": 10,
+      "memberName": "Valentina",
+      "memberSurname": "Lori",
+      "memberTaxCode": "LROVNT80S61H501T",
+      "hasIssue": false,
+      "issue": ""
     }
   ],
   "settings": {
