@@ -24595,7 +24595,21 @@
       "memberId": "0b9d83df-1398-4c6c-b3c6-3480e639b730",
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
-      "amount": 13.5
+      "amount": 13.5,
+      "memberName": "Cecilia",
+      "memberSurname": "Bausano",
+      "memberTaxCode": "BSNCCL79S62H501U",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "a6a411be-8f8e-48e8-976a-77e4e3ef32a2",
+      "receiptId": "1495",
+      "date": "2026-07-23",
+      "memberId": "b5ed0348-d9f4-44fe-923c-1fd821b2a2a3",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Contanti",
+      "amount": 10
     }
   ],
   "settings": {
