@@ -24609,6 +24609,20 @@
       "memberId": "b5ed0348-d9f4-44fe-923c-1fd821b2a2a3",
       "expenseType": "Quota Campo",
       "paymentMethod": "Contanti",
+      "amount": 10,
+      "memberName": "Alex",
+      "memberSurname": "Fratarcangeli",
+      "memberTaxCode": "FRTLXA87C07D810W",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "ff9bad96-685c-42ec-8ae9-421546ea3200",
+      "receiptId": "1496",
+      "date": "2026-07-23",
+      "memberId": "b304aefe-326f-4655-8102-253f37a6f575",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Contanti",
       "amount": 10
     }
   ],
