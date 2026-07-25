@@ -24755,6 +24755,20 @@
       "memberId": "8856400d-59cc-4a64-9e14-890caa2dd097",
       "expenseType": "Quota Campo",
       "paymentMethod": "Contanti",
+      "amount": 10,
+      "memberName": "Yaroslav",
+      "memberSurname": "Smizrov",
+      "memberTaxCode": "SMRYSL94R04Z138M",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "ccce6c68-dfe7-45fb-b246-12a9b3e0ce8a",
+      "receiptId": "1506",
+      "date": "2026-07-24",
+      "memberId": "a08ede04-2ff8-4d94-9c04-717cb5a2a5f2",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Contanti",
       "amount": 10
     }
   ],
