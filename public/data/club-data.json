@@ -24713,7 +24713,21 @@
       "memberId": "9fa4f763-d4af-4b84-ba52-6a21cad36e15",
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
-      "amount": 11
+      "amount": 11,
+      "memberName": "Giuseppe",
+      "memberSurname": "Versace",
+      "memberTaxCode": "VRSGPP70B24H501H",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "c2bdef99-f681-41c2-bf06-5b1494188d94",
+      "receiptId": "1503",
+      "date": "2026-07-24",
+      "memberId": "a0c75ab4-9910-4576-8274-cf57ce20df9a",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Bancomat",
+      "amount": 17
     }
   ],
   "settings": {
