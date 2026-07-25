@@ -24741,7 +24741,21 @@
       "memberId": "ce472df9-5893-4ce8-96f3-fb2a14759367",
       "expenseType": "Quota Campo Intero",
       "paymentMethod": "Bancomat",
-      "amount": 40
+      "amount": 40,
+      "memberName": "Olexander",
+      "memberSurname": "Saltanchuk",
+      "memberTaxCode": "SLTLSN75O07Z138I",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "7371b0a3-be91-4676-84d2-9d3824a15e84",
+      "receiptId": "1505",
+      "date": "2026-07-24",
+      "memberId": "8856400d-59cc-4a64-9e14-890caa2dd097",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Contanti",
+      "amount": 10
     }
   ],
   "settings": {
