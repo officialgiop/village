@@ -24795,9 +24795,9 @@
       "receiptId": "1508",
       "date": "2026-07-25",
       "memberId": "39afa2ba-d706-4e48-b963-f94b082e8da7",
-      "expenseType": "Quota Campo",
+      "expenseType": "Lezione Privata",
       "paymentMethod": "Bancomat",
-      "amount": 10,
+      "amount": 25,
       "memberName": "Federica",
       "memberSurname": "Leurini",
       "memberTaxCode": "LRNFRC65H68H501I",
@@ -24825,7 +24825,12 @@
       "memberId": "ce472df9-5893-4ce8-96f3-fb2a14759367",
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
-      "amount": 10
+      "amount": 10,
+      "memberName": "Olexander",
+      "memberSurname": "Saltanchuk",
+      "memberTaxCode": "SLTLSN75O07Z138I",
+      "hasIssue": false,
+      "issue": ""
     }
   ],
   "settings": {
