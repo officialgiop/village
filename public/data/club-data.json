@@ -24831,6 +24831,15 @@
       "memberTaxCode": "SLTLSN75O07Z138I",
       "hasIssue": false,
       "issue": ""
+    },
+    {
+      "id": "2309fde2-6a16-4776-ad07-4a145c084852",
+      "receiptId": "1511",
+      "date": "2026-07-25",
+      "memberId": "8856400d-59cc-4a64-9e14-890caa2dd097",
+      "expenseType": "Lezione Privata",
+      "paymentMethod": "Bancomat",
+      "amount": 25
     }
   ],
   "settings": {
