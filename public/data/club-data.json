@@ -24929,7 +24929,21 @@
       "memberId": "2dc72279-b194-4942-a6a2-b87107052fe3",
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
-      "amount": 12.5
+      "amount": 12.5,
+      "memberName": "Andrea",
+      "memberSurname": "Baggi",
+      "memberTaxCode": "BGGNDR71B03H501I",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "c74de369-53fa-4c18-b80f-e586ec1be30b",
+      "receiptId": "1518",
+      "date": "2026-07-25",
+      "memberId": "4fbc21f5-c996-4a8e-8689-673c88fcf4da",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Contanti",
+      "amount": 10
     }
   ],
   "settings": {
