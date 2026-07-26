@@ -24853,7 +24853,21 @@
       "memberId": "01c9ca6c-6691-47f8-ac49-9f3736816abd",
       "expenseType": "Quota Campo Intero",
       "paymentMethod": "Bancomat",
-      "amount": 40
+      "amount": 40,
+      "memberName": "Francesco",
+      "memberSurname": "Mineri",
+      "memberTaxCode": "MNRFNC68E26H501F",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "051434ee-1585-42f3-9b71-02352abde58a",
+      "receiptId": "1513",
+      "date": "2026-07-25",
+      "memberId": "1107ea12-7bca-4367-9928-60d1cd507d6d",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Bancomat",
+      "amount": 13.5
     }
   ],
   "settings": {
