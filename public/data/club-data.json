@@ -24769,7 +24769,21 @@
       "memberId": "a08ede04-2ff8-4d94-9c04-717cb5a2a5f2",
       "expenseType": "Quota Campo",
       "paymentMethod": "Contanti",
-      "amount": 10
+      "amount": 10,
+      "memberName": "Marco",
+      "memberSurname": "Fenzato",
+      "memberTaxCode": "FNZMRC66C03C552Z",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "70bf5e34-9568-4f49-9697-ad637ff6f5da",
+      "receiptId": "1507",
+      "date": "2026-07-25",
+      "memberId": "20e27282-589c-4b38-b274-76d2a91d5f76",
+      "expenseType": "Lezione Privata",
+      "paymentMethod": "Bancomat",
+      "amount": 25
     }
   ],
   "settings": {
