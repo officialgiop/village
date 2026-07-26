@@ -24906,10 +24906,15 @@
       "id": "ef6f5cd8-9ef1-4669-a7e5-11c7ec341e94",
       "receiptId": "1516",
       "date": "2026-07-25",
-      "memberId": "ce472df9-5893-4ce8-96f3-fb2a14759367",
+      "memberId": "572e7b06-f72b-4586-a257-436b3ae775bd",
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
-      "amount": 18
+      "amount": 18,
+      "memberName": "Olexander",
+      "memberSurname": "Saltanchuk",
+      "memberTaxCode": "SLTLSN75O07Z138I",
+      "hasIssue": false,
+      "issue": ""
     }
   ],
   "settings": {
