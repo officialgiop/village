@@ -2465,6 +2465,12 @@
       "name": "Simone",
       "surname": "Corso",
       "taxCode": "CRSSMN93P27H501T"
+    },
+    {
+      "id": "2dc72279-b194-4942-a6a2-b87107052fe3",
+      "name": "Andrea",
+      "surname": "Baggi",
+      "taxCode": "BGGNDR71B03H501I"
     }
   ],
   "transactions": [
@@ -24910,9 +24916,9 @@
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
       "amount": 18,
-      "memberName": "Olexander",
-      "memberSurname": "Saltanchuk",
-      "memberTaxCode": "SLTLSN75O07Z138I",
+      "memberName": "Omar",
+      "memberSurname": "Alassuad",
+      "memberTaxCode": "LSSMRO86R28E456Z",
       "hasIssue": false,
       "issue": ""
     }
