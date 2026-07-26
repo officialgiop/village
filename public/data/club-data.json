@@ -24839,7 +24839,21 @@
       "memberId": "8856400d-59cc-4a64-9e14-890caa2dd097",
       "expenseType": "Lezione Privata",
       "paymentMethod": "Bancomat",
-      "amount": 25
+      "amount": 25,
+      "memberName": "Yaroslav",
+      "memberSurname": "Smizrov",
+      "memberTaxCode": "SMRYSL94R04Z138M",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "d8e23c07-80be-4f65-a3db-a59a6fa28dac",
+      "receiptId": "1512",
+      "date": "2026-07-25",
+      "memberId": "01c9ca6c-6691-47f8-ac49-9f3736816abd",
+      "expenseType": "Quota Campo Intero",
+      "paymentMethod": "Bancomat",
+      "amount": 40
     }
   ],
   "settings": {
