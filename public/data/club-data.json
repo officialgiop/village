@@ -24921,6 +24921,15 @@
       "memberTaxCode": "LSSMRO86R28E456Z",
       "hasIssue": false,
       "issue": ""
+    },
+    {
+      "id": "2644d88a-f7ed-46d8-b4a2-500292d83a97",
+      "receiptId": "1517",
+      "date": "2026-07-25",
+      "memberId": "2dc72279-b194-4942-a6a2-b87107052fe3",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Bancomat",
+      "amount": 12.5
     }
   ],
   "settings": {
