@@ -24975,6 +24975,15 @@
       "memberTaxCode": "JCCPGC64P10H501A",
       "hasIssue": false,
       "issue": ""
+    },
+    {
+      "id": "0b378cbd-5cd0-4f39-8396-019327fe451b",
+      "receiptId": "1520",
+      "date": "2026-07-26",
+      "memberId": "d900fbbf-2b47-451a-9bd6-9af89be37cce",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Bancomat",
+      "amount": 10
     }
   ],
   "settings": {
