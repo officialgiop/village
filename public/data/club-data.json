@@ -24997,6 +24997,20 @@
       "memberId": "f02e218a-991f-4618-8e48-b34132726fed",
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
+      "amount": 10,
+      "memberName": "Federico",
+      "memberSurname": "La Penna",
+      "memberTaxCode": "LPNFRC83M07H501B",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "cbba2dfa-d97a-4037-a689-ab2e6c23c70a",
+      "receiptId": "1522",
+      "date": "2026-07-26",
+      "memberId": "164dd512-142e-4876-a88e-e6181a1fa88d",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Bancomat",
       "amount": 10
     }
   ],
