@@ -25025,7 +25025,21 @@
       "memberId": "f4491895-182a-4df3-863d-29e35edf3a94",
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
-      "amount": 15
+      "amount": 15,
+      "memberName": "Giacomo",
+      "memberSurname": "Guarnieri",
+      "memberTaxCode": "GRNGCM04H29H501K",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "b185b46b-e110-4859-ae1e-a71fc227caf3",
+      "receiptId": "1524",
+      "date": "2026-07-26",
+      "memberId": "91396e66-f5a0-4128-86be-a49bcab68e1d",
+      "expenseType": "Lezione Doppia",
+      "paymentMethod": "Bancomat",
+      "amount": 45
     }
   ],
   "settings": {
