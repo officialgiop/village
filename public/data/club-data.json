@@ -25067,7 +25067,7 @@
       "memberId": "37cb01ca-c70a-43e4-8c1f-0db55a56ddde",
       "expenseType": "Quota Campo Doppia",
       "paymentMethod": "Bancomat",
-      "amount": 20,
+      "amount": 26,
       "memberName": "Giampaolo",
       "memberSurname": "Perrone",
       "memberTaxCode": "PRRGPL86H14C136Q",
@@ -25095,7 +25095,12 @@
       "memberId": "09ae4695-c0cb-484c-9f9e-8d4fd7208be7",
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
-      "amount": 10
+      "amount": 10,
+      "memberName": "Irene",
+      "memberSurname": "serraino fiory",
+      "memberTaxCode": "SRRRNI88H49H501P",
+      "hasIssue": false,
+      "issue": ""
     }
   ],
   "settings": {
