@@ -2477,6 +2477,12 @@
       "name": "Giacomo",
       "surname": "Guarnieri",
       "taxCode": "GRNGCM04H29H501K"
+    },
+    {
+      "id": "e672f3b8-85e6-4662-9395-d7bf7578361c",
+      "name": "Riccardo",
+      "surname": "Melia",
+      "taxCode": "MLERCR95E11H501D"
     }
   ],
   "transactions": [
