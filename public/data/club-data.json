@@ -25422,8 +25422,13 @@
       "date": "2026-07-28",
       "memberId": "d20c42f2-4c80-4c33-b1f0-534eb86acfeb",
       "expenseType": "Quota Campo",
-      "paymentMethod": "Bancomat",
-      "amount": 10
+      "paymentMethod": "Contanti",
+      "amount": 10,
+      "memberName": "Francesca",
+      "memberSurname": "Lelli",
+      "memberTaxCode": "LLLFNC74H64H501P",
+      "hasIssue": false,
+      "issue": ""
     }
   ],
   "settings": {
