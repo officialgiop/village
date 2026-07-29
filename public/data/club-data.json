@@ -2489,6 +2489,12 @@
       "name": "Leonardo",
       "surname": "Torelli",
       "taxCode": "TRLLRD99S07H501G"
+    },
+    {
+      "id": "0f275c5c-348a-4c1f-98ce-0334c8baf73d",
+      "name": "Eugenio",
+      "surname": "Venturo",
+      "taxCode": "VNTGNE72E22H501S"
     }
   ],
   "transactions": [
@@ -25437,7 +25443,12 @@
       "memberId": "0353d1b2-5f30-442c-8748-121d1b46e799",
       "expenseType": "Quota campo lezione partita",
       "paymentMethod": "Contanti",
-      "amount": 15
+      "amount": 15,
+      "memberName": "Margherita",
+      "memberSurname": "Di Stefano",
+      "memberTaxCode": "DSTMGH03B54H501H",
+      "hasIssue": false,
+      "issue": ""
     }
   ],
   "settings": {
