@@ -25227,6 +25227,20 @@
       "memberId": "1e0033eb-1a26-4fb5-9d02-a5b47cead7dd",
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
+      "amount": 10,
+      "memberName": "Chiara",
+      "memberSurname": "Cesarini",
+      "memberTaxCode": "CSRCHR99D69H501V",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "a1446593-350e-4588-82f3-c17594863e84",
+      "receiptId": "1538",
+      "date": "2026-07-27",
+      "memberId": "514173c4-562f-43a6-87b3-a77e2fa3505c",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Bancomat",
       "amount": 10
     }
   ],
