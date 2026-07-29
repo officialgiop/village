@@ -25269,6 +25269,20 @@
       "memberId": "037712c2-d381-4e71-8ce3-ad5c5515078e",
       "expenseType": "Quota Campo",
       "paymentMethod": "Contanti",
+      "amount": 10,
+      "memberName": "Osvaldo Nicolas",
+      "memberSurname": "Girado",
+      "memberTaxCode": "GRDSLD90D22Z600L",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "ee780d12-e6d0-4c42-836e-2465415b7458",
+      "receiptId": "1541",
+      "date": "2026-07-28",
+      "memberId": "20606689-64ae-4c8f-9335-663fc231104f",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Bancomat",
       "amount": 10
     }
   ],
