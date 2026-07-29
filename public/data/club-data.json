@@ -25255,6 +25255,20 @@
       "memberId": "c10bf7ca-9476-4907-8c47-23f5a2b7efbf",
       "expenseType": "Quota Campo",
       "paymentMethod": "Contanti",
+      "amount": 10,
+      "memberName": "Mauro",
+      "memberSurname": "Di Marzio",
+      "memberTaxCode": "DMRMRA61T30H501X",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "d85e87d9-f345-40ad-9c87-6cf74503eac0",
+      "receiptId": "1540",
+      "date": "2026-07-27",
+      "memberId": "037712c2-d381-4e71-8ce3-ad5c5515078e",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Contanti",
       "amount": 10
     }
   ],
