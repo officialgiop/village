@@ -25429,6 +25429,15 @@
       "memberTaxCode": "LLLFNC74H64H501P",
       "hasIssue": false,
       "issue": ""
+    },
+    {
+      "id": "764870ba-573c-4deb-824e-e4c9b63a0463",
+      "receiptId": "1552",
+      "date": "2026-07-28",
+      "memberId": "0353d1b2-5f30-442c-8748-121d1b46e799",
+      "expenseType": "Quota campo lezione partita",
+      "paymentMethod": "Contanti",
+      "amount": 15
     }
   ],
   "settings": {
