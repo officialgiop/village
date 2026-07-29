@@ -25121,6 +25121,15 @@
       "memberTaxCode": "SRRRNI88H49H501P",
       "hasIssue": false,
       "issue": ""
+    },
+    {
+      "id": "029aa635-7517-4bc4-adab-6d82672439b8",
+      "receiptId": "1530",
+      "date": "2026-07-27",
+      "memberId": "ed22e446-7521-4f19-9f88-f7bb69e74a7c",
+      "expenseType": "Lezione Privata",
+      "paymentMethod": "Bancomat",
+      "amount": 25
     }
   ],
   "settings": {
