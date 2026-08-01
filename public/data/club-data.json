@@ -25575,7 +25575,21 @@
       "memberId": "01c9ca6c-6691-47f8-ac49-9f3736816abd",
       "expenseType": "Quota Campo",
       "paymentMethod": "Contanti",
-      "amount": 10
+      "amount": 10,
+      "memberName": "Francesco",
+      "memberSurname": "Mineri",
+      "memberTaxCode": "MNRFNC68E26H501F",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "d3a46731-accf-49e5-8b10-eff2167d4bc6",
+      "receiptId": "1562",
+      "date": "2026-07-30",
+      "memberId": "f841e60c-0ffe-4175-8939-361fce411989",
+      "expenseType": "Corso Trimestrale Accademy",
+      "paymentMethod": "Bancomat",
+      "amount": 125
     }
   ],
   "settings": {
