@@ -25715,6 +25715,20 @@
       "memberId": "164dd512-142e-4876-a88e-e6181a1fa88d",
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
+      "amount": 10,
+      "memberName": "Tiziana",
+      "memberSurname": "Olivi",
+      "memberTaxCode": "LVOTZN69E66H501J",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "6fab3903-5ca5-46f2-bf16-4a86b38aa0a8",
+      "receiptId": "1572",
+      "date": "2026-07-31",
+      "memberId": "72401209-cdc1-4ce3-b7e9-466f897aa97a",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Bancomat",
       "amount": 10
     }
   ],
