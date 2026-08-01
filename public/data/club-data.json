@@ -25701,6 +25701,20 @@
       "memberId": "2038ab3d-b83f-41dc-ba4a-af6a697c0d1a",
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
+      "amount": 10,
+      "memberName": "Sirio",
+      "memberSurname": "DI Lelio",
+      "memberTaxCode": "DLLSRI80M04H501S",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "2f178143-479e-4146-b6a7-0cd54b6e858c",
+      "receiptId": "1571",
+      "date": "2026-07-31",
+      "memberId": "164dd512-142e-4876-a88e-e6181a1fa88d",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Bancomat",
       "amount": 10
     }
   ],
