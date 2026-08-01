@@ -25687,6 +25687,20 @@
       "memberId": "14ff8314-627a-4936-b132-ee19decf69ec",
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
+      "amount": 10,
+      "memberName": "Francesco",
+      "memberSurname": "Di Massimo",
+      "memberTaxCode": "DMSFNC00P09H501Z",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "dea4b499-60db-49b7-be0a-5e9766ba1bac",
+      "receiptId": "1570",
+      "date": "2026-07-31",
+      "memberId": "2038ab3d-b83f-41dc-ba4a-af6a697c0d1a",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Bancomat",
       "amount": 10
     }
   ],
