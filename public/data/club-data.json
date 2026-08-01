@@ -25547,7 +25547,21 @@
       "memberId": "0f275c5c-348a-4c1f-98ce-0334c8baf73d",
       "expenseType": "Quota Campo Tripla",
       "paymentMethod": "Bancomat",
-      "amount": 35
+      "amount": 35,
+      "memberName": "Eugenio",
+      "memberSurname": "Venturo",
+      "memberTaxCode": "VNTGNE72E22H501S",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "5dee4046-368f-4ed0-9607-3f61e02cc19d",
+      "receiptId": "1560",
+      "date": "2026-07-29",
+      "memberId": "0f275c5c-348a-4c1f-98ce-0334c8baf73d",
+      "expenseType": "Contributo Kit allenamento",
+      "paymentMethod": "Bancomat",
+      "amount": 15
     }
   ],
   "settings": {
