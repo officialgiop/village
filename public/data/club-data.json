@@ -25455,6 +25455,15 @@
       "memberTaxCode": "DSTMGH03B54H501H",
       "hasIssue": false,
       "issue": ""
+    },
+    {
+      "id": "93f09967-c0f9-48a9-ba19-6425b7b59377",
+      "receiptId": "1553",
+      "date": "2026-07-29",
+      "memberId": "8856400d-59cc-4a64-9e14-890caa2dd097",
+      "expenseType": "Lezione Privata",
+      "paymentMethod": "Bancomat",
+      "amount": 25
     }
   ],
   "settings": {
