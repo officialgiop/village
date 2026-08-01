@@ -25659,7 +25659,21 @@
       "memberId": "20606689-64ae-4c8f-9335-663fc231104f",
       "expenseType": "Quota Campo",
       "paymentMethod": "Contanti",
-      "amount": 10
+      "amount": 10,
+      "memberName": "Matteo",
+      "memberSurname": "Abbati",
+      "memberTaxCode": "BBTMTT75E05L424F",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "c136332e-908b-482c-942a-e40f03057efb",
+      "receiptId": "1568",
+      "date": "2026-07-31",
+      "memberId": "d35bffcf-da1c-47aa-acd5-d10e2796c59e",
+      "expenseType": "Lezione Privata",
+      "paymentMethod": "Bancomat",
+      "amount": 25
     }
   ],
   "settings": {
