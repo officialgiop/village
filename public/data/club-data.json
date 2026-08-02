@@ -2503,12 +2503,6 @@
       "taxCode": "DMSFNC00P09H501Z"
     },
     {
-      "id": "5e3147c3-b446-476e-9e3a-6a1112e2e055",
-      "name": "Ogo",
-      "surname": "Canali",
-      "taxCode": "CNLGUO71R30H501B"
-    },
-    {
       "id": "8456625f-adc4-4f6c-8578-4863bf64786e",
       "name": "Giulia",
       "surname": "Magliano",
@@ -25769,7 +25763,12 @@
       "memberId": "20e27282-589c-4b38-b274-76d2a91d5f76",
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
-      "amount": 10
+      "amount": 10,
+      "memberName": "Andrea",
+      "memberSurname": "Oliva",
+      "memberTaxCode": "LVONDR79R24H501I",
+      "hasIssue": false,
+      "issue": ""
     }
   ],
   "settings": {
