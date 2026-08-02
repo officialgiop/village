@@ -25783,6 +25783,20 @@
       "memberId": "a23a07cf-aee2-4480-8581-4fda84a774eb",
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
+      "amount": 10,
+      "memberName": "Ugo",
+      "memberSurname": "Canali",
+      "memberTaxCode": "CNLGUO71R30H501E",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "1db8daa3-08ad-4425-8520-172585d88041",
+      "receiptId": "1576",
+      "date": "2026-07-31",
+      "memberId": "2dc72279-b194-4942-a6a2-b87107052fe3",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Bancomat",
       "amount": 10
     }
   ],
