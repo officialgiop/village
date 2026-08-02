@@ -25811,6 +25811,20 @@
       "memberId": "f4491895-182a-4df3-863d-29e35edf3a94",
       "expenseType": "Quota Campo",
       "paymentMethod": "Contanti",
+      "amount": 10,
+      "memberName": "Giacomo",
+      "memberSurname": "Guarnieri",
+      "memberTaxCode": "GRNGCM04H29H501K",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "3ecba100-1666-440d-92b1-8c37cec6655a",
+      "receiptId": "1578",
+      "date": "2026-07-31",
+      "memberId": "23843b98-1424-42e0-be5b-b43c0985c44b",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Contanti",
       "amount": 10
     }
   ],
