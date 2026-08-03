@@ -2519,6 +2519,12 @@
       "name": "Sabina",
       "surname": "Grilli",
       "taxCode": "GRLSBN81M46H501O"
+    },
+    {
+      "id": "5ce6faf7-4cdc-4b34-b5d3-ec15bf2c22e5",
+      "name": "Massimo",
+      "surname": "Franzoni",
+      "taxCode": "FRNMSM63L26H501P"
     }
   ],
   "transactions": [
@@ -25076,9 +25082,9 @@
       "expenseType": "Lezione Doppia",
       "paymentMethod": "Bancomat",
       "amount": 45,
-      "memberName": "Giordano",
-      "memberSurname": "Magli",
-      "memberTaxCode": "MGLGDN86L26H501Q",
+      "memberName": "Giulia",
+      "memberSurname": "Magliano",
+      "memberTaxCode": "MGLGLI77R67H501R",
       "hasIssue": false,
       "issue": ""
     },
