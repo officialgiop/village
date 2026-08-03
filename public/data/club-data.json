@@ -2525,6 +2525,12 @@
       "name": "Massimo",
       "surname": "Franzoni",
       "taxCode": "FRNMSM63L26H501P"
+    },
+    {
+      "id": "d4430aa6-92a7-4dd7-984a-400af4c38cd4",
+      "name": "Giuseppe",
+      "surname": "Del Mastro",
+      "taxCode": "DLMGPP07R03D873M"
     }
   ],
   "transactions": [
