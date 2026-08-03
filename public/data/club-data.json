@@ -25857,6 +25857,20 @@
       "memberId": "d900fbbf-2b47-451a-9bd6-9af89be37cce",
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
+      "amount": 10,
+      "memberName": "Cristiano",
+      "memberSurname": "Galeazzi",
+      "memberTaxCode": "GLZCST69C03H501S",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "8c4033cd-9209-4ec4-8040-480432cc7b8a",
+      "receiptId": "1580",
+      "date": "2026-08-02",
+      "memberId": "974ddb6d-5a86-45fd-85d9-9717eb483d2a",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Bancomat",
       "amount": 10
     }
   ],
