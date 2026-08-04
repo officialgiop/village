@@ -2555,6 +2555,12 @@
       "name": "Daniela",
       "surname": "Frusone",
       "taxCode": "FRSDNL67H62H501R"
+    },
+    {
+      "id": "33bf74cc-95a0-4b08-82ed-9ce1a186cace",
+      "name": "Laura",
+      "surname": "Fino",
+      "taxCode": "FNILRA77S58H501O"
     }
   ],
   "transactions": [
