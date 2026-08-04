@@ -2549,6 +2549,12 @@
       "name": "Sara",
       "surname": "Parlanti",
       "taxCode": "PRLSRA77S56H501W"
+    },
+    {
+      "id": "cdd49d0d-edc1-4ede-9bee-ff0a62fc3be3",
+      "name": "Daniela",
+      "surname": "Frusone",
+      "taxCode": "FRSDNL67H62H501R"
     }
   ],
   "transactions": [
@@ -26239,7 +26245,12 @@
       "memberId": "17dd6659-0016-4a03-8c6e-b258933dfeb5",
       "expenseType": "Quota Campo Doppia",
       "paymentMethod": "Contanti",
-      "amount": 20
+      "amount": 20,
+      "memberName": "Michele",
+      "memberSurname": "Napolitano",
+      "memberTaxCode": "NPLMHL06L31D843W",
+      "hasIssue": false,
+      "issue": ""
     }
   ],
   "settings": {
