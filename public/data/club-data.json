@@ -26015,6 +26015,20 @@
       "memberId": "d35bffcf-da1c-47aa-acd5-d10e2796c59e",
       "expenseType": "Lezione Privata",
       "paymentMethod": "Bancomat",
+      "amount": 25,
+      "memberName": "Giulia",
+      "memberSurname": "Altomonte",
+      "memberTaxCode": "LTMGLI80H49H501K",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "cd589ee5-b313-426e-ac47-55dfb0c25cf2",
+      "receiptId": "1590",
+      "date": "2026-08-03",
+      "memberId": "a731f216-b216-4251-8dfc-c1ab5063d298",
+      "expenseType": "Lezione Privata",
+      "paymentMethod": "Bancomat",
       "amount": 25
     }
   ],
