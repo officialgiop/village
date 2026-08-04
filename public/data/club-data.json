@@ -26127,7 +26127,21 @@
       "memberId": "d4430aa6-92a7-4dd7-984a-400af4c38cd4",
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
-      "amount": 11
+      "amount": 11,
+      "memberName": "Giuseppe",
+      "memberSurname": "Del Mastro",
+      "memberTaxCode": "DLMGPP07R03D873M",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "42919de7-9cbc-4b71-96d9-cb552d56ef90",
+      "receiptId": "1598",
+      "date": "2026-08-03",
+      "memberId": "9f186051-62e7-4b2d-98ff-3628077af252",
+      "expenseType": "Lezione Privata",
+      "paymentMethod": "Bancomat",
+      "amount": 25
     }
   ],
   "settings": {
