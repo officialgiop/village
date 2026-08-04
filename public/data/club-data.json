@@ -26169,7 +26169,21 @@
       "memberId": "2425c99b-1fbf-41f1-992c-fd87108016e7",
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
-      "amount": 10
+      "amount": 10,
+      "memberName": "Jessica",
+      "memberSurname": "Testa",
+      "memberTaxCode": "TSTJSC78B51H501P",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "7e538235-fbb3-4807-a239-f905746b649d",
+      "receiptId": "1601",
+      "date": "2026-08-03",
+      "memberId": "49aeb77b-6749-426c-a337-945ae6f883b5",
+      "expenseType": "Quota Campo Doppia",
+      "paymentMethod": "Bancomat",
+      "amount": 22
     }
   ],
   "settings": {
