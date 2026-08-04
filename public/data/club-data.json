@@ -26085,7 +26085,21 @@
       "memberId": "1d661a00-a812-455c-b1fa-8776cbda1102",
       "expenseType": "Corso Mensile",
       "paymentMethod": "Bancomat",
-      "amount": 100
+      "amount": 100,
+      "memberName": "Marco",
+      "memberSurname": "Perotti",
+      "memberTaxCode": "PRTMRC85E20H501I",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "d0d56ede-b8e4-4ace-aa08-3a0d4b67048f",
+      "receiptId": "1595",
+      "date": "2026-08-03",
+      "memberId": "1e0033eb-1a26-4fb5-9d02-a5b47cead7dd",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Bancomat",
+      "amount": 15
     }
   ],
   "settings": {
