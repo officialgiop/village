@@ -26057,6 +26057,20 @@
       "memberId": "eea71d90-de70-4a26-a7ae-889b4152a3b2",
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
+      "amount": 10,
+      "memberName": "Cristian",
+      "memberSurname": "Lo Russo",
+      "memberTaxCode": "LRSCST82A27H501X",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "4a6cb422-3441-4fdd-a649-fde2280308f0",
+      "receiptId": "1593",
+      "date": "2026-08-03",
+      "memberId": "b304aefe-326f-4655-8102-253f37a6f575",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Bancomat",
       "amount": 10
     }
   ],
