@@ -26299,6 +26299,20 @@
       "memberId": "8456625f-adc4-4f6c-8578-4863bf64786e",
       "expenseType": "Lezione Privata",
       "paymentMethod": "Bancomat",
+      "amount": 25,
+      "memberName": "Giulia",
+      "memberSurname": "Magliano",
+      "memberTaxCode": "MGLGLI77R67H501R",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "99ca4fe2-eb27-4f65-ae05-cb2f192556d2",
+      "receiptId": "1609",
+      "date": "2026-08-04",
+      "memberId": "9f186051-62e7-4b2d-98ff-3628077af252",
+      "expenseType": "Lezione Privata",
+      "paymentMethod": "Bancomat",
       "amount": 25
     }
   ],
