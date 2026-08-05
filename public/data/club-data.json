@@ -2567,6 +2567,12 @@
       "name": "Emanuele",
       "surname": "Giammanco",
       "taxCode": "GMMMNL58R06G273B"
+    },
+    {
+      "id": "fd0f1694-34ce-48ff-9de1-18dde8b0c34c",
+      "name": "Stefano",
+      "surname": "Santorelli",
+      "taxCode": "SNTSFN74H14H501V"
     }
   ],
   "transactions": [
@@ -26341,7 +26347,12 @@
       "memberId": "33bf74cc-95a0-4b08-82ed-9ce1a186cace",
       "expenseType": "Quota Campo Doppia",
       "paymentMethod": "Bancomat",
-      "amount": 18
+      "amount": 18,
+      "memberName": "Laura",
+      "memberSurname": "Fino",
+      "memberTaxCode": "FNILRA77S58H501O",
+      "hasIssue": false,
+      "issue": ""
     }
   ],
   "settings": {
