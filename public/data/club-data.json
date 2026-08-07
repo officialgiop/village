@@ -2579,6 +2579,12 @@
       "name": "Matteo",
       "surname": "Verduchi",
       "taxCode": "VRDMTT925D06H501Q"
+    },
+    {
+      "id": "e39e2588-ecf0-4a55-9f81-687c3f1f0e25",
+      "name": "Andrea",
+      "surname": "Riondino",
+      "taxCode": "RNDNDR02C26H501G"
     }
   ],
   "transactions": [
