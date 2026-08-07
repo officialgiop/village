@@ -26515,7 +26515,12 @@
       "memberId": "a45e0949-e675-47b6-8b48-e9da77997136",
       "expenseType": "Quota campo lezione partita",
       "paymentMethod": "Bancomat",
-      "amount": 20
+      "amount": 20,
+      "memberName": "Angela",
+      "memberSurname": "Dottorini",
+      "memberTaxCode": "DTTNGL86H60B114J",
+      "hasIssue": false,
+      "issue": ""
     }
   ],
   "settings": {
@@ -26570,6 +26575,10 @@
       },
       {
         "name": "Quota campo lezione partita",
+        "defaultAmount": null
+      },
+      {
+        "name": "Quota campo doppia lezione partita",
         "defaultAmount": null
       },
       {
