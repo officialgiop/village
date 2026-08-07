@@ -2573,6 +2573,12 @@
       "name": "Stefano",
       "surname": "Santorelli",
       "taxCode": "SNTSFN74H14H501V"
+    },
+    {
+      "id": "9fc49de0-0aa1-4f57-88af-b6f6c6daa2bb",
+      "name": "Matteo",
+      "surname": "Verduchi",
+      "taxCode": "VRDMTT925D06H501Q"
     }
   ],
   "transactions": [
@@ -26529,7 +26535,12 @@
       "memberId": "d35bffcf-da1c-47aa-acd5-d10e2796c59e",
       "expenseType": "Quota campo doppia lezione partita",
       "paymentMethod": "Bancomat",
-      "amount": 40
+      "amount": 40,
+      "memberName": "Giulia",
+      "memberSurname": "Altomonte",
+      "memberTaxCode": "LTMGLI80H49H501K",
+      "hasIssue": false,
+      "issue": ""
     }
   ],
   "settings": {
