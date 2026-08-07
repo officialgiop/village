@@ -26555,7 +26555,21 @@
       "memberId": "9fc49de0-0aa1-4f57-88af-b6f6c6daa2bb",
       "expenseType": "Corso Trimestrale Accademy",
       "paymentMethod": "Bancomat",
-      "amount": 128.5
+      "amount": 128.5,
+      "memberName": "Matteo",
+      "memberSurname": "Verduchi",
+      "memberTaxCode": "VRDMTT925D06H501Q",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "815baf6f-fc76-48fa-93fa-e382345db1ec",
+      "receiptId": "1626",
+      "date": "2026-08-06",
+      "memberId": "9420fe5c-6ecf-43da-b5b2-f080a4913537",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Bancomat",
+      "amount": 10
     }
   ],
   "settings": {
