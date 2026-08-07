@@ -26521,6 +26521,15 @@
       "memberTaxCode": "DTTNGL86H60B114J",
       "hasIssue": false,
       "issue": ""
+    },
+    {
+      "id": "9ca99e63-7589-41ed-88e4-0b48151b2300",
+      "receiptId": "1624",
+      "date": "2026-08-06",
+      "memberId": "d35bffcf-da1c-47aa-acd5-d10e2796c59e",
+      "expenseType": "Quota campo doppia lezione partita",
+      "paymentMethod": "Bancomat",
+      "amount": 40
     }
   ],
   "settings": {
