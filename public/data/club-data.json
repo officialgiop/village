@@ -26501,6 +26501,20 @@
       "memberId": "a169c612-d5e7-4249-90f3-7a200f14a715",
       "expenseType": "Quota Campo Doppia",
       "paymentMethod": "Contanti",
+      "amount": 20,
+      "memberName": "Fabio",
+      "memberSurname": "Garuti",
+      "memberTaxCode": "GRTFBA69B22H501Y",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "f60f082c-78b3-4d5f-be18-812713e6ffca",
+      "receiptId": "1623",
+      "date": "2026-08-06",
+      "memberId": "a45e0949-e675-47b6-8b48-e9da77997136",
+      "expenseType": "Quota campo lezione partita",
+      "paymentMethod": "Bancomat",
       "amount": 20
     }
   ],
