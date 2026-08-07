@@ -26417,7 +26417,21 @@
       "memberId": "8856400d-59cc-4a64-9e14-890caa2dd097",
       "expenseType": "Quota Campo Intero",
       "paymentMethod": "Bancomat",
-      "amount": 50
+      "amount": 50,
+      "memberName": "Yaroslav",
+      "memberSurname": "Smizrov",
+      "memberTaxCode": "SMRYSL94R04Z138M",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "df163f25-2857-4486-9518-bdc4c34b351c",
+      "receiptId": "1617",
+      "date": "2026-08-05",
+      "memberId": "ac0540f1-7836-4a99-b194-3076ac7e6a7d",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Bancomat",
+      "amount": 10
     }
   ],
   "settings": {
