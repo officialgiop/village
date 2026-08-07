@@ -26547,6 +26547,15 @@
       "memberTaxCode": "LTMGLI80H49H501K",
       "hasIssue": false,
       "issue": ""
+    },
+    {
+      "id": "3acf5ce8-7eb2-474e-bf2c-9814dfe169ce",
+      "receiptId": "1625",
+      "date": "2026-08-06",
+      "memberId": "9fc49de0-0aa1-4f57-88af-b6f6c6daa2bb",
+      "expenseType": "Corso Trimestrale Accademy",
+      "paymentMethod": "Bancomat",
+      "amount": 128.5
     }
   ],
   "settings": {
