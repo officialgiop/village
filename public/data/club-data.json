@@ -26353,6 +26353,15 @@
       "memberTaxCode": "FNILRA77S58H501O",
       "hasIssue": false,
       "issue": ""
+    },
+    {
+      "id": "5b0a2eb5-ce4d-4c00-997c-d75de5079d5e",
+      "receiptId": "1612",
+      "date": "2026-08-05",
+      "memberId": "464c21fb-a788-4e44-97b0-207a6d672fc9",
+      "expenseType": "Lezione Privata",
+      "paymentMethod": "Bancomat",
+      "amount": 27.5
     }
   ],
   "settings": {
