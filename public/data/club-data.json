@@ -26696,9 +26696,9 @@
       "expenseType": "Quota campo lezione partita",
       "paymentMethod": "Bancomat",
       "amount": 20,
-      "memberName": "Giulia",
-      "memberSurname": "Altomonte",
-      "memberTaxCode": "LTMGLI80H49H501K",
+      "memberName": "Angela",
+      "memberSurname": "Dottorini",
+      "memberTaxCode": "DTTNGL86H60B114J",
       "hasIssue": false,
       "issue": ""
     }
@@ -26755,7 +26755,7 @@
       },
       {
         "name": "Quota campo lezione partita",
-        "defaultAmount": null
+        "defaultAmount": 20
       },
       {
         "name": "Quota campo doppia lezione partita",
