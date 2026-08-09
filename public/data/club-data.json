@@ -26793,7 +26793,21 @@
       "memberId": "4c7dd2d7-4eee-4410-9a0d-052b6ff44f9b",
       "expenseType": "Quota Campo Intero",
       "paymentMethod": "Bancomat",
-      "amount": 50
+      "amount": 50,
+      "memberName": "Paolo",
+      "memberSurname": "Teodoli",
+      "memberTaxCode": "TDLPLA10A29H501G",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "5eda2c15-045e-4fc4-a1e9-3bfc9740c29b",
+      "receiptId": "1643",
+      "date": "2026-08-08",
+      "memberId": "20bd5bc1-658b-4230-8ffb-c874715ad292",
+      "expenseType": "Quota campo lezione partita",
+      "paymentMethod": "Bancomat",
+      "amount": 20
     }
   ],
   "settings": {
