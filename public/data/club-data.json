@@ -26891,6 +26891,20 @@
       "memberId": "23843b98-1424-42e0-be5b-b43c0985c44b",
       "expenseType": "Quota Campo",
       "paymentMethod": "Contanti",
+      "amount": 10,
+      "memberName": "Stefano",
+      "memberSurname": "Valvo",
+      "memberTaxCode": "VLVSFN83M09H501A",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "cd860bec-a55c-4677-b0d1-a64182d16c6a",
+      "receiptId": "1650",
+      "date": "2026-08-08",
+      "memberId": "a169c612-d5e7-4249-90f3-7a200f14a715",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Contanti",
       "amount": 10
     }
   ],
