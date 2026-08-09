@@ -26597,7 +26597,21 @@
       "memberId": "28ae3ee7-e6cb-4204-8731-27eb508b4740",
       "expenseType": "Quota Campo",
       "paymentMethod": "Contanti",
-      "amount": 10
+      "amount": 10,
+      "memberName": "Pierfrancesco",
+      "memberSurname": "Scremin",
+      "memberTaxCode": "SCRPFR91S07H501I",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "790a31f5-7bde-4129-93c6-8a98ae539247",
+      "receiptId": "1629",
+      "date": "2026-08-07",
+      "memberId": "a731f216-b216-4251-8dfc-c1ab5063d298",
+      "expenseType": "Lezione Privata",
+      "paymentMethod": "Bancomat",
+      "amount": 25
     }
   ],
   "settings": {
