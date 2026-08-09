@@ -2585,6 +2585,12 @@
       "name": "Andrea",
       "surname": "Riondino",
       "taxCode": "RNDNDR02C26H501G"
+    },
+    {
+      "id": "1a982fab-c08d-4b51-bbc5-4264b5792c96",
+      "name": "Chiara",
+      "surname": "Venturi",
+      "taxCode": "VNTCHR86C42H501C"
     }
   ],
   "transactions": [
@@ -26905,7 +26911,12 @@
       "memberId": "a169c612-d5e7-4249-90f3-7a200f14a715",
       "expenseType": "Quota Campo",
       "paymentMethod": "Contanti",
-      "amount": 10
+      "amount": 10,
+      "memberName": "Fabio",
+      "memberSurname": "Garuti",
+      "memberTaxCode": "GRTFBA69B22H501Y",
+      "hasIssue": false,
+      "issue": ""
     }
   ],
   "settings": {
