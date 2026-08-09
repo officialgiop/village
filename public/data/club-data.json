@@ -26681,7 +26681,21 @@
       "memberId": "c3814b12-5676-44d4-9501-ce0dc004490a",
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
-      "amount": 10
+      "amount": 10,
+      "memberName": "Laura",
+      "memberSurname": "Cavicchia",
+      "memberTaxCode": "CVCLRA70C68H501N",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "ebdd5bcd-242e-49b6-b9ab-fa8efe4e9815",
+      "receiptId": "1635",
+      "date": "2026-08-07",
+      "memberId": "d35bffcf-da1c-47aa-acd5-d10e2796c59e",
+      "expenseType": "Quota campo lezione partita",
+      "paymentMethod": "Bancomat",
+      "amount": 20
     }
   ],
   "settings": {
