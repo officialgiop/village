@@ -26957,7 +26957,21 @@
       "memberId": "23843b98-1424-42e0-be5b-b43c0985c44b",
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
-      "amount": 10
+      "amount": 10,
+      "memberName": "Stefano",
+      "memberSurname": "Valvo",
+      "memberTaxCode": "VLVSFN83M09H501A",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "9c550e91-57dc-41d2-b3f5-c437162411cd",
+      "receiptId": "1653",
+      "date": "2026-08-09",
+      "memberId": "8456625f-adc4-4f6c-8578-4863bf64786e",
+      "expenseType": "Quota Campo Intero",
+      "paymentMethod": "Bancomat",
+      "amount": 40
     }
   ],
   "settings": {
