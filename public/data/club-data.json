@@ -2591,6 +2591,12 @@
       "name": "Chiara",
       "surname": "Venturi",
       "taxCode": "VNTCHR86C42H501C"
+    },
+    {
+      "id": "82d20ab6-1939-4e64-8615-9204d085a856",
+      "name": "Attilio",
+      "surname": "Parisi",
+      "taxCode": "PRSTTL60B27H501A"
     }
   ],
   "transactions": [
