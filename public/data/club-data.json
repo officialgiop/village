@@ -26935,6 +26935,15 @@
       "memberTaxCode": "GRTFBA69B22H501Y",
       "hasIssue": false,
       "issue": ""
+    },
+    {
+      "id": "767400e7-5d3a-4c2f-bb4d-c41270928a9e",
+      "receiptId": "1651",
+      "date": "2026-08-09",
+      "memberId": "a9d1ebab-8c3a-4653-b5b3-a0090b253d8d",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Bancomat",
+      "amount": 12
     }
   ],
   "settings": {
