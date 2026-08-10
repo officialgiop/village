@@ -26999,7 +26999,21 @@
       "memberId": "1a982fab-c08d-4b51-bbc5-4264b5792c96",
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
-      "amount": 10
+      "amount": 10,
+      "memberName": "Chiara",
+      "memberSurname": "Venturi",
+      "memberTaxCode": "VNTCHR86C42H501C",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "07dc805c-19e8-443d-8c25-d594fe18ed7a",
+      "receiptId": "1656",
+      "date": "2026-08-09",
+      "memberId": "b04a1a72-9874-4945-8022-97df5caa43ee",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Bancomat",
+      "amount": 16.5
     }
   ],
   "settings": {
