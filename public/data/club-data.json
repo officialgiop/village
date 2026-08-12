@@ -27139,7 +27139,21 @@
       "memberId": "fafa96ef-2dba-4b73-8a66-cd38a54e8a8c",
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
-      "amount": 12.5
+      "amount": 12.5,
+      "memberName": "Ugo",
+      "memberSurname": "Bornengo",
+      "memberTaxCode": "BRNGUO76P28H501K",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "08bbd952-5a04-4432-9e6d-c691667419bb",
+      "receiptId": "1666",
+      "date": "2026-08-10",
+      "memberId": "1181102f-1c3a-458c-9a71-550d6620c7b4",
+      "expenseType": "Lezione Privata",
+      "paymentMethod": "Bancomat",
+      "amount": 26
     }
   ],
   "settings": {
