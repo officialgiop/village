@@ -27075,6 +27075,15 @@
       "memberTaxCode": "DTTNGL86H60B114J",
       "hasIssue": false,
       "issue": ""
+    },
+    {
+      "id": "dd446d19-b94e-4eec-94a5-179d9d109ac9",
+      "receiptId": "1661",
+      "date": "2026-08-10",
+      "memberId": "55ad3402-cfd4-46f6-8ed9-6c7622859bb6",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Bancomat",
+      "amount": 10
     }
   ],
   "settings": {
