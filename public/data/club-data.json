@@ -27299,7 +27299,21 @@
       "memberId": "e2e7bb85-80a1-414d-8ceb-0879a4cac8bf",
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
-      "amount": 10
+      "amount": 10,
+      "memberName": "Stefano",
+      "memberSurname": "Manili",
+      "memberTaxCode": "MNLSFN71E03H501D",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "2b52099a-da40-4ff6-a90b-f691e3c3d10d",
+      "receiptId": "1677",
+      "date": "2026-08-11",
+      "memberId": "8856400d-59cc-4a64-9e14-890caa2dd097",
+      "expenseType": "Lezione Privata",
+      "paymentMethod": "Bancomat",
+      "amount": 25
     }
   ],
   "settings": {
