@@ -27257,7 +27257,21 @@
       "memberId": "d900fbbf-2b47-451a-9bd6-9af89be37cce",
       "expenseType": "Contributo Kit allenamento",
       "paymentMethod": "Bancomat",
-      "amount": 7
+      "amount": 7,
+      "memberName": "Cristiano",
+      "memberSurname": "Galeazzi",
+      "memberTaxCode": "GLZCST69C03H501S",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "4e0752bd-b877-47a9-b8d0-74ad73dde98e",
+      "receiptId": "1674",
+      "date": "2026-08-11",
+      "memberId": "a731f216-b216-4251-8dfc-c1ab5063d298",
+      "expenseType": "Lezione Privata",
+      "paymentMethod": "Bancomat",
+      "amount": 25
     }
   ],
   "settings": {
