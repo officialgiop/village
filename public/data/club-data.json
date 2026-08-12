@@ -27235,6 +27235,15 @@
       "memberTaxCode": "FRNMSM63L26H501P",
       "hasIssue": false,
       "issue": ""
+    },
+    {
+      "id": "56cc6fcc-269b-42b4-8934-b1661cc70279",
+      "receiptId": "1672",
+      "date": "2026-08-11",
+      "memberId": "d900fbbf-2b47-451a-9bd6-9af89be37cce",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Bancomat",
+      "amount": 10
     }
   ],
   "settings": {
