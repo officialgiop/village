@@ -27125,7 +27125,21 @@
       "memberId": "9fc49de0-0aa1-4f57-88af-b6f6c6daa2bb",
       "expenseType": "Corso Settimanale",
       "paymentMethod": "Bancomat",
-      "amount": 125
+      "amount": 125,
+      "memberName": "Matteo",
+      "memberSurname": "Verduchi",
+      "memberTaxCode": "VRDMTT925D06H501Q",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "9057a844-45d3-41a3-b1ab-25433291f758",
+      "receiptId": "1665",
+      "date": "2026-08-10",
+      "memberId": "fafa96ef-2dba-4b73-8a66-cd38a54e8a8c",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Bancomat",
+      "amount": 12.5
     }
   ],
   "settings": {
