@@ -27195,6 +27195,20 @@
       "memberId": "b6af7c20-af68-4491-a12e-6103283e6a5e",
       "expenseType": "Quota Campo",
       "paymentMethod": "Contanti",
+      "amount": 10,
+      "memberName": "Cosimo",
+      "memberSurname": "Costantini",
+      "memberTaxCode": "CSTCSM75B25F152L",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "ecafd4e5-7e8b-4930-9492-ba5829dcb408",
+      "receiptId": "1670",
+      "date": "2026-08-10",
+      "memberId": "73a442c6-1cfe-451d-99dc-3b63fcf901ff",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Contanti",
       "amount": 10
     }
   ],
