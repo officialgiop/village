@@ -27111,7 +27111,21 @@
       "memberId": "1668fcd9-6379-4e47-806b-865f5fa80a12",
       "expenseType": "Quota Campo Tripla",
       "paymentMethod": "Bancomat",
-      "amount": 30
+      "amount": 30,
+      "memberName": "Anastasia",
+      "memberSurname": "Biagioni",
+      "memberTaxCode": "BGNNTS02M48H501F",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "bc881c24-66f6-4d46-aba4-4899da58e05a",
+      "receiptId": "1664",
+      "date": "2026-08-10",
+      "memberId": "9fc49de0-0aa1-4f57-88af-b6f6c6daa2bb",
+      "expenseType": "Corso Settimanale",
+      "paymentMethod": "Bancomat",
+      "amount": 125
     }
   ],
   "settings": {
