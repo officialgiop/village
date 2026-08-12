@@ -27271,7 +27271,21 @@
       "memberId": "a731f216-b216-4251-8dfc-c1ab5063d298",
       "expenseType": "Lezione Privata",
       "paymentMethod": "Bancomat",
-      "amount": 25
+      "amount": 25,
+      "memberName": "Sabina",
+      "memberSurname": "Grilli",
+      "memberTaxCode": "GRLSBN81M46H501O",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "8ec54e96-7c46-4509-8910-8d58061caa8d",
+      "receiptId": "1675",
+      "date": "2026-08-11",
+      "memberId": "f4491895-182a-4df3-863d-29e35edf3a94",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Bancomat",
+      "amount": 13
     }
   ],
   "settings": {
