@@ -2609,6 +2609,12 @@
       "name": "Fabio",
       "surname": "Cuscunà",
       "taxCode": "CSCFBA83P15L219G"
+    },
+    {
+      "id": "3264809a-ad78-4cd3-b53e-84a27fa3810f",
+      "name": "Maria Elena",
+      "surname": "Lorenzi",
+      "taxCode": "LRNMLN09D41H501H"
     }
   ],
   "transactions": [
@@ -27223,7 +27229,12 @@
       "memberId": "5ce6faf7-4cdc-4b34-b5d3-ec15bf2c22e5",
       "expenseType": "Quota Campo",
       "paymentMethod": "Contanti",
-      "amount": 10
+      "amount": 10,
+      "memberName": "Massimo",
+      "memberSurname": "Franzoni",
+      "memberTaxCode": "FRNMSM63L26H501P",
+      "hasIssue": false,
+      "issue": ""
     }
   ],
   "settings": {
