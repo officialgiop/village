@@ -27699,7 +27699,21 @@
       "memberId": "82d20ab6-1939-4e64-8615-9204d085a856",
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
-      "amount": 10
+      "amount": 10,
+      "memberName": "Attilio",
+      "memberSurname": "Parisi",
+      "memberTaxCode": "PRSTTL60B27H501A",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "27f095e1-06fd-42a2-a71a-2eb196d9870e",
+      "receiptId": "1703",
+      "date": "2026-08-13",
+      "memberId": "3246340e-7657-4f02-b7ff-36279a5aaf7e",
+      "expenseType": "Lezione Privata",
+      "paymentMethod": "Bancomat",
+      "amount": 30
     }
   ],
   "settings": {
