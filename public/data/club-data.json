@@ -2639,6 +2639,12 @@
       "name": "Andrea",
       "surname": "Brenne",
       "taxCode": "BRNNDR99T19B639Y"
+    },
+    {
+      "id": "02258c48-7cf5-4953-8a50-34b04537b570",
+      "name": "Barbara",
+      "surname": "Palmisano",
+      "taxCode": "PLMBBR79A68H501S"
     }
   ],
   "transactions": [
