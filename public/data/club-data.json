@@ -27461,7 +27461,21 @@
       "memberId": "fc56a088-4374-4605-87dd-f40c5a8338b0",
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
-      "amount": 11
+      "amount": 11,
+      "memberName": "Fabrizio",
+      "memberSurname": "Montani",
+      "memberTaxCode": "MNTFRZ70C16H501L",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "3ce5732f-7b48-4ab4-a569-5a10e183fa3e",
+      "receiptId": "1686",
+      "date": "2026-08-12",
+      "memberId": "a731f216-b216-4251-8dfc-c1ab5063d298",
+      "expenseType": "Lezione Privata",
+      "paymentMethod": "Bancomat",
+      "amount": 25
     }
   ],
   "settings": {
