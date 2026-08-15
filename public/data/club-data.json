@@ -27811,7 +27811,21 @@
       "memberId": "3c93fe56-c36c-46ec-bb5d-d991f33d3c8e",
       "expenseType": "Quota Campo Doppia",
       "paymentMethod": "Contanti",
-      "amount": 20
+      "amount": 20,
+      "memberName": "Paolo",
+      "memberSurname": "Andrielli",
+      "memberTaxCode": "NDRPLA63T18H501S",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "22c2d9f4-c5df-4d9d-aa0c-2c3db2e0c170",
+      "receiptId": "1711",
+      "date": "2026-08-14",
+      "memberId": "ef1ea025-c2bf-4ee1-abe7-42e0cbda6bd2",
+      "expenseType": "Quota Lezione Doppia",
+      "paymentMethod": "Bancomat",
+      "amount": 21
     }
   ],
   "settings": {
