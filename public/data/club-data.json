@@ -27943,6 +27943,15 @@
       "memberTaxCode": "TDLPLA10A29H501G",
       "hasIssue": false,
       "issue": ""
+    },
+    {
+      "id": "abd11a56-b727-41aa-ac32-20cd6dacb426",
+      "receiptId": "1720",
+      "date": "2026-08-14",
+      "memberId": "b5ed0348-d9f4-44fe-923c-1fd821b2a2a3",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Contanti",
+      "amount": 10
     }
   ],
   "settings": {
