@@ -27439,6 +27439,15 @@
       "memberTaxCode": "BRTFRC77T43H501L",
       "hasIssue": false,
       "issue": ""
+    },
+    {
+      "id": "7b4cc836-1910-4cb7-8a01-7ffe3397a516",
+      "receiptId": "1684",
+      "date": "2026-08-12",
+      "memberId": "3ea30578-cf47-4fb9-8d91-e8d3d279ae1c",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Bancomat",
+      "amount": 11
     }
   ],
   "settings": {
