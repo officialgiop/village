@@ -27517,7 +27517,21 @@
       "memberId": "82d20ab6-1939-4e64-8615-9204d085a856",
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
-      "amount": 12
+      "amount": 12,
+      "memberName": "Attilio",
+      "memberSurname": "Parisi",
+      "memberTaxCode": "PRSTTL60B27H501A",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "2d84b142-8a1b-4651-afeb-8c125eae2ce4",
+      "receiptId": "1690",
+      "date": "2026-08-12",
+      "memberId": "84aafd86-8f1b-459a-ae5a-317077cff3a2",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Bancomat",
+      "amount": 10
     }
   ],
   "settings": {
