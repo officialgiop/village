@@ -27710,10 +27710,15 @@
       "id": "27f095e1-06fd-42a2-a71a-2eb196d9870e",
       "receiptId": "1703",
       "date": "2026-08-13",
-      "memberId": "3246340e-7657-4f02-b7ff-36279a5aaf7e",
+      "memberId": "d8ff21d2-da53-49b4-bc91-61f2b32ad58f",
       "expenseType": "Lezione Privata",
       "paymentMethod": "Bancomat",
-      "amount": 30
+      "amount": 30,
+      "memberName": "Massimo",
+      "memberSurname": "Proverbio",
+      "memberTaxCode": "PRVMSM65M25L219A",
+      "hasIssue": false,
+      "issue": ""
     }
   ],
   "settings": {
