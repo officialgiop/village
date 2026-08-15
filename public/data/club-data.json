@@ -27671,7 +27671,21 @@
       "memberId": "fc56a088-4374-4605-87dd-f40c5a8338b0",
       "expenseType": "Quota Campo",
       "paymentMethod": "Contanti",
-      "amount": 10
+      "amount": 10,
+      "memberName": "Fabrizio",
+      "memberSurname": "Montani",
+      "memberTaxCode": "MNTFRZ70C16H501L",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "12a4afa7-4838-4338-8e44-586ded5efbcf",
+      "receiptId": "1701",
+      "date": "2026-08-13",
+      "memberId": "5ce6faf7-4cdc-4b34-b5d3-ec15bf2c22e5",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Bancomat",
+      "amount": 11
     }
   ],
   "settings": {
