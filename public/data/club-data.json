@@ -27895,7 +27895,21 @@
       "memberId": "357337bc-18c3-446c-9c3a-b2c7c9a10d2c",
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
-      "amount": 10
+      "amount": 10,
+      "memberName": "Alessandra",
+      "memberSurname": "Garufi",
+      "memberTaxCode": "GRFLSN76R41H501G",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "3af77a0f-de7d-4d60-8cbd-ae37b63ae535",
+      "receiptId": "1717",
+      "date": "2026-08-14",
+      "memberId": "151beb34-4b5c-43a2-be77-d171c6eb589c",
+      "expenseType": "Lezione Privata",
+      "paymentMethod": "Bancomat",
+      "amount": 30
     }
   ],
   "settings": {
