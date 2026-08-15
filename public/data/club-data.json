@@ -27825,7 +27825,21 @@
       "memberId": "ef1ea025-c2bf-4ee1-abe7-42e0cbda6bd2",
       "expenseType": "Quota Lezione Doppia",
       "paymentMethod": "Bancomat",
-      "amount": 21
+      "amount": 21,
+      "memberName": "Valerio",
+      "memberSurname": "Quojani",
+      "memberTaxCode": "QJNVLR66H18H501Z",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "671176e3-d9f2-486e-8ba8-54ac15244928",
+      "receiptId": "1712",
+      "date": "2026-08-14",
+      "memberId": "8456625f-adc4-4f6c-8578-4863bf64786e",
+      "expenseType": "Lezione Privata",
+      "paymentMethod": "Bancomat",
+      "amount": 25
     }
   ],
   "settings": {
