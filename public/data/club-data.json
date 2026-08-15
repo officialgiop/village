@@ -27559,7 +27559,21 @@
       "memberId": "fa145c73-0cb0-4f6d-8925-750fb1f6798a",
       "expenseType": "Corso Settimanale",
       "paymentMethod": "Bancomat",
-      "amount": 52
+      "amount": 52,
+      "memberName": "Sonia",
+      "memberSurname": "Maffezzoli",
+      "memberTaxCode": "MFFSNO73R69H501H",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "e5db4ed7-d966-4bad-b328-80f2c061f1fc",
+      "receiptId": "1693",
+      "date": "2026-08-12",
+      "memberId": "1620910e-87bc-4c6b-9e8c-f07527b5c3ab",
+      "expenseType": "Corso Mensile",
+      "paymentMethod": "Bancomat",
+      "amount": 100
     }
   ],
   "settings": {
