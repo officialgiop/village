@@ -27545,7 +27545,21 @@
       "memberId": "462c41f2-b6e1-4623-a753-76a4ca70b574",
       "expenseType": "Lezione Privata",
       "paymentMethod": "Bancomat",
-      "amount": 25
+      "amount": 25,
+      "memberName": "Alessia",
+      "memberSurname": "Cataldo",
+      "memberTaxCode": "CTLLSS03S54H501P",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "aa1f712f-93d3-4579-8639-7a4d50233842",
+      "receiptId": "1692",
+      "date": "2026-08-12",
+      "memberId": "fa145c73-0cb0-4f6d-8925-750fb1f6798a",
+      "expenseType": "Corso Settimanale",
+      "paymentMethod": "Bancomat",
+      "amount": 52
     }
   ],
   "settings": {
