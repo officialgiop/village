@@ -27643,7 +27643,21 @@
       "memberId": "6c2b6bd9-9d70-4aa2-8745-4d26785e82c8",
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
-      "amount": 14
+      "amount": 14,
+      "memberName": "Gianfranco",
+      "memberSurname": "Mazzocchi",
+      "memberTaxCode": "MZZGFR91M06H501V",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "0b9aee47-b190-4a9f-a829-58c368b48312",
+      "receiptId": "1699",
+      "date": "2026-08-12",
+      "memberId": "b6af7c20-af68-4491-a12e-6103283e6a5e",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Contanti",
+      "amount": 10
     }
   ],
   "settings": {
