@@ -2627,6 +2627,12 @@
       "name": "Massimo",
       "surname": "Proverbio",
       "taxCode": "PRVMSM65M25L219A"
+    },
+    {
+      "id": "ef1ea025-c2bf-4ee1-abe7-42e0cbda6bd2",
+      "name": "Valerio",
+      "surname": "Quojani",
+      "taxCode": "QJNVLR66H18H501Z"
     }
   ],
   "transactions": [
