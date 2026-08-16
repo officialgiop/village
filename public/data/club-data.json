@@ -27965,7 +27965,21 @@
       "memberId": "c59ce8e8-0ad5-407b-ab7b-a90ffd4d6e76",
       "expenseType": "Quota Campo",
       "paymentMethod": "Contanti",
-      "amount": 10
+      "amount": 10,
+      "memberName": "Roberto",
+      "memberSurname": "Ricciardi",
+      "memberTaxCode": "RCCRRT69H24H501B",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "01b8135e-2f74-4345-ac55-dd907e57d281",
+      "receiptId": "1722",
+      "date": "2026-08-15",
+      "memberId": "464c21fb-a788-4e44-97b0-207a6d672fc9",
+      "expenseType": "Lezione Privata",
+      "paymentMethod": "Bancomat",
+      "amount": 27.5
     }
   ],
   "settings": {
