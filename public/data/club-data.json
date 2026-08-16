@@ -27979,7 +27979,21 @@
       "memberId": "464c21fb-a788-4e44-97b0-207a6d672fc9",
       "expenseType": "Lezione Privata",
       "paymentMethod": "Bancomat",
-      "amount": 27.5
+      "amount": 27.5,
+      "memberName": "Emanuele",
+      "memberSurname": "Giammanco",
+      "memberTaxCode": "GMMMNL58R06G273B",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "cdcb02c7-7e63-4f8c-90c7-a2e95d44adcf",
+      "receiptId": "1723",
+      "date": "2026-08-15",
+      "memberId": "ef1ea025-c2bf-4ee1-abe7-42e0cbda6bd2",
+      "expenseType": "Quota Campo Doppia",
+      "paymentMethod": "Bancomat",
+      "amount": 20
     }
   ],
   "settings": {
