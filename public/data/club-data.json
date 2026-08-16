@@ -28021,7 +28021,21 @@
       "memberId": "5cbf6b52-979f-4a5e-a740-6af635049f8e",
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
-      "amount": 13.5
+      "amount": 13.5,
+      "memberName": "Davide",
+      "memberSurname": "Feltoni Gurini",
+      "memberTaxCode": "FLTDVD84T20H501K",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "53313ed5-cf50-4cd3-95e9-4f95909ddf04",
+      "receiptId": "1726",
+      "date": "2026-08-15",
+      "memberId": "8856400d-59cc-4a64-9e14-890caa2dd097",
+      "expenseType": "Lezione Privata",
+      "paymentMethod": "Bancomat",
+      "amount": 25
     }
   ],
   "settings": {
