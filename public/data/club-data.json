@@ -2669,6 +2669,12 @@
       "name": "Andrea",
       "surname": "Mangiante",
       "taxCode": "MNGNDR07M31H501C"
+    },
+    {
+      "id": "aba0850e-9d59-4364-b74c-14798e7a3ae8",
+      "name": "Sara",
+      "surname": "Carmenati",
+      "taxCode": "CRMSRA83E56D451E"
     }
   ],
   "transactions": [
