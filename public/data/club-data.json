@@ -28139,7 +28139,21 @@
       "memberId": "8456625f-adc4-4f6c-8578-4863bf64786e",
       "expenseType": "Quota Campo Intero",
       "paymentMethod": "Bancomat",
-      "amount": 40
+      "amount": 40,
+      "memberName": "Giulia",
+      "memberSurname": "Magliano",
+      "memberTaxCode": "MGLGLI77R67H501R",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "57d004db-9db5-485f-8c50-19b97857abf8",
+      "receiptId": "1734",
+      "date": "2026-08-16",
+      "memberId": "45d30b9f-2f89-4247-ad9e-917e71b86132",
+      "expenseType": "Coupon lezioni",
+      "paymentMethod": "Bancomat",
+      "amount": 125
     }
   ],
   "settings": {
