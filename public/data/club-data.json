@@ -28153,7 +28153,21 @@
       "memberId": "45d30b9f-2f89-4247-ad9e-917e71b86132",
       "expenseType": "Coupon lezioni",
       "paymentMethod": "Bancomat",
-      "amount": 125
+      "amount": 125,
+      "memberName": "Antonello",
+      "memberSurname": "Filoso",
+      "memberTaxCode": "FLSNNL60L17H501H",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "80650f95-89c8-4ea2-808c-82bdd1d4f0b3",
+      "receiptId": "1735",
+      "date": "2026-08-16",
+      "memberId": "20bd5bc1-658b-4230-8ffb-c874715ad292",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Bancomat",
+      "amount": 10
     }
   ],
   "settings": {
