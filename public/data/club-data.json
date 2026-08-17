@@ -28251,7 +28251,21 @@
       "memberId": "c0d98894-0a76-4e60-a421-17ad26e9ad7e",
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
-      "amount": 15
+      "amount": 15,
+      "memberName": "Marco",
+      "memberSurname": "Zappellini",
+      "memberTaxCode": "ZPPMRC94P30B832T",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "784ae17f-f342-4fdd-896e-a8b48e07a904",
+      "receiptId": "1742",
+      "date": "2026-08-16",
+      "memberId": "b25cb93e-2106-43af-ae20-6acaf1911b79",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Contanti",
+      "amount": 10
     }
   ],
   "settings": {
