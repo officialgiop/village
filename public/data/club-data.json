@@ -28103,6 +28103,15 @@
       "memberTaxCode": "BRNLSN79A56H501K",
       "hasIssue": false,
       "issue": ""
+    },
+    {
+      "id": "2991de83-5593-4c15-93be-fc90014ad9d9",
+      "receiptId": "1731",
+      "date": "2026-08-16",
+      "memberId": "164dd512-142e-4876-a88e-e6181a1fa88d",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Bancomat",
+      "amount": 10
     }
   ],
   "settings": {
