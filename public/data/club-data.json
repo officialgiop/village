@@ -2693,6 +2693,12 @@
       "name": "Anna Laura",
       "surname": "Cordoba",
       "taxCode": "CRDLRN78P52Z600N"
+    },
+    {
+      "id": "83e0ce5c-0825-43c0-b94b-96cbc4fe896b",
+      "name": "Roberto",
+      "surname": "Romano",
+      "taxCode": "RMNRRT78M01H501R"
     }
   ],
   "transactions": [
