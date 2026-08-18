@@ -2675,6 +2675,12 @@
       "name": "Sara",
       "surname": "Carmenati",
       "taxCode": "CRMSRA83E56D451E"
+    },
+    {
+      "id": "d71af008-2f55-4949-8bec-05f4077f8b28",
+      "name": "Emilio",
+      "surname": "La Pera",
+      "taxCode": "LPRMLE87E08H501R"
     }
   ],
   "transactions": [
@@ -12125,12 +12131,12 @@
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
       "amount": 10,
-      "memberId": null,
+      "memberId": "aba0850e-9d59-4364-b74c-14798e7a3ae8",
       "memberName": "Sara",
       "memberSurname": "Carmenati",
-      "memberTaxCode": "#N/A",
-      "hasIssue": true,
-      "issue": "member_not_found",
+      "memberTaxCode": "CRMSRA83E56D451E",
+      "hasIssue": false,
+      "issue": "",
       "receiptGenerated": true,
       "receiptGeneratedAt": "2026-05-28T00:00:00.000Z"
     },
