@@ -2699,6 +2699,12 @@
       "name": "Roberto",
       "surname": "Romano",
       "taxCode": "RMNRRT78M01H501R"
+    },
+    {
+      "id": "ffc5b5f8-5b1d-4c93-8a6d-92b88effebb3",
+      "name": "Stefano",
+      "surname": "Mignucci",
+      "taxCode": "MGNSFN65B16H501O"
     }
   ],
   "transactions": [
