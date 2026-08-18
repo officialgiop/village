@@ -2681,6 +2681,12 @@
       "name": "Emilio",
       "surname": "La Pera",
       "taxCode": "LPRMLE87E08H501R"
+    },
+    {
+      "id": "02ad1e9d-73a7-4e8d-80ac-5d19a754f5f0",
+      "name": "Dario",
+      "surname": "Cotterchio",
+      "taxCode": "CTTDRA91A18L219A"
     }
   ],
   "transactions": [
