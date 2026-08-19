@@ -28342,11 +28342,20 @@
       "expenseType": "Quota Campo Doppia",
       "paymentMethod": "Bancomat",
       "amount": 20,
-      "memberName": "Valerio",
-      "memberSurname": "Quojani",
-      "memberTaxCode": "QJNVLR66H18H501Z",
+      "memberName": "Francesca",
+      "memberSurname": "Calandra",
+      "memberTaxCode": "CLNFNC79M41H501B",
       "hasIssue": false,
       "issue": ""
+    },
+    {
+      "id": "a02e43bb-d486-4947-ae23-93e8acd96126",
+      "receiptId": "1745",
+      "date": "2026-08-17",
+      "memberId": "24cb34fd-bdb2-46e2-b436-8ccffe190527",
+      "expenseType": "Contributo Kit allenamento",
+      "paymentMethod": "Bancomat",
+      "amount": 4
     }
   ],
   "settings": {
