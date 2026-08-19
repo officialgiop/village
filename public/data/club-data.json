@@ -27055,8 +27055,8 @@
       "paymentMethod": "Bancomat",
       "amount": 10,
       "memberName": "Stefano",
-      "memberSurname": "Valvo",
-      "memberTaxCode": "VLVSFN83M09H501A",
+      "memberSurname": "Mignucci",
+      "memberTaxCode": "MGNSFN65B16H501O",
       "hasIssue": false,
       "issue": ""
     },
@@ -28333,6 +28333,15 @@
       "memberTaxCode": "LRSCST82A27H501X",
       "hasIssue": false,
       "issue": ""
+    },
+    {
+      "id": "f5b200f2-031b-4fad-8abd-e8e2a77dd853",
+      "receiptId": "1744",
+      "date": "2026-08-17",
+      "memberId": "ef1ea025-c2bf-4ee1-abe7-42e0cbda6bd2",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Bancomat",
+      "amount": 12
     }
   ],
   "settings": {
