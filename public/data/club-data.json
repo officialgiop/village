@@ -28607,7 +28607,21 @@
       "memberId": "d71af008-2f55-4949-8bec-05f4077f8b28",
       "expenseType": "Quota Campo Tripla",
       "paymentMethod": "Bancomat",
-      "amount": 30
+      "amount": 30,
+      "memberName": "Emilio",
+      "memberSurname": "La Pera",
+      "memberTaxCode": "LPRMLE87E08H501R",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "ef2266ba-ad54-409a-a405-7af55c939aba",
+      "receiptId": "1764",
+      "date": "2026-08-18",
+      "memberId": "b71a11c1-9968-43fc-8fbe-ac5eeeb30aa5",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Bancomat",
+      "amount": 10
     }
   ],
   "settings": {
