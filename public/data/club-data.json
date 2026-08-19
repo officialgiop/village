@@ -28709,6 +28709,15 @@
       "memberTaxCode": "RMNRRT78M01H501R",
       "hasIssue": false,
       "issue": ""
+    },
+    {
+      "id": "3d1da318-1e2f-45b7-93b5-bc74a724a2a3",
+      "receiptId": "1770",
+      "date": "2026-08-18",
+      "memberId": "ba957a03-b716-481d-9256-2a9de70326e9",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Bancomat",
+      "amount": 10
     }
   ],
   "settings": {
