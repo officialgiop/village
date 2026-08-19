@@ -28717,6 +28717,20 @@
       "memberId": "ba957a03-b716-481d-9256-2a9de70326e9",
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
+      "amount": 10,
+      "memberName": "Samantha",
+      "memberSurname": "Trivero",
+      "memberTaxCode": "STRANIERA",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "ffdb17dc-2b62-4aef-9008-4e5af7c7498a",
+      "receiptId": "1771",
+      "date": "2026-08-18",
+      "memberId": "48a73cb0-1f51-42ff-8f83-7e78a4cbbe5a",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Bancomat",
       "amount": 10
     }
   ],
