@@ -2705,6 +2705,12 @@
       "name": "Stefano",
       "surname": "Mignucci",
       "taxCode": "MGNSFN65B16H501O"
+    },
+    {
+      "id": "ba957a03-b716-481d-9256-2a9de70326e9",
+      "name": "Samantha",
+      "surname": "Trivero",
+      "taxCode": "STRANIERA"
     }
   ],
   "transactions": [
@@ -28691,7 +28697,12 @@
       "memberId": "83e0ce5c-0825-43c0-b94b-96cbc4fe896b",
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
-      "amount": 10
+      "amount": 10,
+      "memberName": "Roberto",
+      "memberSurname": "Romano",
+      "memberTaxCode": "RMNRRT78M01H501R",
+      "hasIssue": false,
+      "issue": ""
     }
   ],
   "settings": {
