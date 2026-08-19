@@ -28426,11 +28426,20 @@
       "expenseType": "Lezione Privata",
       "paymentMethod": "Bancomat",
       "amount": 30,
-      "memberName": "Davide",
-      "memberSurname": "Fiorillo",
-      "memberTaxCode": "FRLDVD82A201H501R",
+      "memberName": "Marta",
+      "memberSurname": "Turino",
+      "memberTaxCode": "TRNMRT82A63H501P",
       "hasIssue": false,
       "issue": ""
+    },
+    {
+      "id": "b0e10fef-844f-4270-94dc-d544ae61a8f0",
+      "receiptId": "1751",
+      "date": "2026-08-17",
+      "memberId": "d8ff21d2-da53-49b4-bc91-61f2b32ad58f",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Bancomat",
+      "amount": 10
     }
   ],
   "settings": {
