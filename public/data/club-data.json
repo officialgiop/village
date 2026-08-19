@@ -28618,10 +28618,15 @@
       "id": "ef2266ba-ad54-409a-a405-7af55c939aba",
       "receiptId": "1764",
       "date": "2026-08-18",
-      "memberId": "b71a11c1-9968-43fc-8fbe-ac5eeeb30aa5",
+      "memberId": "f841e60c-0ffe-4175-8939-361fce411989",
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
-      "amount": 10
+      "amount": 10,
+      "memberName": "Daniele",
+      "memberSurname": "Matta",
+      "memberTaxCode": "MTTDNL82P22H501G",
+      "hasIssue": false,
+      "issue": ""
     }
   ],
   "settings": {
