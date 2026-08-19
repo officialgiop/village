@@ -28677,6 +28677,20 @@
       "memberId": "74018763-b025-4a82-a16b-44c8efc045e4",
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
+      "amount": 10,
+      "memberName": "Anna Laura",
+      "memberSurname": "Cordoba",
+      "memberTaxCode": "CRDLRN78P52Z600N",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "a226858e-8936-4d09-8a35-43582d50d79c",
+      "receiptId": "1769",
+      "date": "2026-08-18",
+      "memberId": "83e0ce5c-0825-43c0-b94b-96cbc4fe896b",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Bancomat",
       "amount": 10
     }
   ],
