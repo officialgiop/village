@@ -28663,6 +28663,20 @@
       "memberId": "ef428797-1117-410a-929d-3818774c4875",
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
+      "amount": 10,
+      "memberName": "Maura",
+      "memberSurname": "Folgori",
+      "memberTaxCode": "FLGMRA68E70H501P",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "7de38aa0-39d8-4086-a9b1-d84af69c0b4a",
+      "receiptId": "1768",
+      "date": "2026-08-18",
+      "memberId": "74018763-b025-4a82-a16b-44c8efc045e4",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Bancomat",
       "amount": 10
     }
   ],
