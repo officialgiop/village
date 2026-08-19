@@ -2717,6 +2717,12 @@
       "name": "Romain",
       "surname": "Drissin",
       "taxCode": "STRANIERO"
+    },
+    {
+      "id": "684ab656-e794-413d-9e9f-f0ab3da7cd6f",
+      "name": "Fausto",
+      "surname": "Recchia",
+      "taxCode": "RCCFFS69T08H501I"
     }
   ],
   "transactions": [
@@ -28787,7 +28793,12 @@
       "memberId": "a9d1ebab-8c3a-4653-b5b3-a0090b253d8d",
       "expenseType": "Quota Campo",
       "paymentMethod": "Contanti",
-      "amount": 10
+      "amount": 10,
+      "memberName": "Claudia",
+      "memberSurname": "Fabris",
+      "memberTaxCode": "FBRCLD75S52F205U",
+      "hasIssue": false,
+      "issue": ""
     }
   ],
   "settings": {
