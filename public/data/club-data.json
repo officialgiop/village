@@ -28495,6 +28495,20 @@
       "memberId": "fafa96ef-2dba-4b73-8a66-cd38a54e8a8c",
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
+      "amount": 10,
+      "memberName": "Ugo",
+      "memberSurname": "Bornengo",
+      "memberTaxCode": "BRNGUO76P28H501K",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "c311e94a-41c3-4163-921d-3813bfd0e500",
+      "receiptId": "1756",
+      "date": "2026-08-17",
+      "memberId": "a0c75ab4-9910-4576-8274-cf57ce20df9a",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Bancomat",
       "amount": 10
     }
   ],
