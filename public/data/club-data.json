@@ -28422,10 +28422,15 @@
       "id": "a2d0b675-5a85-4450-925a-57302e299bb0",
       "receiptId": "1750",
       "date": "2026-08-17",
-      "memberId": "199effed-772f-493a-ae6a-a2edc451a1f1",
-      "expenseType": "Quota Campo Tripla",
+      "memberId": "151beb34-4b5c-43a2-be77-d171c6eb589c",
+      "expenseType": "Lezione Privata",
       "paymentMethod": "Bancomat",
-      "amount": 30
+      "amount": 30,
+      "memberName": "Davide",
+      "memberSurname": "Fiorillo",
+      "memberTaxCode": "FRLDVD82A201H501R",
+      "hasIssue": false,
+      "issue": ""
     }
   ],
   "settings": {
