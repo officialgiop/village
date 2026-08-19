@@ -28355,7 +28355,21 @@
       "memberId": "24cb34fd-bdb2-46e2-b436-8ccffe190527",
       "expenseType": "Contributo Kit allenamento",
       "paymentMethod": "Bancomat",
-      "amount": 4
+      "amount": 4,
+      "memberName": "Francesca",
+      "memberSurname": "Calandra",
+      "memberTaxCode": "CLNFNC79M41H501B",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "bd590107-b9b8-43a3-8b31-32d9d8bf2dbd",
+      "receiptId": "1746",
+      "date": "2026-08-17",
+      "memberId": "a731f216-b216-4251-8dfc-c1ab5063d298",
+      "expenseType": "Lezione Privata",
+      "paymentMethod": "Bancomat",
+      "amount": 25
     }
   ],
   "settings": {
