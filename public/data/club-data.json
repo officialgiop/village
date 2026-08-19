@@ -28338,10 +28338,15 @@
       "id": "f5b200f2-031b-4fad-8abd-e8e2a77dd853",
       "receiptId": "1744",
       "date": "2026-08-17",
-      "memberId": "ef1ea025-c2bf-4ee1-abe7-42e0cbda6bd2",
-      "expenseType": "Quota Campo",
+      "memberId": "24cb34fd-bdb2-46e2-b436-8ccffe190527",
+      "expenseType": "Quota Campo Doppia",
       "paymentMethod": "Bancomat",
-      "amount": 12
+      "amount": 20,
+      "memberName": "Valerio",
+      "memberSurname": "Quojani",
+      "memberTaxCode": "QJNVLR66H18H501Z",
+      "hasIssue": false,
+      "issue": ""
     }
   ],
   "settings": {
