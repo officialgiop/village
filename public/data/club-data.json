@@ -2711,6 +2711,12 @@
       "name": "Samantha",
       "surname": "Trivero",
       "taxCode": "STRANIERA"
+    },
+    {
+      "id": "48a73cb0-1f51-42ff-8f83-7e78a4cbbe5a",
+      "name": "Romain",
+      "surname": "Drissin",
+      "taxCode": "STRANIERO"
     }
   ],
   "transactions": [
