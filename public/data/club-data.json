@@ -2747,6 +2747,12 @@
       "name": "Claudia",
       "surname": "Vellucci",
       "taxCode": "VLLCLD89B60H501L"
+    },
+    {
+      "id": "cf69fa1f-41f9-4905-8cd0-d78d814d8114",
+      "name": "Rodolfo",
+      "surname": "Arcudi",
+      "taxCode": "RCDRLF68E28H124P"
     }
   ],
   "transactions": [
@@ -29097,7 +29103,12 @@
       "memberId": "c8cf39db-6a93-4538-b458-f40c70fc64e0",
       "expenseType": "Quota Campo",
       "paymentMethod": "Contanti",
-      "amount": 10
+      "amount": 10,
+      "memberName": "Marta",
+      "memberSurname": "Alfonsi",
+      "memberTaxCode": "LFNMRT70R42H501S",
+      "hasIssue": false,
+      "issue": ""
     }
   ],
   "settings": {
