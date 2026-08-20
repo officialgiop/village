@@ -2735,6 +2735,12 @@
       "name": "Sofia",
       "surname": "Montesi",
       "taxCode": "MNTSTO10M60H501F"
+    },
+    {
+      "id": "73e0f0b6-5ac0-4c55-8a66-4c4a76d00553",
+      "name": "Anna",
+      "surname": "Passamonti",
+      "taxCode": "PSSNNA77L54H501P"
     }
   ],
   "transactions": [
