@@ -27811,7 +27811,7 @@
       "paymentMethod": "Bancomat",
       "amount": 30,
       "memberName": "Andrea",
-      "memberSurname": "Brenne",
+      "memberSurname": "Brenna",
       "memberTaxCode": "BRNNDR99T19B639Y",
       "hasIssue": false,
       "issue": ""
@@ -27951,7 +27951,7 @@
       "paymentMethod": "Bancomat",
       "amount": 30,
       "memberName": "Andrea",
-      "memberSurname": "Brenne",
+      "memberSurname": "Brenna",
       "memberTaxCode": "BRNNDR99T19B639Y",
       "hasIssue": false,
       "issue": ""
@@ -28483,7 +28483,7 @@
       "paymentMethod": "Bancomat",
       "amount": 10,
       "memberName": "Andrea",
-      "memberSurname": "Brenne",
+      "memberSurname": "Brenna",
       "memberTaxCode": "BRNNDR99T19B639Y",
       "hasIssue": false,
       "issue": ""
@@ -29005,6 +29005,15 @@
       "memberTaxCode": "SMRYSL94R04Z138M",
       "hasIssue": false,
       "issue": ""
+    },
+    {
+      "id": "caacde34-c301-44e7-b2d7-1ff0edab57fb",
+      "receiptId": "1789",
+      "date": "2026-08-19",
+      "memberId": "d8ff21d2-da53-49b4-bc91-61f2b32ad58f",
+      "expenseType": "Quota campo lezione partita",
+      "paymentMethod": "Bancomat",
+      "amount": 20
     }
   ],
   "settings": {
