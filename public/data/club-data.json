@@ -29083,7 +29083,21 @@
       "memberId": "d334eb82-1070-4843-85ea-0d7e11019392",
       "expenseType": "Lezione Privata",
       "paymentMethod": "Bancomat",
-      "amount": 25
+      "amount": 25,
+      "memberName": "Sofia",
+      "memberSurname": "Montesi",
+      "memberTaxCode": "MNTSTO10M60H501F",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "9dbed503-709c-450b-8b87-95e636612f28",
+      "receiptId": "1795",
+      "date": "2026-08-19",
+      "memberId": "c8cf39db-6a93-4538-b458-f40c70fc64e0",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Contanti",
+      "amount": 10
     }
   ],
   "settings": {
