@@ -28859,7 +28859,21 @@
       "memberId": "d35bffcf-da1c-47aa-acd5-d10e2796c59e",
       "expenseType": "Contributo Kit allenamento",
       "paymentMethod": "Bancomat",
-      "amount": 5
+      "amount": 5,
+      "memberName": "Giulia",
+      "memberSurname": "Altomonte",
+      "memberTaxCode": "LTMGLI80H49H501K",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "942e4ce1-25ac-4c74-a90d-dea8276418b2",
+      "receiptId": "1779",
+      "date": "2026-08-19",
+      "memberId": "a08ede04-2ff8-4d94-9c04-717cb5a2a5f2",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Bancomat",
+      "amount": 10
     }
   ],
   "settings": {
