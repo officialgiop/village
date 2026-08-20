@@ -28823,6 +28823,15 @@
       "memberTaxCode": "FBRCLD75S52F205U",
       "hasIssue": false,
       "issue": ""
+    },
+    {
+      "id": "a3b0f18a-d012-4649-8e58-6a02cd0e599e",
+      "receiptId": "1776",
+      "date": "2026-08-19",
+      "memberId": "55ad3402-cfd4-46f6-8ed9-6c7622859bb6",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Bancomat",
+      "amount": 10
     }
   ],
   "settings": {
