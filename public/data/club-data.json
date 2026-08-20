@@ -2637,7 +2637,7 @@
     {
       "id": "d8ff21d2-da53-49b4-bc91-61f2b32ad58f",
       "name": "Andrea",
-      "surname": "Brenne",
+      "surname": "Brenna",
       "taxCode": "BRNNDR99T19B639Y"
     },
     {
@@ -28999,7 +28999,12 @@
       "memberId": "8856400d-59cc-4a64-9e14-890caa2dd097",
       "expenseType": "Quota campo lezione partita",
       "paymentMethod": "Bancomat",
-      "amount": 20
+      "amount": 20,
+      "memberName": "Yaroslav",
+      "memberSurname": "Smizrov",
+      "memberTaxCode": "SMRYSL94R04Z138M",
+      "hasIssue": false,
+      "issue": ""
     }
   ],
   "settings": {
