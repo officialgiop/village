@@ -2771,6 +2771,12 @@
       "name": "Flavio",
       "surname": "Amici",
       "taxCode": "MCAFLV02D28H501Y"
+    },
+    {
+      "id": "b617c3cf-d004-4548-80c5-705ec82b586f",
+      "name": "Federico",
+      "surname": "Santucci",
+      "taxCode": "SNTFRC03S21H501O"
     }
   ],
   "transactions": [
