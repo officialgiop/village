@@ -28922,9 +28922,9 @@
       "expenseType": "Coupon lezioni",
       "paymentMethod": "Bancomat",
       "amount": 125,
-      "memberName": "Paolo",
-      "memberSurname": "Andrielli",
-      "memberTaxCode": "NDRPLA63T18H501S",
+      "memberName": "Rodolfo",
+      "memberSurname": "Arcudi",
+      "memberTaxCode": "RCDRLF68E28H124P",
       "hasIssue": false,
       "issue": ""
     },
@@ -29109,6 +29109,15 @@
       "memberTaxCode": "LFNMRT70R42H501S",
       "hasIssue": false,
       "issue": ""
+    },
+    {
+      "id": "8f2a6ad9-e1fc-4bdc-9ff2-5b12fef2b491",
+      "receiptId": "1796",
+      "date": "2026-08-20",
+      "memberId": "d71af008-2f55-4949-8bec-05f4077f8b28",
+      "expenseType": "Lezione Privata",
+      "paymentMethod": "Bancomat",
+      "amount": 30
     }
   ],
   "settings": {
