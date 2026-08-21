@@ -29117,7 +29117,21 @@
       "memberId": "d71af008-2f55-4949-8bec-05f4077f8b28",
       "expenseType": "Lezione Privata",
       "paymentMethod": "Bancomat",
-      "amount": 30
+      "amount": 30,
+      "memberName": "Emilio",
+      "memberSurname": "La Pera",
+      "memberTaxCode": "LPRMLE87E08H501R",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "63b374b5-06c2-4411-bdc4-d026362acdb7",
+      "receiptId": "1797",
+      "date": "2026-08-20",
+      "memberId": "1d661a00-a812-455c-b1fa-8776cbda1102",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Bancomat",
+      "amount": 10
     }
   ],
   "settings": {
