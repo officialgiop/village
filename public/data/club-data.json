@@ -2777,6 +2777,12 @@
       "name": "Federico",
       "surname": "Santucci",
       "taxCode": "SNTFRC03S21H501O"
+    },
+    {
+      "id": "72a2405f-bc7f-4329-a701-4cdbd78e512b",
+      "name": "Francesco",
+      "surname": "Nicolai",
+      "taxCode": "NCLFNC75E31H769I"
     }
   ],
   "transactions": [
