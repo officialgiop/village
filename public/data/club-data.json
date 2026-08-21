@@ -2765,6 +2765,12 @@
       "name": "Jacopo",
       "surname": "Gialli",
       "taxCode": "GLLJPT01P07H501C"
+    },
+    {
+      "id": "6911e013-b488-49d4-b25f-528bac6b75b2",
+      "name": "Flavio",
+      "surname": "Amici",
+      "taxCode": "MCAFLV02D28H501Y"
     }
   ],
   "transactions": [
