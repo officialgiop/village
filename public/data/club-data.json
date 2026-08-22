@@ -29313,7 +29313,21 @@
       "memberId": "734403d5-2be8-4b5d-86c4-bcf46996ec44",
       "expenseType": "Quota Campo Intero",
       "paymentMethod": "Bancomat",
-      "amount": 40
+      "amount": 40,
+      "memberName": "Andrea",
+      "memberSurname": "Vizzaccaro",
+      "memberTaxCode": "VZZNDR73R18H501L",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "739f2fbd-2cbc-4858-889c-1190e1586501",
+      "receiptId": "1808",
+      "date": "2026-08-21",
+      "memberId": "734403d5-2be8-4b5d-86c4-bcf46996ec44",
+      "expenseType": "Contributo Kit allenamento",
+      "paymentMethod": "Bancomat",
+      "amount": 10
     }
   ],
   "settings": {
