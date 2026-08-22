@@ -29411,7 +29411,21 @@
       "memberId": "6911e013-b488-49d4-b25f-528bac6b75b2",
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
-      "amount": 13
+      "amount": 13,
+      "memberName": "Flavio",
+      "memberSurname": "Amici",
+      "memberTaxCode": "MCAFLV02D28H501Y",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "c6802c60-cdfc-4717-a3f6-d61a035f7f6a",
+      "receiptId": "1815",
+      "date": "2026-08-21",
+      "memberId": "b617c3cf-d004-4548-80c5-705ec82b586f",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Bancomat",
+      "amount": 10
     }
   ],
   "settings": {
