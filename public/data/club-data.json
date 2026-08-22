@@ -2783,6 +2783,12 @@
       "name": "Francesco",
       "surname": "Nicolai",
       "taxCode": "NCLFNC75E31H769I"
+    },
+    {
+      "id": "a775814a-6603-43e9-9719-bdbee6851a66",
+      "name": "Dario",
+      "surname": "Carrus",
+      "taxCode": "CRRDRA74C12H501P"
     }
   ],
   "transactions": [
