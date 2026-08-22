@@ -2789,6 +2789,12 @@
       "name": "Dario",
       "surname": "Carrus",
       "taxCode": "CRRDRA74C12H501P"
+    },
+    {
+      "id": "26dfe07a-dd3a-460c-9fb5-af27844d1c7b",
+      "name": "Matteo",
+      "surname": "Marvaso",
+      "taxCode": "MRVMTT77H09H501G"
     }
   ],
   "transactions": [
