@@ -29277,6 +29277,15 @@
       "memberTaxCode": "MGNSFN65B16H501O",
       "hasIssue": false,
       "issue": ""
+    },
+    {
+      "id": "4362f315-4c56-4673-b80b-237a15a562f7",
+      "receiptId": "1805",
+      "date": "2026-08-21",
+      "memberId": "ef1ea025-c2bf-4ee1-abe7-42e0cbda6bd2",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Bancomat",
+      "amount": 14
     }
   ],
   "settings": {
