@@ -29355,7 +29355,21 @@
       "memberId": "f4491895-182a-4df3-863d-29e35edf3a94",
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
-      "amount": 10
+      "amount": 10,
+      "memberName": "Giacomo",
+      "memberSurname": "Guarnieri",
+      "memberTaxCode": "GRNGCM04H29H501K",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "1d781573-50b8-4f2b-8f46-63dbd13a2c6c",
+      "receiptId": "1811",
+      "date": "2026-08-21",
+      "memberId": "9687837b-a88b-4577-87b1-4b8be2ce4de0",
+      "expenseType": "Quota Campo Tripla",
+      "paymentMethod": "Bancomat",
+      "amount": 35
     }
   ],
   "settings": {
