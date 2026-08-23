@@ -29593,7 +29593,21 @@
       "memberId": "a775814a-6603-43e9-9719-bdbee6851a66",
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
-      "amount": 10
+      "amount": 10,
+      "memberName": "Dario",
+      "memberSurname": "Carrus",
+      "memberTaxCode": "CRRDRA74C12H501P",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "59f04dd9-9e7a-41dd-8f60-e5b77ab8755c",
+      "receiptId": "1828",
+      "date": "2026-08-22",
+      "memberId": "1e53c557-4520-4db5-94e7-d45e63673c45",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Bancomat",
+      "amount": 14
     }
   ],
   "settings": {
