@@ -2795,6 +2795,12 @@
       "name": "Matteo",
       "surname": "Marvaso",
       "taxCode": "MRVMTT77H09H501G"
+    },
+    {
+      "id": "3e8c6f61-94fd-4bcc-88a0-dcbada5546a8",
+      "name": "Chiara",
+      "surname": "Nastasi",
+      "taxCode": "NSTCHR84T55H501H"
     }
   ],
   "transactions": [
@@ -29663,7 +29669,12 @@
       "memberId": "0a20ae74-fdc1-4f6d-ac04-57a2f39a64a0",
       "expenseType": "Quota Campo",
       "paymentMethod": "Contanti",
-      "amount": 10
+      "amount": 10,
+      "memberName": "Claudio Matteo",
+      "memberSurname": "Basili",
+      "memberTaxCode": "BSLCDM60T14E038F",
+      "hasIssue": false,
+      "issue": ""
     }
   ],
   "settings": {
