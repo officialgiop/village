@@ -29649,7 +29649,21 @@
       "memberId": "fa145c73-0cb0-4f6d-8925-750fb1f6798a",
       "expenseType": "Quota Campo Intero",
       "paymentMethod": "Bancomat",
-      "amount": 40
+      "amount": 40,
+      "memberName": "Sonia",
+      "memberSurname": "Maffezzoli",
+      "memberTaxCode": "MFFSNO73R69H501H",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "6dc1ce84-6fb3-479f-96bd-3499a7548137",
+      "receiptId": "1832",
+      "date": "2026-08-22",
+      "memberId": "0a20ae74-fdc1-4f6d-ac04-57a2f39a64a0",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Contanti",
+      "amount": 10
     }
   ],
   "settings": {
