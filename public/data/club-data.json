@@ -29579,6 +29579,20 @@
       "memberId": "b6af7c20-af68-4491-a12e-6103283e6a5e",
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
+      "amount": 10,
+      "memberName": "Cosimo",
+      "memberSurname": "Costantini",
+      "memberTaxCode": "CSTCSM75B25F152L",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "4b1f3463-85d6-41b9-b5ac-f83f2e3fa743",
+      "receiptId": "1827",
+      "date": "2026-08-22",
+      "memberId": "a775814a-6603-43e9-9719-bdbee6851a66",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Bancomat",
       "amount": 10
     }
   ],
