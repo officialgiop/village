@@ -29795,7 +29795,21 @@
       "memberId": "3e8c6f61-94fd-4bcc-88a0-dcbada5546a8",
       "expenseType": "Quota Campo Doppia",
       "paymentMethod": "Bancomat",
-      "amount": 24.5
+      "amount": 24.5,
+      "memberName": "Chiara",
+      "memberSurname": "Nastasi",
+      "memberTaxCode": "NSTCHR84T55H501H",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "fbc8870e-d73a-4140-b6e5-dc16f24bdfcd",
+      "receiptId": "1842",
+      "date": "2026-08-23",
+      "memberId": "ffc5b5f8-5b1d-4c93-8a6d-92b88effebb3",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Contanti",
+      "amount": 10
     }
   ],
   "settings": {
