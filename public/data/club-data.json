@@ -29809,6 +29809,20 @@
       "memberId": "ffc5b5f8-5b1d-4c93-8a6d-92b88effebb3",
       "expenseType": "Quota Campo",
       "paymentMethod": "Contanti",
+      "amount": 10,
+      "memberName": "Stefano",
+      "memberSurname": "Mignucci",
+      "memberTaxCode": "MGNSFN65B16H501O",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "0ade6e26-d82b-4a0e-85b3-d9b8fd0d1f7c",
+      "receiptId": "1843",
+      "date": "2026-08-23",
+      "memberId": "f841e60c-0ffe-4175-8939-361fce411989",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Contanti",
       "amount": 10
     }
   ],
