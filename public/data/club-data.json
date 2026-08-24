@@ -29675,6 +29675,15 @@
       "memberTaxCode": "BSLCDM60T14E038F",
       "hasIssue": false,
       "issue": ""
+    },
+    {
+      "id": "6713f4a1-f100-490d-a12e-160434e9a960",
+      "receiptId": "1833",
+      "date": "2026-08-23",
+      "memberId": "164dd512-142e-4876-a88e-e6181a1fa88d",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Bancomat",
+      "amount": 10
     }
   ],
   "settings": {
