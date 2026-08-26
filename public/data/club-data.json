@@ -29861,6 +29861,15 @@
       "memberTaxCode": "LLLFNC74H64H501P",
       "hasIssue": false,
       "issue": ""
+    },
+    {
+      "id": "acbe416d-0f99-4ba2-a2ec-416839041bad",
+      "receiptId": "1845",
+      "date": "2026-08-24",
+      "memberId": "0efb2b1a-109a-4412-bbbb-2742a660815a",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Bancomat",
+      "amount": 10
     }
   ],
   "settings": {
