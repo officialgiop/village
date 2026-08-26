@@ -2807,6 +2807,12 @@
       "name": "Jahanna",
       "surname": "Weirauch",
       "taxCode": "STRANIER"
+    },
+    {
+      "id": "669eef61-469c-4057-a975-15101fefb1e1",
+      "name": "Andrea",
+      "surname": "Napolitano",
+      "taxCode": "NPLNDR80R31H501W"
     }
   ],
   "transactions": [
