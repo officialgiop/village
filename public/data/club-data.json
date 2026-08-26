@@ -29925,7 +29925,21 @@
       "memberId": "6e5dc61b-c772-45e5-8f4b-3d34010e1031",
       "expenseType": "Coupon lezioni",
       "paymentMethod": "Bancomat",
-      "amount": 125
+      "amount": 125,
+      "memberName": "Johanna",
+      "memberSurname": "Weirauch",
+      "memberTaxCode": "STRANIER",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "62278d68-b757-42c7-9f23-b8b01afa2e0e",
+      "receiptId": "1850",
+      "date": "2026-08-24",
+      "memberId": "4f9d6f92-c1b5-4772-82fd-02146807d430",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Contanti",
+      "amount": 10
     }
   ],
   "settings": {
