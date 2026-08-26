@@ -30023,7 +30023,21 @@
       "memberId": "8eadeaf6-b1d1-4d25-b74a-11b2e115399b",
       "expenseType": "Quota Campo Doppia",
       "paymentMethod": "Bancomat",
-      "amount": 22
+      "amount": 22,
+      "memberName": "Simone",
+      "memberSurname": "Folgori",
+      "memberTaxCode": "FLGSMN71S24H501T",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "84336d3f-8031-4bac-bd62-1682c06c35c2",
+      "receiptId": "1857",
+      "date": "2026-08-25",
+      "memberId": "669eef61-469c-4057-a975-15101fefb1e1",
+      "expenseType": "Contributo Kit allenamento",
+      "paymentMethod": "Bancomat",
+      "amount": 2.5
     }
   ],
   "settings": {
