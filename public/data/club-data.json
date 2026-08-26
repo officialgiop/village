@@ -29917,6 +29917,15 @@
       "memberTaxCode": "RSIPLA69M27H501J",
       "hasIssue": false,
       "issue": ""
+    },
+    {
+      "id": "ccc453f1-968c-4864-8a01-2c27b0ea153a",
+      "receiptId": "1849",
+      "date": "2026-08-24",
+      "memberId": "6e5dc61b-c772-45e5-8f4b-3d34010e1031",
+      "expenseType": "Coupon lezioni",
+      "paymentMethod": "Bancomat",
+      "amount": 125
     }
   ],
   "settings": {
