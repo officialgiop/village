@@ -2813,6 +2813,12 @@
       "name": "Andrea",
       "surname": "Napolitano",
       "taxCode": "NPLNDR80R31H501W"
+    },
+    {
+      "id": "cd7e4904-fd51-4a71-bf0b-6a821af6b119",
+      "name": "Bruno",
+      "surname": "D'Onofrio",
+      "taxCode": "DNFBRN07B01H501F"
     }
   ],
   "transactions": [
