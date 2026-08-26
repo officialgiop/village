@@ -29939,6 +29939,20 @@
       "memberId": "4f9d6f92-c1b5-4772-82fd-02146807d430",
       "expenseType": "Quota Campo",
       "paymentMethod": "Contanti",
+      "amount": 10,
+      "memberName": "Alessia",
+      "memberSurname": "Asuni",
+      "memberTaxCode": "SNALSS72T48B354P",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "f99cbce3-3e48-46e1-8f54-cbabf058d20c",
+      "receiptId": "1851",
+      "date": "2026-08-24",
+      "memberId": "443f7a8b-402e-4a13-ae7a-e46e4ae5f9da",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Contanti",
       "amount": 10
     }
   ],
