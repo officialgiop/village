@@ -29981,7 +29981,21 @@
       "memberId": "3246340e-7657-4f02-b7ff-36279a5aaf7e",
       "expenseType": "Lezione Privata",
       "paymentMethod": "Bancomat",
-      "amount": 25
+      "amount": 25,
+      "memberName": "Massimo",
+      "memberSurname": "Proverbio",
+      "memberTaxCode": "PRVMSM65M25L219A",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "bf5f4719-aa5e-475c-bcc1-5039b5e2d385",
+      "receiptId": "1854",
+      "date": "2026-08-25",
+      "memberId": "20bc7153-27f8-49df-a040-537c80859216",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Bancomat",
+      "amount": 10
     }
   ],
   "settings": {
