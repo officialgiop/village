@@ -2825,6 +2825,12 @@
       "name": "Giuseppe",
       "surname": "Immella",
       "taxCode": "MMLGPP62H11G912W"
+    },
+    {
+      "id": "d744fda3-e274-403a-b95d-4fe24bb9fdde",
+      "name": "Marco",
+      "surname": "Gabriele",
+      "taxCode": "GBRMRC63D23M150W"
     }
   ],
   "transactions": [
