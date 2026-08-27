@@ -2819,6 +2819,12 @@
       "name": "Bruno",
       "surname": "D'Onofrio",
       "taxCode": "DNFBRN07B01H501F"
+    },
+    {
+      "id": "bd0b6fda-775d-4e37-9f08-4f2c75adf03d",
+      "name": "Giuseppe",
+      "surname": "Immella",
+      "taxCode": "MMLGPP62H11G912W"
     }
   ],
   "transactions": [
@@ -30219,7 +30225,12 @@
       "memberId": "ac0540f1-7836-4a99-b194-3076ac7e6a7d",
       "expenseType": "Quota Campo",
       "paymentMethod": "Contanti",
-      "amount": 10
+      "amount": 10,
+      "memberName": "Ivan",
+      "memberSurname": "Pasinato",
+      "memberTaxCode": "PVNVNI78L18H501G",
+      "hasIssue": false,
+      "issue": ""
     }
   ],
   "settings": {
