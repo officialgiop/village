@@ -2831,6 +2831,12 @@
       "name": "Marco",
       "surname": "Gabriele",
       "taxCode": "GBRMRC63D23M150W"
+    },
+    {
+      "id": "3d14fae7-d4f8-40dd-8a5d-2d33320b3b8d",
+      "name": "Alessandro",
+      "surname": "La Ginestra",
+      "taxCode": "LGNLSN98E27H501N"
     }
   ],
   "transactions": [
