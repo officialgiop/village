@@ -30277,7 +30277,21 @@
       "memberId": "d744fda3-e274-403a-b95d-4fe24bb9fdde",
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
-      "amount": 10
+      "amount": 10,
+      "memberName": "Marco",
+      "memberSurname": "Gabriele",
+      "memberTaxCode": "GBRMRC63D23M150W",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "3f620396-2e53-425b-99d2-9b58c886b90e",
+      "receiptId": "1873",
+      "date": "2026-08-27",
+      "memberId": "b92499b9-2247-473e-9d7e-6c8ed621f7be",
+      "expenseType": "Lezione Privata",
+      "paymentMethod": "Bancomat",
+      "amount": 25
     }
   ],
   "settings": {
