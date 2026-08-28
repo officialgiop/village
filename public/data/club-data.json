@@ -30255,6 +30255,15 @@
       "memberTaxCode": "PVNVNI78L18H501G",
       "hasIssue": false,
       "issue": ""
+    },
+    {
+      "id": "40d7f47d-6efb-4baa-8f07-6792f225aa74",
+      "receiptId": "1871",
+      "date": "2026-08-27",
+      "memberId": "bd0b6fda-775d-4e37-9f08-4f2c75adf03d",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Bancomat",
+      "amount": 10
     }
   ],
   "settings": {
