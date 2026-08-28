@@ -30389,7 +30389,21 @@
       "memberId": "040d4ef7-73a6-4c7c-b667-ffbf7105f69c",
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
-      "amount": 11
+      "amount": 11,
+      "memberName": "Gian Luigi",
+      "memberSurname": "Lopez",
+      "memberTaxCode": "LPZGLG71R11H501B",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "f2cf9d14-e835-47fa-96c9-d04adb6fd279",
+      "receiptId": "1881",
+      "date": "2026-08-27",
+      "memberId": "ac71b741-2ff6-44fe-8896-a93892303c81",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Bancomat",
+      "amount": 12
     }
   ],
   "settings": {
