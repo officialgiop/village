@@ -30473,7 +30473,21 @@
       "memberId": "84c1e016-9651-4851-a9fa-e5fccf3be96b",
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
-      "amount": 10
+      "amount": 10,
+      "memberName": "Paolo",
+      "memberSurname": "Risa",
+      "memberTaxCode": "RSIPLA69M27H501J",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "a878d66c-ce40-43fd-a22d-63337d3e1743",
+      "receiptId": "1887",
+      "date": "2026-08-28",
+      "memberId": "45d30b9f-2f89-4247-ad9e-917e71b86132",
+      "expenseType": "Lezione Doppia",
+      "paymentMethod": "Bancomat",
+      "amount": 50
     }
   ],
   "settings": {
