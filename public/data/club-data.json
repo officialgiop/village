@@ -30549,6 +30549,15 @@
       "memberTaxCode": "MLPDRD94L16H501H",
       "hasIssue": false,
       "issue": ""
+    },
+    {
+      "id": "38e8e0ff-0888-4f7b-939d-f2858c97dbe3",
+      "receiptId": "1892",
+      "date": "2026-08-28",
+      "memberId": "16fa8ef6-c54b-4344-892d-d02c689d5daa",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Contanti",
+      "amount": 10
     }
   ],
   "settings": {
