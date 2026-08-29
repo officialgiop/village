@@ -30487,7 +30487,21 @@
       "memberId": "45d30b9f-2f89-4247-ad9e-917e71b86132",
       "expenseType": "Lezione Doppia",
       "paymentMethod": "Bancomat",
-      "amount": 50
+      "amount": 50,
+      "memberName": "Antonello",
+      "memberSurname": "Filoso",
+      "memberTaxCode": "FLSNNL60L17H501H",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "780bd0bf-60ed-4e55-8a87-7367b786cfd0",
+      "receiptId": "1888",
+      "date": "2026-08-28",
+      "memberId": "ede021fc-9c9f-461d-88e7-018097982aef",
+      "expenseType": "Quota campo lezione partita",
+      "paymentMethod": "Bancomat",
+      "amount": 20
     }
   ],
   "settings": {
