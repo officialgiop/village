@@ -30557,6 +30557,20 @@
       "memberId": "16fa8ef6-c54b-4344-892d-d02c689d5daa",
       "expenseType": "Quota Campo",
       "paymentMethod": "Contanti",
+      "amount": 10,
+      "memberName": "Federica",
+      "memberSurname": "Bartocci",
+      "memberTaxCode": "BRTFRC77T43H501L",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "8d16194b-6a70-4b9b-abde-28b3b51201f6",
+      "receiptId": "1893",
+      "date": "2026-08-28",
+      "memberId": "a9d1ebab-8c3a-4653-b5b3-a0090b253d8d",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Contanti",
       "amount": 10
     }
   ],
