@@ -30501,7 +30501,21 @@
       "memberId": "ede021fc-9c9f-461d-88e7-018097982aef",
       "expenseType": "Quota campo lezione partita",
       "paymentMethod": "Bancomat",
-      "amount": 20
+      "amount": 20,
+      "memberName": "Alessia",
+      "memberSurname": "Cicerchia",
+      "memberTaxCode": "CCRLSS91R62H501N",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "405660cf-da06-48ba-ba36-c98ee6caa0a5",
+      "receiptId": "1889",
+      "date": "2026-08-28",
+      "memberId": "86792c05-fb55-4393-a172-9636cb69bfb3",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Bancomat",
+      "amount": 10
     }
   ],
   "settings": {
