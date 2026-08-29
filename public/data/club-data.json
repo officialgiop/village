@@ -30431,7 +30431,21 @@
       "memberId": "4fbc21f5-c996-4a8e-8689-673c88fcf4da",
       "expenseType": "Quota Campo",
       "paymentMethod": "Contanti",
-      "amount": 10
+      "amount": 10,
+      "memberName": "Giampiero",
+      "memberSurname": "Palmieri",
+      "memberTaxCode": "PLMGPR67L09A706H",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "d2a4e433-6e79-45fa-ba3a-9585bbf7975a",
+      "receiptId": "1884",
+      "date": "2026-08-28",
+      "memberId": "ed22e446-7521-4f19-9f88-f7bb69e74a7c",
+      "expenseType": "Lezione Privata",
+      "paymentMethod": "Bancomat",
+      "amount": 25
     }
   ],
   "settings": {
