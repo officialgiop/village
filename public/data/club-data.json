@@ -2861,6 +2861,12 @@
       "name": "Matteo",
       "surname": "De Risi",
       "taxCode": "DRSMTT03P25H501T"
+    },
+    {
+      "id": "a3105576-1d1a-4624-8c51-747b5b007be8",
+      "name": "Matteo",
+      "surname": "Colantoni",
+      "taxCode": "CLNMTT04E05H501A"
     }
   ],
   "transactions": [
