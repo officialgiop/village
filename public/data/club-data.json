@@ -30499,7 +30499,7 @@
       "receiptId": "1888",
       "date": "2026-08-28",
       "memberId": "ede021fc-9c9f-461d-88e7-018097982aef",
-      "expenseType": "Quota campo lezione partita",
+      "expenseType": "Quota Campo Doppia",
       "paymentMethod": "Bancomat",
       "amount": 20,
       "memberName": "Alessia",
@@ -30543,7 +30543,12 @@
       "memberId": "ae0114cc-1d15-48ea-a0c5-2670433e800f",
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
-      "amount": 13
+      "amount": 13,
+      "memberName": "Edoardo",
+      "memberSurname": "Malapena",
+      "memberTaxCode": "MLPDRD94L16H501H",
+      "hasIssue": false,
+      "issue": ""
     }
   ],
   "settings": {
