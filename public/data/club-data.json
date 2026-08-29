@@ -30445,7 +30445,21 @@
       "memberId": "ed22e446-7521-4f19-9f88-f7bb69e74a7c",
       "expenseType": "Lezione Privata",
       "paymentMethod": "Bancomat",
-      "amount": 25
+      "amount": 25,
+      "memberName": "Carlo",
+      "memberSurname": "Bozzi",
+      "memberTaxCode": "BZZCRL69B04H501S",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "97e30ad7-4464-431e-9c05-54d383a37ccc",
+      "receiptId": "1885",
+      "date": "2026-08-28",
+      "memberId": "60b49827-8d1f-48cc-add9-df344c3a0ba5",
+      "expenseType": "Quota Campo Intero",
+      "paymentMethod": "Bancomat",
+      "amount": 40
     }
   ],
   "settings": {
