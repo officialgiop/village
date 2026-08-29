@@ -2855,6 +2855,12 @@
       "name": "Niccolò",
       "surname": "Cotrone",
       "taxCode": "CTRNCL99B08H501A"
+    },
+    {
+      "id": "44af8d83-8b72-41af-b4f8-30a577fbbc91",
+      "name": "Matteo",
+      "surname": "De Risi",
+      "taxCode": "DRSMTT03P25H501T"
     }
   ],
   "transactions": [
