@@ -2849,6 +2849,12 @@
       "name": "Alessia",
       "surname": "Cicerchia",
       "taxCode": "CCRLSS91R62H501N"
+    },
+    {
+      "id": "ed223de2-4ffb-4205-9843-0aab33503f99",
+      "name": "Niccolò",
+      "surname": "Cotrone",
+      "taxCode": "CTRNCL99B08H501A"
     }
   ],
   "transactions": [
@@ -30571,7 +30577,12 @@
       "memberId": "a9d1ebab-8c3a-4653-b5b3-a0090b253d8d",
       "expenseType": "Quota Campo",
       "paymentMethod": "Contanti",
-      "amount": 10
+      "amount": 10,
+      "memberName": "Claudia",
+      "memberSurname": "Fabris",
+      "memberTaxCode": "FBRCLD75S52F205U",
+      "hasIssue": false,
+      "issue": ""
     }
   ],
   "settings": {
