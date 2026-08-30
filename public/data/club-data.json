@@ -30686,9 +30686,9 @@
       "expenseType": "Quota Campo Intero",
       "paymentMethod": "Bancomat",
       "amount": 55,
-      "memberName": "Rodolfo",
-      "memberSurname": "Arcudi",
-      "memberTaxCode": "RCDRLF68E28H124P",
+      "memberName": "Teo",
+      "memberSurname": "Mammucari",
+      "memberTaxCode": "MMMTEO64M12H501X",
       "hasIssue": false,
       "issue": ""
     },
@@ -30761,6 +30761,15 @@
       "memberTaxCode": "MMSNCL04B15H501G",
       "hasIssue": false,
       "issue": ""
+    },
+    {
+      "id": "accb097c-de1b-4138-a16e-a36019958841",
+      "receiptId": "1905",
+      "date": "2026-08-29",
+      "memberId": "3c93fe56-c36c-46ec-bb5d-d991f33d3c8e",
+      "expenseType": "Quota Campo Doppia",
+      "paymentMethod": "Contanti",
+      "amount": 20
     }
   ],
   "settings": {
