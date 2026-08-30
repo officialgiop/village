@@ -30679,7 +30679,21 @@
       "memberId": "cf69fa1f-41f9-4905-8cd0-d78d814d8114",
       "expenseType": "Quota Campo Intero",
       "paymentMethod": "Bancomat",
-      "amount": 55
+      "amount": 55,
+      "memberName": "Rodolfo",
+      "memberSurname": "Arcudi",
+      "memberTaxCode": "RCDRLF68E28H124P",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "95f90265-d9a4-4128-81c3-204048eecc4f",
+      "receiptId": "1900",
+      "date": "2026-08-29",
+      "memberId": "ed223de2-4ffb-4205-9843-0aab33503f99",
+      "expenseType": "Lezione Privata",
+      "paymentMethod": "Bancomat",
+      "amount": 24.5
     }
   ],
   "settings": {
