@@ -2873,6 +2873,12 @@
       "name": "Nicolò",
       "surname": "Momesso",
       "taxCode": "MMSNCL04B15H501G"
+    },
+    {
+      "id": "2a7cb83f-ec27-46ce-a258-cd491d90999a",
+      "name": "Teo",
+      "surname": "Mammucari",
+      "taxCode": "MMMTEO64M12H501X"
     }
   ],
   "transactions": [
@@ -30749,7 +30755,12 @@
       "memberId": "ab0a2c7b-7b5c-4657-9085-1d306515e967",
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
-      "amount": 11
+      "amount": 11,
+      "memberName": "Nicolò",
+      "memberSurname": "Momesso",
+      "memberTaxCode": "MMSNCL04B15H501G",
+      "hasIssue": false,
+      "issue": ""
     }
   ],
   "settings": {
