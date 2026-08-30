@@ -30665,7 +30665,21 @@
       "memberId": "8cd41ed3-f0de-4d21-8382-091f3b3425d6",
       "expenseType": "Corso Mensile",
       "paymentMethod": "Bancomat",
-      "amount": 100
+      "amount": 100,
+      "memberName": "Alessio",
+      "memberSurname": "Olivieri",
+      "memberTaxCode": "LVRLSS75P06H501E",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "56b6efc3-b3fa-41eb-bd7a-6174e3b92173",
+      "receiptId": "1899",
+      "date": "2026-08-29",
+      "memberId": "cf69fa1f-41f9-4905-8cd0-d78d814d8114",
+      "expenseType": "Quota Campo Intero",
+      "paymentMethod": "Bancomat",
+      "amount": 55
     }
   ],
   "settings": {
