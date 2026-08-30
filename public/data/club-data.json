@@ -30601,6 +30601,15 @@
       "memberTaxCode": "FBRCLD75S52F205U",
       "hasIssue": false,
       "issue": ""
+    },
+    {
+      "id": "3f471fdd-b24a-42e7-9511-f190dfc74eee",
+      "receiptId": "1894",
+      "date": "2026-08-29",
+      "memberId": "20e27282-589c-4b38-b274-76d2a91d5f76",
+      "expenseType": "Lezione Privata",
+      "paymentMethod": "Bancomat",
+      "amount": 25
     }
   ],
   "settings": {
