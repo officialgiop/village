@@ -30907,7 +30907,12 @@
       "memberId": "221dd79c-5e15-4461-bb72-162ae714325d",
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
-      "amount": 12
+      "amount": 12,
+      "memberName": "Valerio",
+      "memberSurname": "Marcangeli",
+      "memberTaxCode": "MRCVLR95T18H501G",
+      "hasIssue": false,
+      "issue": ""
     }
   ],
   "settings": {
@@ -30954,6 +30959,10 @@
       },
       {
         "name": "Quota campo + quota associativa",
+        "defaultAmount": null
+      },
+      {
+        "name": "Quota campo + contributo kit",
         "defaultAmount": null
       },
       {
