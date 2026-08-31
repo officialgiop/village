@@ -30843,6 +30843,15 @@
       "memberTaxCode": "QJNVLR66H18H501Z",
       "hasIssue": false,
       "issue": ""
+    },
+    {
+      "id": "aca83643-3346-43ef-9754-1721f69bcbdf",
+      "receiptId": "1910",
+      "date": "2026-08-30",
+      "memberId": "55ad3402-cfd4-46f6-8ed9-6c7622859bb6",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Bancomat",
+      "amount": 13
     }
   ],
   "settings": {
