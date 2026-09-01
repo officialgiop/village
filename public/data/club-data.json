@@ -2891,6 +2891,12 @@
       "name": "Daniele",
       "surname": "Cellitti",
       "taxCode": "CLLDNL03T18H501I"
+    },
+    {
+      "id": "c71865c4-8574-401f-b94a-902bf881a5c1",
+      "name": "Marco",
+      "surname": "Mottolese",
+      "taxCode": "MTTTDR62E30H501O"
     }
   ],
   "transactions": [
@@ -30991,7 +30997,12 @@
       "memberId": "1e0033eb-1a26-4fb5-9d02-a5b47cead7dd",
       "expenseType": "Quota Campo",
       "paymentMethod": "Contanti",
-      "amount": 10
+      "amount": 10,
+      "memberName": "Chiara",
+      "memberSurname": "Cesarini",
+      "memberTaxCode": "CSRCHR99D69H501V",
+      "hasIssue": false,
+      "issue": ""
     }
   ],
   "settings": {
