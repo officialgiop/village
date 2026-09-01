@@ -30977,6 +30977,20 @@
       "memberId": "09ae4695-c0cb-484c-9f9e-8d4fd7208be7",
       "expenseType": "Quota Campo",
       "paymentMethod": "Contanti",
+      "amount": 10,
+      "memberName": "Irene",
+      "memberSurname": "serraino fiory",
+      "memberTaxCode": "SRRRNI88H49H501P",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "b42b317f-c69f-4198-8a50-97f1cdbd13bd",
+      "receiptId": "1920",
+      "date": "2026-08-31",
+      "memberId": "1e0033eb-1a26-4fb5-9d02-a5b47cead7dd",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Contanti",
       "amount": 10
     }
   ],
