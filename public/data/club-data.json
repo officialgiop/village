@@ -31053,7 +31053,21 @@
       "memberId": "f841e60c-0ffe-4175-8939-361fce411989",
       "expenseType": "Quota Campo",
       "paymentMethod": "Contanti",
-      "amount": 10
+      "amount": 10,
+      "memberName": "Rinaldo",
+      "memberSurname": "Soldatelli",
+      "memberTaxCode": "SLDRLD69R23H501L",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "da4390b1-3e6f-430d-92ce-6e1d5090f32a",
+      "receiptId": "1925",
+      "date": "2026-09-02",
+      "memberId": "5cbf6b52-979f-4a5e-a740-6af635049f8e",
+      "expenseType": "Quota campo + contributo kit",
+      "paymentMethod": "Bancomat",
+      "amount": 17
     }
   ],
   "settings": {
