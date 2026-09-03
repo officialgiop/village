@@ -31067,7 +31067,21 @@
       "memberId": "5cbf6b52-979f-4a5e-a740-6af635049f8e",
       "expenseType": "Quota campo + contributo kit",
       "paymentMethod": "Bancomat",
-      "amount": 17
+      "amount": 17,
+      "memberName": "Davide",
+      "memberSurname": "Feltoni Gurini",
+      "memberTaxCode": "FLTDVD84T20H501K",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "d20e1be7-fc79-4b0b-a831-bb46f6e69646",
+      "receiptId": "1926",
+      "date": "2026-09-02",
+      "memberId": "1620910e-87bc-4c6b-9e8c-f07527b5c3ab",
+      "expenseType": "Lezione Privata",
+      "paymentMethod": "Bancomat",
+      "amount": 25
     }
   ],
   "settings": {
