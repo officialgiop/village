@@ -31003,6 +31003,15 @@
       "memberTaxCode": "CSRCHR99D69H501V",
       "hasIssue": false,
       "issue": ""
+    },
+    {
+      "id": "30d53f94-e422-4b11-975c-a7e2e0cd09d0",
+      "receiptId": "1921",
+      "date": "2026-09-01",
+      "memberId": "ea32028e-6e16-4d1d-90d8-440faaf802ec",
+      "expenseType": "Quota Campo Doppia",
+      "paymentMethod": "Bancomat",
+      "amount": 22
     }
   ],
   "settings": {
