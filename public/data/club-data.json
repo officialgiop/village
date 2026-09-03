@@ -31101,6 +31101,15 @@
       "memberTaxCode": "LPTMSM66H26H501O",
       "hasIssue": false,
       "issue": ""
+    },
+    {
+      "id": "6e8c4d62-6f9e-4de1-aae0-fc1024e26a4a",
+      "receiptId": "1928",
+      "date": "2026-09-02",
+      "memberId": "00fb9f30-be13-44de-8689-640b8f00a557",
+      "expenseType": "Coupon quota campo",
+      "paymentMethod": "Bancomat",
+      "amount": 50
     }
   ],
   "settings": {
