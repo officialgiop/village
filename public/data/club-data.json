@@ -31081,7 +31081,21 @@
       "memberId": "1620910e-87bc-4c6b-9e8c-f07527b5c3ab",
       "expenseType": "Lezione Privata",
       "paymentMethod": "Bancomat",
-      "amount": 25
+      "amount": 25,
+      "memberName": "Claudio",
+      "memberSurname": "Candio",
+      "memberTaxCode": "CNDCLD68H14H501A",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "684d6e2c-e7d5-4eda-a4a1-af1d01b5afe5",
+      "receiptId": "1927",
+      "date": "2026-09-02",
+      "memberId": "f93c78f4-aade-4982-aa1e-e46804c6fb9f",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Bancomat",
+      "amount": 10
     }
   ],
   "settings": {
