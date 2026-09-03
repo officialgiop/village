@@ -31109,7 +31109,21 @@
       "memberId": "00fb9f30-be13-44de-8689-640b8f00a557",
       "expenseType": "Coupon quota campo",
       "paymentMethod": "Bancomat",
-      "amount": 50
+      "amount": 50,
+      "memberName": "Alfonso",
+      "memberSurname": "Pietropaolo",
+      "memberTaxCode": "PTRLNS83T09L219S",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "938fea6c-95a1-4d47-b97b-4a00284cfb00",
+      "receiptId": "1929",
+      "date": "2026-09-02",
+      "memberId": "b5ed0348-d9f4-44fe-923c-1fd821b2a2a3",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Contanti",
+      "amount": 10
     }
   ],
   "settings": {
