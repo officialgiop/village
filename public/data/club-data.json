@@ -2897,6 +2897,12 @@
       "name": "Marco",
       "surname": "Mottolese",
       "taxCode": "MTTTDR62E30H501O"
+    },
+    {
+      "id": "998dc294-3eba-4ed7-95af-fae2bf29e193",
+      "name": "Davide",
+      "surname": "Scaglione",
+      "taxCode": "SCGDVD00C31H501W"
     }
   ],
   "transactions": [
@@ -31123,7 +31129,12 @@
       "memberId": "b5ed0348-d9f4-44fe-923c-1fd821b2a2a3",
       "expenseType": "Quota Campo",
       "paymentMethod": "Contanti",
-      "amount": 10
+      "amount": 10,
+      "memberName": "Alex",
+      "memberSurname": "Fratarcangeli",
+      "memberTaxCode": "FRTLXA87C07D810W",
+      "hasIssue": false,
+      "issue": ""
     }
   ],
   "settings": {
