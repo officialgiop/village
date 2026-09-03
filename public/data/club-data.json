@@ -31025,7 +31025,21 @@
       "memberId": "c71865c4-8574-401f-b94a-902bf881a5c1",
       "expenseType": "Quota Campo Intero",
       "paymentMethod": "Bancomat",
-      "amount": 42
+      "amount": 42,
+      "memberName": "Marco",
+      "memberSurname": "Mottolese",
+      "memberTaxCode": "MTTTDR62E30H501O",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "1cbef655-97fe-453e-bbb5-afb8e8651a29",
+      "receiptId": "1923",
+      "date": "2026-09-01",
+      "memberId": "ffc5b5f8-5b1d-4c93-8a6d-92b88effebb3",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Contanti",
+      "amount": 10
     }
   ],
   "settings": {
