@@ -31253,6 +31253,20 @@
       "memberId": "497d563f-e883-49fa-a98a-b9ae6be338c1",
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
+      "amount": 10,
+      "memberName": "Miriana",
+      "memberSurname": "De Silvestris",
+      "memberTaxCode": "DLSMRN82A45E205T",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "02d6752e-2aa8-402e-b7a4-c6282fd905a8",
+      "receiptId": "1938",
+      "date": "2026-09-03",
+      "memberId": "1620910e-87bc-4c6b-9e8c-f07527b5c3ab",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Contanti",
       "amount": 10
     }
   ],
