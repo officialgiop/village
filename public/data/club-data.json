@@ -31337,7 +31337,21 @@
       "memberId": "9f186051-62e7-4b2d-98ff-3628077af252",
       "expenseType": "Corso Mensile",
       "paymentMethod": "Bancomat",
-      "amount": 100
+      "amount": 100,
+      "memberName": "Lita Gabriela",
+      "memberSurname": "Troncoso",
+      "memberTaxCode": "TRNLGB59P70Z611W",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "93df6247-d859-4ca0-8a74-05d90b564b34",
+      "receiptId": "1944",
+      "date": "2026-09-04",
+      "memberId": "c3814b12-5676-44d4-9501-ce0dc004490a",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Bancomat",
+      "amount": 10
     }
   ],
   "settings": {
