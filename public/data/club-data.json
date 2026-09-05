@@ -31155,7 +31155,12 @@
       "memberId": "3e34e519-ed09-45ad-8d79-e389df61cb74",
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
-      "amount": 10
+      "amount": 15,
+      "memberName": "Chiara",
+      "memberSurname": "Cardinali",
+      "memberTaxCode": "CRDCHR95E43D612F",
+      "hasIssue": false,
+      "issue": ""
     }
   ],
   "settings": {
