@@ -31239,6 +31239,20 @@
       "memberId": "357337bc-18c3-446c-9c3a-b2c7c9a10d2c",
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
+      "amount": 10,
+      "memberName": "Alessandra",
+      "memberSurname": "Garufi",
+      "memberTaxCode": "GRFLSN76R41H501G",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "c0ada3cb-5e54-45fc-be20-a25a5a41aec5",
+      "receiptId": "1937",
+      "date": "2026-09-03",
+      "memberId": "497d563f-e883-49fa-a98a-b9ae6be338c1",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Bancomat",
       "amount": 10
     }
   ],
