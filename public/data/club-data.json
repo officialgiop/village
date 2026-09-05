@@ -31169,7 +31169,21 @@
       "memberId": "a8916894-581a-4820-9fcc-0c568493f418",
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
-      "amount": 10
+      "amount": 10,
+      "memberName": "Valerio",
+      "memberSurname": "Consorti",
+      "memberTaxCode": "CNSVLR88P16H501I",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "d1915c8c-3686-4c43-b453-f5e9a18bf1d4",
+      "receiptId": "1932",
+      "date": "2026-09-03",
+      "memberId": "998dc294-3eba-4ed7-95af-fae2bf29e193",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Bancomat",
+      "amount": 12.5
     }
   ],
   "settings": {
