@@ -31351,6 +31351,20 @@
       "memberId": "c3814b12-5676-44d4-9501-ce0dc004490a",
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
+      "amount": 10,
+      "memberName": "Laura",
+      "memberSurname": "Cavicchia",
+      "memberTaxCode": "CVCLRA70C68H501N",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "f8decd48-f4d8-4e99-a6bc-86b90055712b",
+      "receiptId": "1945",
+      "date": "2026-09-04",
+      "memberId": "443f7a8b-402e-4a13-ae7a-e46e4ae5f9da",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Contanti",
       "amount": 10
     }
   ],
