@@ -31147,6 +31147,15 @@
       "memberTaxCode": "FRTLXA87C07D810W",
       "hasIssue": false,
       "issue": ""
+    },
+    {
+      "id": "83cd4a08-997f-4d57-a341-df389f81aca4",
+      "receiptId": "1930",
+      "date": "2026-09-03",
+      "memberId": "3e34e519-ed09-45ad-8d79-e389df61cb74",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Bancomat",
+      "amount": 10
     }
   ],
   "settings": {
