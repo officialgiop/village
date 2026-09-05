@@ -31295,6 +31295,20 @@
       "memberId": "1636e238-05c3-4701-8b31-0eed026930bc",
       "expenseType": "Quota Campo",
       "paymentMethod": "Contanti",
+      "amount": 10,
+      "memberName": "Marco",
+      "memberSurname": "Lollini",
+      "memberTaxCode": "LLLMRC87A16D612E",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "df42415c-13cd-4227-bd73-720e6599036b",
+      "receiptId": "1941",
+      "date": "2026-09-03",
+      "memberId": "db1f6291-55cd-479c-829c-a47aa8059dba",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Contanti",
       "amount": 10
     }
   ],
