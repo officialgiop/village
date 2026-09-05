@@ -31183,7 +31183,21 @@
       "memberId": "998dc294-3eba-4ed7-95af-fae2bf29e193",
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
-      "amount": 12.5
+      "amount": 12.5,
+      "memberName": "Davide",
+      "memberSurname": "Scaglione",
+      "memberTaxCode": "SCGDVD00C31H501W",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "05b28bb1-a08d-4c02-8371-81b4ce0d473e",
+      "receiptId": "1933",
+      "date": "2026-09-03",
+      "memberId": "5cbf6b52-979f-4a5e-a740-6af635049f8e",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Bancomat",
+      "amount": 10
     }
   ],
   "settings": {
