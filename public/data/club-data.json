@@ -31161,6 +31161,15 @@
       "memberTaxCode": "CRDCHR95E43D612F",
       "hasIssue": false,
       "issue": ""
+    },
+    {
+      "id": "4b82407d-9119-4ea3-889b-c51410483c96",
+      "receiptId": "1931",
+      "date": "2026-09-03",
+      "memberId": "a8916894-581a-4820-9fcc-0c568493f418",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Bancomat",
+      "amount": 10
     }
   ],
   "settings": {
