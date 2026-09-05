@@ -2915,6 +2915,12 @@
       "name": "Germana",
       "surname": "Ronzoni",
       "taxCode": "RNZGMN69A54H501K"
+    },
+    {
+      "id": "bdf717ab-09b0-436b-8a84-d42be8a62d89",
+      "name": "Stefano",
+      "surname": "Gianesi",
+      "taxCode": "GNSSTN74D02H501H"
     }
   ],
   "transactions": [
@@ -31379,7 +31385,12 @@
       "memberId": "0f275c5c-348a-4c1f-98ce-0334c8baf73d",
       "expenseType": "Quota Campo",
       "paymentMethod": "Contanti",
-      "amount": 10
+      "amount": 10,
+      "memberName": "Eugenio",
+      "memberSurname": "Venturo",
+      "memberTaxCode": "VNTGNE72E22H501S",
+      "hasIssue": false,
+      "issue": ""
     }
   ],
   "settings": {
