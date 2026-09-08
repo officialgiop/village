@@ -31413,7 +31413,21 @@
       "memberId": "ae0114cc-1d15-48ea-a0c5-2670433e800f",
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
-      "amount": 10
+      "amount": 10,
+      "memberName": "Edoardo",
+      "memberSurname": "Malapena",
+      "memberTaxCode": "MLPDRD94L16H501H",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "ab6122fb-9f5a-4997-b96f-2edb3fa5be66",
+      "receiptId": "1949",
+      "date": "2026-09-05",
+      "memberId": "2a7cb83f-ec27-46ce-a258-cd491d90999a",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Bancomat",
+      "amount": 9.5
     }
   ],
   "settings": {
