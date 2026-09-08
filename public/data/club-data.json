@@ -31469,7 +31469,21 @@
       "memberId": "20bd5bc1-658b-4230-8ffb-c874715ad292",
       "expenseType": "Corso Mensile",
       "paymentMethod": "Bancomat",
-      "amount": 100
+      "amount": 100,
+      "memberName": "Lorenzo",
+      "memberSurname": "Piromalli",
+      "memberTaxCode": "PRMLNZ70T16H501F",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "bd6a62a1-d0d1-48a8-81a5-ceefa442fea8",
+      "receiptId": "1953",
+      "date": "2026-09-06",
+      "memberId": "7a1cc8b0-7c3c-4885-85d3-7c951c4107bc",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Bancomat",
+      "amount": 10
     }
   ],
   "settings": {
