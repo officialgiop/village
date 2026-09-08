@@ -31427,7 +31427,21 @@
       "memberId": "2a7cb83f-ec27-46ce-a258-cd491d90999a",
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
-      "amount": 9.5
+      "amount": 9.5,
+      "memberName": "Teo",
+      "memberSurname": "Mammucari",
+      "memberTaxCode": "MMMTEO64M12H501X",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "787004d2-afcb-4413-b31a-917d14478eda",
+      "receiptId": "1950",
+      "date": "2026-09-06",
+      "memberId": "164dd512-142e-4876-a88e-e6181a1fa88d",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Bancomat",
+      "amount": 10
     }
   ],
   "settings": {
