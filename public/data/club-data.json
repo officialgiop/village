@@ -31511,7 +31511,21 @@
       "memberId": "443f7a8b-402e-4a13-ae7a-e46e4ae5f9da",
       "expenseType": "Quota Campo",
       "paymentMethod": "Contanti",
-      "amount": 10
+      "amount": 10,
+      "memberName": "Nur",
+      "memberSurname": "Laela",
+      "memberTaxCode": "LLANRU71P46Z223G",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "2c95fd53-6b37-4c63-9987-568c84f41110",
+      "receiptId": "1956",
+      "date": "2026-09-07",
+      "memberId": "9f186051-62e7-4b2d-98ff-3628077af252",
+      "expenseType": "Lezione Privata",
+      "paymentMethod": "Bancomat",
+      "amount": 25
     }
   ],
   "settings": {
