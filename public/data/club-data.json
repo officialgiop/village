@@ -31391,6 +31391,15 @@
       "memberTaxCode": "VNTGNE72E22H501S",
       "hasIssue": false,
       "issue": ""
+    },
+    {
+      "id": "8e7ae224-71d9-4c3a-b50f-09e3401c7287",
+      "receiptId": "1947",
+      "date": "2026-09-05",
+      "memberId": "bdf717ab-09b0-436b-8a84-d42be8a62d89",
+      "expenseType": "Quota Campo Doppia",
+      "paymentMethod": "Bancomat",
+      "amount": 24
     }
   ],
   "settings": {
