@@ -31455,7 +31455,21 @@
       "memberId": "f1d7de56-e7dd-4004-bf84-e51e70a8d0b2",
       "expenseType": "Quota Lezione Doppia",
       "paymentMethod": "Bancomat",
-      "amount": 50
+      "amount": 50,
+      "memberName": "Germana",
+      "memberSurname": "Ronzoni",
+      "memberTaxCode": "RNZGMN69A54H501K",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "e80d3207-82e3-4473-a153-c972a3833d28",
+      "receiptId": "1952",
+      "date": "2026-09-06",
+      "memberId": "20bd5bc1-658b-4230-8ffb-c874715ad292",
+      "expenseType": "Corso Mensile",
+      "paymentMethod": "Bancomat",
+      "amount": 100
     }
   ],
   "settings": {
