@@ -31497,6 +31497,20 @@
       "memberId": "b4d2f588-e748-4363-b397-4ec295e7cfeb",
       "expenseType": "Quota Campo",
       "paymentMethod": "Contanti",
+      "amount": 10,
+      "memberName": "Amedea",
+      "memberSurname": "Funari",
+      "memberTaxCode": "FNRMDA63C49H501R",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "e85940b3-7ef4-4deb-8d8f-302436b2c8ab",
+      "receiptId": "1955",
+      "date": "2026-09-06",
+      "memberId": "443f7a8b-402e-4a13-ae7a-e46e4ae5f9da",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Contanti",
       "amount": 10
     }
   ],
