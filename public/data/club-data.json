@@ -2933,6 +2933,12 @@
       "name": "Umberto",
       "surname": "Bardoscia",
       "taxCode": "BRDMRT52H02H501Q"
+    },
+    {
+      "id": "67fe4c24-e1f1-4bac-8e4b-ef2681b73236",
+      "name": "Francesco",
+      "surname": "Faiola",
+      "taxCode": "FLAFNC77A18H501N"
     }
   ],
   "transactions": [
