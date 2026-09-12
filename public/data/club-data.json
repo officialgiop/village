@@ -2927,6 +2927,12 @@
       "name": "Carlo",
       "surname": "Balzerano",
       "taxCode": "BLZCRL76M03H501T"
+    },
+    {
+      "id": "a539c4f2-95c8-4da0-a59d-46ee0cf7c98d",
+      "name": "Umberto",
+      "surname": "Bardoscia",
+      "taxCode": "BRDMRT52H02H501Q"
     }
   ],
   "transactions": [
