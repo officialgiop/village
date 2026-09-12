@@ -31725,6 +31725,20 @@
       "memberId": "c9254689-1b2f-49b4-b7c7-73c62b7f6f83",
       "expenseType": "Quota Campo",
       "paymentMethod": "Contanti",
+      "amount": 10,
+      "memberName": "Giorgia",
+      "memberSurname": "Ridolfi",
+      "memberTaxCode": "RDLGRG73H44H501B",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "1b61684f-1ba1-4e06-b119-db64e795bd3a",
+      "receiptId": "1970",
+      "date": "2026-09-10",
+      "memberId": "ff8662e3-0edd-446b-b2ae-076c4e07ae1b",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Contanti",
       "amount": 10
     }
   ],
