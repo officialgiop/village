@@ -31717,6 +31717,15 @@
       "memberTaxCode": "MMMTEO64M12H501X",
       "hasIssue": false,
       "issue": ""
+    },
+    {
+      "id": "7a4f6ed3-41e8-4d99-8647-63a61932b000",
+      "receiptId": "1969",
+      "date": "2026-09-10",
+      "memberId": "c9254689-1b2f-49b4-b7c7-73c62b7f6f83",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Contanti",
+      "amount": 10
     }
   ],
   "settings": {
