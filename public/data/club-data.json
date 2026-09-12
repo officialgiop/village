@@ -31613,6 +31613,20 @@
       "memberId": "dbcb6162-461c-42e8-9fe0-24313097d0c3",
       "expenseType": "Quota Campo",
       "paymentMethod": "Contanti",
+      "amount": 10,
+      "memberName": "Simona",
+      "memberSurname": "Bernardi",
+      "memberTaxCode": "BRNSMN74P47H501V",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "62081c51-846b-46b4-bf4c-2824ce27520d",
+      "receiptId": "1962",
+      "date": "2026-09-09",
+      "memberId": "b304aefe-326f-4655-8102-253f37a6f575",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Bancomat",
       "amount": 10
     }
   ],
