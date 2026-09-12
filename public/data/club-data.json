@@ -31549,6 +31549,15 @@
       "memberTaxCode": "TRNLGB59P70Z611W",
       "hasIssue": false,
       "issue": ""
+    },
+    {
+      "id": "d1875f5e-da99-4fcf-9092-bf7835f72799",
+      "receiptId": "1957",
+      "date": "2026-09-08",
+      "memberId": "164dd512-142e-4876-a88e-e6181a1fa88d",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Bancomat",
+      "amount": 10
     }
   ],
   "settings": {
