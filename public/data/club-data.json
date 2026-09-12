@@ -31739,6 +31739,20 @@
       "memberId": "ff8662e3-0edd-446b-b2ae-076c4e07ae1b",
       "expenseType": "Quota Campo",
       "paymentMethod": "Contanti",
+      "amount": 10,
+      "memberName": "Camilla",
+      "memberSurname": "Mastroiacovo",
+      "memberTaxCode": "MSTCLL80L65H501Z",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "65a09cab-f9d7-48a0-b23f-a81013ed133e",
+      "receiptId": "1971",
+      "date": "2026-09-10",
+      "memberId": "3c79a8cd-2d16-4779-ad81-3c5623c74afb",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Bancomat",
       "amount": 10
     }
   ],
