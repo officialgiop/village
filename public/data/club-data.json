@@ -31711,7 +31711,12 @@
       "memberId": "2a7cb83f-ec27-46ce-a258-cd491d90999a",
       "expenseType": "Quota Campo Intero",
       "paymentMethod": "Bancomat",
-      "amount": 40
+      "amount": 39.5,
+      "memberName": "Teo",
+      "memberSurname": "Mammucari",
+      "memberTaxCode": "MMMTEO64M12H501X",
+      "hasIssue": false,
+      "issue": ""
     }
   ],
   "settings": {
