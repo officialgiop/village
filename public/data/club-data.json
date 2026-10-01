@@ -31991,7 +31991,21 @@
       "memberId": "a539c4f2-95c8-4da0-a59d-46ee0cf7c98d",
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
-      "amount": 10
+      "amount": 10,
+      "memberName": "Umberto",
+      "memberSurname": "Bardoscia",
+      "memberTaxCode": "BRDMRT52H02H501Q",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "ad7b0089-02b3-475d-b05b-d9eec9d8077f",
+      "receiptId": "1989",
+      "date": "2026-09-12",
+      "memberId": "1620910e-87bc-4c6b-9e8c-f07527b5c3ab",
+      "expenseType": "Corso Mensile",
+      "paymentMethod": "Bancomat",
+      "amount": 100
     }
   ],
   "settings": {
