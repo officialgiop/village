@@ -31809,6 +31809,20 @@
       "memberId": "9d9fcaa4-a109-49a4-8b46-599a2273789b",
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
+      "amount": 10,
+      "memberName": "Claudia",
+      "memberSurname": "Carbini",
+      "memberTaxCode": "CRBCLD81R64H501Q",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "762f69df-e230-4c3c-8176-477686f7b492",
+      "receiptId": "1976",
+      "date": "2026-09-11",
+      "memberId": "164dd512-142e-4876-a88e-e6181a1fa88d",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Bancomat",
       "amount": 10
     }
   ],
