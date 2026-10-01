@@ -32355,7 +32355,21 @@
       "memberId": "233c5a7c-d1e8-49f0-94d5-ce73a395e16e",
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
-      "amount": 12
+      "amount": 12,
+      "memberName": "Daniele",
+      "memberSurname": "Martinelli",
+      "memberTaxCode": "MRTDNL79C15H501S",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "10c78dc2-9ba9-4c22-a4b0-3bee57203c7c",
+      "receiptId": "2015",
+      "date": "2026-09-15",
+      "memberId": "ae0114cc-1d15-48ea-a0c5-2670433e800f",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Contanti",
+      "amount": 10
     }
   ],
   "settings": {
