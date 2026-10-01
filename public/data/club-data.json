@@ -32411,6 +32411,20 @@
       "memberId": "0a20ae74-fdc1-4f6d-ac04-57a2f39a64a0",
       "expenseType": "Quota Campo",
       "paymentMethod": "Contanti",
+      "amount": 10,
+      "memberName": "Claudio Matteo",
+      "memberSurname": "Basili",
+      "memberTaxCode": "BSLCDM60T14E038F",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "c3754f46-1434-4338-8be8-b04114578f4f",
+      "receiptId": "2019",
+      "date": "2026-09-16",
+      "memberId": "1d661a00-a812-455c-b1fa-8776cbda1102",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Contanti",
       "amount": 10
     }
   ],
