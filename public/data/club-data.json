@@ -32201,7 +32201,21 @@
       "memberId": "e0ee7592-8ced-45e4-9c22-53d1267dc655",
       "expenseType": "Quota Campo",
       "paymentMethod": "Contanti",
-      "amount": 10
+      "amount": 10,
+      "memberName": "Francesco",
+      "memberSurname": "Valente",
+      "memberTaxCode": "VLNFNC89T13H501I",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "ceeb4188-b163-45f9-b5f8-82aafdd1a434",
+      "receiptId": "2004",
+      "date": "2026-09-14",
+      "memberId": "9f186051-62e7-4b2d-98ff-3628077af252",
+      "expenseType": "Lezione Privata",
+      "paymentMethod": "Bancomat",
+      "amount": 25
     }
   ],
   "settings": {
