@@ -32299,7 +32299,21 @@
       "memberId": "037712c2-d381-4e71-8ce3-ad5c5515078e",
       "expenseType": "Quota Campo",
       "paymentMethod": "Bancomat",
-      "amount": 11
+      "amount": 11,
+      "memberName": "Osvaldo Nicolas",
+      "memberSurname": "Girado",
+      "memberTaxCode": "GRDSLD90D22Z600L",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "57e0440c-083b-4a14-a93a-a11f075e6cd8",
+      "receiptId": "2011",
+      "date": "2026-09-15",
+      "memberId": "6aa52742-4116-4594-848d-8b36fe130ecb",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Bancomat",
+      "amount": 10
     }
   ],
   "settings": {
