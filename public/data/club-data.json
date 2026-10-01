@@ -31759,6 +31759,15 @@
       "memberTaxCode": "BNCBDT85T67H501W",
       "hasIssue": false,
       "issue": ""
+    },
+    {
+      "id": "e415016a-2d13-48cb-943f-54918d576e14",
+      "receiptId": "1972",
+      "date": "2026-09-11",
+      "memberId": "204676fd-8ea7-4733-ac8f-32ea0f0ddd6a",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Bancomat",
+      "amount": 10
     }
   ],
   "settings": {
