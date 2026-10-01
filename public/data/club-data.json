@@ -32425,6 +32425,20 @@
       "memberId": "1d661a00-a812-455c-b1fa-8776cbda1102",
       "expenseType": "Quota Campo",
       "paymentMethod": "Contanti",
+      "amount": 10,
+      "memberName": "Marco",
+      "memberSurname": "Perotti",
+      "memberTaxCode": "PRTMRC85E20H501I",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "618ffa3b-bc92-493c-8398-b1ce10418fa9",
+      "receiptId": "2020",
+      "date": "2026-09-16",
+      "memberId": "cd5c077e-547a-4440-ba6a-effa50b84a64",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Contanti",
       "amount": 10
     }
   ],
