@@ -32215,7 +32215,21 @@
       "memberId": "9f186051-62e7-4b2d-98ff-3628077af252",
       "expenseType": "Lezione Privata",
       "paymentMethod": "Bancomat",
-      "amount": 25
+      "amount": 25,
+      "memberName": "Lita Gabriela",
+      "memberSurname": "Troncoso",
+      "memberTaxCode": "TRNLGB59P70Z611W",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "fe1d212b-848d-4c88-b3da-3ebba403d4e9",
+      "receiptId": "2005",
+      "date": "2026-09-14",
+      "memberId": "72401209-cdc1-4ce3-b7e9-466f897aa97a",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Bancomat",
+      "amount": 12.5
     }
   ],
   "settings": {
