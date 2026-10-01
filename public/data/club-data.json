@@ -31921,7 +31921,21 @@
       "memberId": "cd0e2413-8415-45fe-8cc6-92d3b2be75e6",
       "expenseType": "Quota campo + contributo kit",
       "paymentMethod": "Bancomat",
-      "amount": 17
+      "amount": 17,
+      "memberName": "Giorgio",
+      "memberSurname": "Viscione",
+      "memberTaxCode": "VSCGRG77C26H501P",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "3b8f31c3-c3e3-4741-9d64-f050a9cba0c6",
+      "receiptId": "1984",
+      "date": "2026-09-12",
+      "memberId": "67fe4c24-e1f1-4bac-8e4b-ef2681b73236",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Bancomat",
+      "amount": 10
     }
   ],
   "settings": {
