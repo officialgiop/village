@@ -32439,7 +32439,21 @@
       "memberId": "cd5c077e-547a-4440-ba6a-effa50b84a64",
       "expenseType": "Quota Campo",
       "paymentMethod": "Contanti",
-      "amount": 10
+      "amount": 10,
+      "memberName": "Stefano",
+      "memberSurname": "Melone",
+      "memberTaxCode": "MLNSFN60T26H501D",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "ed24bac3-3910-4ee9-80a4-2dc255399f9f",
+      "receiptId": "2021",
+      "date": "2026-09-17",
+      "memberId": "2a32e907-91ca-49ee-abe2-197160ed0ed3",
+      "expenseType": "Quota campo lezione partita",
+      "paymentMethod": "Bancomat",
+      "amount": 15
     }
   ],
   "settings": {
