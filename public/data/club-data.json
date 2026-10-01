@@ -32369,7 +32369,21 @@
       "memberId": "ae0114cc-1d15-48ea-a0c5-2670433e800f",
       "expenseType": "Quota Campo",
       "paymentMethod": "Contanti",
-      "amount": 10
+      "amount": 10,
+      "memberName": "Edoardo",
+      "memberSurname": "Malapena",
+      "memberTaxCode": "MLPDRD94L16H501H",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "ad38a751-57b9-47ee-8edb-21bd2208e1bd",
+      "receiptId": "2016",
+      "date": "2026-09-16",
+      "memberId": "d35bffcf-da1c-47aa-acd5-d10e2796c59e",
+      "expenseType": "Lezione Privata",
+      "paymentMethod": "Bancomat",
+      "amount": 25
     }
   ],
   "settings": {
