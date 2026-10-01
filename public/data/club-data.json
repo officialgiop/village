@@ -31893,7 +31893,21 @@
       "memberId": "5cbf6b52-979f-4a5e-a740-6af635049f8e",
       "expenseType": "Corso Mensile",
       "paymentMethod": "Bancomat",
-      "amount": 100
+      "amount": 100,
+      "memberName": "Davide",
+      "memberSurname": "Feltoni Gurini",
+      "memberTaxCode": "FLTDVD84T20H501K",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "aa7dd649-6a6c-4ce8-9642-e781e64f5a41",
+      "receiptId": "1982",
+      "date": "2026-09-12",
+      "memberId": "f4491895-182a-4df3-863d-29e35edf3a94",
+      "expenseType": "Quota Campo",
+      "paymentMethod": "Bancomat",
+      "amount": 11
     }
   ],
   "settings": {
