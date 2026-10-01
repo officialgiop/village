@@ -31963,7 +31963,21 @@
       "memberId": "72a2405f-bc7f-4329-a701-4cdbd78e512b",
       "expenseType": "Quota Campo Doppia",
       "paymentMethod": "Bancomat",
-      "amount": 20
+      "amount": 20,
+      "memberName": "Francesco",
+      "memberSurname": "Nicolai",
+      "memberTaxCode": "NCLFNC75E31H769I",
+      "hasIssue": false,
+      "issue": ""
+    },
+    {
+      "id": "9b098249-16b3-4cb7-9c4e-474e5b3b9166",
+      "receiptId": "1987",
+      "date": "2026-09-12",
+      "memberId": "ea32028e-6e16-4d1d-90d8-440faaf802ec",
+      "expenseType": "Quota Campo Doppia",
+      "paymentMethod": "Bancomat",
+      "amount": 22
     }
   ],
   "settings": {
